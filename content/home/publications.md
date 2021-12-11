@@ -7,10 +7,10 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 90
+weight: 70
 
-title: Recent Publications
-subtitle: ''
+title: Publications
+subtitle: 'Journal Articles, Conference Papers, Datasets'
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -34,9 +34,9 @@ design:
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 4
+  view: 2
 ---
 
 {{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
+[Filter my publications](./publication/).
 {{% /callout %}}

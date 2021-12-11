@@ -5,10 +5,10 @@
 
 # Appearance
 
-theme: minimal
-day_night: true
+theme: Ocean #minimal
+day_night: false
 font: ''
-font_size: L
+font_size: l
 
 # SEO
 
@@ -16,7 +16,7 @@ site_type: Person
 local_business_type: ''
 org_name: ''
 description: ''
-twitter: ''
+twitter: 'fabianmoss'
 
 # Contact (edit or remove options as required)
 
@@ -59,12 +59,12 @@ contact_links:
 
 main_menu:
   enable: true
-  align: l
+  align: r
   show_logo: true
   show_language: false
   show_day_night: true
-  show_search: true
-  highlight_active_link: true
+  show_search: false
+  highlight_active_link: false
 
 # Localization
 
@@ -77,7 +77,8 @@ address_format: en-us
 highlight: true
 highlight_languages:
   - r
-math: false
+  - python
+math: true
 diagram: false
 privacy_pack: false
 edit_page:
