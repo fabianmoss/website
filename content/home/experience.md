@@ -23,7 +23,9 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Research Fellow in Cultural Analytics
-    company: Universiteit van Amsterdam
+    company: |
+      Media Studies Department < Faculty of Humanities < Universeit van Amsterdam <br />
+      Data Science Center < Universiteit van Amsterdam
     company_url: 'https://uva.nl/'
     company_logo: ''
     location: Amsterdam, The Netherlands
@@ -32,7 +34,7 @@ experience:
     description: ''
         
   - title: Postdoctoral Researcher
-    company: Digital and Cognitive Musicology Lab - Digital Humanities Insitute - École Polytechnique Fédérale de Lausanne
+    company: Digital and Cognitive Musicology Lab < Digital Humanities Insitute < Collège des Humanités <  École Polytechnique Fédérale de Lausanne
     company_url: 'https://dcml.epfl.ch'
     company_logo: ''
     location: Lausanne, Switzerland
@@ -43,7 +45,7 @@ experience:
       * 2021: [Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources](http://dcmlab.github.io/ddd)
     
   - title: Doctoral Assistant
-    company: Digital and Cognitive Musicology Lab - Digital Humanities Insitute - École Polytechnique Fédérale de Lausanne
+    company: Digital and Cognitive Musicology Lab < Digital Humanities Insitute < Collège des Humanités < École Polytechnique Fédérale de Lausanne
     company_url: 'https://dcml.epfl.ch'
     company_logo: ''
     location: Lausanne, Switzerland
@@ -52,7 +54,7 @@ experience:
     description: '* Dissertation: [Transitions of Tonality: A Model-Based Corpus Study](https://infoscience.epfl.ch/record/273178)'
   
   - title: Doctoral Assistant
-    company: Dresden Music Cognition Lab - Institut für Kunst- und Musikwissenschaft - Technische Universität Dresden
+    company: Dresden Music Cognition Lab < Institut für Kunst- und Musikwissenschaft < Technische Universität Dresden
     company_url: 'https://tu-dresden.de/gsw/phil/ikm/muwi'
     company_logo: ''
     location: Dresden, Germany
