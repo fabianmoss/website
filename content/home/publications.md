@@ -7,9 +7,9 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 70
+weight: 80
 
-title: Publications
+title: Other publications
 subtitle: 'Journal Articles, Conference Papers, Datasets'
 
 content:
