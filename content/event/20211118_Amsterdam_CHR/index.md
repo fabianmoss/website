@@ -3,11 +3,11 @@
 
 title: "Digitizing a 19th-Century Music Theory Debate for Computational Analysis"
 authors: [admin, Maik Köster, Melinda Femminis, Coline Métrailler, François Bavaud]
-date: 2021-10-26T15:05:36+02:00
+date: 2021-11-18T15:05:36+02:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-10-26T15:05:36+02:00
+publishDate: 2021-11-18T15:05:36+02:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -24,7 +24,7 @@ abstract: "We report the progress of the ongoing project “Digitizing the Duali
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [digital musicology, music theory, dualism debate, corpus study, computational humanities]
+tags: [digital musicology, music theory, dualism debate, corpus studies, computational humanities]
 categories: []
 featured: false
 

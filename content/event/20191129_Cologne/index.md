@@ -29,7 +29,7 @@ all_day: false
 publishDate: 2019-11-18T11:51:05+01:00
 
 authors: [admin]
-tags: []
+tags: [tonality, digital humanities, computational musicology, music theory, music history]
 
 # Is this a featured talk? (true/false)
 featured: true

@@ -24,7 +24,7 @@ all_day: false
 publishDate: 2021-09-17T08:10:19+02:00
 
 authors: [admin]
-tags: [digital musicology, music theory, dualism debate, corpus study, computational humanities]
+tags: [digital musicology, music theory, dualism debate, corpus studies, computational humanities]
 
 # Is this a featured talk? (true/false)
 featured: false
