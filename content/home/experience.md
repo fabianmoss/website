@@ -24,39 +24,38 @@ date_format: Jan 2006
 experience:
   - title: Research Fellow in Cultural Analytics
     company: |
-      Media Studies Department < Faculty of Humanities < Universeit van Amsterdam <br />
-      Data Science Center < Universiteit van Amsterdam
+      Media Studies Department | Data Science Center | Universeit van Amsterdam
     company_url: 'https://uva.nl/'
-    company_logo: ''
+    company_logo: 'Logo_UvA'
     location: Amsterdam, The Netherlands
     date_start: '2022-01-01'
     date_end: ''
     description: ''
         
   - title: Postdoctoral Researcher
-    company: Digital and Cognitive Musicology Lab < Digital Humanities Insitute < Collège des Humanités <  École Polytechnique Fédérale de Lausanne
+    company: Digital and Cognitive Musicology Lab | École Polytechnique Fédérale de Lausanne
     company_url: 'https://dcml.epfl.ch'
-    company_logo: ''
+    company_logo: 'epfl_square'
     location: Lausanne, Switzerland
     date_start: '2020-02-15'
     date_end: '2021-12-31'
-    description: |2-
-      * 2020 - 2021: [Distant Listening - The Development of Harmony over Three Centuries (1700–2000)](https://www.epfl.ch/labs/dcml/projects/distant-listening/)
-      * 2021: [Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources](http://dcmlab.github.io/ddd)
+    # description: |2-
+    #   * 2020 - 2021: [Distant Listening - The Development of Harmony over Three Centuries (1700–2000)](https://www.epfl.ch/labs/dcml/projects/distant-listening/)
+    #   * 2021: [Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources](http://dcmlab.github.io/ddd)
     
   - title: Doctoral Assistant
-    company: Digital and Cognitive Musicology Lab < Digital Humanities Insitute < Collège des Humanités < École Polytechnique Fédérale de Lausanne
+    company: Digital and Cognitive Musicology Lab | École Polytechnique Fédérale de Lausanne
     company_url: 'https://dcml.epfl.ch'
-    company_logo: ''
+    company_logo: 'epfl_square'
     location: Lausanne, Switzerland
     date_start: '2017-09-01'
     date_end: '2020-02-14'
-    description: '* Dissertation: [Transitions of Tonality: A Model-Based Corpus Study](https://infoscience.epfl.ch/record/273178)'
+    # description: '* Dissertation: [Transitions of Tonality: A Model-Based Corpus Study](https://infoscience.epfl.ch/record/273178)'
   
   - title: Doctoral Assistant
-    company: Dresden Music Cognition Lab < Institut für Kunst- und Musikwissenschaft < Technische Universität Dresden
+    company: Dresden Music Cognition Lab | Technische Universität Dresden
     company_url: 'https://tu-dresden.de/gsw/phil/ikm/muwi'
-    company_logo: ''
+    company_logo: 'Logo_TU_Dresden'
     location: Dresden, Germany
     date_start: '2015-01-01'
     date_end: '2017-08-31'
