@@ -26,7 +26,7 @@ abstract: >
 summary: ""
 
 tags: []
-categories: []
+categories: [corpus study]
 featured: false
 
 # Custom links (optional).

@@ -14,7 +14,7 @@ organizations:
   url: https://www.uva.nl/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Fabian C. Moss is a postdoctoral researcher in the _Digital and Cognitive Musicology Lab_ (DCML) at École Polytechnique Fédérale de Lausanne (EPFL, Switzerland). He was born in Cologne, Germany, and studied Mathematics and Educational Studies at University of Cologne, and Music Education (Major Piano) and Musicology at Hochschule für Musik und Tanz, Köln. Working with large symbolic datasets of musical scores and harmonic annotations, he is primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship.
+bio: Fabian C. Moss is a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) (UvA). He was born in Cologne, Germany, and studied Mathematics and Educational Studies at University of Cologne, and Music Education (Major Piano) and Musicology at Hochschule für Musik und Tanz, Köln. He obtained is PhD in Digital Humanities from [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/) (EPFL). Working with large symbolic datasets of musical scores and harmonic annotations, he is primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship.
 
 # Interests to show in About widget
 interests:
