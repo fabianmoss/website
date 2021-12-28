@@ -16,12 +16,10 @@ date: 2021-12-28T12:23:47+01:00
 external_link: ""
 
 # Featured image
-# Photo by <a href="https://unsplash.com/@gpthree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Pagan III</a> on <a href="https://unsplash.com/s/photos/pattern?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
+  caption: Photo by <a href="https://unsplash.com/@tumbao1949?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Wainscoat</a> on <a href="https://unsplash.com/s/photos/swarm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   focal_point: ""
   preview_only: false
 
