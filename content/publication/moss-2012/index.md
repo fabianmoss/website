@@ -8,5 +8,6 @@ abstract: ""
 featured: false
 publication: ""
 tags: ["Albert Simon", "Music Theory", "Neo-Riemannian Theory", "Theory of Tonal Fields", "Tonality"]
+projects: [music-theory]
 ---
 

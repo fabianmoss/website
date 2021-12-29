@@ -11,4 +11,5 @@ links:
 - name: Link
   url: "http://ojs.gold.ac.uk/index.php/sysmus14/article/view/243"
 url_pdf: http://journals.gold.ac.uk/index.php/sysmus14/article/view/243/257
+projects: [music-theory, music-cognition]
 ---

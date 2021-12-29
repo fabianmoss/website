@@ -67,7 +67,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects: [corpus-studies, music-theory, digital-humanities]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

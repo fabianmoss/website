@@ -8,4 +8,5 @@ abstract: "Tonality has been the cornerstone of Western music-theoretical discou
 featured: false
 publication: "Doctoral Dissertation. *École Polytechnique Fédérale de Lausanne, Switzerland*"
 doi: "10.5075/epfl-thesis-9808"
+projects: [music-theory, corpus-studies, digital-humanities]
 ---

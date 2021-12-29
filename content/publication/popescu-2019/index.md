@@ -10,4 +10,5 @@ publication: "*Scientific Reports, 9*(1)"
 tags: ["Cortex", "Human behaviour"]
 url_pdf: "http://www.nature.com/articles/s41598-018-35873-8"
 doi: "10.1038/s41598-018-35873-8"
+projects: [music-cognition, music-theory]
 ---

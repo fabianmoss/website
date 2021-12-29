@@ -11,4 +11,5 @@ publication: "*Frontiers in Digital Humanities*"
 tags: ["Beethoven", "Corpus Research", "Digital Musicology", "Ground Truth", "Harmony", "Music", "Symbolic Music data"]
 url_pdf: "https://www.frontiersin.org/article/10.3389/fdigh.2018.00016/full"
 doi: "10.3389/fdigh.2018.00016"
+projects: [music-theory, corpus-studies]
 ---
