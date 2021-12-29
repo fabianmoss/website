@@ -2,7 +2,7 @@
 title: "The Annotated Beethoven Corpus (ABC): A Dataset of Harmonic Analyses of All Beethoven String Quartets"
 date: 2018-01-01
 publishDate: 2019-10-02T15:46:12.118608Z
-authors: ["Markus Neuwirth", "Daniel Harasim", "Fabian C. Moss", "Martin Rohrmeier"]
+authors: ["Markus Neuwirth", "Daniel Harasim", admin, "Martin Rohrmeier"]
 publication_types: ["2"]
 abstract: ""
 featured: false

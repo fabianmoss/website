@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "A Model Comparison for Chord Prediction on the Annotated Beethoven Corpus"
-authors: [Kristoffer Landnes, Liana Mehrabyan, Victor Wiklund, Robert Lieck, Fabian C. Moss, Martin Rohrmeier]
+authors: [Kristoffer Landnes, Liana Mehrabyan, Victor Wiklund, Robert Lieck, admin, Martin Rohrmeier]
 date: 2019-10-02T18:18:47+02:00
 doi: ""
 

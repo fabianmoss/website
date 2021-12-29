@@ -6,7 +6,7 @@ title: Publications
 #   2 = Compact
 #   3 = Card
 #   4 = Citation
-view: 4 # FM: doesn't change anything?
+view: 4
 
 # Optional header image (relative to `static/img/` folder).
 header:
