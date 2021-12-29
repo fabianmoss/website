@@ -2,7 +2,8 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Music Perception and Cognition"
-summary: ""
+summary: "What makes us listen to music? How do we perceive structure in music? 
+Why is music so closely tied to our emotions? Why does music move us?"
 authors: []
 tags: []
 categories: []
@@ -41,4 +42,12 @@ slides: ""
 ---
 
 What makes us listen to music? How do we perceive structure in music? 
-Why is music so closely tied to our emotions?
+Why is music so closely tied to our emotions? Why does music move us?
+
+## Related publications and talks
+
+{{< cite page="/event/20210730_ICMPC_IndvAgg" view="4" >}}
+{{< cite page="/event/20210729_ICMPC_OctHex" view="4" >}}
+{{< cite page="/publication/popescu-2019" view="4" >}}
+{{< cite page="/event/20170727_Dresden" view="4" >}}
+{{< cite page="/event/20170602_Berlin" view="4" >}}

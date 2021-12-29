@@ -2,11 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Corpus Studies and Stylometry"
-summary: "A main area of my research is **corpus studies**: the computational analysis 
-of large datasets of musical pieces. 
-The overarching goal is to better understand patterns that transcend an individual 
-work or piece, and that can be attributed to a composer's style or to even farther-reaching 
-patterns, such as historical changes in tonality."
+summary: ""
 authors: []
 tags: []
 categories: []
