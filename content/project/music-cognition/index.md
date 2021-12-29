@@ -1,12 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Digital Humanities and Cultural Analytics"
+title: "Music Perception and Cognition"
 summary: ""
 authors: []
 tags: []
 categories: []
-date: 2021-12-28T12:40:42+01:00
+date: 2021-12-27T10:33:22+01:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -15,7 +15,7 @@ external_link: ""
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: Photo by <a href="https://unsplash.com/@impatrickt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Tomasso</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  caption: Photo by <a href="https://unsplash.com/@rexcuando?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric Nopanen</a> on <a href="https://unsplash.com/images/things/music?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   focal_point: ""
   preview_only: false
 
@@ -38,9 +38,7 @@ url_video: ""
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
-
 ---
 
-Digital Humanities or Cultural Analytics develop methods and tools
-in order to study human culture on a large scale, drawing on the 
-power of computational methods and digitized datasets.
+What makes us listen to music? How do we perceive structure in music? 
+Why is music so closely tied to our emotions?

@@ -18,10 +18,10 @@ bio: Fabian C. Moss is a Research Fellow in Cultural Analytics at [University of
 
 # Interests to show in About widget
 interests:
-- Computational Musicology
-- Music Theory
-- Music Cognition
-- Digital Humanities
+- Digital Humanities and Cultural Analytics
+- Corpus Studies and Stylometry
+- Music Theory and Analysis
+- Music Perception and Cognition
 
 # Education to show in About widget
 education:
