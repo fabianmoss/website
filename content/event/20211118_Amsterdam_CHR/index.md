@@ -44,7 +44,6 @@ url_project: https://dcmlab.github.io/ddd/
 url_slides:
 url_source:
 url_video:
-
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
@@ -58,7 +57,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects: [digital-humanities]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
