@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "20210719 22_MEC_Alicante"
+title: "Towards a Unified Model of Chords in Western Harmony"
 authors: [Johannes Hentschel, admin, Andrew McLeod, Markus Neuwirth, Martin Rohrmeier]
 date: 2021-07-19T14:15:00+01:00
 doi: ""
@@ -16,8 +16,8 @@ publishDate: 2021-07-19T14:15:00+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Towards a Unified Model of Chords in Western Harmony"
-publication_short: ""
+publication: "Music Encoding Conference Proceedings 2021"
+publication_short: "MEC Proceedings 2021"
 
 abstract: "Chord-based harmony is an important aspect of many types of Western music, across genres,
 regions, and historical eras. However, the consistent representation and comparison of harmony
