@@ -40,7 +40,7 @@ url_video: ""
 slides: ""
 ---
 
-Formal and mathematical modeling of musical structures, 
-in particular regarding tones, intervals, and harmonies, 
-at the same time delving into the intricacies of individual pieces 
-through close-reading analysis.
+Which underlying structural relations can be identified in a musical composition?
+How can these structures be described precisely, using mathematical and formal models?
+Can we measure music? Which intricate aspects of a piece appear remarkable? 
+What are the contexts in which this is the case?

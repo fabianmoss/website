@@ -40,8 +40,7 @@ url_video: ""
 slides: ""
 ---
 
-A main area of my research is corpus studies: the computational analysis 
-of large datasets of musical pieces. 
-The overarching goal is to better understand patterns that transcend an individual 
-work or piece, and that can be attributed to a composer's style or to even farther-reaching 
-patterns, such as historical changes in tonality.
+Which patterns do emerge when we move from analyzing individual 
+cultural artefacts to collections? 
+Can we create datasets that are reprentative for a certain historical period or style?
+Is it possible to observe trajectories that allow us to speak of cultural evolution?

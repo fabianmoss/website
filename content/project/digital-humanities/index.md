@@ -41,6 +41,6 @@ slides: ""
 
 ---
 
-Digital Humanities or Cultural Analytics develop methods and tools
-in order to study human culture on a large scale, drawing on the 
-power of computational methods and digitized datasets.
+How can we preserve the rich cultural heritage of the past?
+How can we make it accessible for anyone? 
+Which tools do we need to enable everyone to engage with these treasures?
