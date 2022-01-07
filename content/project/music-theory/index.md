@@ -43,4 +43,4 @@ slides: ""
 Which underlying structural relations can be identified in a musical composition?
 How can these structures be described precisely, using mathematical and formal models?
 Can we measure music? Which intricate aspects of a piece appear remarkable? 
-What are the contexts in which this is the case?
+Could there be a general theory of music?
