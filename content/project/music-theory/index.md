@@ -3,7 +3,7 @@
 
 title: "Music Theory and Analysis"
 summary: ""
-authors: [admin]
+authors: []
 tags: []
 categories: []
 date: 2021-12-28T09:36:41+01:00

@@ -41,7 +41,7 @@ url_video: ""
 slides: ""
 ---
 
+How do we make sense of sound?
 What makes us listen to music? How do we perceive structure in music? 
 Why is music so closely tied to our emotions? 
 Why does some music move us deeply and some doesn't?
-How do we make sense of sound?
