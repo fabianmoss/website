@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Der harmonische Dualismus und seine Entwicklung zum 'Streit- und Angelpunkt der Musiktheorie' - eine Diskursanalyse"
-event: Jahrestagung der Gesellschaft für Musikforschung
+event: "Jahrestagung der Gesellschaft für Musikforschung. Nach der Norm: Musikwissenschaft im 21. Jahrhundert"
 event_url: https://www.musikundmedien.hu-berlin.de/de/musikwissenschaft/gfm2022
 location: Humboldt-Universität zu Berlin
 address:
@@ -54,7 +54,7 @@ date_end: 2022-10-01 #T07:53:16+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-04-01T07:53:16+01:00
+publishDate: 2022-02-01T07:53:16+01:00
 
 authors: [Maik Köster, admin]
 tags: [discourse analysis, dualism debate, harmonic dualism]
