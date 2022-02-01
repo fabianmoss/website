@@ -11,8 +11,9 @@ address:
   region:
   postcode:
   country:
-summary:
-abstract: | 
+summary: |
+  In the present study, we adapt and apply numerical methods from computational literary studies and natural language processing, such as text classification and topic modeling, to the Thesaurus Musicarum Italicarum, a corpus of more than thirty Renaissance and Baroque Italian music theory treatises. We discuss the extent to which distant and close reading are mutually beneficial by critically evaluating the results of our analyses.
+abstract: |
   The history of music theory from Antiquity to the present day has produced a large number of central textual sources covering an extensive range of music-related topics such as mathematics, acoustics, philosophy, psychology, pedagogy, composition, and performance. This vast resource is fundamental for large parts of historical musicological inquiry, and music scholars have ever since scrutinized and critically contextualized these texts. 
 
   The comprehensive study of these sources, however, faces a number of challenges. Apart from uncertainties related to fragmented transmission, authenticity and authorship attribution as well as precise dating, a more practical concern for scholars is the sheer amount of sources that surpass any individual scholar’s capacities. To overcome this obstacle, a number of initiatives have created large digitized collections of music-theoretical and musicological texts, providing online access for the benefit of the entire musicological community. 
