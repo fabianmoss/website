@@ -54,10 +54,10 @@ date_end: 2022-10-01 #T07:53:16+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-02-01T07:53:16+01:00
+publishDate: 2022-04-01T07:53:16+01:00
 
 authors: [Maik Köster, admin]
-tags: [discourse analysis, dualism debate]
+tags: [discourse analysis, dualism debate, harmonic dualism]
 
 # Is this a featured event? (true/false)
 featured: false
