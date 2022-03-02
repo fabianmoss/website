@@ -11,8 +11,8 @@ address:
   region:
   postcode:
   country:
-summary:
-abstract: | 
+summary: This paper presents a web application for visualizing the tonality of a piece of music---the organization of its chords and scales---at a high level of abstraction and with coordinated playback.
+abstract: |
   This paper presents a web application for visualizing the tonality of a piece of music---the organization of its chords and scales---at a high level of abstraction and with coordinated playback.
   The application applies the discrete Fourier transform to the pitch-class domain of a user-specified segmentation of a MIDI file and visualizes the Fourier coefficients' trajectories.
   Since the coefficients indicate different musical properties, such as harmonic function, triadicity, and diatonicity, the application isolates aspects of a piece's tonality and shows their development in time.
@@ -25,7 +25,7 @@ date_end: 2022-06-24 #T12:06:24+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-06-14T12:06:24+01:00
+publishDate: 2022-03-02T08:06:24+01:00
 
 authors: [Daniel Harasim, Giovanni Affatato, admin]
 tags: [Web application, Visualization, Discrete Fourier transform, Tonality, MIDI]
