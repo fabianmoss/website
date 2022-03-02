@@ -52,7 +52,7 @@ image:
 # Optional filename of your slides within your event's folder or a URL.
 url_slides:
 
-url_code:
+url_code: https://dcmlab.github.io/midiVERTO/
 url_pdf:
 url_video:
 
