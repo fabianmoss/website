@@ -27,7 +27,7 @@ interests:
 education:
   courses:
   - course: PhD in Digital Humanities
-    institution: École Polytechnique Fédérale de Lausanne, Lausanne Switzerland
+    institution: École Polytechnique Fédérale de Lausanne, Switzerland
     year: 2019
   - course: Staatsexamen Lehramt für Gymnasien und Gesamtschulen (Mathematik, Musik, Erziehungswissenschaft)
     institution: Universität zu Köln, Germany
