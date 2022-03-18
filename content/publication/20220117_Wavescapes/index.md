@@ -26,7 +26,7 @@ summary: "We introduce wavescapes, a novel visualization method for tonal hierar
 
 tags: [Discrete Fourier transform, music analysis, keyscapes, tonal hierarchy, visualization]
 categories: []
-featured: true
+featured: false
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
