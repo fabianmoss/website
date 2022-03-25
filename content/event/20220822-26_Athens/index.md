@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Reading Music Theory from a Distance: A Corpus Study of the Thesaurus Musicarum Italicarum"
+title: "[Cancelled:] Reading Music Theory from a Distance: A Corpus Study of the Thesaurus Musicarum Italicarum"
 event: 21st Quinquennial Congress of the International Musicological Society (IMS2022)
 event_url: https://pcoconvin.eventsair.com/ims22/
 location: Athens, Greece
