@@ -24,7 +24,7 @@ all_day: false
 publishDate: 2022-03-25T08:41:48+01:00
 
 authors: [admin]
-tags: [music theory, discrete Fourier transform, music analysis]
+tags: [discrete Fourier transform, midiVERTO, visualization, MIDI, music analysis]
 
 # Is this a featured event? (true/false)
 featured: false
@@ -46,7 +46,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your event's folder or a URL.
-url_slides:
+url_slides: https://docs.google.com/presentation/d/17I9Q9Hgh6OEX9PcseCATFH69j_S9vnbbx-u5Rm5-cOA/edit?usp=sharingcc
 
 url_code:
 url_pdf:

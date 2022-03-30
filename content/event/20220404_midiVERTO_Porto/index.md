@@ -35,7 +35,7 @@ all_day: false
 publishDate: 2022-03-25T11:06:37+01:00
 
 authors: [admin]
-tags: []
+tags: [discrete Fourier transform, midiVERTO, visualization, MIDI, music analysis]
 
 # Is this a featured event? (true/false)
 featured: false
@@ -57,7 +57,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your event's folder or a URL.
-url_slides:
+url_slides: 
 
 url_code:
 url_pdf:
