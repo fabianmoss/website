@@ -3,7 +3,7 @@
 
 title: "Interactive Music Analysis using the DFT and Pitch-Class Distributions extracted from MIDI files"
 event:
-event_url:
+event_url: https://sigarra.up.pt/feup/pt/noticias_geral.ver_noticia?p_nr=131270
 location: Faculdade de Engenharia da Universidade do Porto (FEUP)
 address:
   street: 
@@ -57,7 +57,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your event's folder or a URL.
-url_slides: 
+url_slides: https://docs.google.com/presentation/d/1mXgRTz90l7qMl6bAxnrIXXSV8Z8YwG0YTcCJWGTBfB0/edit?usp=sharing
 
 url_code:
 url_pdf:
