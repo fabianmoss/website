@@ -31,7 +31,7 @@ experience:
   #   date_end: ""
 
   - title: Research Fellow in Cultural Analytics
-    company: Media Studies Department | Data Science Centre | Universeit van Amsterdam
+    company: Media Studies Department | Institute for Language, Logic and Cognition | Data Science Centre | Universeit van Amsterdam
     company_url: 'https://uva.nl/'
     company_logo: 'Logo_UvA'
     location: Amsterdam, The Netherlands
