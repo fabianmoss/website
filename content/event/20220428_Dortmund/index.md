@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Computational musicology - a new paradigm for music research?"
-event:
-event_url:
+title: "midiVERTO: A web-based tool to make computational music analysis more accessible"
+event: Gastvorträge zur computergestützten Analyse
+event_url: https://www.musik.tu-dortmund.de/news/gastvortraege-zur-computergestuetzten-analyse/
 location: Institut für Musik und Musikwissenschaft, Technische Universität Dortmund
 address:
   street:
@@ -46,7 +46,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your event's folder or a URL.
-url_slides:
+url_slides: https://docs.google.com/presentation/d/1WDbSOlT_Ks80DXk54eBmu3s1KY9ReTTaKjRLyJ_Cq0k/edit?usp=sharing
 
 url_code:
 url_pdf:
