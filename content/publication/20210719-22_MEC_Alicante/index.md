@@ -3,8 +3,8 @@
 
 title: "Towards a Unified Model of Chords in Western Harmony"
 authors: [Johannes Hentschel, admin, Andrew McLeod, Markus Neuwirth, Martin Rohrmeier]
-date: 2021-07-19T14:15:00+01:00
-doi: ""
+date: 2022-05-19T12:15:00+01:00
+doi: "10.17613/4crx-fr36"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2021-07-19T14:15:00+01:00
@@ -55,7 +55,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://apmcleod.github.io/pdf/mec-chord-model.pdf
+url_pdf: https://hcommons.org/deposits/item/hc:46003/ #https://apmcleod.github.io/pdf/mec-chord-model.pdf
 url_code: https://github.com/DCMLab/chord-model
 url_dataset:
 url_poster:
