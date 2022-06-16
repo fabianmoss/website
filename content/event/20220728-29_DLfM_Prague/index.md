@@ -32,7 +32,7 @@ date_end: 2022-07-29 #T08:36:53+02:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-05-10T08:36:53+02:00
+publishDate: 2022-07-28T08:36:53+02:00
 
 authors: [admin, Giovanni Affatato, Daniel Harasim]
 tags: [Sound and music computing, Interactive learning environments, Music retrieval, Visualization toolkits, Scientific visualization]

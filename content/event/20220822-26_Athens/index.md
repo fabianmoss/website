@@ -29,7 +29,7 @@ date_end: 2022-08-26T12:32:30+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2021-12-29T12:32:30+01:00
+publishDate: 2022-08-26T12:32:30+01:00
 
 authors: [admin, Coline Métrailler]
 tags: []

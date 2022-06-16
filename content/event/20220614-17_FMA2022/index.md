@@ -26,8 +26,8 @@ abstract: >
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2022-06-14T14:37:37+02:00
-date_end: 2022-06-17T14:37:37+02:00
+date: 2022-06-16T14:37:37+02:00
+date_end: 2022-06-16T14:37:37+02:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
@@ -58,8 +58,8 @@ image:
 # Optional filename of your slides within your event's folder or a URL.
 url_slides:
 
-url_code:
-url_pdf:
+url_code: https://osf.io/ghqap/
+url_pdf: https://osf.io/5tsxa/
 url_video:
 
 # Markdown Slides (optional).

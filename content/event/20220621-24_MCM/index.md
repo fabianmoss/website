@@ -25,7 +25,7 @@ date_end: 2022-06-24 #T12:06:24+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-03-02T08:06:24+01:00
+publishDate: 2022-06-21T08:06:24+01:00
 
 authors: [Daniel Harasim, Giovanni Affatato, admin]
 tags: [Web application, Visualization, Discrete Fourier transform, Tonality, MIDI]
