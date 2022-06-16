@@ -54,7 +54,7 @@ url_slides:
 
 url_code: https://dcmlab.github.io/midiVERTO/
 url_pdf:
-url_video:
+url_video: https://www.youtube.com/watch?v=VHamnm1F3nc/
 
 # Markdown Slides (optional).
 #   Associate this event with Markdown slides.
