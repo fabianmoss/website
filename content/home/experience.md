@@ -22,7 +22,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  # - title: Assistant Professor in Digital Music Philology and Music Theory
+  # - title: Assistant Professor for Digital Music Philology and Music Theory
   #   company: Institut für Musikforschung | Julius-Maximilians-Universität Würzburg
   #   company_url: https://www.uni-wuerzburg.de/
   #   company_logo: Universität_Würzburg_Logo
