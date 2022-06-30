@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 40
 
-title: Experience
+title: Academic experience
 subtitle:
 
 # Date format for experience
@@ -28,7 +28,7 @@ experience:
   #   company_logo: Universität_Würzburg_Logo
   #   location: Würzburg, Germany
   #   date_start: "2022-10-01"
-  #   date_end: ""
+  #   # date_end: ""
 
   - title: Research Fellow in Cultural Analytics
     company: Media Studies Department | Institute for Language, Logic and Cognition | Data Science Centre | Universeit van Amsterdam
@@ -36,7 +36,7 @@ experience:
     company_logo: 'Logo_UvA'
     location: Amsterdam, The Netherlands
     date_start: '2022-01-01'
-    date_end: ''
+    # date_end: '2022-09-30'
     description: ''
         
   - title: Postdoctoral Researcher
@@ -59,6 +59,15 @@ experience:
     date_end: '2020-02-14'
     # description: '* Dissertation: [Transitions of Tonality: A Model-Based Corpus Study](https://infoscience.epfl.ch/record/273178)'
   
+  - title: Visiting Student
+    company: Department of Linguistics and Philosophy | Massachusetts Institute of Technology
+    company_url: https://www.mit.edu
+    company_logo: MIT_logo
+    location: Cambridge, MA, USA
+    date_start: 2016-02-01
+    date_end: 2016-04-30
+    description: ""
+
   - title: Doctoral Assistant
     company: Dresden Music Cognition Lab | Technische Universität Dresden
     company_url: 'https://tu-dresden.de/gsw/phil/ikm/muwi'
