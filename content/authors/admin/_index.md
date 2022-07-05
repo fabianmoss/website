@@ -17,24 +17,24 @@ organizations:
 bio: Fabian C. Moss is a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) (UvA). He was born in Cologne, Germany, and studied Mathematics and Educational Studies at University of Cologne, and Music Education (Major Piano) and Musicology at Hochschule für Musik und Tanz, Köln. He obtained is PhD in Digital Humanities from [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/) (EPFL). Working with large symbolic datasets of musical scores and harmonic annotations, he is primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship.
 
 # Interests to show in About widget
-interests:
-- Digital Humanities and Cultural Analytics
-- Corpus Studies and Stylometry
-- Music Theory and Analysis
-- Music Perception and Cognition
+# interests:
+# - Digital Humanities and Cultural Analytics
+# - Corpus Studies and Stylometry
+# - Music Theory and Analysis
+# - Music Perception and Cognition
 
 # Education to show in About widget
-education:
-  courses:
-  - course: PhD in Digital Humanities
-    institution: École Polytechnique Fédérale de Lausanne, Switzerland
-    year: 2019
-  - course: Staatsexamen Lehramt für Gymnasien und Gesamtschulen (Mathematik, Musik, Erziehungswissenschaft)
-    institution: Universität zu Köln, Germany
-    year: 2016
-  - course: MA in Musicology
-    institution: Hochschule für Musik und Tanz, Köln, Germany
-    year: 2012
+# education:
+#   courses:
+#   - course: PhD in Digital Humanities
+#     institution: École Polytechnique Fédérale de Lausanne, Switzerland
+#     year: 2019
+#   - course: Staatsexamen Lehramt für Gymnasien und Gesamtschulen (Mathematik, Musik, Erziehungswissenschaft)
+#     institution: Universität zu Köln, Germany
+#     year: 2016
+#   - course: MA in Musicology
+#     institution: Hochschule für Musik und Tanz, Köln, Germany
+#     year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
