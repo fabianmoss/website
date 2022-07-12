@@ -28,7 +28,7 @@ experience:
   #   company_logo: Universität_Würzburg_Logo
   #   location: Würzburg, Germany
   #   date_start: "2022-10-01"
-  #   # date_end: ""
+    # date_end: ""
 
   - title: Research Fellow in Cultural Analytics
     company: Media Studies Department | Institute for Language, Logic and Cognition | Data Science Centre | Universeit van Amsterdam
@@ -59,7 +59,7 @@ experience:
     date_end: '2020-02-14'
     # description: '* Dissertation: [Transitions of Tonality: A Model-Based Corpus Study](https://infoscience.epfl.ch/record/273178)'
   
-  - title: Visiting Student
+  - title: Visiting PhD Student
     company: Department of Linguistics and Philosophy | Massachusetts Institute of Technology
     company_url: https://www.mit.edu
     company_logo: MIT_logo
