@@ -27,12 +27,12 @@ abstract: "We introduce phantom curves, a novel music-theoretical concept based 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2022-07-28 #T08:36:53+02:00
-date_end: 2022-07-29 #T08:36:53+02:00
+date: 2022-07-28T09:00:00+02:00
+date_end: 2022-07-28T17:30:00+02:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-07-28T08:36:53+02:00
+publishDate: 2022-07-28T08:00:00+02:00
 
 authors: [admin, Giovanni Affatato, Daniel Harasim]
 tags: [Sound and music computing, Interactive learning environments, Music retrieval, Visualization toolkits, Scientific visualization]
