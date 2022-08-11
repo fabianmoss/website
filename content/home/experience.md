@@ -28,16 +28,16 @@ experience:
   #   company_logo: Universität_Würzburg_Logo
   #   location: Würzburg, Germany
   #   date_start: "2022-10-01"
-    # date_end: ""
+  #   date_end: ""
 
   - title: Research Fellow in Cultural Analytics
-    company: Media Studies Department | Institute for Language, Logic and Cognition | Data Science Centre | Universeit van Amsterdam
-    company_url: 'https://uva.nl/'
+    company: 'Media Studies Department | [ILLC]([www.illc.com](https://www.illc.uva.nl/)) | [Data Science Centre](https://dsc.uva.nl/) | [Universeit van Amsterdam](https://uva.nl/)'
+    # company_url: ''
     company_logo: 'Logo_UvA'
     location: Amsterdam, The Netherlands
     date_start: '2022-01-01'
     # date_end: '2022-09-30'
-    description: ''
+    # description: ""
         
   - title: Postdoctoral Researcher
     company: Digital and Cognitive Musicology Lab | École Polytechnique Fédérale de Lausanne
@@ -76,6 +76,34 @@ experience:
     date_start: '2015-01-01'
     date_end: '2017-08-31'
     description: ''
+  
+  # - title: ERASMUS Exchange Student
+  #   company: Escola Superior de Música de Catalunya
+  #   company_logo: "ESMUC"
+  #   company_url: "https://esmuc.cat/"
+  #   date_start: 2012-01-01
+  #   date_end: 2012-04-30
+
+  # - title: Master of Arts Musicology
+  #   company: Hochschule für Musik und Tanz Köln
+  #   company_logo: "logo_HFMTK"
+  #   company_url: "https://www.hfmt-koeln.de/"
+  #   date_start: 2011-04-01
+  #   date_end: 2013-09-30
+
+  # - title: State Examination Music
+  #   company: Hochschule für Musik und Tanz Köln
+  #   company_logo: "logo_HFMTK"
+  #   company_url: "https://www.hfmt-koeln.de/"
+  #   date_start: 2008-04-01
+  #   date_end: 2013-09-30
+
+  # - title: State Examination Mathematics and Educational Studies
+  #   company: University of Cologne
+  #   company_logo: "uni-koeln"
+  #   company_url: "https://uni-koeln.de/"
+  #   date_start: 2006-10-01
+  #   date_end: 2016-09-30
 
 design:
   columns: '2'
