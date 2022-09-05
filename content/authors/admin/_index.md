@@ -6,11 +6,11 @@ title: Fabian C. Moss
 superuser: true
 
 # Role/position/tagline
-role: Research Fellow in Cultural Analytics
+role: Research Fellow in Cultural Analytics # Assistant Professor for Digital Music Philology and Music Theory
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of Amsterdam
+- name: University of Amsterdam # Julius-Maximilians-Universität Würzburg 
   url: https://www.uva.nl/
 
 # Short bio (displayed in user profile at end of posts)

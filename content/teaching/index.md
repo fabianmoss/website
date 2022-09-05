@@ -14,7 +14,8 @@ header:
   image: ""
 ---
 
-In the fall semester 2022/23 I teach the following courses:
+In the fall semester of 2022/23 I teach the following courses (in German): 
+<!-- at Würzburg University -->
 
 ## Neo-Riemannian Theories: Analysemethoden für erweiterte Tonalität von der Spätromantik bis zur Filmmusik
 
