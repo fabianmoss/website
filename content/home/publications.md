@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 80
 
-title: Other publications
+title: Publications
 subtitle: 'Journal Articles, Conference Papers, Datasets'
 
 content:
