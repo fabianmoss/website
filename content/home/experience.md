@@ -23,11 +23,11 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   # - title: Assistant Professor for Digital Music Philology and Music Theory
-  #   company: Institut für Musikforschung | Julius-Maximilians-Universität Würzburg
-  #   company_url: https://www.uni-wuerzburg.de/
+  #   company: '[Institut für Musikforschung](http://musikwissenschaft.uni-wuerzburg.de/) | [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/)'
+  #   # company_url: 
   #   company_logo: Universität_Würzburg_Logo
   #   location: Würzburg, Germany
-  #   date_start: "2022-10-01"
+  #   date_start: "2022-12-01"
   #   date_end: ""
 
   - title: Research Fellow in Cultural Analytics
@@ -36,7 +36,7 @@ experience:
     company_logo: 'Logo_UvA'
     location: Amsterdam, The Netherlands
     date_start: '2022-01-01'
-    # date_end: '2022-09-30'
+    date_end: '2022-11-30'
     # description: ""
         
   - title: Postdoctoral Researcher
