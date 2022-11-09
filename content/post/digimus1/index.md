@@ -1,15 +1,44 @@
 ---
 title: Scope and Method of Digital Music Research
-author: Fabian C. Moss
-date: 2022-08-14
+# subtitle: "A little documentation of my journey"
+authors: [admin]
+date: 2022-12-01T08:00:00+02:00
+# lastmod: 2022-05-03T10:54:58+02:00
+
+# summary: ""
+tags: []
+categories: []
+
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+# image:
+#   caption: ""
+#   focal_point: ""
+#   preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+# projects: []
 ---
 
-Since October 2022, I am an Assistant Professor^["Juniorprofessor", as it's called in Germany.] for "Digital Music Philology and Music Theory" at [Ludwig-Maximilians-Universität, Würzburg](https://www.uni-wuerzburg.de/). I am writing this post to explain how I understand the denomination of this professorship, and how I want to fill it with life in research and teaching.
-I find that this denomination actually well expresses my main research foci, but also that it might sound somewhat cryptic to non-specialists. Moreover, its constituent parts each can potentially have very diverging interpretations and meanings. In what follows I will present my personal understanding of this denomination, render explanations for it, and outline how I will fill it with life.
+Since December 2022, I am an assistant professor^["Juniorprofessor", as it's called in Germany.] for "Digital Music Philology and Music Theory" at [Ludwig-Maximilians-Universität, Würzburg](https://www.uni-wuerzburg.de/). Maybe not on first glance, but after a little thought I am finding that "Digital Music Philology and Music Theory" actually quite well expresses my main research interests. However I do realize that it might sound somewhat cryptic. In this post I want to elaborate my understandung of the denomination of this professorship and outline how I want to fill the post with life regarding research and teaching in the coming years.
+
+<!--more-->
+
+My stragegy is simple: I will take it apart ("analyze") each of its constituent parts and elaborate how I understand it, in order to put everything back together at the end. I am sure that my own understanding of these terms will evolve in the next years---hopefully so!---and I am already looking forward to finding out how students approach these topics. 
 
 ## Music Philology
 
-Music philology is the science^[In anglophone contexts, "science" is usually restricted to the 'hard'/natural/formal sciences. In German, however, it applies to any form of academic research and processes of creating knowledge. I am not a big fan of the science-humanities dichotomie because there are too many points of overlap or unclear boundaries to justify this strict separation.] of musical texts. "Texts" should here be understood in the widest possible sense as "anything that can be read" - be it by a human reader or a computer. Examples of such texts are sheet music, sketches, letters, but also recordings, videos, and discourse about music, e.g. in historical books or on social media platforms. While philology is a very old academic discipline, it is highly relevant in our age, where information (often textual) plays a center stage role. 
+Music philology is the science^[In anglophone contexts, "science" is usually restricted to the 'hard'/natural/formal sciences. In German, however, it applies to any form of academic research and processes of creating knowledge. I am not a big fan of the science-humanities dichotomie because there are too many points of overlap or unclear boundaries to justify this strict separation.] of musical texts. "Texts" should here be understood in the widest possible sense as "anything that can be read" -- be it by a human reader or a computer. 
+
+Examples of such texts are sheet music, sketches, letters, but also recordings, videos, and discourse about music, e.g. in historical books or on social media platforms. While philology is a very old academic discipline, it is highly relevant in our age, where information (often textual) plays a center stage role. 
 
 On the other hand, not all music can be captured textually. The majority of cultures on our planet do not possess explicit writing systems for music, but nonetheless posses intricate forms of musical expression.
 Studying these faces the challenge that philoligical methods seem non-applicable. While it is certainly possible to convert any form of music to a textual representation it is questionable whether these transcriptions are truthful representations of the music in the first place, and great care has to be taken not to introduce implicit biases.
@@ -31,17 +60,9 @@ In my own research, I strongly draw on digital represetations of musical scores 
 It also feeds into formal modeling of music, that is, the questions how musical structures can be consistently described and related with one another.
 This, in turn, allows in a final step to encage with "computational modeling" that aims at explaining musical concepts by using formal models and drawing on digital data.
 
-```{mermaid}
-flowchart LR
-    A(Sources) --> B(Digitization/Digitalization)
-    B --> C(Philology)
-    C --> D(Theory)
-    D --> B
-```
-
 ## Conclusion
 
-Modern digital music research is an exciting endeavour. 
+Modern digital music research is an exciting endeavour.
 It opens up completely new avenues of engaging with and obtaining a deeper understandig of music in all its diverse forms.
-But this comes with the price of requiring to learn a host of new methods and techniques. Those are, most of the time, not only applicable to music and thus endow one with a deeper understanding of many other phenomena, and enable one to engage with research literatures from many fields such as digital humanities, cultural evolution, or computational sociology. 
+But this comes with the price of requiring to learn a host of new methods and techniques. Those are, most of the time, not only applicable to music and thus endow one with a deeper understanding of many other phenomena, and enable one to engage with research literatures from many fields such as digital humanities, cultural evolution, or computational sociology.
 We're just beginning to explore the vast oceans of opportunities for digital music research, and I count myself lucky to be at the forefront of this development!
