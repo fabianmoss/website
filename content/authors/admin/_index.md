@@ -6,24 +6,19 @@ title: Fabian C. Moss
 superuser: true
 
 # Role/position/tagline
-role: Research Fellow in Cultural Analytics # Digital Music Philology and Music Theory # 
+role: Digital Music Philology and Music Theory 
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of Amsterdam # Julius-Maximilians-Universität Würzburg # 
-  url: https://www.uva.nl/
+- name: Julius-Maximilians-Universität Würzburg # 
+  url: http://musikwissenschaft.uni-wuerzburg.de/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Fabian C. Moss is a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) (UvA). He was born in Cologne, Germany, and studied Mathematics and Educational Studies at University of Cologne, and Music Education (Major Piano) and Musicology at Hochschule für Musik und Tanz, Köln. He obtained is PhD in Digital Humanities from [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/) (EPFL). Working with large symbolic datasets of musical scores and harmonic annotations, he is primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship.
-# an assistant professor for Digital Music Philology and Music Theory at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany.
+bio: Fabian C. Moss is an assistant professor for Digital Music Philology and Music Theory at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany. 
+#He was born in Cologne, Germany, and studied Mathematics and Educational Studies at University of Cologne, and Music Education (Major Piano) and Musicology at Hochschule für Musik und Tanz, Köln. He obtained is PhD in Digital Humanities from [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/) (EPFL). Working with large symbolic datasets of musical scores and harmonic annotations, he is primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship.
 
 # Interests to show in About widget
-interests:
-- Computational Musicology
-- Corpus Studies and Stylometry
-- Music Theory and Analysis
-- Digital Humanities 
-- Cultural Evolution
+# interests:
 
 # Education to show in About widget
 # education:
@@ -76,26 +71,29 @@ email: ""
 highlight_name: true
 ---
 
-I am a Research Fellow in Cultural Analytics at the [Media Studies Department](https://mediastudies.nl/) at [University of Amsterdam](https://uva.nl) (UvA). I am also affiliated with the [Language & Music Cognition](https://www.illc.uva.nl/Research/Research-Units/LMC/) (LMC) research unit at UvA's [Institute for Language, Logic and Computation](https://www.illc.uva.nl/) (ILLC). I engage with the activities of the [Music Cognition Group](http://mcg.uva.nl/) (MCG) and the [Amsterdam Music Lab](https://www.amsterdammusiclab.nl/) (AML) as well as with the project [_Creative Amsterdam: an e-Humanities Perspective_](https://create.humanities.uva.nl/) (CREATE).
+<!-- I am a Research Fellow in Cultural Analytics at the [Media Studies Department](https://mediastudies.nl/) at [University of Amsterdam](https://uva.nl) (UvA). I am also affiliated with the [Language & Music Cognition](https://www.illc.uva.nl/Research/Research-Units/LMC/) (LMC) research unit at UvA's [Institute for Language, Logic and Computation](https://www.illc.uva.nl/) (ILLC). I engage with the activities of the [Music Cognition Group](http://mcg.uva.nl/) (MCG) and the [Amsterdam Music Lab](https://www.amsterdammusiclab.nl/) (AML) as well as with the project [_Creative Amsterdam: an e-Humanities Perspective_](https://create.humanities.uva.nl/) (CREATE).
 
 My research is inherently interdisciplinary and aims to bridge the humanities and the sciences. I draw on methods and concepts from Musicology and Music Theory, Mathematics, Music Information Retrieval, Data Science & Machine Learning, Music Psychology & Cognition, and the Digital Humanities.
 Working with large symbolic datasets of musical scores and harmonic annotations, I am primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship. 
 
-Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch) (DCML) at [École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL, Switzerland) for the project [*Distant Listening: The Development of Harmony over Three Centuries (1700–2000)*](https://dcml.epfl.ch/projects/distant-listening), funded by the [Swiss National Science Foundation](http://www.snf.ch) (PI: Martin Rohrmeier). I also directed the project [*Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources*](http://dcmlab.github.io/ddd), supported by the EPFL-UNIL funding scheme [CROSS - Collaborative Research on Science and Society](https://www.epfl.ch/schools/cdh/research-2/cross-collaborative-research-on-science-and-society/).
+Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch) (DCML) at [École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL, Switzerland) for the project [*Distant Listening: The Development of Harmony over Three Centuries (1700–2000)*](https://dcml.epfl.ch/projects/distant-listening), funded by the [Swiss National Science Foundation](http://www.snf.ch) (PI: Martin Rohrmeier). I also directed the project [*Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources*](http://dcmlab.github.io/ddd), supported by the EPFL-UNIL funding scheme [CROSS - Collaborative Research on Science and Society](https://www.epfl.ch/schools/cdh/research-2/cross-collaborative-research-on-science-and-society/). -->
 
-<!-- I am an assistant professor for Digital Music Philology and Music Theory
+I am an assistant professor for Digital Music Philology and Music Theory
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany.
 In my research, I try to bridge conceptual and methodological approaches from the humanities and the sciences,
-and to understand music and how it is structured from an inherently interdisciplinary perspective. 
+and to understand music and its structure from an inherently interdisciplinary perspective.
 To that end, I draw on a broad range of methods and concepts from areas such as 
 musicology and music theory, mathematics, music information retrieval, data Science and machine learning, music psychology and cognition, and the digital humanities.
 
-More specifically, I work with large symbolic datasets of musical scores and harmonic annotations. 
-One of my central interests lies in analysing large digital corpora in order to better understand musical styles, 
-especially from a historical viewpoint. I am also interested in computational modeling of music and its perception,
+One of my central interests lies in analysing large digital corpora in order to better understand musical styles,
+especially from a historical viewpoint. More specifically, I work with large symbolic datasets of musical scores and harmonic annotations. I am also interested in computational modeling of music and its perception,
 and am fascinated by quantitative approaches to model historical processes.
 I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools. 
 
 Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), 
 and before that as doctoral and postdoctoral researcher at 
-[École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL; [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch)). -->
+[École Polytechnique Fédérale de Lausanne](https://epfl.ch)'s [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch).
+
+### Research Interests
+
+Computational Musicology · Corpus Studies and Stylometry · Music Theory and Analysis · Digital Humanities · Cultural Evolution
