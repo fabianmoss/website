@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://sites.google.com/view/worms2022
 url_code:
 url_dataset:
 url_poster:
