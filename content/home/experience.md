@@ -22,13 +22,13 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  # - title: Assistant Professor for Digital Music Philology and Music Theory
-  #   company: '[Institut für Musikforschung](http://musikwissenschaft.uni-wuerzburg.de/) | [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/)'
-  #   # company_url: 
-  #   company_logo: Universität_Würzburg_Logo
-  #   location: Würzburg, Germany
-  #   date_start: "2022-12-01"
-  #   date_end: ""
+  - title: Assistant Professor for Digital Music Philology and Music Theory
+    company: '[Institut für Musikforschung](http://musikwissenschaft.uni-wuerzburg.de/) | [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/)'
+    # company_url: 
+    company_logo: Universität_Würzburg_Logo
+    location: Würzburg, Germany
+    date_start: "2022-12-01"
+    date_end: ""
 
   - title: Research Fellow in Cultural Analytics
     company: 'Media Studies Department | [ILLC]([www.illc.com](https://www.illc.uva.nl/)) | [Data Science Centre](https://dsc.uva.nl/) | [Universeit van Amsterdam](https://uva.nl/)'
