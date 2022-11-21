@@ -40,7 +40,7 @@ bio: Fabian C. Moss is an assistant professor for Digital Music Philology and Mu
 social:
 - icon: envelope
   icon_pack: fas
-  link: "mailto:fabian.moss@uva.nl" # '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: "mailto:fabian.moss@uni-wuerzburg.de" # '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/fabianmoss
