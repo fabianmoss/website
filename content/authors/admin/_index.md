@@ -45,21 +45,24 @@ social:
 - icon: envelope
   icon_pack: fas
   link: "mailto:fabian.moss@uni-wuerzburg.de" # '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/fabianmoss
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0001-9377-2066
 - icon: github
   icon_pack: fab
   link: https://github.com/fabianmoss
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=N9vaXGUAAAAJ
-- icon: orcid
-  icon_pack: ai
-  link: https://orcid.org/0000-0001-9377-2066
-- icon: publons
-  icon_pack: ai
-  link: https://publons.com/researcher/3187365/fabian-c-moss/
+- icon: mastodon
+  icon_pack: fab
+  link: https://fedihum.org/@fabianmoss
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/fabianmoss
+# - icon: publons
+#   icon_pack: ai
+#   link: https://publons.com/researcher/3187365/fabian-c-moss/ # now web of science: https://www.webofscience.com/wos/author/record/AAD-2243-2019
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
