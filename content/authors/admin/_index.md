@@ -6,14 +6,10 @@ title: Fabian C. Moss
 superuser: true
 
 # Role/position/tagline
-role: Assistant Professor
+role: Assistant Professor for Music Philology and Music Theory
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Institut für Musikforschung
-  url: https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/
-- name: Zentrum für Philologie und Digitalität
-  url: https://www.uni-wuerzburg.de/zpd/
 - name: Julius-Maximilians-Universität Würzburg # 
   url: http://musikwissenschaft.uni-wuerzburg.de/
 
@@ -86,8 +82,10 @@ Working with large symbolic datasets of musical scores and harmonic annotations,
 Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch) (DCML) at [École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL, Switzerland) for the project [*Distant Listening: The Development of Harmony over Three Centuries (1700–2000)*](https://dcml.epfl.ch/projects/distant-listening), funded by the [Swiss National Science Foundation](http://www.snf.ch) (PI: Martin Rohrmeier). I also directed the project [*Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources*](http://dcmlab.github.io/ddd), supported by the EPFL-UNIL funding scheme [CROSS - Collaborative Research on Science and Society](https://www.epfl.ch/schools/cdh/research-2/cross-collaborative-research-on-science-and-society/). -->
 
 I am an assistant professor for **Digital Music Philology and Music Theory**
+in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/)
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany.
-In my research, I try to bridge conceptual and methodological approaches from the humanities and the sciences,
+I am also affiliated with the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD).
+In my research, I bridge conceptual and methodological approaches from the humanities and the sciences,
 and to understand music and its structure from an inherently interdisciplinary perspective.
 To that end, I draw on a broad range of methods and concepts from areas such as 
 musicology and music theory, mathematics, music information retrieval, data Science and machine learning, music psychology and cognition, and the digital humanities.
