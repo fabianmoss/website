@@ -64,6 +64,6 @@ header:
 </details>
 
 <details>
-  <summary><b>Digitale Tools (nicht nur) für musikwissenschaftliche Projektarbeit</b></summary>
+  <summary><b>Digitale Tools (nicht nur) für musikwissenschaftliche Projektarbeiten</b></summary>
   Wissenschaftliches Arbeiten, insbesondere musikwissenschaftliches Arbeiten, erfordert in zunehmendem Maße die Anwendung und Beherrschung digitaler Werkzeuge und Methoden. Diese reichen von kollaborativen Schreibumgebungen (_GoogleDocs_, _HackMD_, _Overleaf_) über Literaturverwaltungsprogramme (_Zotero_) bis hin zur Software zur Notation (_MuseScore_) und Analyse (_SonicVisualizer_) von Musik oder zur Versionierung von Hausarbeiten (_Git_) sowie Strategien zur Projektorganisation. Dieses Seminar führt eine Vielzahl von nützlichen Tools ein, welche uns bei unserer (musik)wissenschaftlichen Arbeit unterstützen können. Ziel ist es, einen souveränen Umgang durch praktische Anwendung zu erlangen und gleichzeitig einen kritischen Blick auf derartige Werkzeuge und ihre Vor- und Nachteile zu entwickeln.
 </details>
