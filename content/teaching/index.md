@@ -57,8 +57,10 @@ header:
 </details>
 
 <details>
-  <summary><b>Generative Theorien von Musik und algorithmische Musikanalyse</b></summary>
-  Generative Theorien von Musik zielen darauf ab, Entstehungsprozesse oder logische Vorbedingungen von musikalischen Ausdrücken zu verstehen, indem formale Modelle erstellt werden. Stark beeinflusst durch Entwicklungen in der Computerlinguistik wird etwa seit den 1980er Jahren versucht, dieses Vorgehen auf verschiedenste musikalische Parameter zu übertragen, z.B. Harmonik, Melodik, Metrik, Rhythmus oder Form. In diesem Seminar werden wir die wichtigsten Schritte in dieser Entwicklung nachvollziehen und eine Vielzahl von Beispielen aus der älteren und aktuellen Forschung betrachten. Im Fokus stehen dabei Ansätze, die dazu genutzt werden, um algorithmische Verfahren zur Musikanalyse zu entwickeln.
+  <summary>	Konzepte und Anwendungen der Pitch-Class Set Theory</summary>
+  Kompositorische Verfahren der seriellen Musik (z.B. Zwölftontechnik) gründeten nicht nur auf einer neuartigen Auffassung von musikalischem Zusammenhang, sie setzten auch das Beschreibungs- und Erklärungspotential herkömmlicher Analysemethoden außer Kraft. Die in der zweiten Hälfte des 20. Jahrhunderts von Rahn und Forte, zwei prominenten Vertretern der amerikanischen Musiktheorie, entwickelten Pitch-Class Set Theory stellt konkrete Konzepte bereit, mit denen sich atonale Kompositionen analytisch fassen lassen. In diesem Seminar werden wir die Grundbegriffe der PCST kennen lernen und sie analytisch erproben. Dabei wird deutlich werden, inwiefern sie auch sinnvoll für die Analyse tonaler Kompositionen angewandt werden können.
+  <!-- <summary><b>Generative Theorien von Musik und algorithmische Musikanalyse</b></summary>
+  Generative Theorien von Musik zielen darauf ab, Entstehungsprozesse oder logische Vorbedingungen von musikalischen Ausdrücken zu verstehen, indem formale Modelle erstellt werden. Stark beeinflusst durch Entwicklungen in der Computerlinguistik wird etwa seit den 1980er Jahren versucht, dieses Vorgehen auf verschiedenste musikalische Parameter zu übertragen, z.B. Harmonik, Melodik, Metrik, Rhythmus oder Form. In diesem Seminar werden wir die wichtigsten Schritte in dieser Entwicklung nachvollziehen und eine Vielzahl von Beispielen aus der älteren und aktuellen Forschung betrachten. Im Fokus stehen dabei Ansätze, die dazu genutzt werden, um algorithmische Verfahren zur Musikanalyse zu entwickeln. -->
 </details>
 
 <details>
