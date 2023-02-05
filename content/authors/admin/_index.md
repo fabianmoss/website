@@ -6,7 +6,7 @@ title: Fabian C. Moss
 superuser: true
 
 # Role/position/tagline
-role: Assistant Professor for Music Philology and Music Theory
+role: Assistant Professor for Digital Music Philology and Music Theory
 
 # Organizations/Affiliations to show in About widget
 organizations:

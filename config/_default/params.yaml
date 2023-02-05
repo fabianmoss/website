@@ -13,9 +13,9 @@ font_size: s
 # SEO
 
 site_type: Person
-local_business_type: ''
-org_name: ''
-description: ''
+local_business_type: 'University'
+org_name: 'Julius-Maximilians-Universität Würzburg'
+description: 'Juniorprofessur für Digitale Musikphilologie und Musiktheorie'
 twitter: 'fabianmoss'
 
 # Contact (edit or remove options as required)
