@@ -84,7 +84,7 @@ Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digi
 I am an assistant professor for **Digital Music Philology and Music Theory**
 in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/)
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany.
-I am also affiliated with the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD).
+I am also affiliated with the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD) and the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH).
 In my research, I bridge conceptual and methodological approaches from the humanities and the sciences,
 and to understand music and its structure from an inherently interdisciplinary perspective.
 To that end, I draw on a broad range of methods and concepts from areas such as 
