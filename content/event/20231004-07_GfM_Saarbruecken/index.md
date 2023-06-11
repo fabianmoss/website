@@ -1,8 +1,8 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Musikalische Korpusforschung: Aktuelle Trends und Herausforderungen"
-event: Jahrestagung der Gesellschaft für Musikforschung (GfM 2023)
+title: "Korpusforschung und Digitale Edition: ein Plädoyer für stärkere Intradisziplinarität"
+event: 'Panel "Musikalische Korpusforschung: Aktuelle Trends und Herausforderungen" Jahrestagung der Gesellschaft für Musikforschung (GfM 2023)'
 event_url: https://www.uni-saarland.de/fachrichtung/musikwissenschaft/gfm-tagung-2023.html
 location: Saarbrücken, Germany
 address:
@@ -32,7 +32,7 @@ date_end: 2023-10-07T10:04:20+02:00
 all_day: true
 
 # Schedule page publish date (NOT event date).
-publishDate: 2023-10-04T10:04:20+02:00
+publishDate: 2023-06-04T10:04:20+02:00
 
 authors: [Markus Neuwirth, Martin Rohrmeier, admin, Christof Weiß, Johannes Hentschel, Maik Köster]
 tags: []
