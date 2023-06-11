@@ -1,10 +1,10 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "20230922 24_GMTH_Freiburg"
-event:
-event_url:
-location:
+title: "Star Plots: eine neue Methode zur Visualisierung harmonischer Pfade für vierstimmige Kompositionen"
+event: 23. Jahreskongress der Gesellschaft für Musiktheorie (GMTH)
+event_url: https://www.gmth.de/veranstaltungen/jahreskongress/callforpapers.aspx
+location: Freiburg, Germany
 address:
   street:
   city:
@@ -12,18 +12,19 @@ address:
   postcode:
   country:
 summary:
-abstract:
+abstract: |
+  Musikvisualisierungen können ergänzend zu notationsbasierter Analyse eingesetzt werden, um bestimmte Parameter hervorzuheben und musikalische Verläufe gleichsam “einzufrieren”. Automatisierte Visualisierungen, von graphischen Repräsentationen bis hin zu computergestützten Verfahren, haben darüber hinaus den Vorteil, dass sie sich auf eine Vielzahl unterschiedlicher Stücke anwenden lassen und dadurch sowohl Werk- als auch Stilvergleiche erleichtern - selbstverständlich immer nur in Hinsicht auf die verbildlichten Elemente. Der vorliegende Beitrag führt eine neuartige Methode zur Visualisierung von zwei- bis vierstimmigen Sätzen ein, mittels derer insbesondere das Verhältnis von Konsonanzen und Dissonanzen sowie kompositorische Vorlieben für gewisse Klänge verdeutlicht werden. Stücke, die in Form von Ketten vertikaler Intervalle vorliegen (entweder manuell oder algorithmisch erzeugt), werden in einen dreidimensionalen Raum projiziert, in dem Aspekte der Textur, des Kontrapunkts sowie der Harmonik visualisiert sind. Der Output ist eine interaktive Grafik, welche zum Beispiel im Theorieunterricht oder auch in Publikationen eingebunden werden kann. Die Möglichkeiten der Methode werden anhand verschiedener Repertoires (etwa Kantional- versus Choralsatz) verdeutlicht und verglichen. Der Code zum Erzeugen der so genannten "Starplots" ist in der populären Programmiersprache Python geschrieben und frei und offen verfügbar.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2023-06-11T12:08:38+02:00
-date_end: 2023-06-11T12:08:38+02:00
+date: 2023-09-22T17:00:00+02:00
+date_end: 2023-09-22T17:30:00+02:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
 publishDate: 2023-06-11T12:08:38+02:00
 
-authors: []
+authors: [admin]
 tags: []
 
 # Is this a featured event? (true/false)
