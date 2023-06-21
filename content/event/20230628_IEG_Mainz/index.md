@@ -4,15 +4,22 @@
 title: "Töne zählen: Forschungsfragen und Methoden musikwissenschaftlicher Korpusstudien in historischer und epistemologischer Perspektive"
 event: Ringvorlesung _Transdisziplinäre Aspekte digitaler Methodik in den Geistes- und Kulturwissenschaften_
 event_url: 
-location: Mainz, Germany
+location: Leibniz-Institut für Europäische Geschichte, Mainz, Germany
 address:
   street:
-  city:
+  city: 
   region:
   postcode:
-  country:
+  country: 
 summary:
-abstract:
+abstract: |
+  Die musikalische Korpusforschung kann mittlerweile auf eine hundertjährige Geschichte zurück blicken.
+  Dabei stehen seit Beginn inter- und transdisziplinäre Fragen und Methoden im Fokus, welche sich in 
+  jüngerer Zeit immer stärker an Begrifflichkeiten des maschinellen Lernens und der Informatik orientieren.
+  Der Vortrag diskutiert den Begriff von Korpora als Modellen (Piotrowski) und zeigt, wie sich dies 
+  anhand konkreter Beispiele aus dem Forschungsbereich zu Harmonik und Tonalität manifestiert. Die dadurch aufgeworfenen Fragen sind nicht nur für die Musikforschung
+  von Bedeutung, sondern verweisen auf Herausforderungen, die für vielfältige Bereiche der digitalen 
+  Geisteswissenschaften relevant sind.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
