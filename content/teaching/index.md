@@ -24,6 +24,9 @@ header:
   <summary>
     <b>Die Entstehung von "Tonalität" im 19. Jahrhundert</b>
   </summary>
+  Obwohl "Tonalität" zu einem der zentralen Begriffe der Musiktheorie gehört,
+  ist er noch nicht besonders alt. Gestützt auf die Lektüre von Thomas Christensens _Stories of Tonality in the age of François-Joseph Fétis_ (2019)
+  beleuchtet das Seminar den historischen Kontext der Genese des Tonalitätskonzeptes. 
 </details>
 
 ## Spring 2023
