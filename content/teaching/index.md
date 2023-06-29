@@ -19,6 +19,11 @@ header:
   <summary>
     <b>Ringvorlesung CODAMUS: Computational and Digital Approaches to Music Scholarship</b>
   </summary>
+  As musicologists continue to explore new ways of analyzing, understanding, and creating music through the use of digital methods and computational models, new questions and avenues for research and scholarship arise. CODAMUS aims at providing a glimpse into the exciting intersections of music and technology.
+
+  In its first installment during the fall term in 2023, CODAMUS hosts 14 distinguished international speakers. The spectrum of their topics is diverse and ranges from the use of computational tools for analyzing musical structures to the impact of artificial intelligence and machine learning on music composition and performance. Among these topics, we will also explore the role of digital editions in music scholarship through which musicologists are now able to access and study historical manuscripts and printed music in innovative ways.
+
+  Through these discussions, we hope to provide a platform for interdisciplinary dialogue and thought-provoking conversation between musicologists, computer scientists, and musicians. Our aim is to generate new insights into the state-of-the art music scholarship and spark new ideas for collaboration and innovation. We invite you to join us and take part in this exciting exploration of music and technology.
 </details>
 <details>
   <summary>
