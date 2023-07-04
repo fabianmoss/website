@@ -5,8 +5,8 @@
 
 # Appearance
 
-theme: Ocean #minimal
-day_night: false
+theme: "Earth" # Ocean # minimal
+day_night: true
 font: ''
 font_size: s
 
