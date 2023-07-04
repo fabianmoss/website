@@ -11,7 +11,7 @@ headless: true
 weight: 20
 
 title: "Research & Projects"
-subtitle: ''
+subtitle: 'Present and past'
 
 content:
   # Page type to display. E.g. project.
@@ -35,7 +35,7 @@ content:
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '2'
+  columns: '1'
 
   # Toggle between the various page layout types.
   #   1 = List

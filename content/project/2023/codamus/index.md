@@ -1,8 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "CODAMUS"
-subtitle: Computational and Digital Approaches to Music Scholarship
+title: "Computational and Digital Approaches to Music Scholarship (CODAMUS)"
 summary: |
     As musicologists continue to explore new ways of analyzing, understanding, and creating music through the use of digital methods and computational models, new questions and avenues for research and scholarship arise. CODAMUS aims at providing a glimpse into the exciting intersections of music and technology.
 authors: [admin]
