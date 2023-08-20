@@ -98,6 +98,7 @@ I teach courses covering a wide range of topics in music theory, computational m
 Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), 
 and before that as doctoral and postdoctoral researcher at 
 [École Polytechnique Fédérale de Lausanne](https://epfl.ch)'s [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch).
+Supported by the [German Academic Exchange Service](https://www.daad.de/en/) (DAAD), I visited the [Department of Linguistics and Philosophy](https://linguistics.mit.edu/) at the [Massachusetts Institute of Technology](https://www.mit.edu) (MIT) as a research PhD student and spent a semester at [Escola Superior de Música de Catalunya](https://www.esmuc.cat/en/) (ESMUC) funded by the ERASMUS program of the European Union.
 
 ### Research Interests
 
