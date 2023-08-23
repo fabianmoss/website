@@ -51,7 +51,7 @@ image:
 url_slides:
 
 url_code:
-url_pdf:
+url_pdf: https://www.conftool.pro/denver2023-ams-smt/index.php/Animated_Harmonic_Analysis_Using_DFT_Phase_Spaces_and_Coefficient_Products-Yust-615.pdf?page=downloadPaper&filename=Animated_Harmonic_Analysis_Using_DFT_Phase_Spaces_and_Coefficient_Products-Yust-615.pdf&form_id=615
 url_video:
 
 # Markdown Slides (optional).
