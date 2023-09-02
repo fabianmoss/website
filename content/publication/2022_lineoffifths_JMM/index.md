@@ -26,7 +26,7 @@ summary: "In this study, we determine the fundamental role of the line of fifths
 
 tags: [line of fifths, tonal pitch classes, dimensionality reduction, pitch-class co-evolution]
 categories: [corpus studies, music theory]
-featured: true
+featured: false
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
