@@ -5,7 +5,7 @@
 
 # Appearance
 
-theme: "Earth" # Ocean # minimal
+theme: minimal # "Earth" # Ocean 
 day_night: false
 font: ''
 font_size: xs
@@ -24,15 +24,15 @@ email: fabian.moss@uni-wuerzburg.de
 phone: +49 931 31-83693
 address:
   street: Domerschulstr. 13
-  city: "97070 Würzburg"
-  region:
-  postcode:
+  city: "Würzburg"
+  region: Bavaria
+  postcode: 97070
   country: Germany
   country_code: DE
 coordinates:
   latitude: '37.4275'
   longitude: '-122.1697'
-directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+directions: Enter the building and take the stairs to Office 208 on Floor 2
 office_hours:
   - 'Monday 10:00 to 13:00'
   - 'Wednesday 09:00 to 10:00'
@@ -59,12 +59,12 @@ contact_links:
 
 main_menu:
   enable: true
-  align: r
+  align: l
   show_logo: true
   show_language: false
   show_day_night: false
   show_search: false
-  highlight_active_link: false
+  highlight_active_link: true
 
 # Localization
 

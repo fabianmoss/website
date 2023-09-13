@@ -37,9 +37,11 @@ design:
   view: 2
 
 ## Move this below the `---` to display filter
-# {{% callout note %}}
-# [Filter my publications](./publication/).
-# {{% /callout %}}
 
 ---
+
+
+{{% callout note %}}
+[Filter my publications](./publication/).
+{{% /callout %}}
 

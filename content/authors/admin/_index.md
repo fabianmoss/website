@@ -83,21 +83,25 @@ Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digi
 
 I am an assistant professor for **Digital Music Philology and Music Theory**
 in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/)
-at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany.
-I am also affiliated with the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD) and the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH).
-In my research, I bridge conceptual and methodological approaches from the humanities and the sciences,
-and to understand music and its structure from an inherently interdisciplinary perspective.
-To that end, I draw on a broad range of methods and concepts from areas such as 
-musicology and music theory, mathematics, music information retrieval, data Science and machine learning, music psychology and cognition, and the digital humanities.
+at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany, and 
+I am also affiliated with the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD).
+ <!-- and the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). -->
 
+In my research, I bridge concepts and methodologies from the humanities and the sciences,
+and aim to understand music and its structure from an inherently **interdisciplinary perspective**,
+involving fields such as musicology and music theory, mathematics, music information retrieval,
+data science and machine learning, music cognition, and the digital humanities.
 One of my central interests lies in analysing large digital corpora in order to better understand musical styles,
-especially from a historical viewpoint. More specifically, I work with large symbolic datasets of musical scores and harmonic annotations. I am also interested in computational modeling of music and its perception,
+especially from a historical viewpoint. 
+More specifically, I work with large **symbolic datasets** of musical scores and harmonic annotations.
+I  am also interested in **computational modeling** of music and its perception,
 and am fascinated by quantitative approaches to model historical processes.
-I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools. 
+
+I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools.
 
 Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), 
 and before that as doctoral and postdoctoral researcher at 
-[École Polytechnique Fédérale de Lausanne](https://epfl.ch)'s [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch).
+[École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL)'s [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch).
 Supported by the [German Academic Exchange Service](https://www.daad.de/en/) (DAAD), I visited the [Department of Linguistics and Philosophy](https://linguistics.mit.edu/) at the [Massachusetts Institute of Technology](https://www.mit.edu) (MIT) as a research PhD student and spent a semester at [Escola Superior de Música de Catalunya](https://www.esmuc.cat/en/) (ESMUC) funded by the ERASMUS program of the European Union.
 
 ### Research Interests
