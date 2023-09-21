@@ -14,7 +14,7 @@ header:
   image: ""
 ---
 
-The Journal Club is a more or less regular meeting of all people interested in digital and computational music research around the University of Würzburg. It is not an official event, but rather an opportunity to exchange information about current research. Interested parties can subscribe to the CODAMUS mailing list ("Computational and Digital Approaches to Music Scholarship") via [this link](https://lists.uni-wuerzburg.de/mailman/listinfo/codamus) to stay up to date.
+The Journal Club is a more or less regular meeting of all people interested in digital and computational music research around the University of Würzburg. It is not an official event, but rather an opportunity to exchange information about current research. Interested parties can subscribe to the [CODAMUS mailing list ("Computational and Digital Approaches to Music Scholarship")](https://lists.uni-wuerzburg.de/mailman/listinfo/codamus) to stay up to date.
 
 All items discusses in the journal club are collected in our joint [Zotero Group](https://www.zotero.org/groups/5022012/codamus).
 Please contact me directly if you would like to be added to the group.
