@@ -1,7 +1,7 @@
 ---
 title: Journal Club
 # summary: Here we describe how to add a page to your site.
-date: "2022-09-05T00:00:00Z"
+date: "2023-09-21T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?
 share: false  # Show social sharing links?
@@ -14,7 +14,18 @@ header:
   image: ""
 ---
 
-The Journal Club is a more or less regular meeting of all people interested in digital and computational music research around the University of Würzburg. It is not an official event, but rather an opportunity to exchange information about current research. Interested parties can subscribe to the CODAMUS mailing list ("Computational and Digital Approaches to Music Scholarship") via this link to stay up to date: https://lists.uni-wuerzburg.de/mailman/listinfo/codamus. 
+The Journal Club is a more or less regular meeting of all people interested in digital and computational music research around the University of Würzburg. It is not an official event, but rather an opportunity to exchange information about current research. Interested parties can subscribe to the CODAMUS mailing list ("Computational and Digital Approaches to Music Scholarship") via [this link](https://lists.uni-wuerzburg.de/mailman/listinfo/codamus) to stay up to date.
+
+All items discusses in the journal club are collected in our joint [Zotero Group](https://www.zotero.org/groups/5022012/codamus).
+Please contact me directly if you would like to be added to the group.
+
+## Fall 2023
+
+* mittwochs, 12 - 13 Uhr, Raum 208, Domerschulstr. 13 (oder nach Vereinbarung)
+
+### Dates and readings
+
+[TBA]
 
 ## Spring 2023
 
@@ -36,5 +47,3 @@ The Journal Club is a more or less regular meeting of all people interested in d
 12. **_06._** 07.2023, 18:00, Domerschulstr. 13, R. 113: Markus Neuwirth: ["Was soll es bedeuten? Grundlegung einer Theorie musikalischer Semantik."](https://www.musikwissenschaft.uni-wuerzburg.de/fileadmin/04070000/2023/20230530_Ankuendigung_Markus.pdf)
 13. 12.07.2023: Bennett, J. N. (2023). Motivic Trees, Network Analysis, and Bartók’s Eight Improvisations on Hungarian Folk Songs, No. 5. Music Theory Spectrum, mtac015. https://doi.org/10.1093/mts/mtac015 
 14. 19.07.2023: 14.06.2023: Ozaki, Y., Tierney, A., Pfordresher, P., Mcbride, J., Benetos, E., Proutskova, P., Chiba, G., Liu, F., Jacoby, N., Purdy, S., Opondo, P., Fitch, T., Hegde, S., Rocamora, M., Thorne, R., Nweke (Ph.D.), F. E., Sadaphal, D., Sadaphal, P., Hadavi, S., … Savage, P. E. (2022). Globally, songs are slower, higher, and use more stable pitches than speech [Stage 2 Registered Report]. PsyArXiv. https://doi.org/10.31234/osf.io/jr9x7 
-
-<!-- Yust, J. (2023, January). Tonality and Racism [Essay]. https://sites.bu.edu/jyust/publications/tonality-and-racism/  -->
