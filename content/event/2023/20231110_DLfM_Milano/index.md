@@ -4,7 +4,7 @@
 title: "MonodiKit: A data model and toolkit for the Corpus Monodicum"
 event: 10th International Conference on Digital Libraries for Musicology
 event_url: https://dlfm.web.ox.ac.uk/
-location: Conservatorio di Milano
+location: Biblioteca del  Conservatorio di Milano
 address:
   street:
   city: Milano
@@ -29,9 +29,9 @@ abstract: We present _MonodiKit_, a Python library for the analysis and processi
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2023-11-10 #T10:38:13+02:00
-date_end: 2023-11-10 # T10:38:13+02:00
-all_day: true
+date: 2023-11-10T14:00:00+02:00
+date_end: 2023-11-10T15:30:00+02:00
+all_day: false
 
 # Schedule page publish date (NOT event date).
 publishDate: 2023-09-02T10:38:13+02:00
