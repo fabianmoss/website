@@ -25,7 +25,7 @@ Please contact me directly if you would like to be added to the group.
 
 ### Dates and readings
 
-1. 25.10.2023: Clark, E. H. (2021). Introduction: Audibilities of Colonialism and Extractivism. The World of Music, 10(2), 5–20.
+1. 25.10.2023: Clark, E. H. (2021). Introduction: Audibilities of Colonialism and Extractivism. _The World of Music_, 10(2), 5–20.
 2. 01.11.2023: _entfällt_
 3. 08.11.2023: Kepper, J., & Pugin, L. (2017). Was ist eine Digitale Edition? Versuch einer Positionsbestimmung zum Stand der Musikphilologie im Jahr 2017. _Musiktheorie: Zeitschrift für Musikwissenschaft_, 32(4), Article 4.
 4. 15.11.2023: _entfällt_
