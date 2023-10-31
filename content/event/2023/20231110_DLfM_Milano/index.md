@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "MonodiKit: A data model and toolkit for the Corpus Monodicum"
+title: "MonodiKit: A data model and toolkit for medieval monophonic chant"
 event: 10th International Conference on Digital Libraries for Musicology
 event_url: https://dlfm.web.ox.ac.uk/
 location: Biblioteca del  Conservatorio di Milano
