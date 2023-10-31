@@ -4,7 +4,7 @@
 title: "MonodiKit: A data model and toolkit for medieval monophonic chant"
 authors: [Tim Eipert, admin]
 date: 2023-11-10T11:04:00+02:00
-doi: ""
+doi: "https://doi.org/10.1145/3625135.3625145"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2023-10-31T09:04:00+02:00
