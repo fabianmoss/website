@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Interactive Network Visualization of Medieval Chant Repertories"
+title: "Communities in Medieval Troper Networks are Shaped by Carolingian Politics"
 event: Digital Libraries for Musicology
 event_url: https://dlfm.web.ox.ac.uk/
 location: Biblioteca del Conservatorio di Milano
