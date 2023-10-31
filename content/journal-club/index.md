@@ -25,7 +25,10 @@ Please contact me directly if you would like to be added to the group.
 
 ### Dates and readings
 
-[TBA]
+1. 25.10.2023: Clark, E. H. (2021). Introduction: Audibilities of Colonialism and Extractivism. The World of Music, 10(2), 5–20.
+2. 01.11.2023: _entfällt_
+3. 08.11.2023: TBA
+4. 15.11.2023: _entfällt_
 
 ## Spring 2023
 
