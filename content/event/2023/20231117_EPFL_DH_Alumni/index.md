@@ -21,7 +21,7 @@ date_end: 2023-11-17T17:30:00+02:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2023-11-17T14:00:33+02:00
+publishDate: 2023-10-05T14:00:33+02:00
 
 authors: [admin]
 tags: [digital humanities]
@@ -67,4 +67,3 @@ slides: "20231117_EPFL_DH_Alumni"
 projects: []
 ---
 
-Do I need to write here?

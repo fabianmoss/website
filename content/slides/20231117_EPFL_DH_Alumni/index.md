@@ -2,7 +2,7 @@
 authors: [admin]
 tags: []
 categories: []
-date: "2019-02-05T00:00:00Z"
+date: "2023-11-17T16:30:00Z"
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: white
@@ -15,7 +15,18 @@ slides:
 
 ## ---you won't believe no. 7!!
 
-[Fabian C. Moss](https://fabian-moss.de/) | [@fabianmoss](https://twitter.com/fabianmoss)
+[Fabian C. Moss](https://www.fabian-moss.de/) | [@fabianmoss](https://twitter.com/fabianmoss)
+
+<span style="color:grey">Julius-Maximilians-Universität Würzburg, Germany<span>
+
+{{% speaker_note %}}
+
+- task was to say something meaningful in 10 minutes
+- these rules are very subjective
+- I am mostly talking with an academic career in mind
+- feel free to reach out!
+
+{{% /speaker_note %}}
 
 ---
 
@@ -23,11 +34,23 @@ slides:
 
 ### Don't listen to just any advice
 
+{{% speaker_note %}}
+
+...
+
+{{% /speaker_note %}}
+
 ---
 
 ## Rule #2
 
 ### Use Git
+
+{{% speaker_note %}}
+
+...
+
+{{% /speaker_note %}}
 
 ---
 
@@ -35,16 +58,26 @@ slides:
 
 ### _Seriously_, use Git!
 
+{{% speaker_note %}}
+
+...
+
+{{% /speaker_note %}}
+
 ---
 
 ## Rule #4
 
 ### Organize yourself
 
+{{% speaker_note %}}
+
 - task lists
 - file/reference management
 - email / social media / website / GH profile
 - CV
+
+{{% /speaker_note %}}
 
 ---
 
@@ -58,7 +91,11 @@ slides:
 
 ### Read one book a month
 
----Textbooks don't count!
+{{% speaker_note %}}
+
+- Textbooks don't count!
+
+{{% /speaker_note %}}
 
 ---
 
@@ -66,9 +103,13 @@ slides:
 
 ### Waste time
 
+{{% speaker_note %}}
+
 - do nothing
 - play
 - get rest (sleep/go on vacation)
+
+{{% /speaker_note %}}
 
 ---
 
@@ -76,14 +117,24 @@ slides:
 
 ### Think about alternatives
 
+{{% speaker_note %}}
+
 - there are DH jobs but not too many
 - academia is full, look elsewhere
+
+{{% /speaker_note %}}
 
 ---
 
 ## Rule #9
 
-### 
+### DH is a "big tent" --- don't forget your rations
+
+{{% speaker_note %}}
+
+- interdisciplinarity requires fundament in one's own discipline(s)
+
+{{% /speaker_note %}}
 
 ---
 
@@ -91,8 +142,20 @@ slides:
 
 ### Look for and rely on friends
 
+{{% speaker_note %}}
+
+- this could easily have been Rule #1
+
+{{% /speaker_note %}}
+
 ---
 
 ## Rule #11
 
 ### Don't let anybody tell you how many rules there are
+
+{{% speaker_note %}}
+
+- it is up to you!
+
+{{% /speaker_note %}}
