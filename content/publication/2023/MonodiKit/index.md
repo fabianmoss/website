@@ -51,8 +51,8 @@ featured: false
 #   icon: twitter
 
 url_pdf:
-url_code:
-url_dataset:
+url_code: https://github.com/timeipert/MonodiKit
+url_dataset: https://osf.io/fkdq5/
 url_poster:
 url_project:
 url_slides:
