@@ -2,7 +2,7 @@
 authors: [admin]
 tags: []
 categories: []
-date: "2023-11-17T16:30:00Z"
+date: "2023-11-16T16:30:00Z"
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: white
@@ -21,10 +21,12 @@ slides:
 
 {{% speaker_note %}}
 
-- task was to say something meaningful in 10 minutes
+- very grateful to be invited
+- task was to talk for 10 minutes
+- keep it light but say something meaningful
 - these rules are very subjective
-- I am mostly talking with an academic career in mind
-- feel free to reach out!
+- I am mostly talking with an **academic career** in mind
+- let's discuss later / feel free to reach out!
 
 {{% /speaker_note %}}
 
@@ -36,7 +38,11 @@ slides:
 
 {{% speaker_note %}}
 
-...
+- I'm not saying "don't take **any** advice"!
+- listen
+- inform yourself
+- make up your own minds
+- I hope I can maybe inspire a thought or two
 
 {{% /speaker_note %}}
 
@@ -48,7 +54,13 @@ slides:
 
 {{% speaker_note %}}
 
-...
+- or any other version control system
+- your colleagues will thank you
+- the scientific community will thank you
+- your future self will thank you
+- plus: almost hard requirement for any software/data-related job
+- it shapes how we think about achieving tasks and develop an agile mindset
+- THINGS CHANGE
 
 {{% /speaker_note %}}
 
@@ -60,7 +72,7 @@ slides:
 
 {{% speaker_note %}}
 
-...
+- I cannot stress enough how crucial this is!
 
 {{% /speaker_note %}}
 
@@ -72,10 +84,14 @@ slides:
 
 {{% speaker_note %}}
 
-- task lists
-- file/reference management
-- email / social media / website / GH profile
+- being organized is one of the biggest assets
+- continuous struggle
+- todos: task lists
+- material: file/reference management
+- communication: email / social media / website / GH profile
+- time management: agenda!
 - CV
+- why?: we're not always masters of our time
 
 {{% /speaker_note %}}
 
@@ -94,6 +110,11 @@ slides:
 {{% speaker_note %}}
 
 - Textbooks don't count!
+- I am not exaggeration. Aim high!
+- Books are a very poor medium: just text
+- forces our minds to do the rest of the work
+- it's like a gym for your creativity
+- plus: you'll have something else to talk about
 
 {{% /speaker_note %}}
 
@@ -105,9 +126,12 @@ slides:
 
 {{% speaker_note %}}
 
+- the most important rule of all
 - do nothing
 - play
 - get rest (sleep/go on vacation)
+- find your passion and follow it
+- even when you're "supposed to be writing" (always?)
 
 {{% /speaker_note %}}
 
@@ -119,8 +143,10 @@ slides:
 
 {{% speaker_note %}}
 
+- don't put all your money on one horse
 - there are DH jobs but not too many
 - academia is full, look elsewhere
+- life means change, pace may be fast
 
 {{% /speaker_note %}}
 
@@ -133,6 +159,11 @@ slides:
 {{% speaker_note %}}
 
 - interdisciplinarity requires fundament in one's own discipline(s)
+- this means also doing "analog humanities" occasionally
+- going to archives
+- talking to people
+- visiting museums
+- keeping track of what's happening in the world
 
 {{% /speaker_note %}}
 
@@ -145,6 +176,10 @@ slides:
 {{% speaker_note %}}
 
 - this could easily have been Rule #1
+- a degree is an individual work, but it's rarely possible without support
+- especially if you are not a local!
+- difficult times will come, it's good to have someone to rely on
+- I am immensly grateful to my supervisors, my colleagues and friends, the students, and the admin staff here at EPFL
 
 {{% /speaker_note %}}
 
