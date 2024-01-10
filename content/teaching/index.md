@@ -14,7 +14,27 @@ header:
   image: ""
 ---
 
+## Spring 2024
+
+<details>
+  <summary>
+    <b>Einführung in die Digitale Musikwissenschaft</b>
+  </summary>
+</details>
+<details>
+  <summary>
+    <b>Metrum, Rhythmus, Takt und Beat - theoretische und psychologische Aspekte musikalischer Zeit</b>
+  </summary>
+</details>
+<details>
+  <summary>
+    <b>Musikforschung interdisziplinär - Institutskolloquium</b>
+  </summary>
+  Mit Elena Ungeheuer und Melanie Wald-Fuhrmann (Frankfurt a.M.)
+</details>
+
 ## Fall 2023
+
 <details>
   <summary>
     <b>Ringvorlesung CODAMUS: Computational and Digital Approaches to Music Scholarship</b>
