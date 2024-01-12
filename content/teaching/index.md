@@ -41,7 +41,7 @@ header:
     Eine zentrale Frage dabei ist, wie theoretische Modelle mit wahrnehmungspsychologischen
     Erkenntnissen zusammenhängen. Ziel des Seminars ist es, einen Überblick über 
     neuere Rhythmustheorien zu erhalten und in Musikanalysen auch die zeitliche Dimension
-    einbeziehen zu können.
+    einbeziehen zu können. 
 
   - <a href="https://wuestudy.zv.uni-wuerzburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=173726&periodId=292&navigationPosition=hisinoneLehrorganisation,examEventOverviewOwn" target="_blank">Link in WueStudy</a>
 </details>
