@@ -23,16 +23,18 @@ header:
 </details>
 <details>
   <summary>
-    <b><a href="https://wuestudy.zv.uni-wuerzburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=173726&periodId=292&navigationPosition=hisinoneLehrorganisation,examEventOverviewOwn" target="_blank">Metrum, Rhythmus, Takt und Beat - theoretische und psychologische Aspekte musikalischer Zeit</a></b>
+    <b>Metrum, Rhythmus, Takt und Beat - theoretische und psychologische Aspekte musikalischer Zeit</a></b>
+  </summary>
     Musik ist eine Kunst, die sich in der Zeit entfaltet und musiktheoretische und
-    - analytische Beschreibungen der temporalen Organisation von Musik benutzen eine
+    -analytische Beschreibungen der temporalen Organisation von Musik benutzen eine
     Vielzahl von Begriffen, um diesem Phänomen näher zu kommen. 
     In diesem Seminar werden wir eine Reihe verschiedener jüngerer Ansätze kennen lernen.
     Eine zentrale Frage dabei ist, wie theoretische Modelle mit wahrnehmungspsychologischen
     Erkenntnissen zusammenhängen. Ziel des Seminars ist es, einen Überblick über 
     neuere Rhythmustheorien zu erhalten und in Musikanalysen auch die zeitliche Dimension
     einbeziehen zu können.
-  </summary>
+
+  - <a href="https://wuestudy.zv.uni-wuerzburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=173726&periodId=292&navigationPosition=hisinoneLehrorganisation,examEventOverviewOwn" target="_blank">Link in WueStudy</a>
 </details>
 <details>
   <summary>
