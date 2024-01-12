@@ -20,6 +20,15 @@ header:
   <summary>
     <b>Einführung in die Digitale Musikwissenschaft</b>
   </summary>
+  Diese Einführung bietet einen Überblick über die Geschichte, 
+  Forschungsfragen und Methoden der digitalen Musikwissenschaft.
+  Dabei werden verschiedene Bereiche wie digitale Edition, 
+  Korpusforschung und digitale Methoden für die Musikanalyse berücksichtigt.
+  Neben der Kenntnis zentraler Konzepte der digitalen Musikwissenschaft 
+  erhalten Studierende einen Einblick in aktuelle Forschung und lernen 
+  wichtige Publikationen und digitale Methoden kennen.
+
+  - <a href="https://wuestudy.zv.uni-wuerzburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=173816&periodId=292&navigationPosition=hisinoneLehrorganisation,examEventOverviewOwn" target="_blank">Link in WueStudy</a>
 </details>
 <details>
   <summary>
@@ -38,9 +47,11 @@ header:
 </details>
 <details>
   <summary>
-    <b><a href="https://wuestudy.zv.uni-wuerzburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=173721&periodId=292&navigationPosition=hisinoneLehrorganisation,examEventOverviewOwn" target="_blank">Musikforschung interdisziplinär - Institutskolloquium</a></b>
+    <b>Musikforschung interdisziplinär - Institutskolloquium</b>
   </summary>
-  Mit Elena Ungeheuer und Melanie Wald-Fuhrmann (Frankfurt a.M.)
+  Mit Elena Ungeheuer und Melanie Wald-Fuhrmann (Frankfurt a. M.)
+
+  - <a href="https://wuestudy.zv.uni-wuerzburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=173721&periodId=292&navigationPosition=hisinoneLehrorganisation,examEventOverviewOwn" target="_blank">Link in WueStudy</a>
 </details>
 
 ## Fall 2023
