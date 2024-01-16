@@ -3,7 +3,7 @@
 
 title: "An Annotated Corpus of Tonal Piano Music from the Long 19th Century"
 authors: [Johannes Hentschel, Yannis Rammos, admin, Markus Neuwirth, Martin Rohrmeier]
-date: 2024-01-12T13:45:33+01:00
+date: 2023-12-31T13:45:33+01:00
 doi: "https://doi.org/10.18061/emr.v18i1.8903"
 
 # Schedule page publish date (NOT publication's date).
