@@ -16,7 +16,7 @@ publishDate: 2024-03-04T14:00:06+01:00
 publication_types: ["6"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Kreative Missverständnisse oder universale Kunstgesetze? Hugo Riemann und der internationale Musikwissenstransfer"
+publication: "Keym, S. (Ed.): Kreative Missverständnisse oder universale Kunstgesetze? Hugo Riemann und der internationale Musikwissenstransfer. Hildesheim: Georg Olms Verlag, pp. 367-377."
 publication_short: "Kreative Missverständnisse oder universale Kunstgesetze?"
 
 abstract: "Hugo Riemann never set foot on American soil. His harmonic theories, however, did cross the Atlantic and fell on fertile grounds, inspiring a rich repertoire of methods for music analysis that is nowadays usually subsumed under the name of neo-Riemannian theories (NRTs)—decidedly in the plural form. In this essay, I will review the central characteristics of NRTs and will relate
@@ -26,7 +26,7 @@ how they connect with Hugo Riemann's original works."
 summary: "Hugo Riemann never set foot on American soil. His harmonic theories, however, did cross the Atlantic and fell on fertile grounds, inspiring a rich repertoire of methods for music analysis that is nowadays usually subsumed under the name of neo-Riemannian theories (NRTs)—decidedly
 in the plural form. In this essay, I will review the central characteristics of NRTs and will relate how they connect with Hugo Riemann's original works. "
 
-tags: []
+tags: [Hugo Riemann, neo-Riemannian theory, music theory]
 categories: []
 featured: false
 
@@ -38,7 +38,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://osf.io/s7fhn/
 url_code:
 url_dataset:
 url_poster:
