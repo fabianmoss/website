@@ -3,7 +3,7 @@
 
 title: "Transatlantic Transformations: On Neo-Riemannian Theories"
 authors: [admin]
-date: 2024-03-04T14:00:06+01:00
+date: 2024-03-04T14:06+01:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
