@@ -1,29 +1,32 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "20240911 13_GfM_Eipert"
-event:
-event_url:
-location:
+title: "Digital Paths Through History: Phylogenetic Analysis of Medieval Chants based on the Graduale Synopticum Dataset"
+event: Jahrestagung der Gesellschaft für Musikforschung 2024
+event_url: https://www.hfmt-koeln.de/gfm24/
+location: Hochschule für Musik und Tanz Köln und Universität zu Köln
 address:
   street:
-  city:
+  city: Köln
   region:
   postcode:
-  country:
+  country: Germany
 summary:
-abstract:
+abstract: |
+  The Graduale Synopticum project is an especially significant data source for researching medieval chants by presenting early versions of these in a synoptic view. With a re-digitized, computer-readable version of the melodies, which were obtained from purely graphical synopses, we examine the variants of the melodies using digital methods.
+
+  For this purpose, we develop a generative evolutionary model that allows us to reconstruct a phylogenetic tree, illustrating the relationships of variations within and between the manuscripts vividly. This model enables us not only to trace a possible historical development but also to simulate how the chants might have changed and how the relationships of similarities within individual manuscripts, as well as between different manuscripts, have emerged.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2024-03-15T08:02:46+01:00
-date_end: 2024-03-15T08:02:46+01:00
+date: 2024-09-11T08:02:46+01:00
+date_end: 2024-09-14T08:02:46+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2024-05-15T08:02:46+01:00
+publishDate: 2024-08-01T08:02:46+01:00
 
-authors: []
+authors: [Tim Eipert, admin]
 tags: []
 
 # Is this a featured event? (true/false)

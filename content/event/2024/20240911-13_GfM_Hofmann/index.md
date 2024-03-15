@@ -1,29 +1,30 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "20240911 13_GfM_Hofmann"
-event:
-event_url:
-location:
+title: '„Zeitgemäß polyphon“. Zur Kodierung und Modellierung von Polymetrik und metrischer Irregularität in Hugo Distlers Vokalwerken'
+event: Jahrestagung der Gesellschaft für Musikforschung 2024
+event_url: https://www.hfmt-koeln.de/gfm24/
+location: Hochschule für Musik und Tanz Köln und Universität zu Köln
 address:
   street:
-  city:
+  city: Köln
   region:
   postcode:
-  country:
+  country: Germany
 summary:
-abstract:
+abstract: |
+  Intrikate Rhythmik und metrische Verschiebungen kennzeichnen den Stil mehrerer Komponist:innen am Beginn des 20. Jahrhunderts wesentlich. Insbesondere solche komplexen zeitlichen Strukturen stellen die Kodierung und computergestützte Analyse vor Herausforderungen. Gegenstand der zeitstrukturellen Betrachtungen ist das Vokalwerk des deutschen Komponisten Hugo Distler (1908-42). Neben tonalen Besonderheiten sind es hier speziell die metrischen Irregularitäten, die seinen Kompositionen „unverkennbare Distlersche Züge“ (W. Lüdemann) verleihen. Somit soll die Frage nach der idiosynkratischen Verwendung von Metrik und metrischer Ambiguität in Distlers Vokalwerken gestellt werden. Das Spektrum metrischer Phänomene reicht dabei von genuiner Polymetrik bis hin zu häufigen homometrischen Wechseln in der Gesamtfaktur. Und auch die metrische Notation in Distlers Werken ist heterogen. Während die frühen Werke noch auf konventionelle Weise mit einheitlichen Taktstrichen versehen sind, zeigen sich vor allem in den späteren Kompositionen Distlers fortwährende Versuche, seine individuellen metrischen Intentionen im modernen westlichen Notationssystem auszudrücken. Dazu gehören häufige Taktwechsel in den einzelnen Stimmen, Notengruppen, die über Taktstriche hinweg mit Balken verbunden sind, bis hin zur Substitution der Taktstriche durch Mensurstriche, Zäsuren und Atemzeichen. Als „Vorahnung seiner späteren meisterlichen Vokalpolyphonie“ (H. Grabner) lassen sich diese individuellen metrischen Lösungen bereits in Distlers früher Motettensammlung Der Jahrkreis op. 5 ausfindig machen. Ausgehend von seiner Motette „O Heiland, reiß die Himmel auf“, die jede Stimme in ihrer je eigenen Metrik ausgestaltet und damit offenkundig auf die Linearität einer Renaissance-Motette rekurriert, sollen die verwendeten Arten von Metrik systematisiert und Fragen nach der Musikkodierung solcher metrischer Ambiguitäten beantwortet werden. In diesem Zuge präsentieren wir das 52 Motetten umfassende Jahrkreis-Korpus, das wir zum Zwecke einer digitalen Korpusstudie im Humdrum **kern-Format kodiert haben, sowie erste metrische Analysen und Modellierungsansätze.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2024-03-15T08:02:43+01:00
-date_end: 2024-03-15T08:02:43+01:00
+date: 2024-09-11T08:02:46+01:00
+date_end: 2024-09-14T08:02:46+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2024-05-15T08:02:43+01:00
+publishDate: 2024-08-01T08:02:46+01:00
 
-authors: []
+authors: [Lucas Hofmann, Craig S. Sapp, admin]
 tags: []
 
 # Is this a featured event? (true/false)
