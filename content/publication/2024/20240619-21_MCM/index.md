@@ -4,10 +4,10 @@
 title: "Fourier Qualia Wavescapes: Hierarchical Analyses of Set Class Quality and Ambiguity"
 authors: [Samuel Pereira, Giovanni Affatato, Gilberto Bernardes, admin]
 date: 2024-06-19T20:06:29+01:00
-doi: ""
+doi: "10.1007/978-3-031-60638-0_25"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2024-06-19T20:06:29+01:00
+publishDate: 2024-05-22T20:06:29+01:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -41,7 +41,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: "https://link.springer.com/content/pdf/10.1007/978-3-031-60638-0_25.pdf"
 url_code:
 url_dataset:
 url_poster:

@@ -13,7 +13,7 @@ address:
   country: Portugal
 summary:
 abstract: |
-  We introduce a novel perspective on set-class analysis combining the DFT magnitudes with the music visualisation technique of wavescapes. With such a combination, we create a visual representation of a piece's multidimensional qualia, where different colours indicate saliency in chromaticity, diadicity, triadicity, octatonicity, diatonicity, and whole-tone quality. At the centre of our methods are: 1) the formal definition of the _Fourier Qualia Space_ (FQS), 2) its particular ordering of DFT coefficients that delineate regions linked to different musical aesthetics, and 3) the mapping of such regions into a coloured wavescape. Furthermore, we demonstrate the intrinsic capability of the FQS to express qualia ambiguity and map it into a synopsis wavescape. Finally, we showcase the application of our methods by presenting a few analytical remarks on Bach's _Three-part Invention_ BWV 795, Debussy's _Reflets dans l'eau_, and Webern's _Four Pieces for Violin and Piano_, Op. 7, No. 1, unveiling increasingly ambiguous wavescapes.
+  "We introduce a novel perspective on set-class analysis combining the DFT magnitudes with the music visualisation technique of wavescapes. With such a combination, we create a visual representation of a piece's multidimensional qualia, where different colours indicate saliency in chromaticity, diadicity, triadicity, octatonicity, diatonicity, and whole-tone quality. At the centre of our methods are: 1) the formal definition of the _Fourier Qualia Space_ (FQS), 2) its particular ordering of DFT coefficients that delineate regions linked to different musical aesthetics, and 3) the mapping of such regions into a coloured wavescape. Furthermore, we demonstrate the intrinsic capability of the FQS to express qualia ambiguity and map it into a synopsis wavescape. Finally, we showcase the application of our methods by presenting a few analytical remarks on Bach's _Three-part Invention_ BWV 795, Debussy's _Reflets dans l'eau_, and Webern's _Four Pieces for Violin and Piano_, Op. 7, No. 1, unveiling increasingly ambiguous wavescapes."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -24,7 +24,7 @@ all_day: false
 # Schedule page publish date (NOT event date).
 publishDate: 2024-03-15T08:02:19+01:00
 
-authors: [Samuel Pereira, Giovanni Affatato, Gilberto Bernardes, Fabian C. Moss]
+authors: [Samuel Pereira, Giovanni Affatato, Gilberto Bernardes, admin]
 tags: [Fourier Qualia Spaces, wavescapes, Fourier transform, music analysis, harmonic qualities]
 
 # Is this a featured event? (true/false)
