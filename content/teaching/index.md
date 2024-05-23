@@ -15,6 +15,7 @@ header:
 ---
 
 ## Fall 2024
+
 <details>
   <summary>
     <b>YouTube Music Theory</b>
@@ -27,7 +28,6 @@ header:
   </summary>
   Die Strukturhaftigkeit von Musik legt algorithmische Betrachtungen nahe. In diesem Seminar werden Grundbegriffe des Programmierens anhand von musikalischen Konzepten eingeführt und praktisch erprobt. Dabei stehen insbesondere die Kodierung und die Generierung von Musik im Vordergrund. Vorkenntnisse, die über elementare Musiktheorie hinausgehen, sind nicht erforderlich. 
 </details>
-
 
 ## Spring 2024
 
@@ -79,21 +79,6 @@ header:
 
   In its first installment during the fall term in 2023, CODAMUS hosts 14 distinguished international speakers. The spectrum of their topics is diverse and ranges from the use of computational tools for analyzing musical structures to the impact of artificial intelligence and machine learning on music composition and performance. Among these topics, we will also explore the role of digital editions in music scholarship through which musicologists are now able to access and study historical manuscripts and printed music in innovative ways.
 
-  Mit Elena Ungeheuer und Melanie Wald-Fuhrmann (Frankfurt a. M.)
-
-  - <a href="https://wuestudy.zv.uni-wuerzburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=173721&periodId=292&navigationPosition=hisinoneLehrorganisation,examEventOverviewOwn" target="_blank">Link in WueStudy</a>
-</details>
-
-## Fall 2023
-
-<details>
-  <summary>
-    <b>Ringvorlesung CODAMUS: Computational and Digital Approaches to Music Scholarship</b>
-  </summary>
-  As musicologists continue to explore new ways of analyzing, understanding, and creating music through the use of digital methods and computational models, new questions and avenues for research and scholarship arise. CODAMUS aims at providing a glimpse into the exciting intersections of music and technology.
-
-  In its first installment during the fall term in 2023, CODAMUS hosts 14 distinguished international speakers. The spectrum of their topics is diverse and ranges from the use of computational tools for analyzing musical structures to the impact of artificial intelligence and machine learning on music composition and performance. Among these topics, we will also explore the role of digital editions in music scholarship through which musicologists are now able to access and study historical manuscripts and printed music in innovative ways.
-
   Through these discussions, we hope to provide a platform for interdisciplinary dialogue and thought-provoking conversation between musicologists, computer scientists, and musicians. Our aim is to generate new insights into the state-of-the art music scholarship and spark new ideas for collaboration and innovation. We invite you to join us and take part in this exciting exploration of music and technology.
 </details>
 <details>
@@ -106,6 +91,8 @@ header:
 </details>
 
 ## Spring 2023
+<details>
+<summary><b>Digitale Tools (nicht nur) für Musikwissenschaftliche Projektarbeiten</b></summary>
   Wissenschaftliches Arbeiten, insbesondere musikwissenschaftliches Arbeiten, erfordert in zunehmendem Maße die Anwendung und Beherrschung digitaler Werkzeuge und Methoden. Diese reichen von kollaborativen Schreibumgebungen (_GoogleDocs_, _HackMD_, _Overleaf_) über Literaturverwaltungsprogramme (_Zotero_) bis hin zur Software zur Notation (_MuseScore_) und Analyse (_SonicVisualizer_) von Musik oder zur Versionierung von Hausarbeiten (_Git_) sowie Strategien zur Projektorganisation. Dieses Seminar führt eine Vielzahl von nützlichen Tools ein, welche uns bei unserer (musik)wissenschaftlichen Arbeit unterstützen können. Ziel ist es, einen souveränen Umgang durch praktische Anwendung zu erlangen und gleichzeitig einen kritischen Blick auf derartige Werkzeuge und ihre Vor- und Nachteile zu entwickeln.
 </details>
 
