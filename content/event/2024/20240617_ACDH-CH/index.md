@@ -24,7 +24,7 @@ all_day: false
 publishDate: 2024-04-22T12:29:39+02:00
 
 authors: [admin]
-tags: []
+tags: [artificial intelligence, musicology, music]
 
 # Is this a featured event? (true/false)
 featured: false
@@ -46,7 +46,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your event's folder or a URL.
-url_slides:
+url_slides: https://docs.google.com/presentation/d/1VmTuJg-trip1P90tiir_7gDEJAALiBeg_t2YRc7g_DQ/edit?usp=sharing
 
 url_code:
 url_pdf:
