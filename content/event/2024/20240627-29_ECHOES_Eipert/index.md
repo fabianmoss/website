@@ -25,7 +25,7 @@ date_end: 2024-06-28T10:00:00+00:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2024-06-26T08:03:22+01:00
+publishDate: 2024-06-26T00:00:00+00:00
 
 authors: [Tim Eipert, Alexander Hartelt, admin, Frank Puppe]
 tags: [Optical Music Recognition, Digital Analysis of Chant, Phylogenetic Inference]
