@@ -28,6 +28,10 @@ header:
   </summary>
   Die Strukturhaftigkeit von Musik legt algorithmische Betrachtungen nahe. In diesem Seminar werden Grundbegriffe des Programmierens anhand von musikalischen Konzepten eingeführt und praktisch erprobt. Dabei stehen insbesondere die Kodierung und die Generierung von Musik im Vordergrund. Vorkenntnisse, die über elementare Musiktheorie hinausgehen, sind nicht erforderlich. 
 </details>
+<details>
+  <summary><b>Institutskolloquium: Wie über Musik forschen?</b></summary>
+  Unser Institut trägt "Musikforschung" im Namen, aber die Frage, wie Musik eigentlich erforscht werden kann und wird hat viele Antworten. Das Institutskolloquium im Wintersemester 2024/25 versucht sich an einem Überblick der verschiedenen Themen und Ansätze in Würzburg, und nimmt dabei möglichst viele Facetten von Musikforschungstätigkeit in den Blick - von Referaten über Bachelor- und Masterarbeiten bishin zu Dissertationen und großen Forschungsprojekten. Dazu werden wir uns verschiedener methodischer Formate bedienen, wie etwa Literaturrecherche, Interviews, Fragebögen und Ortsbegehungen, und diese qualitativ auswerten.
+</details>
 
 ## Spring 2024
 
