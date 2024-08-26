@@ -81,11 +81,10 @@ Working with large symbolic datasets of musical scores and harmonic annotations,
 
 Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch) (DCML) at [École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL, Switzerland) for the project [*Distant Listening: The Development of Harmony over Three Centuries (1700–2000)*](https://dcml.epfl.ch/projects/distant-listening), funded by the [Swiss National Science Foundation](http://www.snf.ch) (PI: Martin Rohrmeier). I also directed the project [*Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources*](http://dcmlab.github.io/ddd), supported by the EPFL-UNIL funding scheme [CROSS - Collaborative Research on Science and Society](https://www.epfl.ch/schools/cdh/research-2/cross-collaborative-research-on-science-and-society/). -->
 
-I am an assistant professor for **Digital Music Philology and Music Theory**
+I am a tenure-track assistant professor for **Digital Music Philology and Music Theory**
 in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/)
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany, and 
-I am also affiliated with the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD).
- <!-- and the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). -->
+I am also affiliated with the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD) and the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH).
 
 In my research, I bridge concepts and methodologies from the humanities and the sciences,
 and aim to understand music and its structure from an inherently **interdisciplinary perspective**,
@@ -97,7 +96,7 @@ More specifically, I work with large **symbolic datasets** of musical scores and
 I  am also interested in **computational modeling** of music and its perception,
 and am fascinated by quantitative approaches to model historical processes.
 
-I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools.
+I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools, and provide professional service as an advisory board member for [_Computational Humanities Research_](https://www.cambridge.org/core/journals/computational-humanities-research) and [_Analitica - Revista Online di Studi Musicali_](https://lnx.gatm.it/analiticaojs/index.php/analitica) as well as reviewing service for several conferences and journals (see CV).
 
 Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), 
 and before that as doctoral and postdoctoral researcher at 
