@@ -15,7 +15,19 @@ header:
 ---
 
 ## Fall 2024
+<details>
+  <summary>
+    <b>Fall 2024</b>
+  </summary>
+<details>
+  <summary>
+    <b>YouTube Music Theory</b>
+  </summary>
+  Seit einiger Zeit kann man das Phänomen der so genannten "Public Music Theory" beobachten, also der Musiktheorie außerhalb von Klassenzimmern und universitären Seminaren. Eine besondere Rolle spielen dabei Social Media, insbesondere YouTube und in letzter Zeit auch zunehmend TikTok. Welche Themen werden dort besprochen? Welches Repertoire wird analysiert und diskutiert? Welche Terminologien werden benutzt? Welche Zielgruppen werden addressiert? Welche Hintergründe habend die Akteure? Diesen und weiteren Fragen soll in diesem Seminar nachgegangen werden. 
+</details>
 
+</details>
+<!-- Old stuff-->
 <details>
   <summary>
     <b>YouTube Music Theory</b>
