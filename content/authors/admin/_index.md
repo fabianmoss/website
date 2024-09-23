@@ -105,4 +105,4 @@ Supported by the [German Academic Exchange Service](https://www.daad.de/en/) (DA
 
 ### Research Interests
 
-Computational Musicology · Corpus Studies · Music Theory and Analysis · Digital Humanities · Artificial Intelligence · Cultural Evolution
+Computational Musicology · Corpus Studies · Music Theory & Analysis · Digital Humanities · Artificial Intelligence · Cultural Evolution
