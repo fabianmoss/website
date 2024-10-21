@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Metrical Irregularities and Polymetric Structures in Hugo Distler's Vocal Works: Towards a Digital Corpus Study of 'Der Jahrkreis' op. 5"
+title: "Metrical Irregularities and Polymetric Structures in Hugo Distler's Vocal Works: Towards a Digital Corpus Study"
 event: Second international conference on computational and cognitive musicology 
 event_url:
 location: Utrecht University
