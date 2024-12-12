@@ -13,9 +13,24 @@ header:
   caption: ""
   image: ""
 ---
+## Spring 2025
+
+<details>
+  <summary>
+    <b>Musikalische Korpusforschung: Harmonische Annotationen</b>
+  </summary>
+  ...
+</details>
+<details>
+  <summary>
+    <b>Notationskunde 2.0: Digitale Repräsentationen von Musik und Notationssoftware</b>
+  </summary>
+  ...
+</details>
+<details>
 
 ## Fall 2024
-<details>
+
   <summary>
     <b>YouTube Music Theory</b>
   </summary>
