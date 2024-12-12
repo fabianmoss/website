@@ -27,10 +27,10 @@ header:
   </summary>
   ...
 </details>
-<details>
 
 ## Fall 2024
 
+<details>
   <summary>
     <b>YouTube Music Theory</b>
   </summary>
