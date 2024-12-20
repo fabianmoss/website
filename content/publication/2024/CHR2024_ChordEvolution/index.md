@@ -25,7 +25,7 @@ abstract: "Popular music often features a high amount of stable harmonic pattern
 summary: "Here, we introduce music-theoretically sensible notions of harmonic distance between chords, that allows us to arrive at more fine-grained results regarding relative influences of different kinds of harmonic relations on diachronic changes. "
 
 tags: [popular music, harmony, chord substitution, style, cultural evolution]
-categories: []
+categories: [cultural evolution, music theory, popular music]
 featured: false
 
 # Custom links (optional).
@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://ceur-ws.org/Vol-3834/paper133.pdf
 url_code:
 url_dataset:
 url_poster:
