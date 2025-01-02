@@ -37,7 +37,7 @@ featured: false
 #   icon: twitter
 links:
 - name: Full text
-  url: https://www.kontrovers-musikwissenschaft.de/2024/12/20/big-data-grosses-wissen-herausforderungen-der-digital-vergleichenden-korpusforschung/
+  url: https://kontrovers.hypotheses.org/4370
 
 url_pdf:
 url_code:
