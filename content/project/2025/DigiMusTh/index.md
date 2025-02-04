@@ -2,8 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "DigiMusTh"
-subtitle: Aufbau einer offenen digitalen Sammlung historischer musiktheoretischer Texte aus dem deutschsprachigen Raum
-anhand von Beispielen aus dem 19. Jahrhundert  
+subtitle: Aufbau einer offenen digitalen Sammlung historischer musiktheoretischer Texte aus dem deutschsprachigen Raum anhand von Beispielen aus dem 19. Jahrhundert  
 summary: 
 authors: [admin]
 tags: [music theory, corpus studies]
