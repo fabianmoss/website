@@ -52,4 +52,4 @@ Another goal is the technical and methodological advancement of digital music th
 In the long term, DigitMusTh aims to become an open, cooperatively expandable platform for historical music theory texts. Due to its interdisciplinary approach, the project is not only relevant to music theory and musicology but also to the digital humanities and the history of science, particularly concerning the physical and physiological foundations of harmonic theory. With its sustainable structure, DigitMusTh contributes to making historical music theory accessible and analyzable in modern digital formats.
 
 Funded by [Text+](https://text-plus.org/en/), a consortium of the [National Research Data Infrastructure (NFDI)](https://www.dfg.de/de/foerderung/foerderinitiativen/nfdi).
-![Text+ Logo](./text-plus-logo.svg)
+<img src="text-plus-logo.svg" alt="Text+ Logo" width="100"/>
