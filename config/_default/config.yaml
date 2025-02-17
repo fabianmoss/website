@@ -70,10 +70,3 @@ related:
       weight: 70
 security:
   _merge: deep
-<<<<<<< HEAD
-=======
-params:
-  GoogleAnalytics: ""
-  marketing:
-    google_analytics: ""
->>>>>>> 24a3e33091ad6011ceeb3e2bceb1e7613ad046ad
