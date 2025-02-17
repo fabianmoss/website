@@ -3,9 +3,14 @@
 
 title: "DigiMusTh"
 subtitle: Aufbau einer offenen digitalen Sammlung historischer musiktheoretischer Texte aus dem deutschsprachigen Raum anhand von Beispielen aus dem 19. Jahrhundert  
+<<<<<<< HEAD
 # summary: 
+=======
+summary: > 
+  The _DigitMusTh_ project focuses on the digital collection and analysis of historical music theory texts, with a particular emphasis on the 19th-century debate on major-minor dualism. While large digital collections of music theory texts already exist in other languages there is currently no comparable collection for German-language texts, despite their central role in European music theory since the 18th century. _DigitMusTh_ aims to fill this gap by creating a sustainable and expandable digital edition that offers new perspectives for both musicology and the digital humanities.
+>>>>>>> 24a3e33091ad6011ceeb3e2bceb1e7613ad046ad
 authors: [admin]
-tags: [music theory, corpus studies]
+tags: [music theory, digital humanities]
 categories: [digital humanities, music theory]
 date: 2025-01-01T13:09:08+02:00
 
@@ -41,18 +46,14 @@ url_video: ""
 slides: ""
 ---
 
-<!--Choro is a mostly instrumental Brazilian music genre that emerged towards the end of the 19th century. While this genre can be considered to lay outside of the current popular music mainstream, it does nonetheless enjoy a vibrant community of composers, musicians, and enthusiasts that maintain it as a living tradition to the present day, and continue its creative innovation. A peculiar aspect of Choro is its inherent stylistic diversity, resulting both from its various historical and geographical influences and resulting-->
-<!--in an intricate melange of African rhythms and European salon music forms, as well as from the inherently diverse Brazilian culture.-->
-<!--The project "Digital Choro" tackles the research question of how Choro, its emergence as a genre, and its historical development can be understood with the help of computational modeling. Focusing on a wide range of musical and stylistic parameters (e.g., melody, harmony, rhythm, meter, form), we will investigate what kinds of patterns are recurrent in Choro, which ones are particular to certain composers, and which ones are more stable over the course of the history of the genre. Comparisons with European and African reference corpora may shed light on the intricate history of style formation of this genre.-->
-<!---->
-<!--In order to render computational modeling effective, it is necessary to have large datasets for analysis at hand. A crucial part of this project is thus the survey, digitization, and data mining of the largest Choro archive, housed in the [Casa do Choro](https://casadochoro.com.br/) in Rio de Janeiro.-->
-<!--The archive consists of a collection of more than 10,000 scores of sheet music, that form the basis for the analytical processing within the scope of the project. Digitizing these scores with the help of both manual music encoding efforts and automated Optical Music Recognition (OMR) technologies will carry out computational analyses of Brazilian music on a yet unprecedented scale.-->
-<!--Beyond these 10,000 scores, further material exists which is not yet digitized, partially due to copyright considerations. The project will conceive of potential solutions to employ these scores for analysis while respecting the legal constraints. The project will develop means to digitize the remaining sheet music and transform the corpus into the open and widely used symbolic music encoding formats (e.g. MEI, MusicXML). This will, on the one hand, facilitate the computational analyses and, on the other hand, promote the corpus and thus the genre to a wide range of international researchers.-->
-<!---->
-<!--This project can only be realized with the institutional and scientific support from Brazil, as it crucially revolves around Brazilian cultural heritage. Necessary steps will be taken to ensure a fair treatment of the data. This will be mainly ensured by seeking collaborations and understandings with Casa do Choro itself, as well as with researchers at [Universidade Federal do Estado do Rio do Janeiro (UNIRIO)](https://www.unirio.br/) and [Universidade Federal do Rio do Janeiro (UFRJ)](https://ufrj.br/). Moreover, institutional support will come from the Center for Philology and Digitality and the Research Advancement Center of Würzburg University as well as the [Consortium for Research Data on Material and Immaterial Cultural Heritage](https://nfdi4culture.de/) and the [Academy of Sciences and Literature](https://www.adwmainz.de/) in Germany.-->
-<!---->
-<!--At the same time, the project will provide ample training opportunities for Brazilian students and researchers by inviting them to engage with and gain experience in digital methods for music encoding and analysis, e.g. by organizing hands-on workshops. This will contribute to a dissemination and deepening of such skills, rendering these researchers more competitive on the international academic job market. The project "Digital Choro" thus involves a variety of facets ranging from cultural heritage preservation, over computational analysis of a musical style, and dissemination of digital music encoding skills to Brazilian students and scholars.-->
-<!---->
-<!--Funded by the [Bavarian Research Alliance](https://www.bayfor.org/en/).-->
-<!---->
-<!--![BayFOR logo](BayFOR-logo.jpg)-->
+
+The DigitMusTh project focuses on the digital collection and analysis of historical music theory texts, with a particular emphasis on the 19th-century debate on major-minor dualism. While large digital collections of music theory texts already exist in other languages—such as the Thesaurus Musicarum Latinarum (TML) and the Thesaurus Musicarum Italicarum (TMI)—there is currently no comparable collection for German-language texts, despite their central role in European music theory since the 18th century. DigitMusTh aims to fill this gap by creating a sustainable and expandable digital edition that offers new perspectives for both musicology and the digital humanities.
+
+A key aspect of the project is the integration of different types of texts. In addition to monographs and treatises, theoretical journal articles will also be included to provide a more comprehensive picture of the historical debate. Relevant periodicals, such as the Neue Zeitschrift für Musik, the Allgemeine Musikzeitung, and the Neue Berliner Musikzeitung, are already available in digital form. Since a complete collection is not feasible, a targeted selection will be made: only articles that are thematically linked to the existing corpus—either through shared authorship or direct references—will be included. This approach will offer a broader perspective on the discourse of the time and its dissemination in the public sphere.
+
+Another goal is the technical and methodological advancement of digital music theory editing. The complex structure of the sources—including text, images, and musical elements—presents challenges that require innovative solutions. The continuous expansion of the collection will also contribute to the refinement of encoding guidelines and the development of music-theoretical ontologies. Additionally, the integration of individual research projects, such as master's theses or doctoral dissertations on relevant texts, is possible after review, allowing for a collaborative expansion of the collection.
+
+In the long term, DigitMusTh aims to become an open, cooperatively expandable platform for historical music theory texts. Due to its interdisciplinary approach, the project is not only relevant to music theory and musicology but also to the digital humanities and the history of science, particularly concerning the physical and physiological foundations of harmonic theory. With its sustainable structure, DigitMusTh contributes to making historical music theory accessible and analyzable in modern digital formats.
+
+Funded by [Text+](https://text-plus.org/en/), a consortium of the [National Research Data Infrastructure (NFDI)](https://www.dfg.de/de/foerderung/foerderinitiativen/nfdi).
+<img src="text-plus-logo.svg" alt="Text+ Logo" width="100"/>
