@@ -19,13 +19,13 @@ header:
   <summary>
     <b>Musikalische Korpusforschung: Harmonische Annotationen</b>
   </summary>
-  ...
+  Musikalische Korpusforschung beschreibt die Analyse von Musik auf der Grundlage von großen Datensätzen ("Korpora") von digital kodierter Notation oder Audioaufnahmen. Harmonische Annotation ist ein Prozess, der für Abschnitte in der Musik  bestimmt, welche Harmonien (oder Akkorde oder Tonarten) vorliegen. Dies kann entweder manuell oder automatisch geschehen. Beides ist mit gewissen Vorteilen und Schwierigkeiten behaftet. Das Seminar wird eine Vielzahl von Beispielen kennenlernen, sich mit der Frage beschäftigen, wie man Harmonie annotieren kann, und kritisch diskutieren, wie man mit Mehrdeutigkeiten und subjektiven Wahrnehmungen umzugehen könnte.
 </details>
 <details>
   <summary>
     <b>Notationskunde 2.0: Digitale Repräsentationen von Musik und Notationssoftware</b>
   </summary>
-  ...
+  Musik kann in vielfältiger Weise notiert werden. Dabei ist immer klar, dass Notation bestimmte Aspekte und Parameter herausgreift und andere vernachlässigt. Im Kontext westlicher Notation haben sich gewisse Standards herausgebildet, die die Grundlage für Aufführungspraxis und Notenedition bilden. Etwa seit der Mitte des 20. Jahrhunderts wird Computersoftware zum Setzen von Noten eingesetzt und die Entwicklung der verschiedenen Programme bietet einen spannenden Einblick in diese Prozesse. Im Seminar werden wir einen Überblick über historische Musiknotationssoftware erarbeiten und - in Kooperation mit dem Retro Computing Lab - praktische Erfahrungen sammeln. Wir werden diskutieren, was es heißt, Musik schriftlich zu fixieren und verstehen, wie man bestimmte (aber nicht alle) musikalischen Parameter so fassen kann, dass sie selbst ein Computer verstehen kann.
 </details>
 
 ## Fall 2024
