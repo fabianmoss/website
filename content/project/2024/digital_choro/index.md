@@ -3,15 +3,14 @@
 
 title: "Digital Choro"
 subtitle: Exploring the potential of digitization and computational models for Brazil's musical cultural heritage
-summary: |
-  The project "Digtial Choro: Exploring the potential of digitization and computational models for Brazil's musical cultural heritage" aims to utilize digitization and data-driven methods to develop computational models of the complex genesis of Choro, a Brazilian instrumental music genre.
+summary: Exploring the potential of digitization and computational models for Brazil's musical cultural heritage
 authors: [admin]
 tags: [music theory, corpus studies]
 categories: [digital humanities, music theory]
 date: 2024-01-04T13:09:08+02:00
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
