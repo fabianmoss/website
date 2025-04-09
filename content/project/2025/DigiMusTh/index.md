@@ -3,8 +3,7 @@
 
 title: "DigiMusTh"
 subtitle: Aufbau einer offenen digitalen Sammlung historischer musiktheoretischer Texte aus dem deutschsprachigen Raum anhand von Beispielen aus dem 19. Jahrhundert  
-summary: > 
-  The _DigitMusTh_ project focuses on the digital collection and analysis of historical music theory texts, with a particular emphasis on the 19th-century debate on major-minor dualism. While large digital collections of music theory texts already exist in other languages there is currently no comparable collection for German-language texts, despite their central role in European music theory since the 18th century. _DigitMusTh_ aims to fill this gap by creating a sustainable and expandable digital edition that offers new perspectives for both musicology and the digital humanities.
+summary: Aufbau einer offenen digitalen Sammlung historischer musiktheoretischer Texte aus dem deutschsprachigen Raum anhand von Beispielen aus dem 19. Jahrhundert  
 authors: [admin]
 tags: [music theory, digital humanities]
 categories: [digital humanities, music theory]
