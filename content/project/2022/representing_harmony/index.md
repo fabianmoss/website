@@ -2,7 +2,8 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Representing Harmony"
-summary: ""
+subtitle: Goals and Challenges
+summary: "Goals and Challenges"
 authors: [admin, Johannes Hentschel, Markus Neuwirth, Martin Rohrmeier]
 tags: [corpus studies, harmony, music encoding]
 categories: []

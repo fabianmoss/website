@@ -1,8 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Enabling interactive music visualization for a wider community (midiVERTO)"
-summary: ""
+title: "midiVERTO"
+subtitle: Enabling interactive music visualization for a wider community 
+summary: "Enabling interactive music visualization for a wider community"
 authors: [admin, Daniel Harasim, Giovanni Affatato]
 tags: [discrete Fourier transform, visualization, web app]
 categories: [music theory, digital humanities]

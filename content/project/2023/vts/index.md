@@ -3,8 +3,7 @@
 
 title: "Virtual Tonal Spaces (VTS)"
 subtitle: Towards an interactive digital environment for music theory
-summary: |
-  The high dimensionality of music means that even digital representations on screen do not convey tonal spaces with sufficient clarity. Here, the extended field of view and the higher degrees of freedom of virtual reality environments offer the possibility to express musical parameters more clearly through aesthetic parameters and thus generate a better understanding among learners.
+summary: Towards an interactive digital environment for music theory
 authors: [admin]
 tags: [music theory, virtual reality]
 categories: [digital humanities, music theory]

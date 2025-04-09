@@ -1,10 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Digitizing the Dualism Debate (DDD)"
+title: "Digitizing the Dualism Debate"
 subtitle: "a case study in the computational analysis of historical music theory sources"
-summary: |
-  The "dualism debate", a ‘hot topic’ in 19th-century German music theory, is concerned with the mutual relationship of major and minor triads, specifically whether the minor triad is a mere derivative of the major triad or whether it can be derived from first principles on its own right. This project strives to reconstruct and critically evaluate the discursive relations within this debate by using the combined power of qualitative-historical and quantitative-numerical methods and thus serve to build methodological bridges between the humanities and the sciences. 
+summary: "a case study in the computational analysis of historical music theory sources"
 authors: [admin, François Bavaud, Colline Métrailler, Maik Köster, Melinda Femminis]
 tags: []
 categories: [digital humanities, music theory, corpus studies]
