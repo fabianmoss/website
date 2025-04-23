@@ -4,10 +4,10 @@
 title: "Corpus Troporum Dataset: A Digital Catalog of Trope Elements in Medieval Chant"
 authors: [Tim Eipert, Corinna Bongartz, admin]
 date: 2025-03-24T11:53:56+01:00
-doi: ""
+doi: "https://doi.org/10.5334/johd.318"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2025-03-24T11:53:56+01:00
+publishDate: 2025-04-23T11:53:56+01:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -28,7 +28,7 @@ This dataset allows the comprehensive collection of individual trope elements to
 # Summary. An optional shortened abstract.
 summary: "We present a dataset of occurrences of so-called trope elements in manuscripts of European medieval chant. "
 
-tags: []
+tags: [dataset]
 categories: []
 featured: false
 
