@@ -52,3 +52,6 @@ The “Musico Pratico” project envisages a musicological dissertation project 
 
 Funded by the Deutsche Forschungsgemeinschaft (DFG, German
 Research Foundation) – 550042083
+
+
+[Link to press release](https://www.uni-wuerzburg.de/aktuelles/einblick/single/news/renaissance-musiker-digital-wiederbeleben/)
