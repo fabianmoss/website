@@ -23,10 +23,10 @@ image:
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
 links:
-# - name: Project website
-#   url: https://www.uni-wuerzburg.de/projekte/wuedive/projekte/virtual-tonal-spaces/
-#   icon_pack: fab
-#   icon: browser
+- name: Project website
+  url: https://fabianmoss.github.io/digimusth/
+  icon_pack: fab
+  icon: browser
 
 url_code: ""
 url_pdf: ""
