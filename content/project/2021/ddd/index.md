@@ -6,7 +6,7 @@ subtitle: "a case study in the computational analysis of historical music theory
 summary: "a case study in the computational analysis of historical music theory sources"
 authors: [admin, François Bavaud, Colline Métrailler, Maik Köster, Melinda Femminis]
 tags: []
-categories: [digital humanities, music theory, corpus studies]
+categories: [digital humanities, music theory]
 date: 2021-01-01T13:26:57+02:00
 
 # Optional external URL for project (replaces project detail page).

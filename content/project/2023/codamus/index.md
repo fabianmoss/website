@@ -4,8 +4,8 @@
 title: "CODAMUS"
 summary: Computational and Digital Approaches to Music Scholarship
 authors: [admin]
-tags: []
-categories: [] # [corpus studies, digital humanities, computational musicology]
+tags: [computational musicology]
+# categories: [computational musicology] # [corpus studies, digital humanities, computational musicology]
 date: 2023-07-04T14:38:51+02:00
 
 # Optional external URL for project (replaces project detail page).

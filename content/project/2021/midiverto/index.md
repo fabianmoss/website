@@ -6,7 +6,7 @@ subtitle: Enabling interactive music visualization for a wider community
 summary: "Enabling interactive music visualization for a wider community"
 authors: [admin, Daniel Harasim, Giovanni Affatato]
 tags: [discrete Fourier transform, visualization, web app]
-categories: [music theory, digital humanities]
+categories: [music theory]
 date: 2021-07-01T13:35:20+02:00
 
 # Optional external URL for project (replaces project detail page).
