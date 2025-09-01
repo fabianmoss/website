@@ -84,7 +84,11 @@ Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digi
 I am a tenure-track assistant professor for **Digital Music Philology and Music Theory**
 in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/)
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany,
-part of the extended collegial board of the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD), and member of the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH).
+part of the extended collegial board of the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD), and member of the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools.
+
+### Research Interests
+
+Computational Musicology · Corpus Studies · Music Theory & Analysis · Digital Humanities · Artificial Intelligence · Cultural Evolution
 
 In my research, I bridge concepts and methodologies from the humanities and the sciences,
 and aim to understand music and its structure from an inherently **interdisciplinary perspective**,
@@ -96,13 +100,10 @@ More specifically, I work with large **symbolic datasets** of musical scores and
 I  am also interested in **computational modeling** of music and its perception,
 and am fascinated by quantitative approaches to model historical processes.
 
-I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools, and provide professional service as an advisory board member for [_Computational Humanities Research_](https://www.cambridge.org/core/journals/computational-humanities-research) and [_Analitica - Revista Online di Studi Musicali_](https://lnx.gatm.it/analiticaojs/index.php/analitica) as well as reviewing service for several conferences and journals (see CV).
 
-Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), 
-and before that as doctoral and postdoctoral researcher at 
-[École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL)'s [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch).
-Supported by the [German Academic Exchange Service](https://www.daad.de/en/) (DAAD), I visited the [Department of Linguistics and Philosophy](https://linguistics.mit.edu/) at the [Massachusetts Institute of Technology](https://www.mit.edu) (MIT) as a research PhD student and spent a semester at [Escola Superior de Música de Catalunya](https://www.esmuc.cat/en/) (ESMUC) funded by the ERASMUS program of the European Union.
+<!--Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), -->
+<!--and before that as doctoral and postdoctoral researcher at -->
+<!--[École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL)'s [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch).-->
+<!--Supported by the [German Academic Exchange Service](https://www.daad.de/en/) (DAAD), I visited the [Department of Linguistics and Philosophy](https://linguistics.mit.edu/) at the [Massachusetts Institute of Technology](https://www.mit.edu) (MIT) as a research PhD student and spent a semester at [Escola Superior de Música de Catalunya](https://www.esmuc.cat/en/) (ESMUC) funded by the ERASMUS program of the European Union.-->
+<!---->
 
-### Research Interests
-
-Computational Musicology · Corpus Studies · Music Theory & Analysis · Digital Humanities · Artificial Intelligence · Cultural Evolution
