@@ -4,7 +4,7 @@
 title: "Knowing when to stop: insights from ecology for building catalogues, collections, and corpora"
 authors: [Jan Hajič jr, admin]
 date: 2025-06-30T08:20:16+02:00
-doi: ""
+doi: "10.1145/3748336.3748347"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-06-26T08:20:16+02:00
