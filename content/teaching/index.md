@@ -13,6 +13,29 @@ header:
   caption: ""
   image: ""
 ---
+
+## Fall 2025
+
+<details>
+  <summary>
+    <b>Einführung in die Digitale Musikforschung</b>
+  </summary>
+  Diese Veranstaltung bietet eine Einführung und einen Überblick in die Digitale Musikforschung. Es werden die zentrale Forschungsschwerpunkte und Methoden vorgestellt und praktische Übungen zu deren Einübung angeboten. Studierende lernen, Forschungsfragen und Methoden der DM zu analysieren und selbst in eigener Forschung einzusetzen. Gleichzeitig motiviert die Veranstaltung vertiefende Seminare in zukünftigen Semestern.
+</details>
+<details>
+  <summary>
+    <b>Themen der Digitalen Musikforschung</b>
+  </summary>
+  In diesem Seminar werden wir uns mit zentralen und aktuellen Themen der Digitalen Musikforschung beschäftigen und zwar vornehmlich durch die (teilweise gemeinsame) Lektüre grundlegender und aktueller Publikationen. Diese sind größtenteils auf Englisch. 
+</details>
+<details>
+  <summary>
+    <b>Digitale Musikkodierung und -edition</b>
+  </summary>
+Das Seminar behandelt das Thema der digitalen Kodierung von Musik und geht dabei sehr praktisch vor. Wir werden die Grundlagen der Musikkodierung nach den Richtlinien der Music Encoding Initiative (MEI) lernen und an zahlreichen praktischen Beispielen ausprobieren. Dabei kommen auch moderne Softwarelösungen wie MuseScore Studio und mei-friend zum Einsatz. Das Seminar ist eine Blockveranstaltung und findet im CIP-Pool statt, indem die nötige Software vorhanden ist. Studierende sind aber herzlich eingeladen, eigene Geräte (Laptop, Tablet) zu verwenden, sofern sie eine Tastatur haben (nicht nur Bildschirmtastatur).
+</details>
+
+
 ## Spring 2025
 
 <details>
