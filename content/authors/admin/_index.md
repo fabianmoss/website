@@ -14,7 +14,7 @@ organizations:
   url: http://musikwissenschaft.uni-wuerzburg.de/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Fabian C. Moss is an assistant professor for Digital Music Philology and Music Theory at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany. 
+bio: Fabian C. Moss is an assistant professor for Digital Music Philology and Music Theory at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany.
 #He was born in Cologne, Germany, and studied Mathematics and Educational Studies at University of Cologne, and Music Education (Major Piano) and Musicology at Hochschule für Musik und Tanz, Köln. He obtained is PhD in Digital Humanities from [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/) (EPFL). Working with large symbolic datasets of musical scores and harmonic annotations, he is primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship.
 
 # Interests to show in About widget
