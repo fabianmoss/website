@@ -20,10 +20,24 @@ removePathAccents: true
 ## MODULES
 ############################
 
+theme: 
+  - "wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a"
+  - "wowchemy-cms/v5@v5.0.0-20211231133358-6d4989f90f7a"
+
 module:
-  imports:
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
+  mounts:
+    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/assets
+      target: assets
+    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/layouts
+      target: layouts
+    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/static
+      target: static
+    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/data
+      target: data
+    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/archetypes
+      target: archetypes
+    - source: assets
+      target: assets
 
 ############################
 ## ADVANCED
@@ -43,7 +57,7 @@ permalinks:
   publication_types: '/publication-type/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  home: [HTML, RSS]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
