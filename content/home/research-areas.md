@@ -7,13 +7,13 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 25
+weight: 2 
 
-title: "Research Areas"
-subtitle: 'My main areas of research'
+title: "My main research areas"
+subtitle: 'Click on a card to view projects, publications, and events.'
 
 design:
-  columns: '3'
+  columns: '1'
 ---
 
 <div class="research-cards">
@@ -69,7 +69,7 @@ design:
 <style>
 .research-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
