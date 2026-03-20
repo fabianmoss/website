@@ -40,8 +40,7 @@ design:
 
 ---
 
-
 {{% callout note %}}
-[Filter my publications](./publication/).
+[See all publications](./publication/).
 {{% /callout %}}
 

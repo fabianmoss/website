@@ -22,9 +22,9 @@ main:
   - name: Teaching
     url: teaching/
     weight: 60
-  - name: Journal Club
-    weight: 70
-    url: journal-club/
+  # - name: Journal Club
+  #   weight: 70
+  #   url: journal-club/
   # - name: Contact
   #   url: '#contact'
   #   weight: 80
