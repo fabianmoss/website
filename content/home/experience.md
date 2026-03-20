@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Assistant Professor for Digital Music Philology and Music Theory
-    company: '[Institut für Musikforschung](http://musikwissenschaft.uni-wuerzburg.de/) | [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/)'
+    company: '[Institut für Musikforschung](http://musikwissenschaft.uni-wuerzburg.de/) | [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) | [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/)'
     # company_url: 
     company_logo: Universität_Würzburg_Logo
     location: Würzburg, Germany
