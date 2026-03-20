@@ -8,7 +8,7 @@
 theme: minimal # "Earth" # Ocean
 day_night: false
 font: ''
-font_size: m
+font_size: s
 
 # SEO
 
@@ -59,7 +59,7 @@ directions: Enter the building and take the stairs to Office 208 on Floor 2
 
 main_menu:
   enable: true
-  align: l
+  align: r
   show_logo: true
   show_language: false
   show_day_night: false
