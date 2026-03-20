@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 2 
 
-title: "My main research areas"
-subtitle: 'Click on a card to view projects, publications, and events.'
+title: "Research areas"
+# subtitle: 'Click on a card to view projects, publications, and events.'
 
 design:
   columns: '1'
@@ -30,24 +30,24 @@ design:
   </div>
   
   <div class="card-container">
-    <a href="/research/music-theory/" class="card-link">
-      <div class="card research-card">
-        <div class="card-image music-theory"></div>
-        <div class="card-body">
-          <h3 class="card-title">Music Theory</h3>
-          <p class="card-text">Understanding the structures and systems of music</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  
-  <div class="card-container">
     <a href="/research/cultural-evolution/" class="card-link">
       <div class="card research-card">
         <div class="card-image cultural-evolution"></div>
         <div class="card-body">
           <h3 class="card-title">Cultural Evolution</h3>
           <p class="card-text">Tracing the transmission and transformation of musical traditions</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+   <div class="card-container">
+    <a href="/research/music-theory/" class="card-link">
+      <div class="card research-card">
+        <div class="card-image music-theory"></div>
+        <div class="card-body">
+          <h3 class="card-title">Music Theory & Analysis</h3>
+          <p class="card-text">Understanding the structures and systems of music</p>
         </div>
       </div>
     </a>
@@ -70,8 +70,7 @@ design:
 .research-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
-  margin-top: 1rem;
+  gap: 1.5rem;
 }
 
 .card-container {
