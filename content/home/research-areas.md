@@ -10,7 +10,7 @@ headless: true
 weight: 2 
 
 title: "Research areas"
-# subtitle: 'Click on a card to view projects, publications, and events.'
+subtitle: '(under construction)'
 
 design:
   columns: '1'
@@ -23,7 +23,7 @@ design:
         <div class="card-image computational-musicology"></div>
         <div class="card-body">
           <h3 class="card-title">Computational Musicology</h3>
-          <p class="card-text">Exploring music through data and algorithms</p>
+          <p class="card-text">Exploring music through data and computational models</p>
         </div>
       </div>
     </a>
@@ -35,7 +35,7 @@ design:
         <div class="card-image cultural-evolution"></div>
         <div class="card-body">
           <h3 class="card-title">Cultural Evolution</h3>
-          <p class="card-text">Tracing the transmission and transformation of musical traditions</p>
+          <p class="card-text">Tracing the transmission of music through history</p>
         </div>
       </div>
     </a>
@@ -47,7 +47,7 @@ design:
         <div class="card-image music-theory"></div>
         <div class="card-body">
           <h3 class="card-title">Music Theory & Analysis</h3>
-          <p class="card-text">Understanding the structures and systems of music</p>
+          <p class="card-text">Understanding musical structures through algorithms</p>
         </div>
       </div>
     </a>
@@ -88,7 +88,7 @@ design:
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
+  height: 80%;
 }
 
 .research-card:hover {
@@ -106,16 +106,16 @@ design:
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+.card-image.cultural-evolution {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
 .card-image.music-theory {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-.card-image.cultural-evolution {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
 .card-image.digital-humanities {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
 .card-body {
@@ -124,7 +124,7 @@ design:
 
 .card-title {
   margin: 0 0 0.5rem 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
