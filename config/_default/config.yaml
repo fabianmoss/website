@@ -26,6 +26,10 @@ theme:
 
 module:
   mounts:
+    - source: layouts
+      target: layouts
+    - source: assets
+      target: assets
     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/assets
       target: assets
     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/layouts
@@ -36,8 +40,6 @@ module:
       target: data
     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/archetypes
       target: archetypes
-    - source: assets
-      target: assets
 
 ############################
 ## ADVANCED
