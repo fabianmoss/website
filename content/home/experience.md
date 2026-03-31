@@ -60,7 +60,7 @@ experience:
     # description: '* Dissertation: [Transitions of Tonality: A Model-Based Corpus Study](https://infoscience.epfl.ch/record/273178)'
   
   - title: Visiting PhD Student
-    company: Department of Linguistics and Philosophy | Massachusetts Institute of Technology
+    company: Department of Linguistics and Philosophy | Department of Brain & Cognitive Sciences | Massachusetts Institute of Technology
     company_url: https://www.mit.edu
     company_logo: MIT_logo
     location: Cambridge, MA, USA
