@@ -86,9 +86,9 @@ in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzbur
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany,
 part of the extended collegial board of the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD), and member of the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools.
 
-### Research Interests
-
-Computational Musicology · Corpus Studies · Music Theory & Analysis · Digital Humanities · Artificial Intelligence · Cultural Evolution
+<!-- ### Research Interests -->
+<!---->
+<!-- Computational Musicology · Corpus Studies · Music Theory & Analysis · Digital Humanities · Artificial Intelligence · Cultural Evolution -->
 
 In my research, I bridge concepts and methodologies from the humanities and the sciences,
 and aim to understand music and its structure from an inherently **interdisciplinary perspective**,

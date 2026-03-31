@@ -1,0 +1,47 @@
+{{ $tag := .Get "tag" }}
+{{ $page_type := .Get "type" | default "publication" }}
+
+{{ $tag_lower := lower $tag }}
+{{ $tag_with_dash := replace $tag_lower " " "-" }}
+{{ $tag_with_space := replace $tag_lower "-" " " }}
+
+{{ $items := where $.Site.RegularPages "Type" $page_type }}
+
+{{ $matched := slice }}
+{{ range $items }}
+  {{ $has_tag := false }}
+  {{ with .Params.tags }}
+    {{ range . }}
+      {{ $tag_in_content := lower . }}
+      {{ if or (eq $tag_in_content $tag_lower) (in $tag_in_content $tag_lower) (eq $tag_in_content $tag_with_space) (in $tag_in_content $tag_with_space) (eq $tag_in_content $tag_with_dash) (in $tag_in_content $tag_with_dash) }}
+        {{ $has_tag = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ with .Params.categories }}
+    {{ range . }}
+      {{ $cat_in_content := lower . }}
+      {{ if or (eq $cat_in_content $tag_lower) (in $cat_in_content $tag_lower) (eq $cat_in_content $tag_with_space) (in $cat_in_content $tag_with_space) (eq $cat_in_content $tag_with_dash) (in $cat_in_content $tag_with_dash) }}
+        {{ $has_tag = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if $has_tag }}
+    {{ $matched = $matched | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $items := sort $matched "Date" "desc" }}
+
+{{ if $items }}
+<ul class="content-list">
+  {{ range $items }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ with .Date }} — {{ .Format "2006" }}{{ end }}
+  </li>
+  {{ end }}
+</ul>
+{{ else }}
+<p>No items found.</p>
+{{ end }}

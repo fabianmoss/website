@@ -7,9 +7,9 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 80
+weight: 3
 
-title: Publications
+title: Latest publications
 subtitle: 'Journal Articles, Conference Papers, Datasets'
 
 content:
@@ -40,8 +40,7 @@ design:
 
 ---
 
-
 {{% callout note %}}
-[Filter my publications](./publication/).
+[See all publications](./publication/).
 {{% /callout %}}
 

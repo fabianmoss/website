@@ -60,7 +60,7 @@ experience:
     # description: '* Dissertation: [Transitions of Tonality: A Model-Based Corpus Study](https://infoscience.epfl.ch/record/273178)'
   
   - title: Visiting PhD Student
-    company: Department of Linguistics and Philosophy | Massachusetts Institute of Technology
+    company: Department of Linguistics and Philosophy | Department of Brain & Cognitive Sciences | Massachusetts Institute of Technology
     company_url: https://www.mit.edu
     company_logo: MIT_logo
     location: Cambridge, MA, USA
@@ -77,34 +77,34 @@ experience:
     date_end: '2017-08-31'
     description: ''
   
-  # - title: ERASMUS Exchange Student
-  #   company: Escola Superior de Música de Catalunya
-  #   company_logo: "ESMUC"
-  #   company_url: "https://esmuc.cat/"
-  #   date_start: 2012-01-01
-  #   date_end: 2012-04-30
+  - title: ERASMUS Exchange Student
+    company: Escola Superior de Música de Catalunya
+    company_logo: "ESMUC"
+    company_url: "https://esmuc.cat/"
+    date_start: 2012-01-01
+    date_end: 2012-04-30
 
-  # - title: Master of Arts Musicology
-  #   company: Hochschule für Musik und Tanz Köln
-  #   company_logo: "logo_HFMTK"
-  #   company_url: "https://www.hfmt-koeln.de/"
-  #   date_start: 2011-04-01
-  #   date_end: 2013-09-30
+  - title: Master of Arts Musicology
+    company: Hochschule für Musik und Tanz Köln
+    company_logo: "logo_HFMTK"
+    company_url: "https://www.hfmt-koeln.de/"
+    date_start: 2011-04-01
+    date_end: 2013-09-30
 
-  # - title: State Examination Music
-  #   company: Hochschule für Musik und Tanz Köln
-  #   company_logo: "logo_HFMTK"
-  #   company_url: "https://www.hfmt-koeln.de/"
-  #   date_start: 2008-04-01
-  #   date_end: 2013-09-30
+  - title: State Examination Music
+    company: Hochschule für Musik und Tanz Köln
+    company_logo: "logo_HFMTK"
+    company_url: "https://www.hfmt-koeln.de/"
+    date_start: 2008-04-01
+    date_end: 2013-09-30
 
-  # - title: State Examination Mathematics and Educational Studies
-  #   company: University of Cologne
-  #   company_logo: "uni-koeln"
-  #   company_url: "https://uni-koeln.de/"
-  #   date_start: 2006-10-01
-  #   date_end: 2016-09-30
+  - title: State Examination Mathematics and Educational Studies
+    company: University of Cologne
+    company_logo: "uni-koeln"
+    company_url: "https://uni-koeln.de/"
+    date_start: 2006-10-01
+    date_end: 2016-09-30
 
 design:
-  columns: '2'
+  columns: '1'
 ---
