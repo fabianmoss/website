@@ -4,7 +4,8 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Fabian C. Moss # Website name
-baseurl: 'https://www.fabian-moss.de/' # Website URL
+# baseurl: 'https://www.fabian-moss.de/' # Website URL
+baseurl: "https://fabianmoss.github.io/website/"
 copyright: '© {year} Fabian C. Moss' # Footer text, e.g. '© {year} Me'
 
 ############################
@@ -20,7 +21,7 @@ removePathAccents: true
 ## MODULES
 ############################
 
-theme: 
+theme:
   - "wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a"
   - "wowchemy-cms/v5@v5.0.0-20211231133358-6d4989f90f7a"
 
