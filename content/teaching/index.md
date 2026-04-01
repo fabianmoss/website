@@ -14,6 +14,25 @@ header:
   image: ""
 ---
 
+## Spring 2026
+
+<details>
+  <summary>
+    <b>Einführung in die Digitale Musikforschung</b>
+  </summary>
+  Diese Veranstaltung bietet eine Einführung und einen Überblick in die Digitale Musikforschung. Es werden die zentrale Forschungsschwerpunkte und Methoden vorgestellt und praktische Übungen zu deren Einübung angeboten. Studierende lernen, Forschungsfragen und Methoden der DM zu analysieren und selbst in eigener Forschung einzusetzen. Gleichzeitig motiviert die Veranstaltung vertiefende Seminare in zukünftigen Semestern.
+</details>
+<details>
+  <summary>
+    <b>Digitale Korpusforschung - Programmieren und Analysieren mit music21</b>
+  </summary>
+</details>
+<details>
+  <summary>
+    <b>Musikforschung Live: Besuch und Dokumentation der Fourth International Conference for Computational and Cognitive Musicology>
+</details>
+
+
 ## Fall 2025
 
 <details>
