@@ -5,7 +5,7 @@
 
 title: Fabian C. Moss # Website name
 # baseurl: 'https://www.fabian-moss.de/' # Website URL
-baseurl: "https://fabianmoss.github.io/website/"
+baseurl: "http://fabianmoss.github.io/website/"
 copyright: '© {year} Fabian C. Moss' # Footer text, e.g. '© {year} Me'
 
 ############################
