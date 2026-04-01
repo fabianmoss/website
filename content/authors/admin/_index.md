@@ -65,7 +65,7 @@ social:
 # and uncomment the lines below.
 - icon: cv-square
   icon_pack: ai
-  link: uploads/moss_cv.pdf
+  link: static/uploads/moss_cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
