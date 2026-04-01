@@ -25,7 +25,7 @@ abstract: "Corpus studies on musical harmony have increased musicology's knowled
 summary: "This paper reports on an experiment extends a methodology to analyze and compare harmonic progressions at moments of formal segmentation in different styles based on corpora of Roman numeral annotations, and deploys it to the styles of Brazilian choro, Anglophone popular and jazz music. "
 
 tags: [Popular music, Brazilian music, Choro, Jazz, Harmony, Information theory, Music corpus studies]
-categories: [computational-musicology, music theory, cultural-evolution]
+categories: [computational-musicology, music theory]
 featured: false
 
 # Custom links (optional).
