@@ -29,18 +29,6 @@ design:
     </a>
   </div>
   
-  <div class="card-container">
-    <a href="/research/cultural-evolution/" class="card-link">
-      <div class="card research-card">
-        <div class="card-image cultural-evolution"></div>
-        <div class="card-body">
-          <h3 class="card-title">Cultural Evolution</h3>
-          <p class="card-text">Tracing the transmission of music through history</p>
-        </div>
-      </div>
-    </a>
-  </div>
-
    <div class="card-container">
     <a href="/research/music-theory/" class="card-link">
       <div class="card research-card">
@@ -58,8 +46,19 @@ design:
       <div class="card research-card">
         <div class="card-image digital-humanities"></div>
         <div class="card-body">
-          <h3 class="card-title">Digital Humanities</h3>
+          <h3 class="card-title">Music Encoding & Digital Humanities</h3>
           <p class="card-text">Applying digital methods to humanities research</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="card-container">
+    <a href="/research/cultural-evolution/" class="card-link">
+      <div class="card research-card">
+        <div class="card-image cultural-evolution"></div>
+        <div class="card-body">
+          <h3 class="card-title">Cultural Evolution & Music</h3>
+          <p class="card-text">Tracing the transmission of music through history</p>
         </div>
       </div>
     </a>
@@ -124,7 +123,7 @@ design:
 
 .card-title {
   margin: 0 0 0.5rem 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
