@@ -4,8 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Fabian C. Moss # Website name
-baseurl: 'https://www.fabian-moss.de/' # Website URL
-# baseurl: "https://fabianmoss.github.io/website/"
+baseurl: 'https://www.fabian-moss.de' # Website URL
 copyright: '© {year} Fabian C. Moss' # Footer text, e.g. '© {year} Me'
 
 ############################
@@ -27,6 +26,8 @@ theme:
 
 module:
   mounts:
+    - source: static
+      target: static
     - source: layouts
       target: layouts
     - source: assets

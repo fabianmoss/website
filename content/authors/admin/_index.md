@@ -65,7 +65,7 @@ social:
 # and uncomment the lines below.
 - icon: cv-square
   icon_pack: ai
-  link: static/uploads/moss_cv.pdf
+  link: uploads/moss_cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -84,7 +84,9 @@ Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digi
 I am a tenure-track assistant professor for **Digital Music Philology and Music Theory**
 in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/)
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany,
-part of the extended collegial board of the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD), and member of the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools.
+part of the extended collegial board of the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD), and member of the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). 
+
+I teach courses covering a wide range of topics in music theory, computational musicology, and digital tools.
 
 <!-- ### Research Interests -->
 <!---->
