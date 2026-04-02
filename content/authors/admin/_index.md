@@ -86,7 +86,6 @@ in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzbur
 at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany,
 part of the extended collegial board of the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD), and member of the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). 
 
-I [teach courses](teaching) covering a wide range of topics in music theory, computational musicology, and digital tools.
 
 <!-- ### Research Interests -->
 <!---->
@@ -96,12 +95,14 @@ In my research, I bridge concepts and methodologies from the humanities and the 
 and aim to understand music and its structure from an inherently **interdisciplinary perspective**,
 involving fields such as musicology and music theory, mathematics, music information retrieval,
 data science and machine learning, music cognition, and the digital humanities.
+
 One of my central interests lies in analysing large digital corpora in order to better understand musical styles,
 especially from a historical viewpoint. 
 More specifically, I work with large **symbolic datasets** of musical scores and harmonic annotations.
 I  am also interested in **computational modeling** of music and its perception,
 and am fascinated by quantitative approaches to model historical processes.
 
+I [teach courses](teaching) covering a wide range of topics in music theory, computational musicology, and digital tools.
 
 <!--Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), -->
 <!--and before that as doctoral and postdoctoral researcher at -->
