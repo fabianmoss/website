@@ -118,7 +118,7 @@ design:
 }
 
 .card-body {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .card-title {
