@@ -24,24 +24,24 @@ theme:
   - "wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a"
   - "wowchemy-cms/v5@v5.0.0-20211231133358-6d4989f90f7a"
 
-module:
-  mounts:
-    - source: static
-      target: static
-    - source: layouts
-      target: layouts
-    - source: assets
-      target: assets
-    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/assets
-      target: assets
-    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/layouts
-      target: layouts
-    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/static
-      target: static
-    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/data
-      target: data
-    - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/archetypes
-      target: archetypes
+# module:
+#   mounts:
+#     - source: static
+#       target: static
+#     - source: layouts
+#       target: layouts
+#     - source: assets
+#       target: assets
+#     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/assets
+#       target: assets
+#     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/layouts
+#       target: layouts
+#     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/static
+#       target: static
+#     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/data
+#       target: data
+#     - source: themes/wowchemy/v5@v5.0.0-20211231133358-6d4989f90f7a/archetypes
+#       target: archetypes
 
 ############################
 ## ADVANCED
