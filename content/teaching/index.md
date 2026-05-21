@@ -14,23 +14,22 @@ header:
   image: ""
 ---
 
-<details><h2>Fall 2026</h2>
-
 <details>
-  <summary>
-    <b>Computational Musicology: Introduction</b>
-  </summary>
-</details>
-<details>
-  <summary>
-    <b>Cross-Cultural Audio Analysis</b>
-  </summary>
-</details>
-<details>
-  <summary>
-    <b>Open Science in Musicology</b>
-</details>
-
+<summary><h2>Fall 2026</h2></summary>
+  <details>
+    <summary>
+      <h3>Computational Musicology: Introduction</h3>
+    </summary>
+  </details>
+  <details>
+    <summary>
+      <b>Cross-Cultural Audio Analysis</b>
+    </summary>
+  </details>
+  <details>
+    <summary>
+      <b>Open Science in Musicology</b>
+  </details>
 </details>
 
 
