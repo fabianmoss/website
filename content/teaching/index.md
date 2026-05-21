@@ -14,22 +14,22 @@ header:
   image: ""
 ---
 
+## Fall 2026
+
 <details>
-<summary><h2>Fall 2026</h2></summary>
-  <details>
-    <summary>
-      <h3>Computational Musicology: Introduction</h3>
-    </summary>
-  </details>
-  <details>
-    <summary>
-      <b>Cross-Cultural Audio Analysis</b>
-    </summary>
-  </details>
-  <details>
-    <summary>
-      <b>Open Science in Musicology</b>
-  </details>
+  <summary>
+    <b>Computational Musicology: Introduction</b>
+  </summary>
+</details>
+<details>
+  <summary>
+    <b>Cross-Cultural Audio Analysis</b>
+  </summary>
+</details>
+<details>
+  <summary>
+    <b>Open Science in Musicology</b>
+  </summary>
 </details>
 
 
@@ -49,6 +49,7 @@ header:
 <details>
   <summary>
     <b>Musikforschung Live: Besuch und Dokumentation der Fourth International Conference for Computational and Cognitive Musicology</b>
+  </summary>
 </details>
 
 
