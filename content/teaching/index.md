@@ -14,7 +14,7 @@ header:
   image: ""
 ---
 
-## Fall 2026
+<details><h2>Fall 2026</h2>
 
 <details>
   <summary>
@@ -29,6 +29,8 @@ header:
 <details>
   <summary>
     <b>Open Science in Musicology</b>
+</details>
+
 </details>
 
 
