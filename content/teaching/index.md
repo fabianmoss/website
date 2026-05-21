@@ -14,6 +14,24 @@ header:
   image: ""
 ---
 
+## Fall 2026
+
+<details>
+  <summary>
+    <b>Computational Musicology: Introduction</b>
+  </summary>
+</details>
+<details>
+  <summary>
+    <b>Cross-Cultural Audio Analysis</b>
+  </summary>
+</details>
+<details>
+  <summary>
+    <b>Open Science in Musicology</b>
+</details>
+
+
 ## Spring 2026
 
 <details>
