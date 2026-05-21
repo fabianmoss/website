@@ -47,7 +47,7 @@ header:
 </details>
 <details>
   <summary>
-    <b>Musikforschung Live: Besuch und Dokumentation der Fourth International Conference for Computational and Cognitive Musicology>
+    <b>Musikforschung Live: Besuch und Dokumentation der Fourth International Conference for Computational and Cognitive Musicology</b>
 </details>
 
 
