@@ -25,6 +25,7 @@ header:
   <summary>
     <b>Cross-Cultural Audio Analysis</b>
   </summary>
+  Music Information Retrieval (MIR) has over the years produced a number of datasets from different music cultures around the globe. In this seminar, we will survey a number of important publications, discuss particular and cross-cultural research questions, and do hands-on audio analysis using dedicated tools such as _Sonic Visualizer_ or custom-made software libraries. The goals are to develop a basic understanding of how audio analysis works in general and to cultivate a critical stance regarding the possibilities and limitations of computational methods. 
 </details>
 <details>
   <summary>
