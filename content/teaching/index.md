@@ -31,6 +31,7 @@ header:
   <summary>
     <b>Open Science in Musicology</b>
   </summary>
+  "Open Science" is an academic movement aiming at providing open and free access to scientific results, methods, and tools, because what is publicly funded should belong to the public. In this seminar, we will understand important terms in this context, such as the FAIR and CARE principles, Open Data, and licensing. Moreover, we will discuss situations where Open Science seems to be impossible, e.g. regarding sensitive data and copyright, and consider areas of tension when Open Science is confronted with AI. The focus will lie on the context of music research, but the discussions are broadly applicable.
 </details>
 
 
