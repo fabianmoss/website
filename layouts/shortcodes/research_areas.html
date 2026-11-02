@@ -13,8 +13,9 @@
     <a class="research-area-card area-{{ .key }}" href="{{ .url }}">
       {{ with .image }}
         {{ with resources.Get (strings.TrimPrefix "/" .) }}
+          {{ $img := .Resize "640x webp" }}
           <div class="research-area-card__media">
-            <img src="{{ .RelPermalink }}" alt="" loading="lazy" width="1200" height="675">
+            <img src="{{ $img.RelPermalink }}" alt="" loading="lazy" width="{{ $img.Width }}" height="{{ $img.Height }}">
           </div>
         {{ end }}
       {{ end }}

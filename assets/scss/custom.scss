@@ -9,6 +9,39 @@
 // intentionally left for a later pass.
 // =============================================================================
 
+// Self-hosted fonts (latin subsets). Replaces the Google Fonts request.
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/inter-var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/source-serif-pro-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/source-serif-pro-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/source-serif-pro-700.woff2") format("woff2");
+}
+
 // -----------------------------------------------------------------------------
 // 1. Design tokens
 // -----------------------------------------------------------------------------
@@ -113,7 +146,11 @@ h3 {
 
 // Keep the serif display face for H1 only; all lower-level headings use the
 // body sans so the pairing stays consistent with running text.
-h2,
+h1,
+h2 {
+  font-family: $sta-font-heading, serif;
+}
+
 h3,
 h4,
 h5,
@@ -134,7 +171,7 @@ p {
 // Section headings on the homepage (widget titles + subtitles). Serif title,
 // restrained weight, muted subtitle, and a consistent left alignment — the
 // columns-1 widgets (Research areas, Videos) would otherwise centre theirs.
-.home-section .section-heading h1 {
+.home-section .section-heading h2 {
   margin-bottom: var(--fc-space-2);
   font-size: clamp(1.75rem, 2.6vw, 2.15rem);
   font-weight: 600;
@@ -531,7 +568,7 @@ body.dark section#about.wg-about {
     0 0 0 1px var(--fc-border);
 }
 
-.wg-about .portrait-title h2 {
+.wg-about .portrait-title h1 {
   margin: var(--fc-space-4) 0 var(--fc-space-2);
   color: var(--fc-heading);
   font-family: $sta-font-heading, serif;
@@ -1431,7 +1468,7 @@ body.teaching-page .article-style details a {
   }
 }
 
-.home-section .section-heading h1 {
+.home-section .section-heading h2 {
   margin-bottom: var(--fc-space-1);
 }
 
