@@ -255,7 +255,109 @@ button:focus-visible,
 }
 
 // -----------------------------------------------------------------------------
-// 5. Motion preferences
+// 5. Navigation bar
+// -----------------------------------------------------------------------------
+// Fixed, translucent bar over a blurred backdrop; animated underline on the
+// desktop links and a calmer active state. All colours come from the tokens so
+// the dark variant follows automatically.
+
+.navbar {
+  background: rgba(255, 255, 255, 0.82);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--fc-border);
+  box-shadow: none;
+  font-size: 0.95rem;
+}
+
+body.dark .navbar {
+  background: rgba(26, 31, 43, 0.82);
+  border-bottom-color: var(--fc-border);
+  box-shadow: none;
+}
+
+// Brand / wordmark
+.navbar .navbar-brand {
+  color: var(--fc-heading) !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+// Desktop links: muted at rest, heading colour on hover, accent underline that
+// grows in from the left.
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    position: relative;
+    color: var(--fc-text-muted);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: color 0.2s ease;
+  }
+
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link:focus {
+    color: var(--fc-heading);
+  }
+
+  .navbar .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    height: 2px;
+    border-radius: var(--fc-radius-pill);
+    background: var(--fc-accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.22s ease;
+  }
+
+  .navbar .navbar-nav .nav-link:hover::after,
+  .navbar .navbar-nav .nav-link:focus-visible::after,
+  .navbar .navbar-nav .nav-link.active::after {
+    transform: scaleX(1);
+  }
+
+  // Theme marks the active link with !important + bold; keep the emphasis but
+  // align the colour with the accent.
+  .navbar .navbar-nav .nav-link.active {
+    color: var(--fc-accent) !important;
+    font-weight: 600 !important;
+  }
+}
+
+// Mobile: the expanded menu needs an opaque surface behind the blur.
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0.5rem 1rem 1rem;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--fc-border);
+  }
+
+  body.dark .navbar-collapse {
+    background: rgba(26, 31, 43, 0.97);
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: var(--fc-text);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar .navbar-nav .nav-link.active {
+    color: var(--fc-accent) !important;
+  }
+}
+
+.navbar-toggler {
+  color: var(--fc-text);
+}
+
+// -----------------------------------------------------------------------------
+// 6. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,
