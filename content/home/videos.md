@@ -11,7 +11,6 @@ headless: true
 weight: 3
 
 title: Videos
-subtitle: 'Talks, interviews, and features'
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
