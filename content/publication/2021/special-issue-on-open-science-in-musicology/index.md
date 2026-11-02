@@ -3,7 +3,7 @@ title: "Special Issue on Open Science in Musicology"
 authors: ["admin", "Markus Neuwirth"]
 date: 2021-01-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
-publication_types: ["0"]
+publication_types: ["5"]
 publication: "Empirical Musicology Review, 16(1)"
 publication_short: ""
 abstract: ""

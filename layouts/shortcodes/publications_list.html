@@ -33,6 +33,8 @@
     {{ if $isLatest }}{{ $latestCount = add $latestCount 1 }}{{ end }}
     <article class="pub-item" data-year="{{ $year }}"{{ if $hide }} hidden{{ end }}>
       <div class="pub-body">
+        {{ $ptype := partial "functions/publication_type" . }}
+        <div class="pub-type"><i class="fas {{ $ptype.icon }}" aria-hidden="true"></i>{{ $ptype.label }}</div>
         <h3 class="pub-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
         {{ if .Params.authors }}

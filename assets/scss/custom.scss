@@ -830,6 +830,33 @@ body.dark .video-play::before {
 // If the DOI pill was the only attachment, collapse the empty row.
 // (The DOI icon is now rendered inside .pub-links, so the row must stay.)
 
+.pub-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: var(--fc-space-1);
+  color: var(--fc-text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pub-type i {
+  color: var(--fc-accent);
+  font-size: 0.8rem;
+}
+
+.entry-type {
+  color: var(--fc-text-muted);
+  font-weight: 600;
+}
+
+.entry-type i {
+  margin-right: 0.3rem;
+  color: var(--fc-accent);
+}
+
 .pub-title {
   margin: 0 0 var(--fc-space-1);
   font-size: 1.08rem;

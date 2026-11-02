@@ -43,6 +43,9 @@
         <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
         <div class="entry-meta">
           {{ if eq $page_type "publication" }}
+            {{ $ptype := partial "functions/publication_type" $item }}
+            <span class="entry-type"><i class="fas {{ $ptype.icon }}" aria-hidden="true"></i>{{ $ptype.label }}</span>
+            <span class="middot-divider"></span>
             {{ if $item.Params.authors }}{{ partial "page_metadata_authors" $item }}{{ end }}
             {{ with $item.Params.publication }}
               {{ if $item.Params.authors }}<span class="middot-divider"></span>{{ end }}
