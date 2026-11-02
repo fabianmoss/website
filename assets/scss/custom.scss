@@ -259,9 +259,13 @@ button:focus-visible,
 }
 
 .card.research-card .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5em;
   margin: 0;
   color: #fff;
-  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
   font-weight: 600;
   line-height: 1.25;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
@@ -484,8 +488,8 @@ section#about.wg-about {
 
 // Lead paragraph of the bio stands out slightly from the rest.
 .wg-about .article-style > p:first-of-type {
-  font-size: 1.12rem;
-  line-height: 1.65;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--fc-heading);
 }
 
