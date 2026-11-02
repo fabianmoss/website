@@ -7,7 +7,7 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 3
+weight: 4
 
 title: Publications
 subtitle: 'Journal Articles, Conference Papers, Datasets'
@@ -19,4 +19,3 @@ design:
 
 {{< publications_list >}}
 
-<p class="see-all"><a href="./publication/">View all publications &rarr;</a></p>

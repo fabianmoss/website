@@ -20,13 +20,18 @@
 {{ end }}
 {{ $latestYear := "" }}
 {{ with index $items 0 }}{{ $latestYear = .Date.Format "2006" }}{{ end }}
+{{ $latestCount := 0 }}
 
-<div id="publications-timeline" class="year-timeline" role="group" aria-label="Filter publications by year"></div>
+<div id="publications-timeline" class="year-timeline year-timeline--bars" role="group" aria-label="Filter publications by year"></div>
 
 <div class="pub-list">
   {{ range $items }}
     {{ $year := .Date.Format "2006" }}
-    <article class="pub-item" data-year="{{ $year }}"{{ if ne $year $latestYear }} hidden{{ end }}>
+    {{ $isLatest := eq $year $latestYear }}
+    {{ $hide := not $isLatest }}
+    {{ if and $isLatest (ge $latestCount 5) }}{{ $hide = true }}{{ end }}
+    {{ if $isLatest }}{{ $latestCount = add $latestCount 1 }}{{ end }}
+    <article class="pub-item" data-year="{{ $year }}"{{ if $hide }} hidden{{ end }}>
       <div class="pub-body">
         <h3 class="pub-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
@@ -87,6 +92,14 @@
         if (!years.length) return;
         years.sort(function (a, b) { return Number(b) - Number(a); });
 
+        var counts = {};
+        items.forEach(function (item) {
+          var year = item.dataset.year;
+          counts[year] = (counts[year] || 0) + 1;
+        });
+        var maxCount = 0;
+        years.forEach(function (year) { maxCount = Math.max(maxCount, counts[year] || 0); });
+
         var line = document.createElement('span');
         line.className = 'year-timeline__line';
         line.setAttribute('aria-hidden', 'true');
@@ -94,29 +107,75 @@
 
         var buttons = [];
 
-        function addButton(label, value) {
+        function addButton(label, value, count) {
           var button = document.createElement('button');
           button.type = 'button';
           button.className = 'year-timeline__year';
-          button.textContent = label;
           button.dataset.year = value;
           button.setAttribute('aria-pressed', 'false');
+          button.setAttribute('aria-label', count ? label + ' (' + count + ' items)' : label);
           button.addEventListener('click', function () { select(value); });
+
+          var track = document.createElement('span');
+          track.className = 'year-timeline__track';
+          var bar = document.createElement('span');
+          bar.className = 'year-timeline__bar';
+          if (count && maxCount) {
+            bar.style.height = Math.max(3, Math.round((count / maxCount) * 100)) + '%';
+            bar.title = count + (count === 1 ? ' item' : ' items');
+          }
+          track.appendChild(bar);
+
+          var labelEl = document.createElement('span');
+          labelEl.className = 'year-timeline__label';
+          labelEl.textContent = label;
+
+          button.appendChild(track);
+          button.appendChild(labelEl);
           container.appendChild(button);
           buttons.push(button);
         }
 
+        var VISIBLE_LIMIT = 5;
+        var selectedYear = years[0];
+        var expanded = false;
+        var list = section.querySelector('.pub-list');
+        var toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'year-list-toggle';
+        toggle.hidden = true;
+        if (list && list.parentNode) list.parentNode.insertBefore(toggle, list.nextSibling);
+
+        function updateToggle(count) {
+          toggle.hidden = count <= VISIBLE_LIMIT;
+          toggle.textContent = expanded ? 'Show fewer' : 'Show all ' + count + ' from ' + selectedYear;
+          toggle.setAttribute('aria-expanded', String(expanded));
+        }
+
+        function applyFilter() {
+          var yearItems = items.filter(function (item) { return item.dataset.year === selectedYear; });
+          items.forEach(function (item) { item.hidden = true; });
+          yearItems.forEach(function (item, index) {
+            item.hidden = expanded ? false : index >= VISIBLE_LIMIT;
+          });
+          updateToggle(yearItems.length);
+        }
+
+        toggle.addEventListener('click', function () {
+          expanded = !expanded;
+          applyFilter();
+        });
+
         function select(value) {
+          selectedYear = value;
+          expanded = false;
           buttons.forEach(function (button) {
             button.setAttribute('aria-pressed', String(button.dataset.year === value));
           });
-          items.forEach(function (item) {
-            item.hidden = !(value === 'all' || item.dataset.year === value);
-          });
+          applyFilter();
         }
 
-        years.forEach(function (year) { addButton(year, year); });
-        addButton('All', 'all');
+        years.forEach(function (year) { addButton(year, year, counts[year] || 0); });
         select(years[0]);
       }
 

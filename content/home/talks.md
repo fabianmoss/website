@@ -7,15 +7,15 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 4
+weight: 5
 
-title: 'Recent & upcoming talks'
+title: Talks
+subtitle: 'Conferences, workshops, and invited talks'
 
 design:
   # Full-width list so it aligns with the other homepage sections.
   columns: '1'
 ---
 
-{{< talks_list count="6" >}}
+{{< talks_list >}}
 
-<p class="see-all"><a href="./event/">View all talks &rarr;</a></p>

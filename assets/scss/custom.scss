@@ -658,19 +658,8 @@ body.dark .video-play::before {
 // the list a timeline feel; title, authors, venue and the theme's DOI/PDF
 // buttons (styled as pills) carry the rest.
 
-#publications .see-all {
-  margin: var(--fc-space-4) 0 0;
-  text-align: right;
-}
-
 #publications [hidden] {
   display: none !important;
-}
-
-#publications .see-all a {
-  color: var(--fc-accent);
-  font-size: 0.9rem;
-  font-weight: 500;
 }
 
 .pub-list {
@@ -1014,7 +1003,7 @@ body.teaching-page .article-style [hidden] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--fc-space-2);
+  gap: 0.35rem;
   min-width: 3.25rem;
   padding: 0;
   color: var(--fc-text-muted);
@@ -1024,6 +1013,69 @@ body.teaching-page .article-style [hidden] {
   border: 0;
   cursor: pointer;
   transition: color 0.2s ease;
+}
+
+// Small per-year bar chart shown between the dot and the year label.
+.year-timeline__track {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
+
+.year-timeline__bar {
+  width: 10px;
+  height: 0;
+  background: var(--fc-accent);
+  border-radius: 3px 3px 0 0;
+  opacity: 0.35;
+  transition: opacity 0.2s ease;
+}
+
+.year-timeline__year:hover .year-timeline__bar,
+.year-timeline__year[aria-pressed="true"] .year-timeline__bar {
+  opacity: 1;
+}
+
+.year-timeline__label {
+  line-height: 1;
+}
+
+// With bars, stack track -> dot -> label and move the connecting line down so
+// the bars sit above the timeline rather than below it.
+.year-timeline--bars .year-timeline__track {
+  order: 1;
+}
+
+.year-timeline--bars .year-timeline__year::before {
+  order: 2;
+}
+
+.year-timeline--bars .year-timeline__label {
+  order: 3;
+}
+
+.year-timeline--bars .year-timeline__line {
+  top: calc(var(--fc-space-4) + 30px + 0.35rem + 6px);
+}
+
+// "Show all N from YYYY" control below the yearly lists.
+.year-list-toggle {
+  display: block;
+  margin: var(--fc-space-4) auto 0;
+  padding: 0;
+  color: var(--fc-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.year-list-toggle:hover,
+.year-list-toggle:focus-visible {
+  text-decoration: underline;
 }
 
 .year-timeline__year::before {
@@ -1128,15 +1180,8 @@ body.teaching-page .article-style details a {
 // Rendered by `layouts/shortcodes/talks_list.html`: a date badge column, title,
 // event/location, optional "Upcoming" marker, and attachment pills.
 
-#talks .see-all {
-  margin: var(--fc-space-4) 0 0;
-  text-align: right;
-}
-
-#talks .see-all a {
-  color: var(--fc-accent);
-  font-size: 0.9rem;
-  font-weight: 500;
+#talks [hidden] {
+  display: none !important;
 }
 
 .talk-list {
