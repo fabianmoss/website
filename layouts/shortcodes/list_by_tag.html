@@ -37,6 +37,17 @@
 <ul class="entry-list">
   {{ range $items }}
     {{ $item := . }}
+    {{ $venueHref := "" }}
+    {{ with $item.Params.doi }}
+      {{ $venueHref = . }}
+      {{ if not (hasPrefix . "http") }}{{ $venueHref = printf "https://doi.org/%s" . }}{{ end }}
+    {{ end }}
+    {{ if not $venueHref }}
+      {{ with $item.Params.url_pdf }}
+        {{ $venueHref = . }}
+        {{ if not (hasPrefix . "http") }}{{ $venueHref = . | relURL }}{{ end }}
+      {{ end }}
+    {{ end }}
     <li class="entry-item">
       <span class="entry-year">{{ .Date.Format "2006" }}</span>
       <div class="entry-body">
@@ -49,7 +60,7 @@
             {{ if $item.Params.authors }}{{ partial "page_metadata_authors" $item }}{{ end }}
             {{ with $item.Params.publication }}
               {{ if $item.Params.authors }}<span class="middot-divider"></span>{{ end }}
-              <em>{{ . | markdownify }}</em>
+              <em>{{ if $venueHref }}<a href="{{ $venueHref }}" target="_blank" rel="noopener">{{ end }}{{ . | markdownify }}{{ if $venueHref }}</a>{{ end }}</em>
             {{ end }}
           {{ else if eq $page_type "event" }}
             {{ if $item.Params.authors }}{{ partial "page_metadata_authors" $item }}<span class="middot-divider"></span>{{ end }}

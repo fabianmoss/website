@@ -44,13 +44,27 @@
           <div class="pub-authors">{{ partial "page_metadata_authors" . }}</div>
         {{ end }}
 
+        {{ $venueHref := "" }}
+        {{ with .Params.doi }}
+          {{ $venueHref = . }}
+          {{ if not (hasPrefix . "http") }}{{ $venueHref = printf "https://doi.org/%s" . }}{{ end }}
+        {{ end }}
+        {{ if not $venueHref }}
+          {{ with .Params.url_pdf }}
+            {{ $venueHref = . }}
+            {{ if not (hasPrefix . "http") }}{{ $venueHref = . | relURL }}{{ end }}
+          {{ end }}
+        {{ end }}
+
         {{ if or .Params.publication .Params.publication_short }}
           <div class="pub-venue">
+            {{ if $venueHref }}<a href="{{ $venueHref }}" target="_blank" rel="noopener">{{ end }}
             {{ if .Params.publication }}
               {{ .Params.publication | markdownify }}
             {{ else }}
               {{ .Params.publication_short | markdownify }}
             {{ end }}
+            {{ if $venueHref }}</a>{{ end }}
           </div>
         {{ end }}
 
@@ -58,18 +72,9 @@
           <p class="pub-summary">{{ . | markdownify | emojify }}</p>
         {{ end }}
 
-        {{ if or .Params.doi (partial "functions/has_attachments" .) }}
+        {{ if partial "functions/has_attachments" . }}
           <div class="pub-links">
-            {{ with .Params.doi }}
-              {{ $href := . }}
-              {{ if not (hasPrefix . "http") }}{{ $href = printf "https://doi.org/%s" . }}{{ end }}
-              <a class="pub-doi" href="{{ $href }}" target="_blank" rel="noopener" aria-label="Open DOI" title="DOI">
-                <i class="fas fa-link" aria-hidden="true"></i>
-              </a>
-            {{ end }}
-            {{ if partial "functions/has_attachments" . }}
-              {{ partial "page_links" (dict "page" . "is_list" 1) }}
-            {{ end }}
+            {{ partial "page_links" (dict "page" . "is_list" 1) }}
           </div>
         {{ end }}
       </div>
