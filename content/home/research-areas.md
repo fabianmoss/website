@@ -10,7 +10,6 @@ headless: true
 weight: 2 
 
 title: "Research areas"
-subtitle: '(under construction)'
 
 design:
   columns: '1'
