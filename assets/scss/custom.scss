@@ -496,7 +496,120 @@ section#about.wg-about {
 }
 
 // -----------------------------------------------------------------------------
-// 7. Motion preferences
+// 7. Component: video grid (homepage)
+// -----------------------------------------------------------------------------
+// Cards are lightweight "facades": a thumbnail plus play button. The YouTube
+// iframe is only created on click (see layouts/shortcodes/video_grid.html),
+// which keeps the page fast and the layout responsive.
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--fc-space-5);
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-3);
+  margin: 0;
+}
+
+.video-facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.video-facade:hover,
+.video-facade:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.video-facade:focus-visible {
+  outline: 2px solid var(--fc-accent);
+  outline-offset: 3px;
+}
+
+.video-facade img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease;
+}
+
+.video-facade:hover img {
+  opacity: 0.9;
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.video-play::before {
+  content: "";
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: rgba(17, 24, 39, 0.72);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.video-facade:hover .video-play::before,
+.video-facade:focus-visible .video-play::before {
+  background-color: var(--fc-accent);
+  transform: scale(1.06);
+}
+
+.video-iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+}
+
+.video-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.video-title {
+  color: var(--fc-heading);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.video-source {
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+}
+
+// -----------------------------------------------------------------------------
+// 8. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,

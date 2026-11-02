@@ -1,0 +1,22 @@
+# Homepage video grid.
+# Add a new item to publish another video on the homepage:
+#   - youtube_id: the 11-character id from the watch URL
+#     short_title: concise card title (falls back to `title`)
+#     title: full video title, used for accessibility
+#     source: channel / publisher shown under the title
+#     thumbnail: optional custom thumbnail URL (defaults to hqdefault)
+
+- youtube_id: ZAGucLahvn0
+  title: "#neuanderuni – Prof. Dr. Fabian Moss, Juniorprofessur für Digitale Musikphilologie und Musiktheorie"
+  short_title: "#neuanderuni: Digitale Musikphilologie und Musiktheorie"
+  source: Julius-Maximilians-Universität Würzburg
+
+- youtube_id: UOBG5ZNgzjA
+  title: "Decoding Beethoven's music style using data science"
+  short_title: "Decoding Beethoven's music style"
+  source: EPFL
+
+- youtube_id: y5TQN09zDVI
+  title: "Musique – Journées d'information 2021 de l'EPFL"
+  short_title: "Musique: EPFL Journées d'information 2021"
+  source: EPFL Studies
