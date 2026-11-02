@@ -1436,20 +1436,25 @@ body.teaching-page .article-style details a {
 }
 
 @media (max-width: 575.98px) {
+  // Keep the calendar badge vertical so it reads the same as on desktop.
   .talk-item {
-    grid-template-columns: 1fr;
+    grid-template-columns: 3.25rem 1fr;
+    gap: var(--fc-space-2);
+    padding: var(--fc-space-3);
   }
 
   .talk-date {
-    flex-direction: row;
-    align-self: start;
-    gap: var(--fc-space-1);
-    padding: var(--fc-space-1) var(--fc-space-3);
+    padding: var(--fc-space-1) 0.15rem;
+  }
+
+  .talk-month,
+  .talk-year {
+    font-size: 0.65rem;
   }
 
   .talk-day {
-    margin: 0;
-    font-size: 1.1rem;
+    margin: 0.1rem 0;
+    font-size: 1.25rem;
   }
 }
 
