@@ -108,6 +108,17 @@ h3 {
   font-size: clamp(1.2rem, 2.2vw, 1.4rem);
 }
 
+// Keep the serif display face for H1 only; all lower-level headings use the
+// body sans so the pairing stays consistent with running text.
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-subheading {
+  font-family: $sta-font-body, sans-serif;
+}
+
 p {
   text-wrap: pretty;
 }
@@ -117,13 +128,24 @@ p {
   max-width: var(--fc-measure);
 }
 
-// Section heading spacing on the homepage (widget titles + subtitles).
+// Section headings on the homepage (widget titles + subtitles). Serif title,
+// restrained weight, muted subtitle, and a consistent left alignment — the
+// columns-1 widgets (Research areas, Videos) would otherwise centre theirs.
 .home-section .section-heading h1 {
   margin-bottom: var(--fc-space-2);
+  font-size: clamp(1.75rem, 2.6vw, 2.15rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
 }
 
 .home-section .section-heading p {
   color: var(--fc-text-muted);
+  font-size: 1.05rem;
+}
+
+.home-section .section-heading.text-center {
+  text-align: left !important;
 }
 
 // -----------------------------------------------------------------------------

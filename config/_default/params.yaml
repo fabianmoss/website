@@ -7,7 +7,7 @@
 
 theme: minimal # "Earth" # Ocean
 day_night: false
-font: ''
+font: modern
 font_size: s
 
 # SEO

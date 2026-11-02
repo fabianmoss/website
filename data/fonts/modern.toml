@@ -1,0 +1,10 @@
+# Site font set: serif headings on a neutral sans body.
+# Loaded via `font: modern` in config/_default/params.yaml.
+name = "Modern"
+
+google_fonts = "family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&family=Roboto+Mono"
+
+heading_font = "Source Serif Pro"
+body_font = "Inter"
+nav_font = "Inter"
+mono_font = "Roboto Mono"
