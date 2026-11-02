@@ -20,9 +20,10 @@ design:
   <div class="card-container">
     <a href="/research/computational-musicology/" class="card-link">
       <div class="card research-card">
-        <div class="card-image computational-musicology"></div>
-        <div class="card-body">
+        <div class="card-image computational-musicology">
           <h3 class="card-title">Computational Musicology</h3>
+        </div>
+        <div class="card-body">
           <p class="card-text">Exploring music through data and computational models</p>
         </div>
       </div>
@@ -32,9 +33,10 @@ design:
    <div class="card-container">
     <a href="/research/music-theory/" class="card-link">
       <div class="card research-card">
-        <div class="card-image music-theory"></div>
-        <div class="card-body">
+        <div class="card-image music-theory">
           <h3 class="card-title">Music Theory & Analysis</h3>
+        </div>
+        <div class="card-body">
           <p class="card-text">Understanding musical structures through algorithms</p>
         </div>
       </div>
@@ -44,9 +46,10 @@ design:
   <div class="card-container">
     <a href="/research/digital-humanities/" class="card-link">
       <div class="card research-card">
-        <div class="card-image digital-humanities"></div>
-        <div class="card-body">
+        <div class="card-image digital-humanities">
           <h3 class="card-title">Music Encoding & Digital Humanities</h3>
+        </div>
+        <div class="card-body">
           <p class="card-text">Applying digital methods to humanities research</p>
         </div>
       </div>
@@ -55,9 +58,10 @@ design:
   <div class="card-container">
     <a href="/research/cultural-evolution/" class="card-link">
       <div class="card research-card">
-        <div class="card-image cultural-evolution"></div>
-        <div class="card-body">
+        <div class="card-image cultural-evolution">
           <h3 class="card-title">Cultural Evolution & Music</h3>
+        </div>
+        <div class="card-body">
           <p class="card-text">Tracing the transmission of music through history</p>
         </div>
       </div>
@@ -74,20 +78,25 @@ design:
 
 .card-container {
   perspective: 1000px;
+  height: 100%;
 }
 
 .card-link {
+  display: block;
+  height: 100%;
   text-decoration: none;
   color: inherit;
 }
 
 .research-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 80%;
 }
 
 .research-card:hover {
@@ -96,41 +105,51 @@ design:
 }
 
 .card-image {
-  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  padding: 1.25rem;
+  text-align: center;
   background-size: cover;
   background-position: center;
 }
 
 .card-image.computational-musicology {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
 
 .card-image.cultural-evolution {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  background: linear-gradient(135deg, #92400e 0%, #b45309 100%);
 }
 
 .card-image.music-theory {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #be123c 0%, #db2777 100%);
 }
 
 .card-image.digital-humanities {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #075985 0%, #0e7490 100%);
 }
 
 .card-body {
+  flex: 1;
   padding: 1.25rem;
 }
 
 .card-title {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.1rem, 1.5vw, 1.35rem);
   font-weight: 600;
+  line-height: 1.25;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 .card-text {
   margin: 0;
-  color: #666;
+  color: #4b5563;
   font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
