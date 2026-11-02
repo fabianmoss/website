@@ -34,7 +34,10 @@
     <article class="pub-item" data-year="{{ $year }}"{{ if $hide }} hidden{{ end }}>
       <div class="pub-body">
         {{ $ptype := partial "functions/publication_type" . }}
-        <div class="pub-type"><i class="fas {{ $ptype.icon }}" aria-hidden="true"></i>{{ $ptype.label }}</div>
+        <div class="pub-labels">
+          <span class="pub-type"><i class="fas {{ $ptype.icon }}" aria-hidden="true"></i>{{ $ptype.label }}</span>
+          {{ if .Params.accepted }}<span class="pub-status">Accepted</span>{{ end }}
+        </div>
         <h3 class="pub-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
         {{ if .Params.authors }}

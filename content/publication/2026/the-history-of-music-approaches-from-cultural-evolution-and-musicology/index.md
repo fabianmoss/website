@@ -1,6 +1,6 @@
 ---
 title: "The history of music: Approaches from cultural evolution and musicology"
-authors: ["admin", "Mason Youngblood"]
+authors: ["Mason Youngblood", "admin"]
 date: 2026-01-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["6"]

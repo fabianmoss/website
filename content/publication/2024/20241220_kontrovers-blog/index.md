@@ -18,7 +18,7 @@ publication_type_label: "Blog post"
 publication_type_icon: "fa-pen-nib"
 
 # Publication name and optional abbreviated publication name.
-publication: "kontrovers -- Debatten zur Musikwissenschaft"
+publication: "kontrovers – Debatten zur Musikwissenschaft"
 publication_short: ""
 
 abstract: ""

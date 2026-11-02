@@ -4,7 +4,7 @@
 title: "Encoding polymeter: A corpus of Hugo Distler's «Der Jahrkreis» op. 5 in different symbolic formats"
 authors: [Lucas Hofmann, Craig S. Sapp, admin]
 date: 2026-04-01T15:32:32+02:00
-doi: ""
+doi: "10.1145/3815723.3815729"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2026-04-01T15:32:32+02:00
@@ -16,7 +16,7 @@ publishDate: 2026-04-01T15:32:32+02:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Proceedings of the 13th International Conference on Digital Libraries for Musicology (DLfM), 47–55"
 publication_short: ""
 
 abstract: "We present DistlerCorpus, a corpus of Hugo Distler's _Der Jahrkreis_ op. 5 (1933), a collection of 52 predominantly three-voice motets. The corpus is provided in Humdrum and MEI formats. The creation of the data set addresses Distler’s distinctive notational treatment of polymeter: voice-specific time signatures and the resulting non-aligned barlines, combined with frequent homometric meter changes. These characteristics expose limitations in current symbolic music encoding formats (MusicXML, MuseScoreXML, MEI, Humdrum) and motivate our proposed recommendations for encoding polymetric notation in digital music corpora."

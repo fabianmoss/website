@@ -1,15 +1,16 @@
 ---
 title: "A Bayesian Approach to Modality and Regionality in Medieval Chant"
-authors: ["admin", "Tim Eipert", "Christoph Finkensiep"]
+authors: ["Tim Eipert", "Christoph Finkensiep", "admin"]
 date: 2026-01-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["1"]
-publication: "Computational Humanities Research (CHR, accepted)"
+publication: "Computational Humanities Research (CHR)"
 publication_short: ""
 abstract: ""
 summary: "Accepted for publication."
 tags: ["computational musicology", "plainchant", "Bayesian modeling", "digital humanities"]
 categories: ["computational musicology", "digital humanities"]
+accepted: true
 featured: false
 url_pdf: ""
 url_code: ""

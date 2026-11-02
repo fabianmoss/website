@@ -4,7 +4,7 @@
 title: "Mapping the space of harmonic cadences between Brazilian choro, jazz and Anglophone popular music"
 authors: [Mauri Orsini Windholz, admin]
 date: 2026-04-01T15:32:24+02:00
-doi: ""
+doi: "10.1145/3815723.3815724"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2026-04-01T15:32:24+02:00
@@ -16,7 +16,7 @@ publishDate: 2026-04-01T15:32:24+02:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceddings of the 13th International Conference for Digital Libraries for Musicology"
+publication: "Proceedings of the 13th International Conference on Digital Libraries for Musicology (DLfM), 1–9"
 publication_short: ""
 
 abstract: "Corpus studies on musical harmony have increased musicology's knowledge of the harmonic behavior of different styles based on large datasets. However, such studies rarely compare corpora of different styles in a direct, data-driven manner. Moreover, such studies typically focus on styles from the Global North, raising concerns about the limited diversity of the music and identities they represent. This paper reports on an experiment that addresses these issues by extending a methodology to analyze and compare harmonic progressions at moments of formal segmentation in different styles based on corpora of Roman numeral annotations, and deploying it to the styles of Brazilian choro, Anglophone popular and jazz music. The results indicate that, at formal boundaries, the jazz style adopts more falling-5th root-motions, more use of 7th chords, as well as much higher incidence of tonicizing non-I harmonies, than the other two styles. In a previous study, choro was found to deploy more applied dominants than pop and Western classical music. The current results indicate that this harmonic device is even more widespread in jazz. However, applied dominants in jazz are typically nested within applied 2-5-1 patterns. Common tonal harmonic motions such as IV -- V7 -- I were found to be less typical of jazz than the other two styles, a result that contrasted with the previous study, which indicated that such motions are present to a similar degree in choro, popular and Western classical. This suggests that jazz harmonic language may be more distant from tonal motions that are considered prototypical in music theory than the other three styles. By drawing on data-driven methods and large corpora, this study enables a more robust characterization of the harmonic behavior of these styles and how they compare to each other, increasing our knowledge of the development of triadic harmony in different parts of the world. "

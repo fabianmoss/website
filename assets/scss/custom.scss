@@ -830,16 +830,34 @@ body.dark .video-play::before {
 // If the DOI pill was the only attachment, collapse the empty row.
 // (The DOI icon is now rendered inside .pub-links, so the row must stay.)
 
+.pub-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fc-space-2);
+  margin-bottom: var(--fc-space-1);
+}
+
 .pub-type {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  margin-bottom: var(--fc-space-1);
   color: var(--fc-text-muted);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.pub-status {
+  padding: 0.05rem 0.45rem;
+  color: var(--fc-accent);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--fc-accent-soft);
+  border-radius: var(--fc-radius-pill);
 }
 
 .pub-type i {
@@ -873,9 +891,13 @@ body.dark .video-play::before {
 }
 
 .pub-authors {
+  display: -webkit-box;
+  overflow: hidden;
   color: var(--fc-text-muted);
   font-size: 0.88rem;
   line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .pub-authors a {
@@ -896,11 +918,15 @@ body.dark .video-play::before {
 }
 
 .pub-summary {
+  display: -webkit-box;
+  overflow: hidden;
   max-width: none;
   margin: var(--fc-space-2) 0 0;
   color: var(--fc-text-muted);
   font-size: 0.92rem;
   line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .pub-links {
@@ -908,7 +934,7 @@ body.dark .video-play::before {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--fc-space-2);
-  margin-top: var(--fc-space-3);
+  margin-top: var(--fc-space-2);
   line-height: 1;
 }
 

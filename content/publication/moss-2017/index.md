@@ -5,8 +5,10 @@ publishDate: 2019-10-02T15:46:12.126586Z
 authors: [admin]
 publication_types: ["2"]
 abstract: ""
+publication_type_label: "Book review"
+publication_type_icon: "fa-quote-left"
 featured: false
-publication: "*Music Theory & Analysis*"
+publication: "Music Theory & Analysis"
 doi: "10.11116/MTA.4.1.71"
 links:
 - name: Preprint

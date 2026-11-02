@@ -1,15 +1,16 @@
 ---
 title: "Studying Chord Properties from Audio: A Diachronic Analysis of Root, Bass, and Pitch-Class Content"
-authors: ["admin", "Benedikt Henzel", "Yuxuan Ding", "Christof Weiß"]
+authors: ["Benedikt Henzel", "Yuxuan Ding", "admin", "Christof Weiß"]
 date: 2026-01-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["1"]
-publication: "Computational Humanities Research (CHR, accepted)"
+publication: "Computational Humanities Research (CHR)"
 publication_short: ""
 abstract: ""
 summary: "Accepted for publication."
 tags: ["computational musicology", "chord analysis", "audio", "corpus studies"]
 categories: ["computational musicology"]
+accepted: true
 featured: false
 url_pdf: ""
 url_code: ""

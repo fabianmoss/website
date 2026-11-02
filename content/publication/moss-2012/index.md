@@ -6,7 +6,7 @@ authors: [admin]
 publication_types: ["7"]
 abstract: ""
 featured: false
-publication: ""
+publication: "Master’s thesis, Hochschule für Musik und Tanz Köln"
 tags: ["Albert Simon", "Music Theory", "Neo-Riemannian Theory", "Theory of Tonal Fields", "Tonality"]
 projects: [music-theory]
 ---

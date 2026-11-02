@@ -16,7 +16,7 @@ publishDate: 2021-11-12T08:55:54+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the 22nd International  Society for Music Information Retrieval Conference"
+publication: "Proceedings of the 22nd International Society for Music Information Retrieval Conference"
 publication_short: ""
 
 abstract: "The creation and curation of labeled datasets can be an arduous, expensive, and time-consuming task.
