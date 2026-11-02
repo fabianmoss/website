@@ -42,6 +42,10 @@
           {{ if ge .Date now }}<span class="talk-badge">Upcoming</span>{{ end }}
         </h3>
 
+        {{ if .Params.authors }}
+          <div class="talk-speakers">{{ partial "page_metadata_authors" . }}</div>
+        {{ end }}
+
         {{ if or .Params.event .Params.location }}
           <div class="talk-meta">
             {{ with .Params.event }}<span class="talk-event">{{ . }}</span>{{ end }}

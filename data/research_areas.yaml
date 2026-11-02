@@ -1,10 +1,9 @@
-# Images: Wikimedia Commons (public domain / CC0). See individual files:
-#   computational-musicology — Man-person-technology-music (CC0)
-#   music-theory — Gavotte from French suite n. 5 (public domain)
-#   digital-humanities — Chigi codex (public domain)
-#   cultural-evolution — Assamese folk wind instruments (CC0)
-# Research area cards shown on the homepage.
-# `key` is used for styling and for matching tags/categories in the counts.
+# Images are figures from Fabian Moss's own publications and projects:
+#   computational-musicology — line of fifths / tonal pitch-class co-evolution (JMM 2022)
+#   music-theory — Wavescapes (Moss et al., Musicae Scientiae 2022)
+#   digital-humanities — DigiMusTh project banner (text collection/encoding)
+#   cultural-evolution — chord evolution in popular music (CHR 2024)
+
 - key: computational-musicology
   title: "Computational Musicology"
   description: "Modeling musical patterns in large corpora"

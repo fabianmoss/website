@@ -222,7 +222,7 @@ button:focus-visible,
 }
 
 .research-area-card__media {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   background: var(--fc-surface-alt);
 }
@@ -1337,6 +1337,18 @@ body.teaching-page .article-style details a {
   border-radius: var(--fc-radius-pill);
 }
 
+.talk-speakers {
+  margin-bottom: var(--fc-space-1);
+  color: var(--fc-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.talk-speakers .author-highlighted {
+  color: var(--fc-heading);
+  font-weight: 600;
+}
+
 .talk-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1604,7 +1616,181 @@ body.teaching-page .article-style details a {
 }
 
 // -----------------------------------------------------------------------------
-// 14. Motion preferences
+// 14. Research area pages
+// -----------------------------------------------------------------------------
+// Entry rows on the /research/*/ pages, using the same card language as the
+// homepage lists.
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry-item {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: var(--fc-space-3);
+  padding: var(--fc-space-3) var(--fc-space-4);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.entry-item:hover {
+  transform: translateY(-1px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.entry-year {
+  padding-top: 2px;
+  color: var(--fc-accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+.entry-title {
+  display: inline-block;
+  color: var(--fc-heading);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.entry-title:hover {
+  color: var(--fc-accent);
+}
+
+.entry-meta {
+  margin-top: 2px;
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.entry-meta a {
+  color: inherit;
+}
+
+.entry-meta a:hover {
+  color: var(--fc-accent);
+}
+
+.entry-meta .author-highlighted {
+  color: var(--fc-heading);
+  font-weight: 600;
+}
+
+.entry-empty {
+  color: var(--fc-text-muted);
+}
+
+.research-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: var(--fc-space-6);
+  align-items: center;
+  margin-bottom: var(--fc-space-5);
+}
+
+.research-intro__text p {
+  margin: 0;
+  color: var(--fc-heading);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.research-intro__text p + p {
+  margin-top: var(--fc-space-3);
+}
+
+.research-intro__media {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+}
+
+.research-intro__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .research-intro {
+    grid-template-columns: 1fr;
+    gap: var(--fc-space-4);
+  }
+}
+
+body.research-page .article-style h2 {
+  clear: both;
+}
+
+@media (max-width: 767.98px) {
+  .research-intro-image {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 var(--fc-space-4);
+  }
+}
+
+body.research-page .article-style > p:first-of-type {
+  color: var(--fc-heading);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+body.research-page .article-style h2 {
+  display: flex;
+  align-items: center;
+  margin: var(--fc-space-6) 0 var(--fc-space-3);
+  padding-bottom: var(--fc-space-1);
+  color: var(--fc-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--fc-border);
+}
+
+body.research-page .article-style h2::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: var(--fc-space-3);
+  background: var(--fc-accent);
+  border-radius: 50%;
+}
+
+@media (max-width: 575.98px) {
+  .entry-item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .entry-year {
+    padding-top: 0;
+    font-size: 0.8rem;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 15. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,
