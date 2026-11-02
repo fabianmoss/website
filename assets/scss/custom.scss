@@ -740,7 +740,149 @@ section#about.wg-about {
 }
 
 // -----------------------------------------------------------------------------
-// 9. Motion preferences
+// 9. Footer
+// -----------------------------------------------------------------------------
+// Rendered by the site override in `layouts/partials/site_footer.html`:
+// brand block, quick links, social buttons, then a quiet legal/credit row.
+
+.site-footer {
+  margin-top: var(--fc-space-8);
+  padding: var(--fc-space-6) 0 var(--fc-space-5);
+  border-top: 1px solid var(--fc-border);
+  color: var(--fc-text-muted);
+  font-size: 0.9rem;
+}
+
+body.dark .site-footer {
+  color: var(--fc-text-muted);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--fc-space-6);
+  align-items: start;
+}
+
+.footer-brand p {
+  margin: var(--fc-space-1) 0 0;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.footer-name {
+  color: var(--fc-heading);
+  font-family: $sta-font-heading, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.footer-name:hover {
+  color: var(--fc-accent);
+}
+
+.footer-role {
+  color: var(--fc-text-muted);
+}
+
+.footer-org a {
+  color: var(--fc-text-muted);
+}
+
+.footer-org a:hover {
+  color: var(--fc-accent);
+}
+
+.footer-social .network-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--fc-space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social .network-icon li {
+  margin: 0;
+}
+
+.footer-social .network-icon li:hover {
+  transform: none;
+}
+
+.footer-social .network-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: 50%;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social .network-icon a:hover,
+.footer-social .network-icon a:focus-visible {
+  color: #fff;
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  transform: translateY(-2px);
+}
+
+.footer-social .network-icon i {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--fc-space-2) var(--fc-space-4);
+  margin-top: var(--fc-space-6);
+  padding-top: var(--fc-space-4);
+  border-top: 1px solid var(--fc-border);
+  font-size: 0.8rem;
+}
+
+.footer-meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fc-space-1) var(--fc-space-4);
+}
+
+.footer-legal {
+  display: inline-flex;
+  gap: var(--fc-space-2);
+}
+
+.footer-bottom a {
+  color: var(--fc-text-muted);
+}
+
+.footer-bottom a:hover {
+  color: var(--fc-accent);
+}
+
+@media (max-width: 767.98px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: var(--fc-space-4);
+  }
+
+  .footer-social .network-icon {
+    justify-content: flex-start;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 10. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,

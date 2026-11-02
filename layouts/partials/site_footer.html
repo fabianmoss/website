@@ -1,0 +1,39 @@
+{{ $author := site.GetPage "/authors/admin" }}
+<footer class="site-footer">
+  {{ partial "hooks/footer" . }}
+
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="footer-name" href="{{ "" | relLangURL }}">{{ site.Title }}</a>
+      {{ with $author }}
+        {{ with .Params.role }}<p class="footer-role">{{ . | markdownify | emojify }}</p>{{ end }}
+        {{ with index .Params.organizations 0 }}
+          <p class="footer-org">
+            {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}
+          </p>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{ with $author }}
+      <div class="footer-social">
+        {{ partial "social_links" . }}
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">{{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify }}{{ end }}</span>
+
+    <span class="footer-meta">
+      {{ if or (site.GetPage "/privacy.md") (site.GetPage "/terms.md") }}
+        <span class="footer-legal">
+          {{ with site.GetPage "/privacy.md" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+          {{ if and (site.GetPage "/privacy.md") (site.GetPage "/terms.md") }}<span aria-hidden="true">·</span>{{ end }}
+          {{ with site.GetPage "/terms.md" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+        </span>
+      {{ end }}
+      <span class="footer-credit">Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &amp; <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a></span>
+    </span>
+  </div>
+</footer>
