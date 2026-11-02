@@ -1,0 +1,62 @@
+{{ $page := .page }}
+{{ $columns := $page.Params.design.columns | default "2" }}
+{{ $dateFormat := $page.Params.date_format | default "Jan 2006" }}
+
+<div class="col-12 {{ if eq $columns "2" }}col-lg-8{{ end }}">
+  {{ with $page.Content }}{{ . }}{{ end }}
+
+  {{ if $page.Params.experience }}
+    <div class="exp-timeline">
+      {{ range $page.Params.experience }}
+        {{ $start := time .date_start }}
+        {{ $end := "" }}
+        {{ with .date_end }}{{ $end = time . }}{{ end }}
+        {{ $url := .company_url }}
+
+        <article class="exp-item">
+          <div class="exp-marker" aria-hidden="true">
+            <span class="exp-dot{{ if not $end }} exp-dot--current{{ end }}"></span>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-card-head">
+              {{ with .company_logo }}
+                {{ with resources.Get (printf "media/icons/brands/%s.svg" .) }}
+                  <div class="exp-logo">
+                    {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener">{{ end }}
+                    <img src="{{ .RelPermalink }}" alt="" width="44" height="44" loading="lazy">
+                    {{ if $url }}</a>{{ end }}
+                  </div>
+                {{ end }}
+              {{ end }}
+
+              <div class="exp-main">
+                <h3 class="exp-title">{{ .title | markdownify | emojify }}</h3>
+
+                {{ $company := printf "%s" (.company | markdownify | emojify) }}
+                <div class="exp-company">
+                  {{ if and .company_url (not (strings.Contains $company "<a")) }}
+                    <a href="{{ .company_url }}" target="_blank" rel="noopener">{{ $company | safeHTML }}</a>
+                  {{ else }}
+                    {{ $company | safeHTML }}
+                  {{ end }}
+                </div>
+
+                <div class="exp-meta">
+                  {{ $start.Format $dateFormat }} – {{ if $end }}{{ $end.Format $dateFormat }}{{ else }}Present{{ end }}
+                  {{ with .location }}
+                    <span class="middot-divider"></span><span>{{ . }}</span>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+
+            {{ with .description }}
+              <div class="exp-description">{{ . | markdownify | emojify }}</div>
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

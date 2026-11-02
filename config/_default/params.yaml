@@ -6,8 +6,8 @@
 # Appearance
 
 theme: minimal # "Earth" # Ocean
-day_night: false
-font: ''
+day_night: true
+font: modern
 font_size: s
 
 # SEO
@@ -62,7 +62,7 @@ main_menu:
   align: r
   show_logo: true
   show_language: false
-  show_day_night: false
+  show_day_night: true
   show_search: false
   highlight_active_link: true
 

@@ -1,0 +1,59 @@
+{{ if site.Params.day_night }}
+{{/* Turn Wowchemy's theme dropdown into a single sun/moon toggle. The three
+     hidden menu items stay in the DOM so the theme's own click handlers keep
+     managing localStorage and code highlighting. */}}
+<script>
+  (function () {
+    function init() {
+      var dropdown = document.querySelector('.theme-dropdown');
+      if (!dropdown) return;
+      var trigger = dropdown.querySelector('.nav-link');
+      var darkLink = dropdown.querySelector('.js-set-theme-dark');
+      var lightLink = dropdown.querySelector('.js-set-theme-light');
+      if (!trigger || !darkLink || !lightLink) return;
+
+      // Remove the dropdown menu entirely; the links stay referenced above so
+      // Wowchemy's handlers still manage storage and code highlighting.
+      var menu = dropdown.querySelector('.dropdown-menu');
+      if (menu) menu.parentNode.removeChild(menu);
+
+      // Prevent Bootstrap from opening the dropdown.
+      trigger.removeAttribute('data-toggle');
+      trigger.classList.add('theme-toggle');
+
+      function isDark() {
+        return document.body.classList.contains('dark');
+      }
+
+      function render() {
+        var dark = isDark();
+        trigger.innerHTML = '<i class="fas ' + (dark ? 'fa-sun' : 'fa-moon') + '" aria-hidden="true"></i>';
+        trigger.setAttribute('aria-pressed', String(dark));
+        trigger.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+        trigger.setAttribute('title', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+
+      trigger.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        (isDark() ? lightLink : darkLink).click();
+        render();
+      });
+
+      // Keep the icon in sync with system-preference changes.
+      new MutationObserver(render).observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+
+      render();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+{{ end }}

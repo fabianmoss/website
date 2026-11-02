@@ -1,0 +1,34 @@
+{{ $areas := site.Data.research_areas }}
+<div class="research-cards">
+  {{ range $areas }}
+    {{ $pubs := partial "functions/count_by_tag" (dict "tag" .key "type" "publication") }}
+    {{ $talks := partial "functions/count_by_tag" (dict "tag" .key "type" "event") }}
+    {{ $projects := partial "functions/count_by_tag" (dict "tag" .key "type" "project") }}
+
+    {{ $bits := slice }}
+    {{ if gt $pubs 0 }}{{ $bits = $bits | append (printf "%d %s" $pubs (cond (eq $pubs 1) "publication" "publications")) }}{{ end }}
+    {{ if gt $talks 0 }}{{ $bits = $bits | append (printf "%d %s" $talks (cond (eq $talks 1) "talk" "talks")) }}{{ end }}
+    {{ if gt $projects 0 }}{{ $bits = $bits | append (printf "%d %s" $projects (cond (eq $projects 1) "project" "projects")) }}{{ end }}
+
+    <a class="research-area-card area-{{ .key }}" href="{{ .url }}">
+      {{ with .image }}
+        {{ with resources.Get (strings.TrimPrefix "/" .) }}
+          <div class="research-area-card__media">
+            <img src="{{ .RelPermalink }}" alt="" loading="lazy" width="1200" height="675">
+          </div>
+        {{ end }}
+      {{ end }}
+      <div class="research-area-card__body">
+        <div class="research-area-card__head">
+          <span class="research-area-card__icon"><i class="fas {{ .icon }}" aria-hidden="true"></i></span>
+          <h3 class="research-area-card__title">{{ .title }}</h3>
+        </div>
+        <p class="research-area-card__text">{{ .description }}</p>
+        {{ with $bits }}
+          <div class="research-area-card__meta">{{ delimit . " · " }}</div>
+        {{ end }}
+        <span class="research-area-card__link">Explore <span aria-hidden="true">&rarr;</span></span>
+      </div>
+    </a>
+  {{ end }}
+</div>

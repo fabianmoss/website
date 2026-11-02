@@ -1,0 +1,43 @@
+{{/* Responsive, click-to-play video grid driven by `data/videos.yaml`. */}}
+<div class="video-grid">
+  {{ range site.Data.videos }}
+    {{ $id := .youtube_id }}
+    {{ $title := .title | default .short_title }}
+    {{ $thumb := .thumbnail | default (printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" $id) }}
+    <figure class="video-card">
+      <button type="button" class="video-facade" data-video-id="{{ $id }}" aria-label="Play video: {{ $title }}">
+        <img src="{{ $thumb }}"
+             alt=""
+             loading="lazy"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/{{ $id }}/mqdefault.jpg';">
+        <span class="video-play" aria-hidden="true"></span>
+      </button>
+      <figcaption class="video-meta">
+        <span class="video-title">{{ .short_title | default .title }}</span>
+        {{ with .source }}<span class="video-source">{{ . }}</span>{{ end }}
+      </figcaption>
+    </figure>
+  {{ end }}
+</div>
+
+{{ if not (.Page.Scratch.Get "video_grid_js") }}
+  {{ .Page.Scratch.Set "video_grid_js" true }}
+  <script>
+    (function () {
+      document.addEventListener('click', function (event) {
+        var button = event.target.closest('.video-facade');
+        if (!button) return;
+        event.preventDefault();
+        var id = button.getAttribute('data-video-id');
+        if (!id) return;
+        var iframe = document.createElement('iframe');
+        iframe.className = 'video-iframe';
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+        iframe.title = button.getAttribute('aria-label') || 'Video';
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        iframe.setAttribute('allowfullscreen', '');
+        button.parentNode.replaceChild(iframe, button);
+      });
+    })();
+  </script>
+{{ end }}

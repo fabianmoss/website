@@ -1,0 +1,33 @@
+# Images are figures from Fabian Moss's own publications and projects:
+#   computational-musicology — line of fifths / tonal pitch-class co-evolution (JMM 2022)
+#   music-theory — Wavescapes (Moss et al., Musicae Scientiae 2022)
+#   digital-humanities — DigiMusTh project banner (text collection/encoding)
+#   cultural-evolution — chord evolution in popular music (CHR 2024)
+
+- key: computational-musicology
+  title: "Computational Musicology"
+  description: "Modeling musical patterns in large corpora"
+  icon: "fa-wave-square"
+  image: "/media/research/computational-musicology.jpg"
+  url: "/research/computational-musicology/"
+
+- key: music-theory
+  title: "Music Theory & Analysis"
+  description: "How algorithms reveal musical structure"
+  icon: "fa-music"
+  image: "/media/research/music-theory.jpg"
+  url: "/research/music-theory/"
+
+- key: digital-humanities
+  title: "Music Encoding & Digital Humanities"
+  description: "Building digital editions and research tools"
+  icon: "fa-code"
+  image: "/media/research/digital-humanities.jpg"
+  url: "/research/digital-humanities/"
+
+- key: cultural-evolution
+  title: "Cultural Evolution & Music"
+  description: "How musical traditions change and spread"
+  icon: "fa-network-wired"
+  image: "/media/research/cultural-evolution.jpg"
+  url: "/research/cultural-evolution/"

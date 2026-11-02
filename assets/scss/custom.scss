@@ -1,0 +1,1804 @@
+// =============================================================================
+// Site design foundations
+// -----------------------------------------------------------------------------
+// Loaded last by Wowchemy's `assets/scss/main.scss` (@import "custom"), so
+// project-level rules here override theme defaults without editing `themes/`.
+//
+// First pass scope: design tokens, typographic rhythm, spacing, and a
+// dark-mode-ready palette. Component restyling (cards, navbar, chips) is
+// intentionally left for a later pass.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// 1. Design tokens
+// -----------------------------------------------------------------------------
+:root {
+  // Accent: a slightly deeper, less saturated blue than the theme default
+  // (#1565c0), which reads a little more contemporary.
+  --fc-accent: #1d4ed8;
+  --fc-accent-hover: #1e40af;
+  --fc-accent-soft: #eef2ff;
+  // Text/icon colour placed on top of a filled accent surface.
+  --fc-on-accent: #ffffff;
+
+  // Neutral palette (cool grey, Tailwind-like scale)
+  --fc-text: #1f2937;
+  --fc-text-muted: #4b5563;
+  --fc-heading: #111827;
+  --fc-surface: #ffffff;
+  --fc-surface-alt: #f8fafc;
+  --fc-border: #e5e7eb;
+
+  // Radii
+  --fc-radius-sm: 6px;
+  --fc-radius-md: 10px;
+  --fc-radius-lg: 16px;
+  --fc-radius-pill: 999px;
+
+  // Elevation
+  --fc-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06),
+    0 1px 3px rgba(15, 23, 42, 0.08);
+  --fc-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08),
+    0 2px 4px rgba(15, 23, 42, 0.06);
+
+  // Spacing scale (4px base)
+  --fc-space-1: 0.25rem;
+  --fc-space-2: 0.5rem;
+  --fc-space-3: 0.75rem;
+  --fc-space-4: 1rem;
+  --fc-space-5: 1.5rem;
+  --fc-space-6: 2rem;
+  --fc-space-7: 3rem;
+  --fc-space-8: 4rem;
+
+  // Reading measure for long-form text
+  --fc-measure: 68ch;
+}
+
+// Dark-mode-ready palette. Wowchemy toggles dark mode by adding `.dark` to
+// <body> (see wowchemy-theming.js). These tokens activate automatically once
+// `day_night` is enabled in params.yaml; nothing changes today.
+body.dark {
+  --fc-accent: #93b4ff;
+  --fc-accent-hover: #bcd0ff;
+  --fc-accent-soft: rgba(147, 180, 255, 0.12);
+  --fc-on-accent: #111827;
+
+  --fc-text: #e5e7eb;
+  --fc-text-muted: #9ca3af;
+  --fc-heading: #f9fafb;
+  --fc-surface: #1f2430;
+  --fc-surface-alt: #262c3a;
+  --fc-border: #374151;
+
+  --fc-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --fc-shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+// -----------------------------------------------------------------------------
+// 2. Typography
+// -----------------------------------------------------------------------------
+body {
+  color: var(--fc-text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--fc-heading);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+// Gentle fluid scale so headings do not feel oversized on mobile or cramped
+// on wide screens.
+h1 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+}
+
+// Keep the serif display face for H1 only; all lower-level headings use the
+// body sans so the pairing stays consistent with running text.
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-subheading {
+  font-family: $sta-font-body, sans-serif;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+// Keep long-form prose at a comfortable measure.
+.article-style p {
+  max-width: var(--fc-measure);
+}
+
+// Section headings on the homepage (widget titles + subtitles). Serif title,
+// restrained weight, muted subtitle, and a consistent left alignment — the
+// columns-1 widgets (Research areas, Videos) would otherwise centre theirs.
+.home-section .section-heading h1 {
+  margin-bottom: var(--fc-space-2);
+  font-size: clamp(1.75rem, 2.6vw, 2.15rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+
+.home-section .section-heading p {
+  color: var(--fc-text-muted);
+  font-size: 1.05rem;
+}
+
+.home-section .section-heading.text-center {
+  text-align: left !important;
+}
+
+// -----------------------------------------------------------------------------
+// 3. Links and focus states
+// -----------------------------------------------------------------------------
+a {
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+// Keep the theme's link colours intact; only improve the focus ring so it is
+// visible and consistent with the accent.
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--fc-accent);
+  outline-offset: 2px;
+  border-radius: var(--fc-radius-sm);
+}
+
+// -----------------------------------------------------------------------------
+// 4. Component: research area cards (homepage)
+// -----------------------------------------------------------------------------
+// Rendered by `layouts/shortcodes/research_areas.html` from
+// `data/research_areas.yaml`: muted tinted icon, accent top rule, content
+// counts, and an explicit "Explore" affordance.
+
+.research-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: var(--fc-space-4);
+}
+
+.research-area-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.research-area-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--area-color);
+}
+
+.research-area-card:hover,
+.research-area-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--area-color);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.research-area-card:focus-visible {
+  outline: 2px solid var(--area-color);
+  outline-offset: 3px;
+}
+
+.research-area-card__media {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--fc-surface-alt);
+}
+
+.research-area-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.research-area-card:hover .research-area-card__media img,
+.research-area-card:focus-visible .research-area-card__media img {
+  transform: scale(1.03);
+}
+
+.research-area-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--fc-space-2);
+  padding: var(--fc-space-4) var(--fc-space-5);
+}
+
+.research-area-card__head {
+  display: flex;
+  align-items: center;
+  gap: var(--fc-space-3);
+}
+
+.research-area-card__icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--area-color);
+  font-size: 1rem;
+  background: var(--area-soft);
+  border-radius: 50%;
+}
+
+.research-area-card__title {
+  margin: 0;
+  color: var(--fc-heading);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.research-area-card__text {
+  margin: 0;
+  color: var(--fc-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.research-area-card__meta {
+  margin-top: auto;
+  padding-top: var(--fc-space-3);
+  color: var(--fc-text-muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.research-area-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--area-color);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.research-area-card__link span {
+  transition: transform 0.2s ease;
+}
+
+.research-area-card:hover .research-area-card__link span,
+.research-area-card:focus-visible .research-area-card__link span {
+  transform: translateX(3px);
+}
+
+.area-computational-musicology {
+  --area-color: #4f46e5;
+  --area-soft: #eef2ff;
+}
+
+.area-music-theory {
+  --area-color: #be123c;
+  --area-soft: #fff1f4;
+}
+
+.area-digital-humanities {
+  --area-color: #0e7490;
+  --area-soft: #ecfeff;
+}
+
+.area-cultural-evolution {
+  --area-color: #b45309;
+  --area-soft: #fffbeb;
+}
+
+body.dark .area-computational-musicology {
+  --area-color: #a5b4fc;
+  --area-soft: rgba(165, 180, 252, 0.14);
+}
+
+body.dark .area-music-theory {
+  --area-color: #fda4af;
+  --area-soft: rgba(253, 164, 175, 0.14);
+}
+
+body.dark .area-digital-humanities {
+  --area-color: #67e8f9;
+  --area-soft: rgba(103, 232, 249, 0.14);
+}
+
+body.dark .area-cultural-evolution {
+  --area-color: #fcd34d;
+  --area-soft: rgba(252, 211, 77, 0.14);
+}
+
+// -----------------------------------------------------------------------------
+// 5. Navigation bar
+// -----------------------------------------------------------------------------
+// Fixed, translucent bar over a blurred backdrop; animated underline on the
+// desktop links and a calmer active state. All colours come from the tokens so
+// the dark variant follows automatically.
+
+.navbar {
+  background: rgba(255, 255, 255, 0.82);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--fc-border);
+  box-shadow: none;
+  font-size: 0.95rem;
+}
+
+body.dark .navbar {
+  background: rgba(26, 31, 43, 0.82);
+  border-bottom-color: var(--fc-border);
+  box-shadow: none;
+}
+
+// Dropdowns (e.g. the theme selector) need readable surfaces in dark mode.
+body.dark .dropdown-menu {
+  background-color: var(--fc-surface) !important;
+  color: var(--fc-text) !important;
+  border: 1px solid var(--fc-border);
+}
+
+// The theme selector is a single toggle, not a dropdown.
+.theme-dropdown > .nav-link {
+  cursor: pointer;
+}
+
+body.dark .dropdown-item {
+  color: var(--fc-text);
+}
+
+body.dark .dropdown-item:hover,
+body.dark .dropdown-item:focus {
+  color: var(--fc-accent);
+  background: var(--fc-surface-alt);
+}
+
+body.dark .dropdown-item-active {
+  color: var(--fc-accent) !important;
+}
+
+// Brand / wordmark
+.navbar .navbar-brand {
+  color: var(--fc-heading) !important;
+  font-family: $sta-font-heading, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+// Desktop links: muted at rest, heading colour on hover, accent underline that
+// grows in from the left.
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    position: relative;
+    color: var(--fc-text-muted);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: color 0.2s ease;
+  }
+
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link:focus {
+    color: var(--fc-heading);
+  }
+
+  .navbar .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    height: 2px;
+    border-radius: var(--fc-radius-pill);
+    background: var(--fc-accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.22s ease;
+  }
+
+  .navbar .navbar-nav .nav-link:hover::after,
+  .navbar .navbar-nav .nav-link:focus-visible::after,
+  .navbar .navbar-nav .nav-link.active::after {
+    transform: scaleX(1);
+  }
+
+  // Theme marks the active link with !important + bold; keep the emphasis but
+  // align the colour with the accent.
+  .navbar .navbar-nav .nav-link.active {
+    color: var(--fc-accent) !important;
+    font-weight: 600 !important;
+  }
+}
+
+// Mobile: the expanded menu needs an opaque surface behind the blur.
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0.5rem 1rem 1rem;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--fc-border);
+  }
+
+  body.dark .navbar-collapse {
+    background: rgba(26, 31, 43, 0.97);
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: var(--fc-text);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar .navbar-nav .nav-link.active {
+    color: var(--fc-accent) !important;
+  }
+}
+
+.navbar-toggler {
+  color: var(--fc-text);
+}
+
+// -----------------------------------------------------------------------------
+// 6. Hero / About section
+// -----------------------------------------------------------------------------
+// Turns the default About widget into a calmer hero: radiused portrait with a
+// ring, display-scale name, accent role line, circular social buttons, and a
+// subtle accent wash behind the section.
+
+section#about.wg-about {
+  background: radial-gradient(
+      70rem 32rem at 12% -25%,
+      rgba(29, 78, 216, 0.07),
+      transparent 70%
+    ),
+    var(--fc-surface);
+}
+
+body.dark section#about.wg-about {
+  background: radial-gradient(
+      70rem 32rem at 12% -25%,
+      rgba(147, 180, 255, 0.08),
+      transparent 70%
+    ),
+    var(--fc-surface);
+}
+
+.wg-about .row {
+  align-items: center;
+  row-gap: var(--fc-space-6);
+}
+
+.wg-about #profile {
+  padding: var(--fc-space-4) var(--fc-space-3);
+}
+
+.wg-about .avatar {
+  width: clamp(160px, 18vw, 210px);
+  height: clamp(160px, 18vw, 210px);
+  border: 4px solid var(--fc-surface);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18),
+    0 0 0 1px var(--fc-border);
+}
+
+.wg-about .portrait-title h2 {
+  margin: var(--fc-space-4) 0 var(--fc-space-2);
+  color: var(--fc-heading);
+  font-family: $sta-font-heading, serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.wg-about .portrait-title h3 {
+  margin-bottom: var(--fc-space-1);
+  color: var(--fc-text-muted);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+// First h3 is the role/tagline; the rest are affiliations.
+.wg-about .portrait-title h3:first-of-type {
+  color: var(--fc-accent);
+  font-weight: 600;
+}
+
+.wg-about .portrait-title h3 a {
+  color: var(--fc-text-muted);
+}
+
+.wg-about .portrait-title h3 a:hover {
+  color: var(--fc-accent);
+}
+
+// Social links as circular buttons.
+.wg-about .network-icon {
+  margin-top: var(--fc-space-5);
+}
+
+.wg-about .network-icon li {
+  margin-right: var(--fc-space-2);
+}
+
+.wg-about .network-icon li:hover {
+  transform: none;
+}
+
+.wg-about .network-icon li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--fc-border);
+  border-radius: 50%;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface);
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease;
+}
+
+.wg-about .network-icon li a:hover,
+.wg-about .network-icon li a:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  transform: translateY(-2px);
+}
+
+.wg-about .network-icon .big-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+// Lead paragraph of the bio stands out slightly from the rest.
+.wg-about .article-style > p:first-of-type {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--fc-heading);
+}
+
+// -----------------------------------------------------------------------------
+// 7. Component: video grid (homepage)
+// -----------------------------------------------------------------------------
+// Cards are lightweight "facades": a thumbnail plus play button. The YouTube
+// iframe is only created on click (see layouts/shortcodes/video_grid.html),
+// which keeps the page fast and the layout responsive.
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--fc-space-5);
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-3);
+  margin: 0;
+}
+
+.video-facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.video-facade:hover,
+.video-facade:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.video-facade:focus-visible {
+  outline: 2px solid var(--fc-accent);
+  outline-offset: 3px;
+}
+
+.video-facade img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease;
+}
+
+.video-facade:hover img {
+  opacity: 0.9;
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.video-play::before {
+  content: "";
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: rgba(17, 24, 39, 0.72);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.video-facade:hover .video-play::before,
+.video-facade:focus-visible .video-play::before {
+  background-color: var(--fc-accent);
+  transform: scale(1.06);
+}
+
+// On a light accent surface (dark mode) use a dark glyph instead of white.
+body.dark .video-play::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23111827'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");
+}
+
+.video-iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+}
+
+.video-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.video-title {
+  color: var(--fc-heading);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.video-source {
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+}
+
+// -----------------------------------------------------------------------------
+// 8. Component: publications list (homepage)
+// -----------------------------------------------------------------------------
+// Rendered by `layouts/shortcodes/publications_list.html`. A year column gives
+// the list a timeline feel; title, authors, venue and the theme's DOI/PDF
+// buttons (styled as pills) carry the rest.
+
+#publications [hidden] {
+  display: none !important;
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-4);
+}
+
+.pub-item {
+  display: block;
+  padding: var(--fc-space-4) var(--fc-space-5);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.pub-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.pub-doi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin: 0;
+  color: var(--fc-text-muted);
+  font-size: 0.7rem;
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: 50%;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pub-doi:hover,
+.pub-doi:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  transform: translateY(-1px);
+}
+
+// DOI is shown as the icon under the year, so hide its pill here.
+#publications .pub-links .btn[href^="https://doi.org/"] {
+  display: none;
+}
+
+// If the DOI pill was the only attachment, collapse the empty row.
+// (The DOI icon is now rendered inside .pub-links, so the row must stay.)
+
+.pub-title {
+  margin: 0 0 var(--fc-space-1);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.pub-title a {
+  color: var(--fc-heading);
+}
+
+.pub-title a:hover {
+  color: var(--fc-accent);
+}
+
+.pub-authors {
+  color: var(--fc-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.pub-authors a {
+  color: inherit;
+}
+
+.pub-authors .author-highlighted {
+  color: var(--fc-heading);
+  font-weight: 600;
+}
+
+.pub-venue {
+  margin-top: 2px;
+  color: var(--fc-text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.pub-summary {
+  max-width: none;
+  margin: var(--fc-space-2) 0 0;
+  color: var(--fc-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fc-space-2);
+  margin-top: var(--fc-space-3);
+  line-height: 1;
+}
+
+.pub-links .btn {
+  margin: 0;
+  padding: 0.15rem 0.65rem;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-pill);
+  box-shadow: none;
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pub-links .btn:hover,
+.pub-links .btn:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+}
+
+@media (max-width: 575.98px) {
+  .pub-links {
+    gap: var(--fc-space-2);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 9. Footer
+// -----------------------------------------------------------------------------
+// Rendered by the site override in `layouts/partials/site_footer.html`:
+// brand block, quick links, social buttons, then a quiet legal/credit row.
+
+.site-footer {
+  margin-top: var(--fc-space-8);
+  padding: var(--fc-space-6) 0 var(--fc-space-5);
+  border-top: 1px solid var(--fc-border);
+  color: var(--fc-text-muted);
+  font-size: 0.9rem;
+}
+
+body.dark .site-footer {
+  color: var(--fc-text-muted);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--fc-space-6);
+  align-items: start;
+}
+
+.footer-brand p {
+  margin: var(--fc-space-1) 0 0;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.footer-name {
+  color: var(--fc-heading);
+  font-family: $sta-font-heading, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.footer-name:hover {
+  color: var(--fc-accent);
+}
+
+.footer-role {
+  color: var(--fc-text-muted);
+}
+
+.footer-org a {
+  color: var(--fc-text-muted);
+}
+
+.footer-org a:hover {
+  color: var(--fc-accent);
+}
+
+.footer-social .network-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--fc-space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social .network-icon li {
+  margin: 0;
+}
+
+.footer-social .network-icon li:hover {
+  transform: none;
+}
+
+.footer-social .network-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: 50%;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social .network-icon a:hover,
+.footer-social .network-icon a:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  transform: translateY(-2px);
+}
+
+.footer-social .network-icon i {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--fc-space-2) var(--fc-space-4);
+  margin-top: var(--fc-space-6);
+  padding-top: var(--fc-space-4);
+  border-top: 1px solid var(--fc-border);
+  font-size: 0.8rem;
+}
+
+.footer-meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fc-space-1) var(--fc-space-4);
+}
+
+.footer-legal {
+  display: inline-flex;
+  gap: var(--fc-space-2);
+}
+
+.footer-bottom a {
+  color: var(--fc-text-muted);
+}
+
+.footer-bottom a:hover {
+  color: var(--fc-accent);
+}
+
+@media (max-width: 767.98px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: var(--fc-space-4);
+  }
+
+  .footer-social .network-icon {
+    justify-content: flex-start;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 10. Teaching page
+// -----------------------------------------------------------------------------
+// Scoped via `design.css_class: teaching-page` in content/teaching/index.md.
+// Semesters become section headers; each course is an accordion card.
+
+body.teaching-page .article-style h2 {
+  display: flex;
+  align-items: center;
+  margin: var(--fc-space-7) 0 var(--fc-space-4);
+  padding-bottom: var(--fc-space-2);
+  border-bottom: 1px solid var(--fc-border);
+  color: var(--fc-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+body.teaching-page .article-style h2::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: var(--fc-space-3);
+  border-radius: 50%;
+  background: var(--fc-accent);
+}
+
+body.teaching-page .article-style > h2:first-of-type {
+  margin-top: 0;
+}
+
+body.teaching-page .article-style [hidden] {
+  display: none !important;
+}
+
+.year-timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--fc-space-2);
+  margin: 0 0 var(--fc-space-6);
+  padding: var(--fc-space-4) 0 var(--fc-space-2);
+  overflow-x: auto;
+}
+
+.year-timeline__line {
+  position: absolute;
+  top: calc(var(--fc-space-4) + 6px);
+  left: 1.625rem;
+  right: 1.625rem;
+  height: 2px;
+  background: var(--fc-border);
+}
+
+.year-timeline__year {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 3.25rem;
+  padding: 0;
+  color: var(--fc-text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+// Small per-year bar chart shown between the dot and the year label.
+.year-timeline__track {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
+
+.year-timeline__bar {
+  width: 10px;
+  height: 0;
+  background: var(--fc-accent);
+  border-radius: 3px 3px 0 0;
+  opacity: 0.35;
+  transition: opacity 0.2s ease;
+}
+
+.year-timeline__year:hover .year-timeline__bar,
+.year-timeline__year[aria-pressed="true"] .year-timeline__bar {
+  opacity: 1;
+}
+
+.year-timeline__label {
+  line-height: 1;
+}
+
+// With bars, stack track -> dot -> label and move the connecting line down so
+// the bars sit above the timeline rather than below it.
+.year-timeline--bars .year-timeline__track {
+  order: 1;
+}
+
+.year-timeline--bars .year-timeline__year::before {
+  order: 2;
+}
+
+.year-timeline--bars .year-timeline__label {
+  order: 3;
+}
+
+.year-timeline--bars .year-timeline__line {
+  top: calc(var(--fc-space-4) + 30px + 0.35rem + 6px);
+}
+
+// "Show all N from YYYY" control below the yearly lists.
+.year-list-toggle {
+  display: block;
+  margin: var(--fc-space-4) auto 0;
+  padding: 0;
+  color: var(--fc-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.year-list-toggle:hover,
+.year-list-toggle:focus-visible {
+  text-decoration: underline;
+}
+
+.year-timeline__year::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: var(--fc-surface);
+  border: 2px solid var(--fc-border);
+  border-radius: 50%;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.year-timeline__year:hover {
+  color: var(--fc-accent);
+}
+
+.year-timeline__year:hover::before {
+  border-color: var(--fc-accent);
+}
+
+.year-timeline__year[aria-pressed="true"] {
+  color: var(--fc-accent);
+}
+
+.year-timeline__year[aria-pressed="true"]::before {
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  box-shadow: 0 0 0 4px var(--fc-accent-soft);
+}
+
+body.teaching-page .article-style details {
+  margin: 0 0 var(--fc-space-3);
+  padding: 0 var(--fc-space-5) var(--fc-space-4);
+  color: var(--fc-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-md);
+  box-shadow: var(--fc-shadow-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.teaching-page .article-style details:not([open]) {
+  padding-bottom: 0;
+}
+
+body.teaching-page .article-style details[open] {
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+body.teaching-page .article-style summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fc-space-4);
+  margin: 0 calc(-1 * var(--fc-space-5));
+  padding: var(--fc-space-4) var(--fc-space-5);
+  color: var(--fc-heading);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.2s ease;
+}
+
+body.teaching-page .article-style summary::-webkit-details-marker {
+  display: none;
+}
+
+body.teaching-page .article-style summary b {
+  font-weight: 600;
+}
+
+body.teaching-page .article-style summary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+body.teaching-page .article-style details[open] summary::after {
+  transform: rotate(-135deg);
+}
+
+body.teaching-page .article-style summary:hover {
+  color: var(--fc-accent);
+}
+
+body.teaching-page .article-style details a {
+  color: var(--fc-accent);
+}
+
+// -----------------------------------------------------------------------------
+// 11. Component: talks list (homepage)
+// -----------------------------------------------------------------------------
+// Rendered by `layouts/shortcodes/talks_list.html`: a date badge column, title,
+// event/location, optional "Upcoming" marker, and attachment pills.
+
+#talks [hidden] {
+  display: none !important;
+}
+
+.talk-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-4);
+}
+
+.talk-item {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--fc-space-4);
+  padding: var(--fc-space-4) var(--fc-space-5);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.talk-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.talk-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  padding: var(--fc-space-2) var(--fc-space-1);
+  line-height: 1;
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-md);
+}
+
+.talk-month {
+  color: var(--fc-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.talk-day {
+  margin: 0.15rem 0;
+  color: var(--fc-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.talk-year {
+  color: var(--fc-text-muted);
+  font-size: 0.72rem;
+}
+
+.talk-title {
+  margin: 0 0 var(--fc-space-1);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.talk-title a {
+  color: var(--fc-heading);
+}
+
+.talk-title a:hover {
+  color: var(--fc-accent);
+}
+
+.talk-badge {
+  display: inline-block;
+  margin-left: var(--fc-space-2);
+  padding: 0.1rem 0.5rem;
+  color: var(--fc-accent);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  background: var(--fc-accent-soft);
+  border-radius: var(--fc-radius-pill);
+}
+
+.talk-speakers {
+  margin-bottom: var(--fc-space-1);
+  color: var(--fc-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.talk-speakers .author-highlighted {
+  color: var(--fc-heading);
+  font-weight: 600;
+}
+
+.talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--fc-space-3);
+  color: var(--fc-text-muted);
+  font-size: 0.88rem;
+}
+
+.talk-event {
+  font-style: italic;
+}
+
+.talk-links {
+  margin-top: var(--fc-space-3);
+  line-height: 1;
+}
+
+.talk-links .btn {
+  margin: 0 var(--fc-space-2) var(--fc-space-2) 0;
+  padding: 0.15rem 0.65rem;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-pill);
+  box-shadow: none;
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.talk-links .btn:hover,
+.talk-links .btn:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+}
+
+@media (max-width: 575.98px) {
+  .talk-item {
+    grid-template-columns: 1fr;
+  }
+
+  .talk-date {
+    flex-direction: row;
+    align-self: start;
+    gap: var(--fc-space-1);
+    padding: var(--fc-space-1) var(--fc-space-3);
+  }
+
+  .talk-day {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 12. Vertical rhythm
+// -----------------------------------------------------------------------------
+// Tighter section and card spacing so the homepage uses less vertical space.
+
+.home-section {
+  padding: 48px 0;
+}
+
+@media (max-width: 991.98px) {
+  .home-section {
+    padding: 36px 0;
+  }
+}
+
+.home-section .section-heading h1 {
+  margin-bottom: var(--fc-space-1);
+}
+
+.year-timeline {
+  margin-bottom: var(--fc-space-4);
+}
+
+.year-timeline__track {
+  height: 24px;
+}
+
+.year-timeline--bars .year-timeline__line {
+  top: calc(var(--fc-space-4) + 24px + 0.35rem + 6px);
+}
+
+.year-list-toggle {
+  margin-top: var(--fc-space-3);
+}
+
+.pub-list,
+.talk-list {
+  gap: var(--fc-space-3);
+}
+
+.pub-item,
+.talk-item {
+  padding: var(--fc-space-3) var(--fc-space-4);
+}
+
+.pub-links,
+.talk-links {
+  margin-top: var(--fc-space-2);
+}
+
+.video-grid {
+  gap: var(--fc-space-4);
+}
+
+.video-card {
+  gap: var(--fc-space-2);
+}
+
+.card.research-card .card-image {
+  min-height: 84px;
+  padding: 0.6rem 1rem;
+}
+
+.card.research-card .card-body {
+  padding: 0.85rem 1.25rem;
+}
+
+.site-footer {
+  margin-top: var(--fc-space-6);
+}
+
+// -----------------------------------------------------------------------------
+// 13. Experience timeline (homepage)
+// -----------------------------------------------------------------------------
+// Vertical counterpart of the publications/talks timeline: year column, accent
+// line with dots, and the same card treatment.
+
+.exp-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-4);
+}
+
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 0.75rem;
+  width: 2px;
+  background: var(--fc-border);
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: var(--fc-space-3);
+  align-items: start;
+}
+
+.exp-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.exp-dot {
+  position: relative;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  background: var(--fc-surface);
+  border: 2px solid var(--fc-accent);
+  border-radius: 50%;
+}
+
+.exp-dot--current {
+  background: var(--fc-accent);
+  box-shadow: 0 0 0 4px var(--fc-accent-soft);
+}
+
+.exp-card {
+  padding: var(--fc-space-3) var(--fc-space-4);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.exp-card-head {
+  display: flex;
+  gap: var(--fc-space-3);
+  align-items: flex-start;
+}
+
+.exp-logo {
+  flex: 0 0 auto;
+}
+
+.exp-logo img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.exp-title {
+  margin: 0;
+  color: var(--fc-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.exp-company {
+  margin-top: 2px;
+  color: var(--fc-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.exp-company a {
+  color: inherit;
+}
+
+.exp-company a:hover {
+  color: var(--fc-accent);
+}
+
+.exp-meta {
+  margin-top: var(--fc-space-1);
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.exp-description {
+  margin-top: var(--fc-space-2);
+  color: var(--fc-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.exp-description p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .exp-timeline::before {
+    left: 0.5rem;
+  }
+
+  .exp-item {
+    grid-template-columns: 1rem 1fr;
+    gap: var(--fc-space-2);
+  }
+
+}
+
+// -----------------------------------------------------------------------------
+// 14. Research area pages
+// -----------------------------------------------------------------------------
+// Entry rows on the /research/*/ pages, using the same card language as the
+// homepage lists.
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry-item {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: var(--fc-space-3);
+  padding: var(--fc-space-3) var(--fc-space-4);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.entry-item:hover {
+  transform: translateY(-1px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.entry-year {
+  padding-top: 2px;
+  color: var(--fc-accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+.entry-title {
+  display: inline-block;
+  color: var(--fc-heading);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.entry-title:hover {
+  color: var(--fc-accent);
+}
+
+.entry-meta {
+  margin-top: 2px;
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.entry-meta a {
+  color: inherit;
+}
+
+.entry-meta a:hover {
+  color: var(--fc-accent);
+}
+
+.entry-meta .author-highlighted {
+  color: var(--fc-heading);
+  font-weight: 600;
+}
+
+.entry-empty {
+  color: var(--fc-text-muted);
+}
+
+.research-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: var(--fc-space-6);
+  align-items: center;
+  margin-bottom: var(--fc-space-5);
+}
+
+.research-intro__text p {
+  margin: 0;
+  color: var(--fc-heading);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.research-intro__text p + p {
+  margin-top: var(--fc-space-3);
+}
+
+.research-intro__media {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+}
+
+.research-intro__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .research-intro {
+    grid-template-columns: 1fr;
+    gap: var(--fc-space-4);
+  }
+}
+
+body.research-page .article-style h2 {
+  clear: both;
+}
+
+@media (max-width: 767.98px) {
+  .research-intro-image {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 var(--fc-space-4);
+  }
+}
+
+body.research-page .article-style > p:first-of-type {
+  color: var(--fc-heading);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+body.research-page .article-style h2 {
+  display: flex;
+  align-items: center;
+  margin: var(--fc-space-6) 0 var(--fc-space-3);
+  padding-bottom: var(--fc-space-1);
+  color: var(--fc-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--fc-border);
+}
+
+body.research-page .article-style h2::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: var(--fc-space-3);
+  background: var(--fc-accent);
+  border-radius: 50%;
+}
+
+@media (max-width: 575.98px) {
+  .entry-item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .entry-year {
+    padding-top: 0;
+    font-size: 0.8rem;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 15. Motion preferences
+// -----------------------------------------------------------------------------
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

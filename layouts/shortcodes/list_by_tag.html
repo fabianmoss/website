@@ -34,14 +34,33 @@
 {{ $items := sort $matched "Date" "desc" }}
 
 {{ if $items }}
-<ul class="content-list">
+<ul class="entry-list">
   {{ range $items }}
-  <li>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{ with .Date }} — {{ .Format "2006" }}{{ end }}
-  </li>
+    {{ $item := . }}
+    <li class="entry-item">
+      <span class="entry-year">{{ .Date.Format "2006" }}</span>
+      <div class="entry-body">
+        <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <div class="entry-meta">
+          {{ if eq $page_type "publication" }}
+            {{ if $item.Params.authors }}{{ partial "page_metadata_authors" $item }}{{ end }}
+            {{ with $item.Params.publication }}
+              {{ if $item.Params.authors }}<span class="middot-divider"></span>{{ end }}
+              <em>{{ . | markdownify }}</em>
+            {{ end }}
+          {{ else if eq $page_type "event" }}
+            {{ if $item.Params.authors }}{{ partial "page_metadata_authors" $item }}<span class="middot-divider"></span>{{ end }}
+            {{ partial "functions/get_event_dates" . }}
+            {{ with .Params.event }}<span class="middot-divider"></span>{{ . | markdownify }}{{ end }}
+            {{ with .Params.location }}<span class="middot-divider"></span>{{ . }}{{ end }}
+          {{ else }}
+            {{ with .Params.summary }}{{ . | plainify | truncate 160 }}{{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </li>
   {{ end }}
 </ul>
 {{ else }}
-<p>No items found.</p>
+<p class="entry-empty">No items found.</p>
 {{ end }}

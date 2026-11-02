@@ -1,0 +1,31 @@
+{{/* Count regular pages of a type whose tags or categories match a research
+     area key, using the same flexible matching as the list_by_tag shortcode. */}}
+{{ $tag := .tag }}
+{{ $type := .type }}
+{{ $tag_lower := lower $tag }}
+{{ $tag_with_dash := replace $tag_lower " " "-" }}
+{{ $tag_with_space := replace $tag_lower "-" " " }}
+{{ $count := 0 }}
+
+{{ range where site.RegularPages "Type" $type }}
+  {{ $has := false }}
+  {{ with .Params.tags }}
+    {{ range . }}
+      {{ $t := lower . }}
+      {{ if or (eq $t $tag_lower) (in $t $tag_lower) (eq $t $tag_with_space) (in $t $tag_with_space) (eq $t $tag_with_dash) (in $t $tag_with_dash) }}
+        {{ $has = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ with .Params.categories }}
+    {{ range . }}
+      {{ $c := lower . }}
+      {{ if or (eq $c $tag_lower) (in $c $tag_lower) (eq $c $tag_with_space) (in $c $tag_with_space) (eq $c $tag_with_dash) (in $c $tag_with_dash) }}
+        {{ $has = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if $has }}{{ $count = add $count 1 }}{{ end }}
+{{ end }}
+
+{{ return $count }}
