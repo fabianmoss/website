@@ -28,14 +28,8 @@ Cultural evolution studies how cultural traits—such as musical styles, genres,
 
 {{< list_by_tag tag="cultural-evolution" type="project" >}}
 
-## Events
+## Talks
 
 {{< list_by_tag tag="cultural-evolution" type="event" >}}
 
-## Talks
 
-{{< list_by_tag tag="cultural-evolution" type="talk" >}}
-
-## Posts
-
-{{< list_by_tag tag="cultural-evolution" type="post" >}}

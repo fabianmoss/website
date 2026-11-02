@@ -4,8 +4,7 @@
 title: "Inferring Communities of Medieval Music Manuscripts Using Stochastic Block Models"
 authors: [Tim Eipert, admin]
 date: 2026-03-03T15:04:38+01:00
-doi: "https://doi.org/10.5334/tismir.298"
-
+doi: "10.5334/tismir.298"
 # Schedule page publish date (NOT publication's date).
 publishDate: 2026-03-03T15:04:38+01:00
 

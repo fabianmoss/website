@@ -4,8 +4,7 @@
 title: "Exploring the foundations of tonality: statistical cognitive modeling of modes in the history of Western classical music"
 authors: [Daniel Harasim, admin, Matthias Ramirez, Martin Rohrmeier]
 date: 2021-01-04T14:18:51+01:00
-doi: "https://doi.org/10.1057/s41599-020-00678-6"
-
+doi: "10.1057/s41599-020-00678-6"
 # Schedule page publish date (NOT publication's date).
 publishDate: 2021-01-04T14:18:51+01:00
 

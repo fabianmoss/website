@@ -4,8 +4,7 @@
 title: "FAIR, Open, Linked: Introducing the Special Issue on Open Science in Musicology"
 authors: [admin, Markus Neuwirth]
 date: 2021-12-11T11:25:56+01:00
-doi: "http://dx.doi.org/10.18061/emr.v16i1.8246"
-
+doi: "10.18061/emr.v16i1.8246"
 # Schedule page publish date (NOT publication's date).
 publishDate: 2021-12-11T11:25:56+01:00
 

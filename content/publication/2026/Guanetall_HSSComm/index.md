@@ -4,8 +4,7 @@
 title: "Studying the diachronic development of chromaticism and dissonance in western music over three centuries"
 authors: [Xinyi Guan, Johannes Hentschel, admin, Martin Rohrmeier]
 date: 2026-09-04T09:39:51+02:00
-doi: "https://doi.org/10.1057/s41599-026-08811-7"
-
+doi: "10.1057/s41599-026-08811-7"
 # Schedule page publish date (NOT publication's date).
 publishDate: 2026-09-04T09:39:51+02:00
 

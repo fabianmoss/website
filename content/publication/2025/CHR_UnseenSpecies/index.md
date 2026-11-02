@@ -4,8 +4,7 @@
 title: "The Rest is Silence: Leveraging Unseen Species Models for Computational Musicology"
 authors: [admin, Jan Hajič jr., Adrian Nachtwey, Laurent Pugin]
 date: 2025-09-29T07:41:45+02:00
-doi: "https://doi.org/10.63744/tP4bLwLkye8B"
-
+doi: "10.63744/tP4bLwLkye8B"
 # Schedule page publish date ().
 publishDate: 2025-09-29T07:41:45+02:00
 

@@ -4,8 +4,7 @@
 title: "Harmonic patterns in Brazilian choro, Western classical, and Anglophone popular music: a data-driven comparison"
 authors: [Mauro Orsini Windholz, David Sears, admin]
 date: 2026-09-04T09:39:23+02:00
-doi: "https://doi.org/10.46926/musmat.2026v10.54-71"
-
+doi: "10.46926/musmat.2026v10.54-71"
 # Schedule page publish date (NOT publication's date).
 publishDate: 2026-09-04T09:39:23+02:00
 

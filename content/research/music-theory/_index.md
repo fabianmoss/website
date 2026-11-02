@@ -28,14 +28,8 @@ Music theory investigates the fundamental structures, systems, and conventions t
 
 {{< list_by_tag tag="music theory" type="project" >}}
 
-## Events
+## Talks
 
 {{< list_by_tag tag="music theory" type="event" >}}
 
-## Talks
 
-{{< list_by_tag tag="music theory" type="talk" >}}
-
-## Posts
-
-{{< list_by_tag tag="music theory" type="post" >}}
