@@ -1,0 +1,52 @@
+{{/*
+  Talks / events list for the homepage.
+
+  Parameters:
+    count – number of items (default 6)
+
+  Renders a date badge, title, event/location, an optional "Upcoming" badge,
+  and the theme's slides/PDF/video buttons as pills.
+*/}}
+{{ $count := int (.Get "count" | default 6) }}
+{{ $items := where site.RegularPages "Type" "event" }}
+{{ $items = sort $items "Date" "desc" }}
+{{ $items = first $count $items }}
+
+<div class="talk-list">
+  {{ range $items }}
+    <article class="talk-item">
+      <time class="talk-date"
+            datetime="{{ .Date.Format "2006-01-02" }}"
+            title="{{ .Date.Format "Jan 2, 2006" }}{{ with .Params.date_end }} – {{ (time.AsTime .).Format "Jan 2, 2006" }}{{ end }}">
+        <span class="talk-month">{{ .Date.Format "Jan" }}</span>
+        <span class="talk-day">{{ .Date.Format "2" }}</span>
+        <span class="talk-year">{{ .Date.Format "2006" }}</span>
+      </time>
+
+      <div class="talk-body">
+        <h3 class="talk-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ if ge .Date now }}<span class="talk-badge">Upcoming</span>{{ end }}
+        </h3>
+
+        {{ if or .Params.event .Params.location }}
+          <div class="talk-meta">
+            {{ with .Params.event }}<span class="talk-event">{{ . }}</span>{{ end }}
+            {{ with .Params.location }}<span class="talk-location">{{ . }}</span>{{ end }}
+          </div>
+        {{ end }}
+
+        {{ if or .Params.event_url (partial "functions/has_attachments" .) }}
+          <div class="talk-links">
+            {{ with .Params.event_url }}
+              <a class="btn" href="{{ . }}" target="_blank" rel="noopener">Event</a>
+            {{ end }}
+            {{ if partial "functions/has_attachments" . }}
+              {{ partial "page_links" (dict "page" . "is_list" 1) }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </article>
+  {{ end }}
+</div>
