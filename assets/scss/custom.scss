@@ -145,7 +145,117 @@ button:focus-visible,
 }
 
 // -----------------------------------------------------------------------------
-// 4. Motion preferences
+// 4. Component: research area cards (homepage)
+// -----------------------------------------------------------------------------
+// Markup lives in `content/home/research-areas.md`; these styles were
+// previously inlined there. Kept here so the cards share the site's design
+// tokens and can be maintained in one place.
+
+.research-cards {
+  display: grid;
+  // Auto-fit keeps the layout intact if a fifth (or third) research area is
+  // added later, instead of hard-coding a four-column grid.
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: var(--fc-space-5);
+}
+
+.card-container {
+  perspective: 1000px;
+  height: 100%;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:focus-visible {
+  outline: 2px solid var(--fc-accent);
+  outline-offset: 4px;
+  border-radius: var(--fc-radius-lg);
+}
+
+.card.research-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.card.research-card:hover,
+.card-link:focus-visible .card.research-card {
+  transform: translateY(-6px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.card.research-card .card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 108px;
+  padding: var(--fc-space-4) var(--fc-space-5);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.25s ease;
+}
+
+.card.research-card:hover .card-image,
+.card-link:focus-visible .card-image {
+  filter: saturate(1.1);
+}
+
+.card-image.computational-musicology {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+.card-image.cultural-evolution {
+  background: linear-gradient(135deg, #92400e 0%, #b45309 100%);
+}
+
+.card-image.music-theory {
+  background: linear-gradient(135deg, #be123c 0%, #db2777 100%);
+}
+
+.card-image.digital-humanities {
+  background: linear-gradient(135deg, #075985 0%, #0e7490 100%);
+}
+
+.card.research-card .card-body {
+  flex: 1;
+  padding: var(--fc-space-4) var(--fc-space-5);
+}
+
+.card.research-card .card-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.25;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.card.research-card .card-text {
+  margin: 0;
+  padding: 0;
+  color: var(--fc-text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+// -----------------------------------------------------------------------------
+// 5. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,
