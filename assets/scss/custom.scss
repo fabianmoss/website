@@ -357,7 +357,118 @@ body.dark .navbar {
 }
 
 // -----------------------------------------------------------------------------
-// 6. Motion preferences
+// 6. Hero / About section
+// -----------------------------------------------------------------------------
+// Turns the default About widget into a calmer hero: radiused portrait with a
+// ring, display-scale name, accent role line, circular social buttons, and a
+// subtle accent wash behind the section.
+
+section#about.wg-about {
+  background: radial-gradient(
+      70rem 32rem at 12% -25%,
+      rgba(29, 78, 216, 0.07),
+      transparent 70%
+    ),
+    var(--fc-surface);
+}
+
+.wg-about .row {
+  align-items: center;
+  row-gap: var(--fc-space-6);
+}
+
+.wg-about #profile {
+  padding: var(--fc-space-4) var(--fc-space-3);
+}
+
+.wg-about .avatar {
+  width: clamp(160px, 18vw, 210px);
+  height: clamp(160px, 18vw, 210px);
+  border: 4px solid var(--fc-surface);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18),
+    0 0 0 1px var(--fc-border);
+}
+
+.wg-about .portrait-title h2 {
+  margin: var(--fc-space-4) 0 var(--fc-space-2);
+  color: var(--fc-heading);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.wg-about .portrait-title h3 {
+  margin-bottom: var(--fc-space-1);
+  color: var(--fc-text-muted);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+// First h3 is the role/tagline; the rest are affiliations.
+.wg-about .portrait-title h3:first-of-type {
+  color: var(--fc-accent);
+  font-weight: 600;
+}
+
+.wg-about .portrait-title h3 a {
+  color: var(--fc-text-muted);
+}
+
+.wg-about .portrait-title h3 a:hover {
+  color: var(--fc-accent);
+}
+
+// Social links as circular buttons.
+.wg-about .network-icon {
+  margin-top: var(--fc-space-5);
+}
+
+.wg-about .network-icon li {
+  margin-right: var(--fc-space-2);
+}
+
+.wg-about .network-icon li:hover {
+  transform: none;
+}
+
+.wg-about .network-icon li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--fc-border);
+  border-radius: 50%;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface);
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease;
+}
+
+.wg-about .network-icon li a:hover,
+.wg-about .network-icon li a:focus-visible {
+  color: #fff;
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  transform: translateY(-2px);
+}
+
+.wg-about .network-icon .big-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+// Lead paragraph of the bio stands out slightly from the rest.
+.wg-about .article-style > p:first-of-type {
+  font-size: 1.12rem;
+  line-height: 1.65;
+  color: var(--fc-heading);
+}
+
+// -----------------------------------------------------------------------------
+// 7. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,
