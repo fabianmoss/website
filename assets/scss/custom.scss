@@ -172,42 +172,25 @@ button:focus-visible,
 // -----------------------------------------------------------------------------
 // 4. Component: research area cards (homepage)
 // -----------------------------------------------------------------------------
-// Markup lives in `content/home/research-areas.md`; these styles were
-// previously inlined there. Kept here so the cards share the site's design
-// tokens and can be maintained in one place.
+// Rendered by `layouts/shortcodes/research_areas.html` from
+// `data/research_areas.yaml`: muted tinted icon, accent top rule, content
+// counts, and an explicit "Explore" affordance.
 
 .research-cards {
   display: grid;
-  // Auto-fit keeps the layout intact if a fifth (or third) research area is
-  // added later, instead of hard-coding a four-column grid.
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: var(--fc-space-5);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: var(--fc-space-4);
 }
 
-.card-container {
-  perspective: 1000px;
-  height: 100%;
-}
-
-.card-link {
-  display: block;
-  height: 100%;
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-link:focus-visible {
-  outline: 2px solid var(--fc-accent);
-  outline-offset: 4px;
-  border-radius: var(--fc-radius-lg);
-}
-
-.card.research-card {
+.research-area-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 0;
+  padding: 0;
   overflow: hidden;
+  color: inherit;
+  text-decoration: none;
   background: var(--fc-surface);
   border: 1px solid var(--fc-border);
   border-radius: var(--fc-radius-lg);
@@ -216,71 +199,154 @@ button:focus-visible,
     border-color 0.25s ease;
 }
 
-.card.research-card:hover,
-.card-link:focus-visible .card.research-card {
-  transform: translateY(-6px);
-  border-color: var(--fc-accent);
+.research-area-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--area-color);
+}
+
+.research-area-card:hover,
+.research-area-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--area-color);
   box-shadow: var(--fc-shadow-md);
 }
 
-.card.research-card .card-image {
+.research-area-card:focus-visible {
+  outline: 2px solid var(--area-color);
+  outline-offset: 3px;
+}
+
+.research-area-card__media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--fc-surface-alt);
+}
+
+.research-area-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.research-area-card:hover .research-area-card__media img,
+.research-area-card:focus-visible .research-area-card__media img {
+  transform: scale(1.03);
+}
+
+.research-area-card__body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 108px;
-  padding: var(--fc-space-4) var(--fc-space-5);
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  transition: filter 0.25s ease;
-}
-
-.card.research-card:hover .card-image,
-.card-link:focus-visible .card-image {
-  filter: saturate(1.1);
-}
-
-.card-image.computational-musicology {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-}
-
-.card-image.cultural-evolution {
-  background: linear-gradient(135deg, #92400e 0%, #b45309 100%);
-}
-
-.card-image.music-theory {
-  background: linear-gradient(135deg, #be123c 0%, #db2777 100%);
-}
-
-.card-image.digital-humanities {
-  background: linear-gradient(135deg, #075985 0%, #0e7490 100%);
-}
-
-.card.research-card .card-body {
   flex: 1;
+  flex-direction: column;
+  gap: var(--fc-space-2);
   padding: var(--fc-space-4) var(--fc-space-5);
 }
 
-.card.research-card .card-title {
+.research-area-card__head {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 2.5em;
-  margin: 0;
-  color: #fff;
-  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
-  font-weight: 600;
-  line-height: 1.25;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  gap: var(--fc-space-3);
 }
 
-.card.research-card .card-text {
-  margin: 0;
-  padding: 0;
-  color: var(--fc-text-muted);
+.research-area-card__icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--area-color);
   font-size: 1rem;
-  line-height: 1.5;
+  background: var(--area-soft);
+  border-radius: 50%;
+}
+
+.research-area-card__title {
+  margin: 0;
+  color: var(--fc-heading);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.3;
   text-wrap: balance;
+}
+
+.research-area-card__text {
+  margin: 0;
+  color: var(--fc-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.research-area-card__meta {
+  margin-top: auto;
+  padding-top: var(--fc-space-3);
+  color: var(--fc-text-muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.research-area-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--area-color);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.research-area-card__link span {
+  transition: transform 0.2s ease;
+}
+
+.research-area-card:hover .research-area-card__link span,
+.research-area-card:focus-visible .research-area-card__link span {
+  transform: translateX(3px);
+}
+
+.area-computational-musicology {
+  --area-color: #4f46e5;
+  --area-soft: #eef2ff;
+}
+
+.area-music-theory {
+  --area-color: #be123c;
+  --area-soft: #fff1f4;
+}
+
+.area-digital-humanities {
+  --area-color: #0e7490;
+  --area-soft: #ecfeff;
+}
+
+.area-cultural-evolution {
+  --area-color: #b45309;
+  --area-soft: #fffbeb;
+}
+
+body.dark .area-computational-musicology {
+  --area-color: #a5b4fc;
+  --area-soft: rgba(165, 180, 252, 0.14);
+}
+
+body.dark .area-music-theory {
+  --area-color: #fda4af;
+  --area-soft: rgba(253, 164, 175, 0.14);
+}
+
+body.dark .area-digital-humanities {
+  --area-color: #67e8f9;
+  --area-soft: rgba(103, 232, 249, 0.14);
+}
+
+body.dark .area-cultural-evolution {
+  --area-color: #fcd34d;
+  --area-soft: rgba(252, 211, 77, 0.14);
 }
 
 // -----------------------------------------------------------------------------
@@ -1329,7 +1395,216 @@ body.teaching-page .article-style details a {
 }
 
 // -----------------------------------------------------------------------------
-// 12. Motion preferences
+// 12. Vertical rhythm
+// -----------------------------------------------------------------------------
+// Tighter section and card spacing so the homepage uses less vertical space.
+
+.home-section {
+  padding: 48px 0;
+}
+
+@media (max-width: 991.98px) {
+  .home-section {
+    padding: 36px 0;
+  }
+}
+
+.home-section .section-heading h1 {
+  margin-bottom: var(--fc-space-1);
+}
+
+.year-timeline {
+  margin-bottom: var(--fc-space-4);
+}
+
+.year-timeline__track {
+  height: 24px;
+}
+
+.year-timeline--bars .year-timeline__line {
+  top: calc(var(--fc-space-4) + 24px + 0.35rem + 6px);
+}
+
+.year-list-toggle {
+  margin-top: var(--fc-space-3);
+}
+
+.pub-list,
+.talk-list {
+  gap: var(--fc-space-3);
+}
+
+.pub-item,
+.talk-item {
+  padding: var(--fc-space-3) var(--fc-space-4);
+}
+
+.pub-links,
+.talk-links {
+  margin-top: var(--fc-space-2);
+}
+
+.video-grid {
+  gap: var(--fc-space-4);
+}
+
+.video-card {
+  gap: var(--fc-space-2);
+}
+
+.card.research-card .card-image {
+  min-height: 84px;
+  padding: 0.6rem 1rem;
+}
+
+.card.research-card .card-body {
+  padding: 0.85rem 1.25rem;
+}
+
+.site-footer {
+  margin-top: var(--fc-space-6);
+}
+
+// -----------------------------------------------------------------------------
+// 13. Experience timeline (homepage)
+// -----------------------------------------------------------------------------
+// Vertical counterpart of the publications/talks timeline: year column, accent
+// line with dots, and the same card treatment.
+
+.exp-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-4);
+}
+
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 0.75rem;
+  width: 2px;
+  background: var(--fc-border);
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: var(--fc-space-3);
+  align-items: start;
+}
+
+.exp-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.exp-dot {
+  position: relative;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  background: var(--fc-surface);
+  border: 2px solid var(--fc-accent);
+  border-radius: 50%;
+}
+
+.exp-dot--current {
+  background: var(--fc-accent);
+  box-shadow: 0 0 0 4px var(--fc-accent-soft);
+}
+
+.exp-card {
+  padding: var(--fc-space-3) var(--fc-space-4);
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+.exp-card-head {
+  display: flex;
+  gap: var(--fc-space-3);
+  align-items: flex-start;
+}
+
+.exp-logo {
+  flex: 0 0 auto;
+}
+
+.exp-logo img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.exp-title {
+  margin: 0;
+  color: var(--fc-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.exp-company {
+  margin-top: 2px;
+  color: var(--fc-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.exp-company a {
+  color: inherit;
+}
+
+.exp-company a:hover {
+  color: var(--fc-accent);
+}
+
+.exp-meta {
+  margin-top: var(--fc-space-1);
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.exp-description {
+  margin-top: var(--fc-space-2);
+  color: var(--fc-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.exp-description p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .exp-timeline::before {
+    left: 0.5rem;
+  }
+
+  .exp-item {
+    grid-template-columns: 1rem 1fr;
+    gap: var(--fc-space-2);
+  }
+
+}
+
+// -----------------------------------------------------------------------------
+// 14. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,

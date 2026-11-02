@@ -1,0 +1,34 @@
+# Images: Wikimedia Commons (public domain / CC0). See individual files:
+#   computational-musicology — Man-person-technology-music (CC0)
+#   music-theory — Gavotte from French suite n. 5 (public domain)
+#   digital-humanities — Chigi codex (public domain)
+#   cultural-evolution — Assamese folk wind instruments (CC0)
+# Research area cards shown on the homepage.
+# `key` is used for styling and for matching tags/categories in the counts.
+- key: computational-musicology
+  title: "Computational Musicology"
+  description: "Modeling musical patterns in large corpora"
+  icon: "fa-wave-square"
+  image: "/media/research/computational-musicology.jpg"
+  url: "/research/computational-musicology/"
+
+- key: music-theory
+  title: "Music Theory & Analysis"
+  description: "How algorithms reveal musical structure"
+  icon: "fa-music"
+  image: "/media/research/music-theory.jpg"
+  url: "/research/music-theory/"
+
+- key: digital-humanities
+  title: "Music Encoding & Digital Humanities"
+  description: "Building digital editions and research tools"
+  icon: "fa-code"
+  image: "/media/research/digital-humanities.jpg"
+  url: "/research/digital-humanities/"
+
+- key: cultural-evolution
+  title: "Cultural Evolution & Music"
+  description: "How musical traditions change and spread"
+  icon: "fa-network-wired"
+  image: "/media/research/cultural-evolution.jpg"
+  url: "/research/cultural-evolution/"
