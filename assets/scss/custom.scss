@@ -1800,7 +1800,129 @@ body.research-page .article-style h2::before {
 }
 
 // -----------------------------------------------------------------------------
-// 15. Motion preferences
+// 15. Project detail pages
+// -----------------------------------------------------------------------------
+
+.article-project .page-subtitle {
+  max-width: 65ch;
+  color: var(--fc-text-muted);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.article-project .article-metadata {
+  margin-top: var(--fc-space-2);
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+}
+
+// Author is implicit on a single-author site.
+.article-project .article-metadata > div:first-child {
+  display: none;
+}
+
+.article-project .article-categories .fa-folder {
+  display: none;
+}
+
+.article-project .article-categories a {
+  display: inline-block;
+  margin: 0 var(--fc-space-1) var(--fc-space-1) 0;
+  padding: 0.1rem 0.55rem;
+  color: var(--fc-text-muted);
+  font-size: 0.78rem;
+  text-decoration: none;
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-pill);
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.article-project .article-categories a:hover,
+.article-project .article-categories a:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+}
+
+.article-project .btn-links {
+  margin: var(--fc-space-3) 0 var(--fc-space-2);
+  line-height: 1;
+}
+
+.article-project .btn-links .btn {
+  margin: 0 var(--fc-space-2) var(--fc-space-2) 0;
+  padding: 0.15rem 0.65rem;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-pill);
+  box-shadow: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.article-project .btn-links .btn:hover,
+.article-project .btn-links .btn:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+}
+
+.article-project .featured-image-wrapper {
+  max-width: 720px !important;
+  max-height: none !important;
+  margin: var(--fc-space-4) auto var(--fc-space-5);
+  overflow: hidden;
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+}
+
+.article-project .featured-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-project .article-style > p:first-of-type {
+  color: var(--fc-heading);
+  font-size: 1.03rem;
+  line-height: 1.65;
+}
+
+.project-related-pages {
+  margin-top: var(--fc-space-6);
+}
+
+.project-related-pages h2 {
+  display: flex;
+  align-items: center;
+  margin: var(--fc-space-6) 0 var(--fc-space-3);
+  padding-bottom: var(--fc-space-1);
+  color: var(--fc-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--fc-border);
+}
+
+.project-related-pages h2::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: var(--fc-space-3);
+  background: var(--fc-accent);
+  border-radius: 50%;
+}
+
+// -----------------------------------------------------------------------------
+// 16. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,
