@@ -1,7 +1,7 @@
 ---
-# An instance of the Pages widget.
-# Documentation: https://wowchemy.com/docs/page-builder/
-widget: pages
+# A blank widget that renders the latest publications via a custom shortcode.
+widget: blank
+active: true
 
 # This file represents a page section.
 headless: true
@@ -12,35 +12,11 @@ weight: 3
 title: Latest publications
 subtitle: 'Journal Articles, Conference Papers, Datasets'
 
-content:
-  # Page type to display. E.g. post, talk, publication...
-  page_type: publication
-  # Choose how much pages you would like to display (0 = all pages)
-  count: 4 
-  # Choose how many pages you would like to offset by
-  offset: 0
-  # Page order: descending (desc) or ascending (asc) date.
-  order: desc
-  # Filter on criteria
-  filters:
-    tag: ''
-    category: ''
-    publication_type: ''
-    author: ''
-    exclude_featured: true
 design:
-  # Choose a view for the listings:
-  #   1 = List
-  #   2 = Compact
-  #   3 = Card
-  #   4 = Citation (publication only)
-  view: 2 
-
-## Move this below the `---` to display filter
-
+  # Full-width list so it aligns with the other homepage sections.
+  columns: '1'
 ---
 
-{{% callout note %}}
-[See all publications](./publication/).
-{{% /callout %}}
+{{< publications_list count="4" >}}
 
+<p class="see-all"><a href="./publication/">View all publications &rarr;</a></p>

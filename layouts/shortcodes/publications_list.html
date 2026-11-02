@@ -1,0 +1,52 @@
+{{/*
+  Publications list for the homepage.
+
+  Parameters:
+    count             – number of items (default 4)
+    exclude_featured  – set "false" to include featured publications
+
+  Renders year, title, authors, venue, summary, and the theme's existing
+  DOI/PDF/code buttons as pills.
+*/}}
+{{ $count := int (.Get "count" | default 4) }}
+{{ $items := where site.RegularPages "Type" "publication" }}
+{{ if ne (.Get "exclude_featured") "false" }}
+  {{ $items = where $items "Params.featured" "!=" true }}
+{{ end }}
+{{ $items = sort $items "Date" "desc" }}
+{{ $items = first $count $items }}
+
+<div class="pub-list">
+  {{ range $items }}
+    <article class="pub-item">
+      <div class="pub-year">{{ .Date.Format "2006" }}</div>
+      <div class="pub-body">
+        <h3 class="pub-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+        {{ if .Params.authors }}
+          <div class="pub-authors">{{ partial "page_metadata_authors" . }}</div>
+        {{ end }}
+
+        {{ if or .Params.publication .Params.publication_short }}
+          <div class="pub-venue">
+            {{ if .Params.publication }}
+              {{ .Params.publication | markdownify }}
+            {{ else }}
+              {{ .Params.publication_short | markdownify }}
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ with .Params.summary }}
+          <p class="pub-summary">{{ . | markdownify | emojify }}</p>
+        {{ end }}
+
+        {{ if partial "functions/has_attachments" . }}
+          <div class="pub-links">
+            {{ partial "page_links" (dict "page" . "is_list" 1) }}
+          </div>
+        {{ end }}
+      </div>
+    </article>
+  {{ end }}
+</div>
