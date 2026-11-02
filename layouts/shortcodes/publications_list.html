@@ -1,25 +1,32 @@
 {{/*
-  Publications list for the homepage.
+  Publications list with a year timeline.
 
   Parameters:
-    count             – number of items (default 4)
+    count             – optional limit; omit or 0 for all publications
     exclude_featured  – set "false" to include featured publications
 
-  Renders year, title, authors, venue, summary, and the theme's existing
-  DOI/PDF/code buttons as pills.
+  Renders a year selector (newest first, All at the end) and one card per
+  publication. The newest year is selected and rendered server-side so there is
+  no flash of the full list before the script runs.
 */}}
-{{ $count := int (.Get "count" | default 4) }}
+{{ $count := int (.Get "count" | default 0) }}
 {{ $items := where site.RegularPages "Type" "publication" }}
 {{ if ne (.Get "exclude_featured") "false" }}
   {{ $items = where $items "Params.featured" "!=" true }}
 {{ end }}
 {{ $items = sort $items "Date" "desc" }}
-{{ $items = first $count $items }}
+{{ if gt $count 0 }}
+  {{ $items = first $count $items }}
+{{ end }}
+{{ $latestYear := "" }}
+{{ with index $items 0 }}{{ $latestYear = .Date.Format "2006" }}{{ end }}
+
+<div id="publications-timeline" class="year-timeline" role="group" aria-label="Filter publications by year"></div>
 
 <div class="pub-list">
   {{ range $items }}
-    <article class="pub-item">
-      <div class="pub-year">{{ .Date.Format "2006" }}</div>
+    {{ $year := .Date.Format "2006" }}
+    <article class="pub-item" data-year="{{ $year }}"{{ if ne $year $latestYear }} hidden{{ end }}>
       <div class="pub-body">
         <h3 class="pub-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
@@ -41,12 +48,83 @@
           <p class="pub-summary">{{ . | markdownify | emojify }}</p>
         {{ end }}
 
-        {{ if partial "functions/has_attachments" . }}
+        {{ if or .Params.doi (partial "functions/has_attachments" .) }}
           <div class="pub-links">
-            {{ partial "page_links" (dict "page" . "is_list" 1) }}
+            {{ with .Params.doi }}
+              {{ $href := . }}
+              {{ if not (hasPrefix . "http") }}{{ $href = printf "https://doi.org/%s" . }}{{ end }}
+              <a class="pub-doi" href="{{ $href }}" target="_blank" rel="noopener" aria-label="Open DOI" title="DOI">
+                <i class="fas fa-link" aria-hidden="true"></i>
+              </a>
+            {{ end }}
+            {{ if partial "functions/has_attachments" . }}
+              {{ partial "page_links" (dict "page" . "is_list" 1) }}
+            {{ end }}
           </div>
         {{ end }}
       </div>
     </article>
   {{ end }}
 </div>
+
+{{ if not (.Page.Scratch.Get "publications_timeline_js") }}
+  {{ .Page.Scratch.Set "publications_timeline_js" true }}
+  <script>
+    (function () {
+      function init() {
+        var container = document.getElementById('publications-timeline');
+        if (!container || container.dataset.ready) return;
+        var section = container.closest('section');
+        if (!section) return;
+        container.dataset.ready = 'true';
+
+        var items = Array.prototype.slice.call(section.querySelectorAll('.pub-item[data-year]'));
+        var years = [];
+        items.forEach(function (item) {
+          var year = item.dataset.year;
+          if (year && years.indexOf(year) === -1) years.push(year);
+        });
+        if (!years.length) return;
+        years.sort(function (a, b) { return Number(b) - Number(a); });
+
+        var line = document.createElement('span');
+        line.className = 'year-timeline__line';
+        line.setAttribute('aria-hidden', 'true');
+        container.appendChild(line);
+
+        var buttons = [];
+
+        function addButton(label, value) {
+          var button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'year-timeline__year';
+          button.textContent = label;
+          button.dataset.year = value;
+          button.setAttribute('aria-pressed', 'false');
+          button.addEventListener('click', function () { select(value); });
+          container.appendChild(button);
+          buttons.push(button);
+        }
+
+        function select(value) {
+          buttons.forEach(function (button) {
+            button.setAttribute('aria-pressed', String(button.dataset.year === value));
+          });
+          items.forEach(function (item) {
+            item.hidden = !(value === 'all' || item.dataset.year === value);
+          });
+        }
+
+        years.forEach(function (year) { addButton(year, year); });
+        addButton('All', 'all');
+        select(years[0]);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+{{ end }}

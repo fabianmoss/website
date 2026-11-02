@@ -663,6 +663,10 @@ body.dark .video-play::before {
   text-align: right;
 }
 
+#publications [hidden] {
+  display: none !important;
+}
+
 #publications .see-all a {
   color: var(--fc-accent);
   font-size: 0.9rem;
@@ -676,9 +680,7 @@ body.dark .video-play::before {
 }
 
 .pub-item {
-  display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: var(--fc-space-4);
+  display: block;
   padding: var(--fc-space-4) var(--fc-space-5);
   background: var(--fc-surface);
   border: 1px solid var(--fc-border);
@@ -694,13 +696,37 @@ body.dark .video-play::before {
   box-shadow: var(--fc-shadow-md);
 }
 
-.pub-year {
-  color: var(--fc-accent);
-  font-size: 1rem;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-  line-height: 1.4;
+.pub-doi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin: 0;
+  color: var(--fc-text-muted);
+  font-size: 0.7rem;
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: 50%;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease;
 }
+
+.pub-doi:hover,
+.pub-doi:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  transform: translateY(-1px);
+}
+
+// DOI is shown as the icon under the year, so hide its pill here.
+#publications .pub-links .btn[href^="https://doi.org/"] {
+  display: none;
+}
+
+// If the DOI pill was the only attachment, collapse the empty row.
+// (The DOI icon is now rendered inside .pub-links, so the row must stay.)
 
 .pub-title {
   margin: 0 0 var(--fc-space-1);
@@ -749,12 +775,16 @@ body.dark .video-play::before {
 }
 
 .pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fc-space-2);
   margin-top: var(--fc-space-3);
   line-height: 1;
 }
 
 .pub-links .btn {
-  margin: 0 var(--fc-space-2) var(--fc-space-2) 0;
+  margin: 0;
   padding: 0.15rem 0.65rem;
   color: var(--fc-text-muted);
   background: var(--fc-surface-alt);
@@ -776,9 +806,8 @@ body.dark .video-play::before {
 }
 
 @media (max-width: 575.98px) {
-  .pub-item {
-    grid-template-columns: 1fr;
-    gap: var(--fc-space-1);
+  .pub-links {
+    gap: var(--fc-space-2);
   }
 }
 
@@ -960,7 +989,7 @@ body.teaching-page .article-style [hidden] {
   display: none !important;
 }
 
-body.teaching-page .teaching-timeline {
+.year-timeline {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -970,16 +999,16 @@ body.teaching-page .teaching-timeline {
   overflow-x: auto;
 }
 
-body.teaching-page .teaching-timeline__line {
+.year-timeline__line {
   position: absolute;
   top: calc(var(--fc-space-4) + 6px);
-  left: 6%;
-  right: 6%;
+  left: 1.625rem;
+  right: 1.625rem;
   height: 2px;
   background: var(--fc-border);
 }
 
-body.teaching-page .teaching-timeline__year {
+.year-timeline__year {
   position: relative;
   z-index: 1;
   display: flex;
@@ -997,7 +1026,7 @@ body.teaching-page .teaching-timeline__year {
   transition: color 0.2s ease;
 }
 
-body.teaching-page .teaching-timeline__year::before {
+.year-timeline__year::before {
   content: "";
   width: 14px;
   height: 14px;
@@ -1008,19 +1037,19 @@ body.teaching-page .teaching-timeline__year::before {
     box-shadow 0.2s ease;
 }
 
-body.teaching-page .teaching-timeline__year:hover {
+.year-timeline__year:hover {
   color: var(--fc-accent);
 }
 
-body.teaching-page .teaching-timeline__year:hover::before {
+.year-timeline__year:hover::before {
   border-color: var(--fc-accent);
 }
 
-body.teaching-page .teaching-timeline__year[aria-pressed="true"] {
+.year-timeline__year[aria-pressed="true"] {
   color: var(--fc-accent);
 }
 
-body.teaching-page .teaching-timeline__year[aria-pressed="true"]::before {
+.year-timeline__year[aria-pressed="true"]::before {
   background: var(--fc-accent);
   border-color: var(--fc-accent);
   box-shadow: 0 0 0 4px var(--fc-accent-soft);

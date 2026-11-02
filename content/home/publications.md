@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 3
 
-title: Latest publications
+title: Publications
 subtitle: 'Journal Articles, Conference Papers, Datasets'
 
 design:
@@ -17,6 +17,6 @@ design:
   columns: '1'
 ---
 
-{{< publications_list count="4" >}}
+{{< publications_list >}}
 
 <p class="see-all"><a href="./publication/">View all publications &rarr;</a></p>

@@ -5,7 +5,7 @@
   teaching page and filters the page to the selected year. With JavaScript
   disabled the timeline stays hidden and all courses remain visible.
 */}}
-<div id="teaching-timeline" class="teaching-timeline" role="group" aria-label="Filter courses by year"></div>
+<div id="teaching-timeline" class="year-timeline" role="group" aria-label="Filter courses by year"></div>
 <script>
   (function () {
     function init() {
@@ -39,7 +39,7 @@
       years.sort(function (a, b) { return Number(b) - Number(a); });
 
       var line = document.createElement('span');
-      line.className = 'teaching-timeline__line';
+      line.className = 'year-timeline__line';
       line.setAttribute('aria-hidden', 'true');
       container.appendChild(line);
 
@@ -48,7 +48,7 @@
       function addButton(label, value) {
         var button = document.createElement('button');
         button.type = 'button';
-        button.className = 'teaching-timeline__year';
+        button.className = 'year-timeline__year';
         button.textContent = label;
         button.dataset.year = value;
         button.setAttribute('aria-pressed', 'false');
