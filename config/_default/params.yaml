@@ -74,6 +74,9 @@ address_format: en-us
 
 # Site features
 
+# Hide the author box on content pages (single-author site).
+profile: false
+
 highlight: true
 highlight_languages:
   - r
