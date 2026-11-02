@@ -16,7 +16,7 @@ publishDate: 2021-11-12T09:02:08+01:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the 22nd International  Society for Music Information Retrieval Conference"
+publication: "Proceedings of the 22nd International Society for Music Information Retrieval Conference"
 publication_short: ""
 
 abstract: "Extended tonality is a central system that characterizes the music from the 19th up to the 21st century, including styles like popular music, ﬁlm music or Jazz. Developing from classical major-minor tonality, the harmonic language of extended tonality forms its own set of rules and regularities, which are a result of the freer combinatoriality of chords within phrases, non-standard chord forms, the emancipation of dissonance, and the loosening of the concept of key. These phenomena posit a challenge for formal, mathematical theory building. The theoretical model proposed in this paper proceeds from Neo-Riemannian and Tonfeld theory, a systematic but informal music-theoretical framework for extended tonality. Our model brings together three fundamental components: the underlying algebraic structure of the Tonnetz, the three basic analytical categories from Tonfeld theory (octatonic and hexatonic collections as well as stacks of ﬁfths), and harmonic syntax in terms of formal language theory. The proposed model is speciﬁed to a level of detail that lends itself for implementation and empirical investigation."

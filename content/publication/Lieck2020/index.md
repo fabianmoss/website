@@ -14,7 +14,7 @@ publishDate: "2020-10-01T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Transactions of the International Society of Music Information Retrieval, 3*(1), 153-164"
+publication: "Transactions of the International Society of Music Information Retrieval, 3(1), 153-164"
 publication_short: ""
 
 abstract: > 

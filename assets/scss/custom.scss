@@ -9,6 +9,39 @@
 // intentionally left for a later pass.
 // =============================================================================
 
+// Self-hosted fonts (latin subsets). Replaces the Google Fonts request.
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/inter-var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/source-serif-pro-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/source-serif-pro-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/source-serif-pro-700.woff2") format("woff2");
+}
+
 // -----------------------------------------------------------------------------
 // 1. Design tokens
 // -----------------------------------------------------------------------------
@@ -113,7 +146,11 @@ h3 {
 
 // Keep the serif display face for H1 only; all lower-level headings use the
 // body sans so the pairing stays consistent with running text.
-h2,
+h1,
+h2 {
+  font-family: $sta-font-heading, serif;
+}
+
 h3,
 h4,
 h5,
@@ -134,7 +171,7 @@ p {
 // Section headings on the homepage (widget titles + subtitles). Serif title,
 // restrained weight, muted subtitle, and a consistent left alignment — the
 // columns-1 widgets (Research areas, Videos) would otherwise centre theirs.
-.home-section .section-heading h1 {
+.home-section .section-heading h2 {
   margin-bottom: var(--fc-space-2);
   font-size: clamp(1.75rem, 2.6vw, 2.15rem);
   font-weight: 600;
@@ -349,6 +386,16 @@ body.dark .area-cultural-evolution {
   --area-soft: rgba(252, 211, 77, 0.14);
 }
 
+body.research-index .research-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 767.98px) {
+  body.research-index .research-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 // -----------------------------------------------------------------------------
 // 5. Navigation bar
 // -----------------------------------------------------------------------------
@@ -521,7 +568,7 @@ body.dark section#about.wg-about {
     0 0 0 1px var(--fc-border);
 }
 
-.wg-about .portrait-title h2 {
+.wg-about .portrait-title h1 {
   margin: var(--fc-space-4) 0 var(--fc-space-2);
   color: var(--fc-heading);
   font-family: $sta-font-heading, serif;
@@ -751,37 +798,58 @@ body.dark .video-play::before {
   box-shadow: var(--fc-shadow-md);
 }
 
-.pub-doi {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.7rem;
-  height: 1.7rem;
-  margin: 0;
-  color: var(--fc-text-muted);
-  font-size: 0.7rem;
-  background: var(--fc-surface-alt);
-  border: 1px solid var(--fc-border);
-  border-radius: 50%;
-  transition: color 0.2s ease, background-color 0.2s ease,
-    border-color 0.2s ease, transform 0.2s ease;
-}
-
-.pub-doi:hover,
-.pub-doi:focus-visible {
-  color: var(--fc-on-accent);
-  background: var(--fc-accent);
-  border-color: var(--fc-accent);
-  transform: translateY(-1px);
-}
-
-// DOI is shown as the icon under the year, so hide its pill here.
+// The venue links to the DOI, so hide the duplicate DOI pill here.
 #publications .pub-links .btn[href^="https://doi.org/"] {
   display: none;
 }
 
 // If the DOI pill was the only attachment, collapse the empty row.
 // (The DOI icon is now rendered inside .pub-links, so the row must stay.)
+
+.pub-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fc-space-2);
+  margin-bottom: var(--fc-space-1);
+}
+
+.pub-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--fc-text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pub-status {
+  padding: 0.05rem 0.45rem;
+  color: var(--fc-accent);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--fc-accent-soft);
+  border-radius: var(--fc-radius-pill);
+}
+
+.pub-type i {
+  color: var(--fc-accent);
+  font-size: 0.8rem;
+}
+
+.entry-type {
+  color: var(--fc-text-muted);
+  font-weight: 600;
+}
+
+.entry-type i {
+  margin-right: 0.3rem;
+  color: var(--fc-accent);
+}
 
 .pub-title {
   margin: 0 0 var(--fc-space-1);
@@ -799,9 +867,13 @@ body.dark .video-play::before {
 }
 
 .pub-authors {
+  display: -webkit-box;
+  overflow: hidden;
   color: var(--fc-text-muted);
   font-size: 0.88rem;
   line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .pub-authors a {
@@ -821,12 +893,29 @@ body.dark .video-play::before {
   line-height: 1.5;
 }
 
+.pub-venue a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.pub-venue a:hover,
+.pub-venue a:focus-visible {
+  color: var(--fc-accent);
+  border-bottom-color: currentColor;
+}
+
 .pub-summary {
+  display: -webkit-box;
+  overflow: hidden;
   max-width: none;
   margin: var(--fc-space-2) 0 0;
   color: var(--fc-text-muted);
   font-size: 0.92rem;
   line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .pub-links {
@@ -834,7 +923,7 @@ body.dark .video-play::before {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--fc-space-2);
-  margin-top: var(--fc-space-3);
+  margin-top: var(--fc-space-2);
   line-height: 1;
 }
 
@@ -1389,20 +1478,25 @@ body.teaching-page .article-style details a {
 }
 
 @media (max-width: 575.98px) {
+  // Keep the calendar badge vertical so it reads the same as on desktop.
   .talk-item {
-    grid-template-columns: 1fr;
+    grid-template-columns: 3.25rem 1fr;
+    gap: var(--fc-space-2);
+    padding: var(--fc-space-3);
   }
 
   .talk-date {
-    flex-direction: row;
-    align-self: start;
-    gap: var(--fc-space-1);
-    padding: var(--fc-space-1) var(--fc-space-3);
+    padding: var(--fc-space-1) 0.15rem;
+  }
+
+  .talk-month,
+  .talk-year {
+    font-size: 0.65rem;
   }
 
   .talk-day {
-    margin: 0;
-    font-size: 1.1rem;
+    margin: 0.1rem 0;
+    font-size: 1.25rem;
   }
 }
 
@@ -1421,7 +1515,7 @@ body.teaching-page .article-style details a {
   }
 }
 
-.home-section .section-heading h1 {
+.home-section .section-heading h2 {
   margin-bottom: var(--fc-space-1);
 }
 
@@ -1790,7 +1884,129 @@ body.research-page .article-style h2::before {
 }
 
 // -----------------------------------------------------------------------------
-// 15. Motion preferences
+// 15. Project detail pages
+// -----------------------------------------------------------------------------
+
+.article-project .page-subtitle {
+  max-width: 65ch;
+  color: var(--fc-text-muted);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.article-project .article-metadata {
+  margin-top: var(--fc-space-2);
+  color: var(--fc-text-muted);
+  font-size: 0.85rem;
+}
+
+// Author is implicit on a single-author site.
+.article-project .article-metadata > div:first-child {
+  display: none;
+}
+
+.article-project .article-categories .fa-folder {
+  display: none;
+}
+
+.article-project .article-categories a {
+  display: inline-block;
+  margin: 0 var(--fc-space-1) var(--fc-space-1) 0;
+  padding: 0.1rem 0.55rem;
+  color: var(--fc-text-muted);
+  font-size: 0.78rem;
+  text-decoration: none;
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-pill);
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.article-project .article-categories a:hover,
+.article-project .article-categories a:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+}
+
+.article-project .btn-links {
+  margin: var(--fc-space-3) 0 var(--fc-space-2);
+  line-height: 1;
+}
+
+.article-project .btn-links .btn {
+  margin: 0 var(--fc-space-2) var(--fc-space-2) 0;
+  padding: 0.15rem 0.65rem;
+  color: var(--fc-text-muted);
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-pill);
+  box-shadow: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.article-project .btn-links .btn:hover,
+.article-project .btn-links .btn:focus-visible {
+  color: var(--fc-on-accent);
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+}
+
+.article-project .featured-image-wrapper {
+  max-width: 720px !important;
+  max-height: none !important;
+  margin: var(--fc-space-4) auto var(--fc-space-5);
+  overflow: hidden;
+  background: var(--fc-surface-alt);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+  box-shadow: var(--fc-shadow-sm);
+}
+
+.article-project .featured-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-project .article-style > p:first-of-type {
+  color: var(--fc-heading);
+  font-size: 1.03rem;
+  line-height: 1.65;
+}
+
+.project-related-pages {
+  margin-top: var(--fc-space-6);
+}
+
+.project-related-pages h2 {
+  display: flex;
+  align-items: center;
+  margin: var(--fc-space-6) 0 var(--fc-space-3);
+  padding-bottom: var(--fc-space-1);
+  color: var(--fc-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--fc-border);
+}
+
+.project-related-pages h2::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: var(--fc-space-3);
+  background: var(--fc-accent);
+  border-radius: 50%;
+}
+
+// -----------------------------------------------------------------------------
+// 16. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,

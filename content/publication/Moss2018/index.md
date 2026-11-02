@@ -14,6 +14,8 @@ publishDate: 2019-10-02T18:25:03+02:00
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types: ["0"]
+publication_type_label: "Dataset"
+publication_type_icon: "fa-database"
 
 # Publication name and optional abbreviated publication name.
 publication: "Zenodo"

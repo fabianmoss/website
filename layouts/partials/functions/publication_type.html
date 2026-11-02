@@ -1,0 +1,29 @@
+{{/* Map a numeric publication type to an icon and label. */}}
+{{ $page := . }}
+{{ $customLabel := "" }}
+{{ $customIcon := "" }}
+{{ with $page.Params.publication_type_label }}
+  {{ $customLabel = . }}
+  {{ $customIcon = $page.Params.publication_type_icon | default "fa-file" }}
+{{ end }}
+
+{{ $type := "0" }}
+{{ with .Params.publication_types }}
+  {{ $type = printf "%v" (index . 0) }}
+{{ end }}
+{{ $types := dict
+  "0" (dict "label" "Publication" "icon" "fa-file")
+  "1" (dict "label" "Conference paper" "icon" "fa-comments")
+  "2" (dict "label" "Journal article" "icon" "fa-book-open")
+  "3" (dict "label" "Preprint" "icon" "fa-file-alt")
+  "4" (dict "label" "Report" "icon" "fa-file-contract")
+  "5" (dict "label" "Book" "icon" "fa-book")
+  "6" (dict "label" "Book chapter" "icon" "fa-bookmark")
+  "7" (dict "label" "Thesis" "icon" "fa-graduation-cap")
+  "8" (dict "label" "Patent" "icon" "fa-certificate")
+}}
+{{ $entry := index $types $type | default (index $types "0") }}
+{{ if $customLabel }}
+  {{ $entry = dict "label" $customLabel "icon" $customIcon }}
+{{ end }}
+{{ return $entry }}

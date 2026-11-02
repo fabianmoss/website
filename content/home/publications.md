@@ -10,7 +10,6 @@ headless: true
 weight: 4
 
 title: Publications
-subtitle: 'Journal Articles, Conference Papers, Datasets'
 
 design:
   # Full-width list so it aligns with the other homepage sections.

@@ -1,6 +1,6 @@
 ---
 title: "midiVERTO: A Web Application to Visualize Tonality in Real Time"
-authors: ["admin", "Daniel Harasim", "Gabriele Affatato"]
+authors: ["Daniel Harasim", "Gabriele Affatato", "admin"]
 date: 2022-06-21T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["1"]

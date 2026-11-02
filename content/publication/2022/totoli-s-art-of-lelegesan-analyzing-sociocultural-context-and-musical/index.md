@@ -1,6 +1,6 @@
 ---
 title: "Totoli's Art of Lelegesan: Analyzing Sociocultural Context and Musical Content"
-authors: ["admin", "Clara Bracks"]
+authors: ["Clara Bracks", "admin"]
 date: 2022-06-14T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["1"]

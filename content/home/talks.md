@@ -10,7 +10,6 @@ headless: true
 weight: 5
 
 title: Talks
-subtitle: 'Conferences, workshops, and invited talks'
 
 design:
   # Full-width list so it aligns with the other homepage sections.

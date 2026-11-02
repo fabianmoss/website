@@ -28,14 +28,8 @@ Digital humanities combines computational methods with traditional humanities sc
 
 {{< list_by_tag tag="digital humanities" type="project" >}}
 
-## Events
+## Talks
 
 {{< list_by_tag tag="digital humanities" type="event" >}}
 
-## Talks
 
-{{< list_by_tag tag="digital humanities" type="talk" >}}
-
-## Posts
-
-{{< list_by_tag tag="digital humanities" type="post" >}}

@@ -4,8 +4,7 @@
 title: "Beyond Bars: Distribution of Edit Operations in Historical Prints"
 authors: [Adrian Nachtwey, admin, Anna Viktoria Katrin Plaksin]
 date: 2026-09-04T09:39:36+02:00
-doi: "https://doi.org/10.1177/20592043261470534"
-
+doi: "10.1177/20592043261470534"
 # Schedule page publish date (NOT publication's date).
 publishDate: 2026-09-04T09:39:36+02:00
 
@@ -13,7 +12,7 @@ publishDate: 2026-09-04T09:39:36+02:00
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: "Music & Science"
