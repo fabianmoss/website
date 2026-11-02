@@ -12,7 +12,13 @@ comments: false  # Show comments?
 header:
   caption: ""
   image: ""
+
+design:
+  # Adds a `teaching-page` class to <body> so styles stay scoped to this page.
+  css_class: teaching-page
 ---
+
+{{< teaching_timeline >}}
 
 ## Fall 2026
 

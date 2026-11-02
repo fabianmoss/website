@@ -882,7 +882,176 @@ body.dark .site-footer {
 }
 
 // -----------------------------------------------------------------------------
-// 10. Motion preferences
+// 10. Teaching page
+// -----------------------------------------------------------------------------
+// Scoped via `design.css_class: teaching-page` in content/teaching/index.md.
+// Semesters become section headers; each course is an accordion card.
+
+body.teaching-page .article-style h2 {
+  display: flex;
+  align-items: center;
+  margin: var(--fc-space-7) 0 var(--fc-space-4);
+  padding-bottom: var(--fc-space-2);
+  border-bottom: 1px solid var(--fc-border);
+  color: var(--fc-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+body.teaching-page .article-style h2::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: var(--fc-space-3);
+  border-radius: 50%;
+  background: var(--fc-accent);
+}
+
+body.teaching-page .article-style > h2:first-of-type {
+  margin-top: 0;
+}
+
+body.teaching-page .article-style [hidden] {
+  display: none !important;
+}
+
+body.teaching-page .teaching-timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--fc-space-2);
+  margin: 0 0 var(--fc-space-6);
+  padding: var(--fc-space-4) 0 var(--fc-space-2);
+  overflow-x: auto;
+}
+
+body.teaching-page .teaching-timeline__line {
+  position: absolute;
+  top: calc(var(--fc-space-4) + 6px);
+  left: 6%;
+  right: 6%;
+  height: 2px;
+  background: var(--fc-border);
+}
+
+body.teaching-page .teaching-timeline__year {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--fc-space-2);
+  min-width: 3.25rem;
+  padding: 0;
+  color: var(--fc-text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+body.teaching-page .teaching-timeline__year::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: var(--fc-surface);
+  border: 2px solid var(--fc-border);
+  border-radius: 50%;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+body.teaching-page .teaching-timeline__year:hover {
+  color: var(--fc-accent);
+}
+
+body.teaching-page .teaching-timeline__year:hover::before {
+  border-color: var(--fc-accent);
+}
+
+body.teaching-page .teaching-timeline__year[aria-pressed="true"] {
+  color: var(--fc-accent);
+}
+
+body.teaching-page .teaching-timeline__year[aria-pressed="true"]::before {
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  box-shadow: 0 0 0 4px var(--fc-accent-soft);
+}
+
+body.teaching-page .article-style details {
+  margin: 0 0 var(--fc-space-3);
+  padding: 0 var(--fc-space-5) var(--fc-space-4);
+  color: var(--fc-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  background: var(--fc-surface);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-md);
+  box-shadow: var(--fc-shadow-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.teaching-page .article-style details:not([open]) {
+  padding-bottom: 0;
+}
+
+body.teaching-page .article-style details[open] {
+  border-color: var(--fc-accent);
+  box-shadow: var(--fc-shadow-md);
+}
+
+body.teaching-page .article-style summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fc-space-4);
+  margin: 0 calc(-1 * var(--fc-space-5));
+  padding: var(--fc-space-4) var(--fc-space-5);
+  color: var(--fc-heading);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.2s ease;
+}
+
+body.teaching-page .article-style summary::-webkit-details-marker {
+  display: none;
+}
+
+body.teaching-page .article-style summary b {
+  font-weight: 600;
+}
+
+body.teaching-page .article-style summary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+body.teaching-page .article-style details[open] summary::after {
+  transform: rotate(-135deg);
+}
+
+body.teaching-page .article-style summary:hover {
+  color: var(--fc-accent);
+}
+
+body.teaching-page .article-style details a {
+  color: var(--fc-accent);
+}
+
+// -----------------------------------------------------------------------------
+// 11. Motion preferences
 // -----------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *,

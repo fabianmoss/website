@@ -1,0 +1,81 @@
+{{/*
+  Teaching timeline.
+
+  Builds a year selector from the `## <Semester> <Year>` headings on the
+  teaching page and filters the page to the selected year. With JavaScript
+  disabled the timeline stays hidden and all courses remain visible.
+*/}}
+<div id="teaching-timeline" class="teaching-timeline" role="group" aria-label="Filter courses by year"></div>
+<script>
+  (function () {
+    function init() {
+      var container = document.getElementById('teaching-timeline');
+      if (!container || container.dataset.ready) return;
+
+      var article = container.closest('.article-style');
+      if (!article) return;
+      container.dataset.ready = 'true';
+
+      var children = Array.prototype.slice.call(article.children);
+      var groups = [];
+      var current = null;
+
+      children.forEach(function (node) {
+        if (node === container || node.tagName === 'SCRIPT') return;
+        if (node.tagName === 'H2') {
+          var match = node.textContent.match(/(\d{4})/);
+          current = { year: match ? match[1] : '', nodes: [node] };
+          groups.push(current);
+        } else if (current) {
+          current.nodes.push(node);
+        }
+      });
+
+      var years = [];
+      groups.forEach(function (group) {
+        if (group.year && years.indexOf(group.year) === -1) years.push(group.year);
+      });
+      if (!years.length) return;
+      years.sort(function (a, b) { return Number(b) - Number(a); });
+
+      var line = document.createElement('span');
+      line.className = 'teaching-timeline__line';
+      line.setAttribute('aria-hidden', 'true');
+      container.appendChild(line);
+
+      var buttons = [];
+
+      function addButton(label, value) {
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'teaching-timeline__year';
+        button.textContent = label;
+        button.dataset.year = value;
+        button.setAttribute('aria-pressed', 'false');
+        button.addEventListener('click', function () { select(value); });
+        container.appendChild(button);
+        buttons.push(button);
+      }
+
+      function select(value) {
+        buttons.forEach(function (button) {
+          button.setAttribute('aria-pressed', String(button.dataset.year === value));
+        });
+        groups.forEach(function (group) {
+          var show = value === 'all' || group.year === value;
+          group.nodes.forEach(function (node) { node.hidden = !show; });
+        });
+      }
+
+      years.forEach(function (year) { addButton(year, year); });
+      addButton('All', 'all');
+      select(years[0]);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
