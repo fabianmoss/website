@@ -1,6 +1,6 @@
 ---
 title: "Developing digital preservation, edition, and analysis of sources of medieval monophony and its theory: A Report from the EarlyMuse STS in Würzburg, Germany"
-authors: ["admin"]
+authors: ["A. Ignesti", "K. Landerkin", "D. Merlin", "M. Winter", "admin", "K. Voigt"]
 date: 2026-02-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["4"]

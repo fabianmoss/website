@@ -1,6 +1,6 @@
 ---
 title: "Musicology and European Partnerships: Resilient Cultural Heritage and Virtual Worlds"
-authors: ["admin"]
+authors: ["R. Ahrendt", "A. Arjmand", "M. Bebak", "A. Bellia", "A. Caussé", "C. Cavicchi", "B. Dolce", "D. V. Filippi", "S. Gasch", "M. Guido", "S. Hamhuis", "S. Holland", "C. Levaux", "E. MoredaRodriguez", "admin", "J. Neumann", "L. Pugin", "G. Rossi Rognoni", "C. Scuderi", "P. Vendrix"]
 date: 2026-08-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["4"]

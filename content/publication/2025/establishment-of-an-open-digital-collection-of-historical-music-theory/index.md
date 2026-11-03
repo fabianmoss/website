@@ -1,6 +1,6 @@
 ---
 title: "Establishment of an open digital collection of historical music theory texts from German-speaking countries based on 19th-century examples (DigiMusTh) – Project Documentation and Guidelines"
-authors: ["admin", "Torsten Roeder", "Jana Klinger", "Corinna Keupp", "J. M. Roth"]
+authors: ["admin", "T. Roeder", "J. Klinger", "C. Keupp", "J. M. Roth"]
 date: 2025-12-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["4"]
