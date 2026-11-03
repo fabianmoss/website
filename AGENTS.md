@@ -52,8 +52,8 @@ hugo list drafts                           # show draft pages
 |---|---|---|
 | 1 | `about.md` | Hero (author `admin`) |
 | 2 | `research-areas.md` | `{{< research_areas >}}` |
-| 3 | `videos.md` | `{{< video_grid >}}` |
-| 100 | `experience.md` | Experience lanes + education |
+| 3 | `experience.md` | Experience lanes + education |
+| 4 | `videos.md` | `{{< video_grid >}}` |
 
 Inactive widgets: `publications`, `talks`, `projects`, `posts`, `featured`, `skills`, `accomplishments`, `contact`, `tags`. Publications and talks are browsed through the research areas; the complete archives still exist at `/publication/` and `/event/` but are not in the main menu.
 
