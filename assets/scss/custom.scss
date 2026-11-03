@@ -1660,6 +1660,9 @@ body.teaching-page .article-style details a {
 
 .exp-chart__inner {
   min-width: 810px;
+  // Breathing room for the light logo chips, whose halo extends past the box;
+  // the scroll container would otherwise clip them on the left edge.
+  padding: 4px 0 4px 4px;
 }
 
 .exp-chart__axis,
