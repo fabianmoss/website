@@ -77,7 +77,7 @@ Shortcodes (`layouts/shortcodes/`):
 - `publications_list.html` — publications list, year timeline, five-per-year cap, type/accepted labels, venue links to DOI/PDF. Optional `tag=` filters by research area and `heading=` adds a section title; used on the homepage and inside research areas.
 - `talks_list.html` — talks list, year timeline, date badge, speakers, attachment pills. Same optional `tag=` / `heading=` parameters as `publications_list`.
 - `research_areas.html` — research cards from `data/research_areas.yaml`, including live counts.
-- `research_intro.html` — two-column figure + intro block for research-area pages.
+- `research_intro.html` — intro text block for research-area pages (no figure; figures live on the project cards and homepage research cards).
 - `video_grid.html` — click-to-play video cards from `data/videos.yaml`; embeds YouTube only on click.
 - `teaching_timeline.html` — year selector for the teaching page.
 - `list_by_tag.html` — project cards for a research area; matches `tags`/`categories` case-insensitively by substring. Supports `type=` (default `project`) and `heading=`.
@@ -126,5 +126,5 @@ If Wowchemy is updated, re-check these overrides against the new theme partials.
 
 1. Add an entry to `data/research_areas.yaml` (`key`, `title`, `description`, `icon`, `image`, `url`).
 2. Add `content/research/<key>/_index.md` with the intro paragraph wrapped in `{{< research_intro name="<key>" >}}…{{< /research_intro >}}`, then `Projects` via `{{< list_by_tag tag="<key>" type="project" heading="Projects" >}}` and `Publications` / `Talks` via `{{< publications_list tag="<key>" heading="Publications" >}}` / `{{< talks_list tag="<key>" heading="Talks" >}}`. Empty sections hide themselves.
-3. Add an image at `assets/media/research/<key>.jpg`.
+3. Add an image at `assets/media/research/<key>.jpg` — used by the homepage research card, not by the research-area page.
 4. Counts and homepage cards update automatically; do not hard-code cards in `research-areas.md`.
