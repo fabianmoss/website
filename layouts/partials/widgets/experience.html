@@ -85,7 +85,7 @@
               {{ $tip := printf "%s – %s" ($start.Format "Jan 2006") (cond (eq .date_end "") "Present" ($end.Format "Jan 2006")) }}
 
               <div class="exp-track">
-                <span class="exp-bar{{ if not .date_end }} exp-bar--current{{ end }}"
+                <span class="exp-bar{{ with .type }} exp-bar--{{ . }}{{ end }}{{ if not .date_end }} exp-bar--current{{ end }}"
                       style="left:{{ printf "%.3f" $left }}%;width:{{ printf "%.3f" $width }}%"
                       title="{{ $tip }}"></span>
                 {{ range .markers }}
@@ -96,7 +96,7 @@
                         title="{{ .title }}{{ with .date_start }} · {{ (time .).Format "Jan 2006" }}{{ end }}"></span>
                 {{ end }}
               </div>
-              <div class="exp-role">{{ .title }}</div>
+              <div class="exp-role{{ with .type }} exp-role--{{ . }}{{ end }}">{{ .title }}</div>
             {{ end }}
             </div>
           {{ end }}

@@ -51,6 +51,11 @@
   --fc-accent: #1d4ed8;
   --fc-accent-hover: #1e40af;
   --fc-accent-soft: #eef2ff;
+
+  // Role accents for the experience lanes: professor = primary accent,
+  // postdoc/research = teal, doctoral = amber.
+  --fc-role-postdoc: #0f766e;
+  --fc-role-doctoral: #b45309;
   // Text/icon colour placed on top of a filled accent surface.
   --fc-on-accent: #ffffff;
 
@@ -95,6 +100,9 @@ body.dark {
   --fc-accent: #93b4ff;
   --fc-accent-hover: #bcd0ff;
   --fc-accent-soft: rgba(147, 180, 255, 0.12);
+
+  --fc-role-postdoc: #5eead4;
+  --fc-role-doctoral: #fbbf24;
   --fc-on-accent: #111827;
 
   --fc-text: #e5e7eb;
@@ -1737,6 +1745,14 @@ body.teaching-page .article-style details a {
   box-shadow: 0 0 0 3px var(--fc-accent-soft);
 }
 
+.exp-bar--postdoc {
+  background: var(--fc-role-postdoc);
+}
+
+.exp-bar--doctoral {
+  background: var(--fc-role-doctoral);
+}
+
 .exp-marker {
   position: absolute;
   top: 50%;
@@ -1752,6 +1768,27 @@ body.teaching-page .article-style details a {
   color: var(--fc-text-muted);
   font-size: 0.8rem;
   line-height: 1.35;
+}
+
+// Small colour cue repeated beside the label, so role kinds stay readable
+// even when a bar is very short.
+.exp-role::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 0.4rem;
+  vertical-align: 0.1em;
+  background: var(--fc-accent);
+  border-radius: 50%;
+}
+
+.exp-role--postdoc::before {
+  background: var(--fc-role-postdoc);
+}
+
+.exp-role--doctoral::before {
+  background: var(--fc-role-doctoral);
 }
 
 // Compact education block beneath the lanes.

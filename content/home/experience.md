@@ -15,7 +15,8 @@ subtitle:
 # Positions are grouped by institution. Each role gets its own bar on the
 # shared year axis, labelled in the column beside it. `date_end` empty means
 # "present". Add `markers:` to a role for short visits or secondments inside
-# that period.
+# that period. `type:` (professor | postdoc | doctoral) colours the bar and its
+# label so role kinds can be told apart at a glance.
 positions:
   - institution: Julius-Maximilians-Universität Würzburg
     company_url: https://www.uni-wuerzburg.de/
@@ -23,6 +24,7 @@ positions:
     location: Würzburg, Germany
     roles:
       - title: Assistant Professor for Digital Music Philology and Music Theory
+        type: professor
         date_start: "2022-12-01"
         date_end: ""
 
@@ -32,6 +34,7 @@ positions:
     location: Amsterdam, The Netherlands
     roles:
       - title: Research Fellow in Cultural Analytics
+        type: postdoc
         date_start: "2022-01-01"
         date_end: "2022-11-30"
 
@@ -41,9 +44,11 @@ positions:
     location: Lausanne, Switzerland
     roles:
       - title: Postdoctoral Researcher
+        type: postdoc
         date_start: "2020-02-15"
         date_end: "2021-12-31"
       - title: Doctoral Assistant
+        type: doctoral
         date_start: "2017-09-01"
         date_end: "2020-02-14"
 
@@ -53,6 +58,7 @@ positions:
     location: Dresden, Germany
     roles:
       - title: Doctoral Assistant
+        type: doctoral
         date_start: "2015-01-01"
         date_end: "2017-08-31"
 
