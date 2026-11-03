@@ -45,6 +45,8 @@ tags:
 - Cognitive Modeling
 - Tonality
 - Bayesian Generative Model
+- computational musicology
+- music theory
 featured: false
 
 # links:

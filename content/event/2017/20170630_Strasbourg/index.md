@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2019-10-02T15:46:23+02:00
 
 authors: [admin, Martin Rohrmeier]
-tags: []
-
+tags: [music theory]
 # Is this a featured talk? (true/false)
 featured: false
 

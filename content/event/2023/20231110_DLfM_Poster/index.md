@@ -31,8 +31,7 @@ all_day: false
 publishDate: 2023-10-25T10:34:04+02:00
 
 authors: [Tim Eipert, admin]
-tags: [Digital Musicology, network models, medieval chant, community detection]
-
+tags: [Digital Musicology, network models, medieval chant, community detection, digital humanities, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

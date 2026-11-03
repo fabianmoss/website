@@ -37,8 +37,7 @@ all_day: false
 publishDate: 2023-09-02T10:38:13+02:00
 
 authors: [Tim Eipert, admin]
-tags: [music encoding, data model, Python, medieval chant, corpus studies]
-
+tags: [music encoding, data model, Python, medieval chant, corpus studies, digital humanities, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

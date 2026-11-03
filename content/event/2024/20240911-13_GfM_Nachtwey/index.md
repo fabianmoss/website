@@ -31,8 +31,7 @@ all_day: false
 publishDate: 2024-08-01T08:02:46+01:00
 
 authors: [Adrian Nachtwey, admin]
-tags: []
-
+tags: [digital humanities, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

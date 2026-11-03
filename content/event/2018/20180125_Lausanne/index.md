@@ -24,8 +24,7 @@ all_day: true
 publishDate: 2019-10-02T13:46:51+02:00
 
 authors: [Daniel Harasim, admin, Matthias Ramirez, Martin Rohrmeier]
-tags: []
-
+tags: [computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2023-06-11T12:09:46+02:00
 
 authors: [admin]
-tags: [corpus studies]
-
+tags: [corpus studies, computational musicology, digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

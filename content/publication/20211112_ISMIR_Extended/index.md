@@ -24,7 +24,7 @@ abstract: "Extended tonality is a central system that characterizes the music fr
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: [music theory, computational musicology]
 categories: []
 featured: false
 

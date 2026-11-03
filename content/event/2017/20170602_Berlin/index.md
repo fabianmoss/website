@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2019-10-02T15:54:00+02:00
 
 authors: [admin, Martin Rohrmeier, Fernando Bravo]
-tags: []
-
+tags: [computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

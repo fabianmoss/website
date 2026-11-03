@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2025-08-07T17:21:25+02:00
 
 authors: [Mauro Orsini Windholz, David Sears, admin]
-tags: []
-
+tags: [computational musicology, cultural evolution]
 # Is this a featured event? (true/false)
 featured: false
 

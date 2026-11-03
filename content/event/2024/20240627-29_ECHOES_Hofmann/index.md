@@ -25,8 +25,7 @@ all_day: false
 publishDate: 2024-03-15T08:03:22+01:00
 
 authors: [Lucas Hofmann, Craig S. Sapp, admin]
-tags: [polymeter, meter, music encoding, Hugo Distler]
-
+tags: [polymeter, meter, music encoding, Hugo Distler, digital humanities, music theory]
 # Is this a featured event? (true/false)
 featured: false
 

@@ -29,8 +29,7 @@ all_day: true
 publishDate: 2020-09-01T12:00:10+02:00
 
 authors: [admin]
-tags: [visualization]
-
+tags: [visualization, music theory, computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

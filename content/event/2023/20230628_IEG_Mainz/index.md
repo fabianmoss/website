@@ -31,8 +31,7 @@ all_day: false
 publishDate: 2023-03-23T13:10:50+01:00
 
 authors: [admin]
-tags: [digital musicology, corpus studies]
-
+tags: [digital musicology, corpus studies, computational musicology, digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

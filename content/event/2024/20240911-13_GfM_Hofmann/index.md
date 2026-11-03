@@ -25,8 +25,7 @@ all_day: false
 publishDate: 2024-08-01T08:02:46+01:00
 
 authors: [Lucas Hofmann, Craig S. Sapp, admin]
-tags: []
-
+tags: [digital humanities, music theory]
 # Is this a featured event? (true/false)
 featured: false
 

@@ -30,7 +30,7 @@ To demonstrate the workflow's effectiveness, we introduce one possible implement
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: [computational musicology, digital humanities]
 categories: []
 featured: false
 

@@ -34,8 +34,7 @@ all_day: false
 publishDate: 2022-04-30T14:37:37+02:00
 
 authors: [Christoph Bracks, admin]
-tags: [Lelegesan, Indonesia, Language documentation, Language endangerment, Computational music analysis, ethnomusicology]
-
+tags: [Lelegesan, Indonesia, Language documentation, Language endangerment, Computational music analysis, ethnomusicology, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

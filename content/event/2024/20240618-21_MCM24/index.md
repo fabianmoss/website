@@ -25,8 +25,7 @@ all_day: false
 publishDate: 2024-03-15T08:02:19+01:00
 
 authors: [Samuel Pereira, Giovanni Affatato, Gilberto Bernardes, admin]
-tags: [Fourier Qualia Spaces, wavescapes, Fourier transform, music analysis, harmonic qualities]
-
+tags: [Fourier Qualia Spaces, wavescapes, Fourier transform, music analysis, harmonic qualities, computational musicology, music theory]
 # Is this a featured event? (true/false)
 featured: false
 

@@ -44,7 +44,7 @@ abstract: "A major locus of musicological activity—increasingly in the digital
 # Summary. An optional shortened abstract.
 summary: "How much are we still missing?"
 
-tags: [Computational Humanities, Unseen Species, Musicology, Modeling]
+tags: [Computational Humanities, Unseen Species, Musicology, Modeling, computational musicology, digital humanities]
 categories: []
 featured: false
 

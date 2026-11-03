@@ -1,7 +1,7 @@
 ---
 # A blank widget that renders recent and upcoming talks via a custom shortcode.
 widget: blank
-active: true
+active: false
 
 # This file represents a page section.
 headless: true

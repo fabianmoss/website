@@ -35,8 +35,7 @@ all_day: false
 publishDate: 2022-07-28T08:00:00+02:00
 
 authors: [admin, Giovanni Affatato, Daniel Harasim]
-tags: [Sound and music computing, Interactive learning environments, Music retrieval, Visualization toolkits, Scientific visualization]
-
+tags: [Sound and music computing, Interactive learning environments, Music retrieval, Visualization toolkits, Scientific visualization, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

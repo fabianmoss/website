@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2019-10-02T14:02:27+02:00
 
 authors: [admin]
-tags: []
-
+tags: [music theory]
 # Is this a featured talk? (true/false)
 featured: false
 

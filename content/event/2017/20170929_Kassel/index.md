@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2019-10-03T15:41:11+02:00
 
 authors: [admin, Daniel Harasim, Markus Neuwirth, Martin Rohrmeier]
-tags: []
-
+tags: [computational musicology, digital humanities]
 # Is this a featured talk? (true/false)
 featured: false
 

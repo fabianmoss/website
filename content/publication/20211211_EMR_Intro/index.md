@@ -23,7 +23,7 @@ abstract: "Empirical musicology crucially relies on the creation, publication, d
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [Open Science, Musicology, FAIR]
+tags: [Open Science, Musicology, FAIR, digital humanities, computational musicology]
 categories: []
 featured: false
 

@@ -53,11 +53,9 @@ hugo list drafts                           # show draft pages
 | 1 | `about.md` | Hero (author `admin`) |
 | 2 | `research-areas.md` | `{{< research_areas >}}` |
 | 3 | `videos.md` | `{{< video_grid >}}` |
-| 4 | `publications.md` | `{{< publications_list >}}` |
-| 5 | `talks.md` | `{{< talks_list >}}` |
 | 100 | `experience.md` | Experience lanes + education |
 
-Inactive widgets: `projects`, `posts`, `featured`, `skills`, `accomplishments`, `contact`, `tags`. Enabling one usually means editing both its front matter and `menus.yaml`.
+Inactive widgets: `publications`, `talks`, `projects`, `posts`, `featured`, `skills`, `accomplishments`, `contact`, `tags`. Publications and talks are browsed through the research areas; the complete archives still exist at `/publication/` and `/event/` but are not in the main menu.
 
 ## Content model
 
@@ -128,3 +126,4 @@ If Wowchemy is updated, re-check these overrides against the new theme partials.
 2. Add `content/research/<key>/_index.md` with the intro paragraph wrapped in `{{< research_intro name="<key>" >}}…{{< /research_intro >}}`, then `Projects` via `{{< list_by_tag tag="<key>" type="project" heading="Projects" >}}` and `Publications` / `Talks` via `{{< publications_list tag="<key>" heading="Publications" >}}` / `{{< talks_list tag="<key>" heading="Talks" >}}`. Empty sections hide themselves.
 3. Add an image at `assets/media/research/<key>.jpg` — used by the homepage research card, not by the research-area page.
 4. Counts and homepage cards update automatically; do not hard-code cards in `research-areas.md`.
+5. Every publication and talk must carry at least one research-area tag (`computational musicology`, `music theory`, `digital humanities`, `cultural evolution`); the research areas are the only browse path now that the homepage lists and menu entries are gone.

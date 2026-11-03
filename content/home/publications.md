@@ -1,7 +1,7 @@
 ---
 # A blank widget that renders the latest publications via a custom shortcode.
 widget: blank
-active: true
+active: false
 
 # This file represents a page section.
 headless: true

@@ -13,12 +13,6 @@ main:
   - name: Research
     url: '#research-areas' # '#projects'
     weight: 30
-  - name: Publications
-    url: "#publications" # '#featured'
-    weight: 40
-  - name: Talks
-    url: '#talks'
-    weight: 50
   - name: Teaching
     url: teaching/
     weight: 60

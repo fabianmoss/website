@@ -29,8 +29,7 @@ all_day: false
 publishDate: 2021-03-04T19:12:10+01:00
 
 authors: [admin, Markus Neuwirth, Martin Rohrmeier]
-tags: []
-
+tags: [computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

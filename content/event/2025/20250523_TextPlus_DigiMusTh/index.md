@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2025-05-23T09:28:29+02:00
 
 authors: [admin]
-tags: []
-
+tags: [digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

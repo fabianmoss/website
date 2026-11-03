@@ -26,8 +26,7 @@ all_day: false
 publishDate: 2023-06-11T12:09:12+02:00
 
 authors: [Jason Yust, Giovanni Affatato, admin]
-tags: []
-
+tags: [computational musicology, music theory]
 # Is this a featured event? (true/false)
 featured: false
 

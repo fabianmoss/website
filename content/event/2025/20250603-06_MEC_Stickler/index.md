@@ -24,8 +24,7 @@ all_day: true
 publishDate: 2025-02-17
 
 authors: [Felicitas Stickler, Torsten Roeder, admin]
-tags: []
-
+tags: [digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

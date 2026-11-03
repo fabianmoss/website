@@ -27,8 +27,7 @@ all_day: false
 publishDate: 2024-08-01T08:02:46+01:00
 
 authors: [Tim Eipert, admin]
-tags: []
-
+tags: [cultural evolution, digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

@@ -24,7 +24,7 @@ abstract: "Many structural aspects of music, such as tonality, can be expressed 
 # Summary. An optional shortened abstract.
 summary: "We introduce wavescapes, a novel visualization method for tonal hierarchies that combines the visual representation of keyscapes with music analysis based on the discrete Fourier transformation (DFT) and illustrate it by analyzing compositions by Josquin, Bach, Liszt, Chopin, Scriabin, Webern, Coltrane, and Ligeti."
 
-tags: [Discrete Fourier transform, music analysis, keyscapes, tonal hierarchy, visualization]
+tags: [Discrete Fourier transform, music analysis, keyscapes, tonal hierarchy, visualization, computational musicology, music theory]
 categories: []
 featured: false
 

@@ -8,7 +8,7 @@ abstract: ""
 featured: false
 categories: [data]
 publication: "Frontiers in Digital Humanities"
-tags: ["Beethoven", "Corpus Research", "Digital Musicology", "Ground Truth", "Harmony", "Music", "Symbolic Music data"]
+tags: [Beethoven, Corpus Research, Digital Musicology, Ground Truth, Harmony, Music, Symbolic Music data, computational musicology, digital humanities]
 url_pdf: "https://www.frontiersin.org/article/10.3389/fdigh.2018.00016/full"
 doi: "10.3389/fdigh.2018.00016"
 projects: [music-theory, corpus-studies]

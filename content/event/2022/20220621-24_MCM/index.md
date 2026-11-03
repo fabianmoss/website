@@ -28,8 +28,7 @@ all_day: false
 publishDate: 2022-06-21T08:06:24+01:00
 
 authors: [Daniel Harasim, Giovanni Affatato, admin]
-tags: [Web application, Visualization, Discrete Fourier transform, Tonality, MIDI]
-
+tags: [Web application, Visualization, Discrete Fourier transform, Tonality, MIDI, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

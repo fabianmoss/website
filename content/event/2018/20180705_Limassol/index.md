@@ -24,8 +24,7 @@ all_day: true
 publishDate: 2019-10-02T13:38:29+02:00
 
 authors: [Colin Aitken, Timothy J. O'Donnell, Martin Rohrmeier]
-tags: []
-
+tags: [computational musicology, music theory]
 # Is this a featured talk? (true/false)
 featured: false
 

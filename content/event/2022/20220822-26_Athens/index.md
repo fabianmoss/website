@@ -32,8 +32,7 @@ all_day: false
 publishDate: 2022-08-26T12:32:30+01:00
 
 authors: [admin, Coline Métrailler]
-tags: []
-
+tags: [music theory, digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

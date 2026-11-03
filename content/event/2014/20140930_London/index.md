@@ -24,8 +24,7 @@ all_day: true
 publishDate: 2019-10-02T17:30:37+02:00
 
 authors: [admin]
-tags: []
-
+tags: [music theory, computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

@@ -25,7 +25,7 @@ abstract: >
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [corpus]
+tags: [corpus, computational musicology, music theory]
 categories: []
 featured: false
 

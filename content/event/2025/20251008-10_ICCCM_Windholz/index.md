@@ -29,8 +29,7 @@ all_day: false
 publishDate: 2025-08-07T17:21:25+02:00
 
 authors: [Lucas Hofmann, Christoph Finkensiep, admin]
-tags: [meter, metric complexity, metric stability, computational analysis, Hugo Distler]
-
+tags: [meter, metric complexity, metric stability, computational analysis, Hugo Distler, computational musicology, music theory]
 # Is this a featured event? (true/false)
 featured: false
 

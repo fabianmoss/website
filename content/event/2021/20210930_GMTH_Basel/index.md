@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2021-09-27T08:21:06+02:00
 
 authors: [admin]
-tags: [polytonality, tone fields, emergence of tonality, Tailleferre]
-
+tags: [polytonality, tone fields, emergence of tonality, Tailleferre, music theory]
 # Is this a featured talk? (true/false)
 featured: false
 

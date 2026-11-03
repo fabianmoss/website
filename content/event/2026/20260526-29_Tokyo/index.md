@@ -24,8 +24,7 @@ all_day: true
 publishDate: 2026-01-26T13:11:19+01:00
 
 authors: [Torsten Roeder, admin]
-tags: [Multimodality, Diagrams, Formulas, Frameworks, Minimal Publishing]
-
+tags: [Multimodality, Diagrams, Formulas, Frameworks, Minimal Publishing, digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

@@ -25,7 +25,7 @@ auch vor anderen Herausforderungen als bei Bachschen Chorälen oder Schützschen
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: [music theory]
 categories: []
 featured: false
 

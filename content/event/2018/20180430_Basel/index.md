@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2019-10-02T13:52:57+02:00
 
 authors: [admin]
-tags: []
-
+tags: [digital humanities, computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 
