@@ -8,6 +8,8 @@ authors: [admin, François Bavaud, Colline Métrailler, Maik Köster, Melinda Fe
 tags: []
 categories: [digital humanities, music theory]
 date: 2021-01-01T13:26:57+02:00
+date_start: "2021-01-01"
+date_end: "2021-12-31"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

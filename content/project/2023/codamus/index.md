@@ -6,7 +6,9 @@ summary: Computational and Digital Approaches to Music Scholarship
 authors: [admin]
 tags: [computational musicology]
 # categories: [computational musicology] # [corpus studies, digital humanities, computational musicology]
-date: 2023-07-04T14:38:51+02:00
+date: 2023-10-01T14:38:51+02:00
+date_start: "2023-10-01"
+date_end: "2024-03-31"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "http://codamus.pubpub.org/"

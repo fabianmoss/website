@@ -8,6 +8,8 @@ authors: [admin]
 tags: [music theory, corpus studies]
 categories: [digital humanities, music theory]
 date: 2024-01-04T13:09:08+02:00
+date_start: "2024-01-04"
+date_end: "2024-08-31"
 
 # Optional external URL for project (replaces project detail page).
 

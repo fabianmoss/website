@@ -8,6 +8,8 @@ authors: [admin, Daniel Harasim, Giovanni Affatato]
 tags: [discrete Fourier transform, visualization, web app]
 categories: [music theory]
 date: 2021-07-01T13:35:20+02:00
+date_start: "2021-07-01"
+date_end: "2021-09-30"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://dcmlab.github.io/midiVERTO/#/"

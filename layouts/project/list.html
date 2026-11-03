@@ -6,9 +6,19 @@
       <div class="article-style">{{ . }}</div>
     {{ end }}
 
+    {{ $ongoing := sort (where .Pages "Params.ongoing" true) "Params.date_end" "desc" }}
+    {{ $rest := sort (where .Pages "Params.ongoing" "!=" true) "Params.date_end" "desc" }}
+    {{ $projects := slice }}
+    {{ range $ongoing }}{{ $projects = $projects | append . }}{{ end }}
+    {{ range $rest }}{{ $projects = $projects | append . }}{{ end }}
+
     <div class="project-tiles">
-      {{ range .Pages.ByDate.Reverse }}
+      {{ range $projects }}
         {{ $title := .Title }}
+        {{ $start := .Params.date_start | default (.Date.Format "2006-01-02") }}
+        {{ $startYear := (time $start).Format "2006" }}
+        {{ $endYear := "" }}
+        {{ with .Params.date_end }}{{ $endYear = (time .).Format "2006" }}{{ end }}
         {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
         <a class="project-tile" href="{{ .RelPermalink }}">
           {{ with $img }}
@@ -19,7 +29,13 @@
           {{ end }}
           <div class="project-tile__body">
             <div class="project-tile__meta">
-              {{ .Date.Format "2006" }}{{ with .Params.categories }} · {{ index . 0 }}{{ end }}
+              {{ if .Params.ongoing }}
+                {{ $startYear }}–present
+              {{ else if eq $startYear $endYear }}
+                {{ $startYear }}
+              {{ else }}
+                {{ $startYear }}–{{ $endYear }}
+              {{ end }}{{ with .Params.categories }} · {{ index . 0 }}{{ end }}
             </div>
             <h2 class="project-tile__title">{{ .Title }}</h2>
             {{ with .Params.summary }}

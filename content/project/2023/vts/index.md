@@ -7,7 +7,9 @@ summary: Towards an interactive digital environment for music theory
 authors: [admin]
 tags: [music theory, virtual reality]
 categories: [digital humanities, music theory]
-date: 2023-07-04T13:09:08+02:00
+date: 2023-10-01T13:09:08+02:00
+date_start: "2023-10-01"
+date_end: "2024-06-30"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
