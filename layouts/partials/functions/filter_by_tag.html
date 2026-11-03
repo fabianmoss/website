@@ -1,0 +1,41 @@
+{{/* Filter pages of a given type by a research-area tag.
+
+     Matches `tags` or `categories` case-insensitively, accepting exact values as
+     well as space/hyphen variants and substrings. Shared by the research-area
+     lists, the research-card counts and the homepage publication/talk widgets so
+     their results can never drift apart.
+
+     Call with:
+       (dict "pages" $collection "tag" "computational musicology")
+     Returns the filtered slice. */}}
+{{ $pages := .pages }}
+{{ $tag := .tag }}
+{{ $tag_lower := lower $tag }}
+{{ $tag_with_dash := replace $tag_lower " " "-" }}
+{{ $tag_with_space := replace $tag_lower "-" " " }}
+
+{{ $matched := slice }}
+{{ range $pages }}
+  {{ $has_tag := false }}
+  {{ with .Params.tags }}
+    {{ range . }}
+      {{ $t := lower . }}
+      {{ if or (eq $t $tag_lower) (in $t $tag_lower) (eq $t $tag_with_space) (in $t $tag_with_space) (eq $t $tag_with_dash) (in $t $tag_with_dash) }}
+        {{ $has_tag = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ with .Params.categories }}
+    {{ range . }}
+      {{ $c := lower . }}
+      {{ if or (eq $c $tag_lower) (in $c $tag_lower) (eq $c $tag_with_space) (in $c $tag_with_space) (eq $c $tag_with_dash) (in $c $tag_with_dash) }}
+        {{ $has_tag = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if $has_tag }}
+    {{ $matched = $matched | append . }}
+  {{ end }}
+{{ end }}
+
+{{ return $matched }}

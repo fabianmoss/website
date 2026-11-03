@@ -13,16 +13,16 @@
     </div>
   {{ end }}
   <div class="project-tile__body">
+    <h2 class="project-tile__title">{{ $p.Title }}</h2>
     <div class="project-tile__meta">
       {{ if $p.Params.ongoing }}
-        {{ $startYear }}–present
+        {{ $startYear }}–Present
       {{ else if eq $startYear $endYear }}
         {{ $startYear }}
       {{ else }}
         {{ $startYear }}–{{ $endYear }}
       {{ end }}{{ with $p.Params.categories }} · {{ index . 0 }}{{ end }}
     </div>
-    <h2 class="project-tile__title">{{ $p.Title }}</h2>
     {{ with $p.Params.summary }}
       <p class="project-tile__summary">{{ . | plainify | truncate 160 }}</p>
     {{ end }}

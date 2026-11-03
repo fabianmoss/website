@@ -2,179 +2,209 @@
   Talks / events list with a year timeline.
 
   Parameters:
-    count – optional limit; omit or 0 for all talks
+    count   – optional limit; omit or 0 for all talks
+    tag     – optional research-area key/name; only matching talks
+    heading – optional section heading (e.g. inside research areas)
 
-  Renders a year selector (newest first, All at the end) and one card per talk.
-  The newest year is selected and rendered server-side so there is no flash of
-  the full list before the script runs.
+  Renders a year selector (newest first) and one card per talk. The newest year
+  is selected and rendered server-side so there is no flash of the full list
+  before the script runs. When a tag filters out every talk, nothing is rendered
+  at all so empty sections disappear.
 */}}
 {{ $count := int (.Get "count" | default 0) }}
+{{ $tag := .Get "tag" }}
+{{ $heading := .Get "heading" }}
 {{ $items := where site.RegularPages "Type" "event" }}
+{{ with $tag }}
+  {{ $items = partial "functions/filter_by_tag" (dict "pages" $items "tag" .) }}
+{{ end }}
 {{ $items = sort $items "Date" "desc" }}
 {{ if gt $count 0 }}
   {{ $items = first $count $items }}
 {{ end }}
-{{ $latestYear := "" }}
-{{ with index $items 0 }}{{ $latestYear = .Date.Format "2006" }}{{ end }}
-{{ $latestCount := 0 }}
 
-<div id="talks-timeline" class="year-timeline year-timeline--bars" role="group" aria-label="Filter talks by year"></div>
+{{ if $items }}
+  {{ with $heading }}<h2 id="{{ . | anchorize }}">{{ . }}</h2>{{ end }}
+  {{ $latestYear := "" }}
+  {{ with index $items 0 }}{{ $latestYear = .Date.Format "2006" }}{{ end }}
+  {{ $latestCount := 0 }}
 
-<div class="talk-list">
-  {{ range $items }}
-    {{ $year := .Date.Format "2006" }}
-    {{ $isLatest := eq $year $latestYear }}
-    {{ $hide := not $isLatest }}
-    {{ if and $isLatest (ge $latestCount 5) }}{{ $hide = true }}{{ end }}
-    {{ if $isLatest }}{{ $latestCount = add $latestCount 1 }}{{ end }}
-    <article class="talk-item" data-year="{{ $year }}"{{ if $hide }} hidden{{ end }}>
-      <time class="talk-date"
-            datetime="{{ .Date.Format "2006-01-02" }}"
-            title="{{ .Date.Format "Jan 2, 2006" }}{{ with .Params.date_end }} – {{ (time.AsTime .).Format "Jan 2, 2006" }}{{ end }}">
-        <span class="talk-month">{{ .Date.Format "Jan" }}</span>
-        <span class="talk-day">{{ .Date.Format "2" }}</span>
-        <span class="talk-year">{{ .Date.Format "2006" }}</span>
-      </time>
+  <div class="year-widget year-widget--talks">
+    <div class="year-timeline year-timeline--bars" role="group" aria-label="Filter talks by year"></div>
 
-      <div class="talk-body">
-        <h3 class="talk-title">
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ if ge .Date now }}<span class="talk-badge">Upcoming</span>{{ end }}
-        </h3>
+    <div class="talk-list">
+      {{ range $items }}
+        {{ $year := .Date.Format "2006" }}
+        {{ $isLatest := eq $year $latestYear }}
+        {{ $hide := not $isLatest }}
+        {{ if and $isLatest (ge $latestCount 5) }}{{ $hide = true }}{{ end }}
+        {{ if $isLatest }}{{ $latestCount = add $latestCount 1 }}{{ end }}
+        <article class="talk-item" data-year="{{ $year }}"{{ if $hide }} hidden{{ end }}>
+          <time class="talk-date"
+                datetime="{{ .Date.Format "2006-01-02" }}"
+                title="{{ .Date.Format "Jan 2, 2006" }}{{ with .Params.date_end }} – {{ (time.AsTime .).Format "Jan 2, 2006" }}{{ end }}">
+            <span class="talk-month">{{ .Date.Format "Jan" }}</span>
+            <span class="talk-day">{{ .Date.Format "2" }}</span>
+            <span class="talk-year">{{ .Date.Format "2006" }}</span>
+          </time>
 
-        {{ if .Params.authors }}
-          <div class="talk-speakers">{{ partial "page_metadata_authors" . }}</div>
-        {{ end }}
+          <div class="talk-body">
+            <h3 class="talk-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ if ge .Date now }}<span class="talk-badge">Upcoming</span>{{ end }}
+            </h3>
 
-        {{ if or .Params.event .Params.location }}
-          <div class="talk-meta">
-            {{ with .Params.event }}<span class="talk-event">{{ . }}</span>{{ end }}
-            {{ with .Params.location }}<span class="talk-location">{{ . }}</span>{{ end }}
+            {{ if .Params.authors }}
+              <div class="talk-speakers">{{ partial "page_metadata_authors" . }}</div>
+            {{ end }}
+
+            {{ if or .Params.event .Params.location }}
+              <div class="talk-meta">
+                {{ with .Params.event }}<span class="talk-event">{{ . }}</span>{{ end }}
+                {{ with .Params.location }}<span class="talk-location">{{ . }}</span>{{ end }}
+              </div>
+            {{ end }}
+
+            {{ if partial "functions/has_attachments" . }}
+              <div class="talk-links">
+                {{ partial "page_links" (dict "page" . "is_list" 1) }}
+              </div>
+            {{ end }}
           </div>
-        {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </div>
 
-        {{ if partial "functions/has_attachments" . }}
-          <div class="talk-links">
-            {{ partial "page_links" (dict "page" . "is_list" 1) }}
-          </div>
-        {{ end }}
-      </div>
-    </article>
-  {{ end }}
-</div>
+  {{ if not (.Page.Scratch.Get "talks_timeline_js") }}
+    {{ .Page.Scratch.Set "talks_timeline_js" true }}
+    <script>
+      (function () {
+        function initWidget(widget) {
+          if (!widget || widget.dataset.ready) return;
+          var container = widget.querySelector('.year-timeline');
+          var list = widget.querySelector('.talk-list');
+          if (!container || !list) return;
+          widget.dataset.ready = 'true';
 
-{{ if not (.Page.Scratch.Get "talks_timeline_js") }}
-  {{ .Page.Scratch.Set "talks_timeline_js" true }}
-  <script>
-    (function () {
-      function init() {
-        var container = document.getElementById('talks-timeline');
-        if (!container || container.dataset.ready) return;
-        var section = container.closest('section');
-        if (!section) return;
-        container.dataset.ready = 'true';
+          var items = Array.prototype.slice.call(widget.querySelectorAll('.talk-item[data-year]'));
+          var counts = {};
+          var oldest = null;
+          var newest = null;
+          items.forEach(function (item) {
+            var year = Number(item.dataset.year);
+            if (!year) return;
+            counts[year] = (counts[year] || 0) + 1;
+            if (oldest === null || year < oldest) oldest = year;
+            if (newest === null || year > newest) newest = year;
+          });
+          if (newest === null) return;
 
-        var items = Array.prototype.slice.call(section.querySelectorAll('.talk-item[data-year]'));
-        var years = [];
-        items.forEach(function (item) {
-          var year = item.dataset.year;
-          if (year && years.indexOf(year) === -1) years.push(year);
-        });
-        if (!years.length) return;
-        years.sort(function (a, b) { return Number(b) - Number(a); });
+          // Keep years without items on the axis so the timeline stays
+          // continuous; they render without a bar and are not clickable.
+          var years = [];
+          for (var y = newest; y >= oldest; y--) years.push(String(y));
 
-        var counts = {};
-        items.forEach(function (item) {
-          var year = item.dataset.year;
-          counts[year] = (counts[year] || 0) + 1;
-        });
-        var maxCount = 0;
-        years.forEach(function (year) { maxCount = Math.max(maxCount, counts[year] || 0); });
+          var maxCount = 0;
+          years.forEach(function (year) { maxCount = Math.max(maxCount, counts[year] || 0); });
 
-        var line = document.createElement('span');
-        line.className = 'year-timeline__line';
-        line.setAttribute('aria-hidden', 'true');
-        container.appendChild(line);
+          var line = document.createElement('span');
+          line.className = 'year-timeline__line';
+          line.setAttribute('aria-hidden', 'true');
+          container.appendChild(line);
 
-        var buttons = [];
+          var buttons = [];
 
-        function addButton(label, value, count) {
-          var button = document.createElement('button');
-          button.type = 'button';
-          button.className = 'year-timeline__year';
-          button.dataset.year = value;
-          button.setAttribute('aria-pressed', 'false');
-          button.setAttribute('aria-label', count ? label + ' (' + count + ' items)' : label);
-          button.addEventListener('click', function () { select(value); });
+          function addButton(label, value, count) {
+            var empty = !count;
+            var node = document.createElement(empty ? 'span' : 'button');
+            node.className = 'year-timeline__year' + (empty ? ' year-timeline__year--empty' : '');
+            node.dataset.year = value;
+            if (empty) {
+              node.title = 'No items in ' + label;
+            } else {
+              node.type = 'button';
+              node.setAttribute('aria-pressed', 'false');
+              node.setAttribute('aria-label', label + ' (' + count + ' items)');
+              node.addEventListener('click', function () { select(value); });
+            }
 
-          var track = document.createElement('span');
-          track.className = 'year-timeline__track';
-          var bar = document.createElement('span');
-          bar.className = 'year-timeline__bar';
-          if (count && maxCount) {
-            bar.style.height = Math.max(3, Math.round((count / maxCount) * 100)) + '%';
-            bar.title = count + (count === 1 ? ' item' : ' items');
+            var track = document.createElement('span');
+            track.className = 'year-timeline__track';
+            if (!empty) {
+              var bar = document.createElement('span');
+              bar.className = 'year-timeline__bar';
+              if (maxCount) {
+                bar.style.height = Math.max(3, Math.round((count / maxCount) * 100)) + '%';
+                bar.title = count + (count === 1 ? ' item' : ' items');
+              }
+              track.appendChild(bar);
+            }
+
+            var labelEl = document.createElement('span');
+            labelEl.className = 'year-timeline__label';
+            labelEl.textContent = label;
+
+            node.appendChild(track);
+            node.appendChild(labelEl);
+            container.appendChild(node);
+            if (!empty) buttons.push(node);
           }
-          track.appendChild(bar);
 
-          var labelEl = document.createElement('span');
-          labelEl.className = 'year-timeline__label';
-          labelEl.textContent = label;
+          var VISIBLE_LIMIT = 5;
+          var selectedYear = years[0];
+          var expanded = false;
+          var toggle = document.createElement('button');
+          toggle.type = 'button';
+          toggle.className = 'year-list-toggle';
+          toggle.hidden = true;
+          list.parentNode.insertBefore(toggle, list.nextSibling);
 
-          button.appendChild(track);
-          button.appendChild(labelEl);
-          container.appendChild(button);
-          buttons.push(button);
-        }
+          function updateToggle(count) {
+            toggle.hidden = count <= VISIBLE_LIMIT;
+            toggle.textContent = expanded ? 'Show fewer' : 'Show all ' + count + ' from ' + selectedYear;
+            toggle.setAttribute('aria-expanded', String(expanded));
+          }
 
-        var VISIBLE_LIMIT = 5;
-        var selectedYear = years[0];
-        var expanded = false;
-        var list = section.querySelector('.talk-list');
-        var toggle = document.createElement('button');
-        toggle.type = 'button';
-        toggle.className = 'year-list-toggle';
-        toggle.hidden = true;
-        if (list && list.parentNode) list.parentNode.insertBefore(toggle, list.nextSibling);
+          function applyFilter() {
+            var yearItems = items.filter(function (item) { return item.dataset.year === selectedYear; });
+            items.forEach(function (item) { item.hidden = true; });
+            yearItems.forEach(function (item, index) {
+              item.hidden = expanded ? false : index >= VISIBLE_LIMIT;
+            });
+            updateToggle(yearItems.length);
+          }
 
-        function updateToggle(count) {
-          toggle.hidden = count <= VISIBLE_LIMIT;
-          toggle.textContent = expanded ? 'Show fewer' : 'Show all ' + count + ' from ' + selectedYear;
-          toggle.setAttribute('aria-expanded', String(expanded));
-        }
-
-        function applyFilter() {
-          var yearItems = items.filter(function (item) { return item.dataset.year === selectedYear; });
-          items.forEach(function (item) { item.hidden = true; });
-          yearItems.forEach(function (item, index) {
-            item.hidden = expanded ? false : index >= VISIBLE_LIMIT;
+          toggle.addEventListener('click', function () {
+            expanded = !expanded;
+            applyFilter();
           });
-          updateToggle(yearItems.length);
+
+          function select(value) {
+            selectedYear = value;
+            expanded = false;
+            buttons.forEach(function (button) {
+              button.setAttribute('aria-pressed', String(button.dataset.year === value));
+            });
+            applyFilter();
+          }
+
+          years.forEach(function (year) { addButton(year, year, counts[year] || 0); });
+          select(years[0]);
         }
 
-        toggle.addEventListener('click', function () {
-          expanded = !expanded;
-          applyFilter();
-        });
-
-        function select(value) {
-          selectedYear = value;
-          expanded = false;
-          buttons.forEach(function (button) {
-            button.setAttribute('aria-pressed', String(button.dataset.year === value));
-          });
-          applyFilter();
+        function init() {
+          Array.prototype.slice
+            .call(document.querySelectorAll('.year-widget--talks'))
+            .forEach(initWidget);
         }
 
-        years.forEach(function (year) { addButton(year, year, counts[year] || 0); });
-        select(years[0]);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+        } else {
+          init();
+        }
+      })();
+    </script>
+  {{ end }}
 {{ end }}

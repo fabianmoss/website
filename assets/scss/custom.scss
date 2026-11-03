@@ -215,14 +215,32 @@ button:focus-visible,
 
 .research-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--fc-space-4);
+}
+
+@media (max-width: 767.98px) {
+  .research-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .research-area-card {
+    flex-direction: column;
+  }
+
+  .research-area-card__media {
+    flex: none;
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+  }
 }
 
 .research-area-card {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: stretch;
   height: 100%;
   padding: 0;
   overflow: hidden;
@@ -259,16 +277,18 @@ button:focus-visible,
 }
 
 .research-area-card__media {
-  aspect-ratio: 3 / 2;
+  flex: 0 0 40%;
+  width: 40%;
+  min-height: 200px;
   overflow: hidden;
-  background: var(--fc-surface-alt);
+  background: #fff;
 }
 
 .research-area-card__media img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.4s ease;
 }
 
@@ -386,15 +406,6 @@ body.dark .area-cultural-evolution {
   --area-soft: rgba(252, 211, 77, 0.14);
 }
 
-body.research-index .research-cards {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-@media (max-width: 767.98px) {
-  body.research-index .research-cards {
-    grid-template-columns: 1fr;
-  }
-}
 
 // -----------------------------------------------------------------------------
 // 5. Navigation bar
@@ -771,7 +782,7 @@ body.dark .video-play::before {
 // the list a timeline feel; title, authors, venue and the theme's DOI/PDF
 // buttons (styled as pills) carry the rest.
 
-#publications [hidden] {
+.year-widget [hidden] {
   display: none !important;
 }
 
@@ -799,7 +810,7 @@ body.dark .video-play::before {
 }
 
 // The venue links to the DOI, so hide the duplicate DOI pill here.
-#publications .pub-links .btn[href^="https://doi.org/"] {
+.year-widget .pub-links .btn[href^="https://doi.org/"] {
   display: none;
 }
 
@@ -839,16 +850,6 @@ body.dark .video-play::before {
 .pub-type i {
   color: var(--fc-accent);
   font-size: 0.8rem;
-}
-
-.entry-type {
-  color: var(--fc-text-muted);
-  font-weight: 600;
-}
-
-.entry-type i {
-  margin-right: 0.3rem;
-  color: var(--fc-accent);
 }
 
 .pub-title {
@@ -1197,6 +1198,21 @@ body.teaching-page .article-style [hidden] {
   line-height: 1;
 }
 
+// Years without publications/talks stay on the axis as non-clickable markers.
+.year-timeline__year--empty {
+  cursor: default;
+  pointer-events: none;
+}
+
+.year-timeline__year--empty .year-timeline__label {
+  opacity: 0.5;
+}
+
+.year-timeline__year--empty::before {
+  border-style: dashed;
+  opacity: 0.6;
+}
+
 // With bars, stack track -> dot -> label and move the connecting line down so
 // the bars sit above the timeline rather than below it.
 .year-timeline--bars .year-timeline__track {
@@ -1334,10 +1350,6 @@ body.teaching-page .article-style details a {
 // -----------------------------------------------------------------------------
 // Rendered by `layouts/shortcodes/talks_list.html`: a date badge column, title,
 // event/location, optional "Upcoming" marker, and attachment pills.
-
-#talks [hidden] {
-  display: none !important;
-}
 
 .talk-list {
   display: flex;
@@ -1572,223 +1584,274 @@ body.teaching-page .article-style details a {
 }
 
 // -----------------------------------------------------------------------------
-// 13. Experience timeline (homepage)
+// 13. Experience lanes (homepage)
 // -----------------------------------------------------------------------------
-// Vertical counterpart of the publications/talks timeline: year column, accent
-// line with dots, and the same card treatment.
+// One lane per institution on a shared year axis, one bar per position. The
+// role name sits in its own column beside the bars, so lanes stay one line
+// tall. Degrees live in a compact block underneath. Scrolls horizontally on
+// narrow screens.
 
-.exp-timeline {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: var(--fc-space-4);
+.exp-chart {
+  margin-bottom: var(--fc-space-5);
+  overflow-x: auto;
 }
 
-.exp-timeline::before {
+.exp-chart__inner {
+  min-width: 810px;
+}
+
+.exp-chart__axis,
+.exp-group {
+  display: grid;
+  grid-template-columns: 330px minmax(0, 1fr) minmax(170px, 240px);
+  gap: 0 var(--fc-space-3);
+  align-items: center;
+}
+
+.exp-chart__axis {
+  margin-bottom: var(--fc-space-1);
+}
+
+.exp-chart__ticks {
+  position: relative;
+  height: 1.4rem;
+}
+
+.exp-chart__tick {
+  position: absolute;
+  top: 0;
+  color: var(--fc-text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.exp-chart__tick::after {
   content: "";
   position: absolute;
-  top: 1rem;
-  bottom: 1rem;
-  left: 0.75rem;
-  width: 2px;
+  bottom: -0.35rem;
+  left: 50%;
+  width: 1px;
+  height: 0.3rem;
   background: var(--fc-border);
 }
 
-.exp-item {
-  display: grid;
-  grid-template-columns: 1.5rem 1fr;
-  gap: var(--fc-space-3);
-  align-items: start;
+.exp-chart__rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fc-space-2);
 }
 
-.exp-marker {
+.exp-group {
+  align-content: center;
+}
+
+.exp-inst {
   display: flex;
+  gap: var(--fc-space-2);
+  align-items: center;
+  align-self: center;
+  min-width: 0;
+}
+
+.exp-inst__logo {
+  display: flex;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  align-self: stretch;
+  width: 30px;
+  height: 30px;
 }
 
-.exp-dot {
-  position: relative;
-  z-index: 1;
-  width: 14px;
-  height: 14px;
-  background: var(--fc-surface);
-  border: 2px solid var(--fc-accent);
-  border-radius: 50%;
-}
-
-.exp-dot--current {
-  background: var(--fc-accent);
-  box-shadow: 0 0 0 4px var(--fc-accent-soft);
-}
-
-.exp-card {
-  padding: var(--fc-space-3) var(--fc-space-4);
-  background: var(--fc-surface);
-  border: 1px solid var(--fc-border);
-  border-radius: var(--fc-radius-lg);
-  box-shadow: var(--fc-shadow-sm);
-  transition: transform 0.25s ease, box-shadow 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.exp-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--fc-accent);
-  box-shadow: var(--fc-shadow-md);
-}
-
-.exp-card-head {
-  display: flex;
-  gap: var(--fc-space-3);
-  align-items: flex-start;
-}
-
-.exp-logo {
-  flex: 0 0 auto;
-}
-
-.exp-logo img {
+.exp-inst__logo img {
   display: block;
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
-.exp-title {
-  margin: 0;
+.exp-inst__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.exp-inst__name {
   color: var(--fc-heading);
-  font-size: 1rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1.3;
+  white-space: nowrap;
 }
 
-.exp-company {
-  margin-top: 2px;
-  color: var(--fc-text-muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
-}
-
-.exp-company a {
+.exp-inst__name a {
   color: inherit;
+  text-decoration: none;
 }
 
-.exp-company a:hover {
+.exp-inst__name a:hover {
   color: var(--fc-accent);
 }
 
-.exp-meta {
-  margin-top: var(--fc-space-1);
+.exp-inst__location {
   color: var(--fc-text-muted);
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.72rem;
+  line-height: 1.3;
 }
 
-.exp-description {
-  margin-top: var(--fc-space-2);
+.exp-track {
+  position: relative;
+  height: 1.25rem;
+}
+
+.exp-track::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: var(--fc-border);
+}
+
+.exp-bar {
+  position: absolute;
+  top: 50%;
+  height: 1.05rem;
+  min-width: 6px;
+  background: var(--fc-accent);
+  border-radius: 999px;
+  opacity: 0.5;
+  transform: translateY(-50%);
+  transition: opacity 0.2s ease;
+}
+
+.exp-bar:hover {
+  opacity: 1;
+}
+
+.exp-bar--current {
+  opacity: 1;
+  box-shadow: 0 0 0 3px var(--fc-accent-soft);
+}
+
+.exp-marker {
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  background: var(--fc-surface);
+  border: 2px solid var(--fc-heading);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exp-role {
   color: var(--fc-text-muted);
-  font-size: 0.92rem;
-  line-height: 1.55;
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
 
-.exp-description p:last-child {
-  margin-bottom: 0;
+// Compact education block beneath the lanes.
+.exp-education {
+  margin-top: var(--fc-space-3);
+  padding-top: var(--fc-space-4);
+  border-top: 1px solid var(--fc-border);
 }
 
-@media (max-width: 575.98px) {
-  .exp-timeline::before {
-    left: 0.5rem;
-  }
-
-  .exp-item {
-    grid-template-columns: 1rem 1fr;
-    gap: var(--fc-space-2);
-  }
-
+.exp-education__heading {
+  margin: 0 0 var(--fc-space-3);
+  color: var(--fc-text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-// -----------------------------------------------------------------------------
-// 14. Research area pages
-// -----------------------------------------------------------------------------
-// Entry rows on the /research/*/ pages, using the same card language as the
-// homepage lists.
-
-.entry-list {
+.exp-education__list {
   display: flex;
   flex-direction: column;
-  gap: var(--fc-space-3);
+  gap: var(--fc-space-2);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.entry-item {
+.exp-edu {
   display: grid;
-  grid-template-columns: 3.5rem 1fr;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
   gap: var(--fc-space-3);
-  padding: var(--fc-space-3) var(--fc-space-4);
-  background: var(--fc-surface);
-  border: 1px solid var(--fc-border);
-  border-radius: var(--fc-radius-lg);
-  box-shadow: var(--fc-shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease,
-    border-color 0.2s ease;
+  align-items: center;
 }
 
-.entry-item:hover {
-  transform: translateY(-1px);
-  border-color: var(--fc-accent);
-  box-shadow: var(--fc-shadow-md);
+.exp-edu__logo img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
-.entry-year {
-  padding-top: 2px;
-  color: var(--fc-accent);
-  font-size: 0.92rem;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-  line-height: 1.4;
+.exp-edu__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
-.entry-title {
-  display: inline-block;
+.exp-edu__institution {
   color: var(--fc-heading);
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.35;
+}
+
+.exp-edu__institution a {
+  color: inherit;
   text-decoration: none;
 }
 
-.entry-title:hover {
+.exp-edu__institution a:hover {
   color: var(--fc-accent);
 }
 
-.entry-meta {
-  margin-top: 2px;
+.exp-edu__detail {
   color: var(--fc-text-muted);
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
-.entry-meta a {
-  color: inherit;
-}
-
-.entry-meta a:hover {
-  color: var(--fc-accent);
-}
-
-.entry-meta .author-highlighted {
-  color: var(--fc-heading);
+.exp-edu__dates {
+  color: var(--fc-text-muted);
+  font-size: 0.78rem;
   font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
-.entry-empty {
-  color: var(--fc-text-muted);
+@media (max-width: 767.98px) {
+  .exp-chart__axis,
+  .exp-group {
+    grid-template-columns: 330px minmax(0, 1fr) 150px;
+  }
 }
 
+@media (max-width: 575.98px) {
+  .exp-edu {
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: var(--fc-space-1) var(--fc-space-2);
+    align-items: start;
+  }
+
+  .exp-edu__dates {
+    grid-column: 2;
+    text-align: left;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 14. Research area pages
+// -----------------------------------------------------------------------------
 .research-intro {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
@@ -1835,7 +1898,7 @@ body.dark .research-intro__media {
   }
 }
 
-body.research-page .article-style h2 {
+body.research-page .article-style h2:not(.project-tile__title) {
   clear: both;
 }
 
@@ -1854,7 +1917,7 @@ body.research-page .article-style > p:first-of-type {
   line-height: 1.65;
 }
 
-body.research-page .article-style h2 {
+body.research-page .article-style h2:not(.project-tile__title) {
   display: flex;
   align-items: center;
   margin: var(--fc-space-6) 0 var(--fc-space-3);
@@ -1865,7 +1928,7 @@ body.research-page .article-style h2 {
   border-bottom: 1px solid var(--fc-border);
 }
 
-body.research-page .article-style h2::before {
+body.research-page .article-style h2:not(.project-tile__title)::before {
   content: "";
   flex: 0 0 auto;
   width: 0.5rem;
@@ -1873,18 +1936,6 @@ body.research-page .article-style h2::before {
   margin-right: var(--fc-space-3);
   background: var(--fc-accent);
   border-radius: 50%;
-}
-
-@media (max-width: 575.98px) {
-  .entry-item {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
-  }
-
-  .entry-year {
-    padding-top: 0;
-    font-size: 0.8rem;
-  }
 }
 
 // -----------------------------------------------------------------------------
@@ -2056,6 +2107,7 @@ body.research-page .article-style h2::before {
   display: block;
   width: 100%;
   height: 100%;
+  margin: 0;
   object-fit: contain;
   transition: transform 0.4s ease;
 }
@@ -2122,6 +2174,76 @@ body.research-page .article-style h2::before {
 @media (max-width: 767.98px) {
   .project-tiles {
     grid-template-columns: 1fr;
+  }
+}
+// Research-area pages: compact horizontal project rows instead of large cards.
+body.research-page .project-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--fc-space-3);
+}
+
+body.research-page .project-tile {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  align-items: start;
+  gap: var(--fc-space-3);
+  padding: var(--fc-space-3) var(--fc-space-4);
+}
+
+body.research-page .project-tile__media {
+  width: 96px;
+  height: 72px;
+  min-height: 0;
+  aspect-ratio: auto;
+  align-self: start;
+  background: var(--fc-surface);
+  border-radius: var(--fc-radius-md);
+}
+
+body.research-page .project-tile__media img {
+  object-fit: cover;
+}
+
+body.research-page .project-tile__body {
+  min-width: 0;
+  gap: 0.15rem;
+  padding: 0;
+}
+
+body.research-page .project-tile__meta {
+  font-size: 0.68rem;
+}
+
+body.research-page .project-tile__title {
+  font-size: 0.98rem;
+}
+
+body.research-page .project-tile__summary {
+  font-size: 0.85rem;
+  -webkit-line-clamp: 1;
+}
+
+body.research-page .project-tile__link {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  body.research-page .project-tiles {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.research-page .project-tile {
+    grid-template-columns: 72px 1fr;
+    gap: var(--fc-space-2);
+    padding: var(--fc-space-2) var(--fc-space-3);
+  }
+
+  body.research-page .project-tile__media {
+    width: 72px;
+    height: 54px;
   }
 }
 

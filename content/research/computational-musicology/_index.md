@@ -22,8 +22,8 @@ Computational musicology applies computational methods—such as machine learnin
 
 {{< list_by_tag tag="computational-musicology" type="project" heading="Projects" >}}
 
-{{< list_by_tag tag="computational-musicology" type="publication" heading="Publications" >}}
+{{< publications_list tag="computational-musicology" heading="Publications" >}}
 
-{{< list_by_tag tag="computational-musicology" type="event" heading="Talks" >}}
+{{< talks_list tag="computational-musicology" heading="Talks" >}}
 
 
