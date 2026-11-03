@@ -1,0 +1,34 @@
+{{ define "main" }}
+  {{ partial "page_header.html" . }}
+
+  <div class="universal-wrapper">
+    {{ with .Content }}
+      <div class="article-style">{{ . }}</div>
+    {{ end }}
+
+    <div class="project-tiles">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ $title := .Title }}
+        {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+        <a class="project-tile" href="{{ .RelPermalink }}">
+          {{ with $img }}
+            {{ $thumb := .Fill "640x427 webp" }}
+            <div class="project-tile__media">
+              <img src="{{ $thumb.RelPermalink }}" alt="{{ $title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy">
+            </div>
+          {{ end }}
+          <div class="project-tile__body">
+            <div class="project-tile__meta">
+              {{ .Date.Format "2006" }}{{ with .Params.categories }} · {{ index . 0 }}{{ end }}
+            </div>
+            <h2 class="project-tile__title">{{ .Title }}</h2>
+            {{ with .Params.summary }}
+              <p class="project-tile__summary">{{ . | plainify | truncate 160 }}</p>
+            {{ end }}
+            <span class="project-tile__link">View project <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

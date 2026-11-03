@@ -22,6 +22,12 @@ main:
   - name: Teaching
     url: teaching/
     weight: 60
+  - name: CV
+    url: uploads/moss_cv.pdf
+    weight: 70
+  - name: Contact
+    url: "mailto:fabian.moss@uni-wuerzburg.de"
+    weight: 80
   # - name: Journal Club
   #   weight: 70
   #   url: journal-club/

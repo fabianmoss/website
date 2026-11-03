@@ -3,7 +3,7 @@
 
   Parameters:
     count             – optional limit; omit or 0 for all publications
-    exclude_featured  – set "false" to include featured publications
+    exclude_featured  – set "true" to exclude featured publications
 
   Renders a year selector (newest first, All at the end) and one card per
   publication. The newest year is selected and rendered server-side so there is
@@ -11,7 +11,7 @@
 */}}
 {{ $count := int (.Get "count" | default 0) }}
 {{ $items := where site.RegularPages "Type" "publication" }}
-{{ if ne (.Get "exclude_featured") "false" }}
+{{ if eq (.Get "exclude_featured") "true" }}
   {{ $items = where $items "Params.featured" "!=" true }}
 {{ end }}
 {{ $items = sort $items "Date" "desc" }}
