@@ -193,6 +193,12 @@ p {
   max-width: var(--fc-measure);
 }
 
+// The hero text shares its row with the portrait; let it use the full column
+// so its right edge lines up with the sections below.
+#about .article-style p {
+  max-width: none;
+}
+
 // Section headings on the homepage (widget titles + subtitles). Serif title,
 // restrained weight, muted subtitle, and a consistent left alignment — the
 // columns-1 widgets (Research areas, Videos) would otherwise centre theirs.
