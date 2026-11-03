@@ -86,7 +86,7 @@ Partials / templates (`layouts/`):
 - `partials/widget_page.html` — section titles as H2.
 - `partials/widgets/about.html` — hero name as H1; optional widget title as H2.
 - `partials/widgets/experience.html` — institution lanes on a shared year axis, one bar per role with the role name in the column beside it, plus a compact Education block. Reads `positions:` (`institution`, `company_logo`, `company_url`, `location`, `roles` with `title`/`date_start`/`date_end`, optional `type` (`professor`/`postdoc`/`doctoral`, drives the bar colour) and per-role `markers`) and `education:` from `content/home/experience.md`; the chart scrolls horizontally on mobile.
-- `partials/site_footer.html` — brand, social, legal/credit row; no duplicate menu.
+- `partials/site_footer.html` — copyright and “Built with Hugo & Wowchemy” only (no brand block, social icons or duplicated menu).
 - `partials/search.html` — search heading as H2.
 - `partials/hooks/footer.html` — sun/moon theme toggle.
 - `partials/functions/filter_by_tag.html` — shared tag/category matching for research lists, card counts and the filtered widgets.
