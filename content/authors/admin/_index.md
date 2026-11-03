@@ -81,11 +81,11 @@ Working with large symbolic datasets of musical scores and harmonic annotations,
 
 Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch) (DCML) at [École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL, Switzerland) for the project [*Distant Listening: The Development of Harmony over Three Centuries (1700–2000)*](https://dcml.epfl.ch/projects/distant-listening), funded by the [Swiss National Science Foundation](http://www.snf.ch) (PI: Martin Rohrmeier). I also directed the project [*Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources*](http://dcmlab.github.io/ddd), supported by the EPFL-UNIL funding scheme [CROSS - Collaborative Research on Science and Society](https://www.epfl.ch/schools/cdh/research-2/cross-collaborative-research-on-science-and-society/). -->
 
-I am an assistant professor of Digital Music Philology and Music Theory at Julius-Maximilians-Universität Würzburg, at the Institut für Musikforschung and the Zentrum für Philologie und Digitalität.
+I am an assistant professor of Digital Music Philology and Music Theory at [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/), at the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/) and the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/).
 
 I study how harmony and tonality change over time. From medieval chant and Renaissance polyphony to 19th-century tonality, Brazilian choro and popular music, I work with large corpora of scores and harmonic annotations — pairing music theory with statistical modelling, machine learning and music cognition to find patterns that close analysis alone cannot reach, and to test what our theories of harmony actually predict. The methods are a means, not an end: the goal is always a better understanding of music.
 
-Current projects include *Musico Pratico*, a digital edition, translation and study of Pietro Pontio's 16th-century dialogues on music theory, and *DigiMusTh*, an open collection of 19th-century German-language music-theory texts.
+Current projects include [*Musico Pratico*](/project/2025/musicopratico/), a digital edition, translation and study of Pietro Pontio's 16th-century dialogues on music theory, and [*DigiMusTh*](/project/2025/digimusth/), an open collection of 19th-century German-language music-theory texts.
 
 I teach music theory, computational musicology and digital methods, and I supervise work on corpus-based and computational approaches to music. I am always glad to hear from students and collaborators, and from anyone who wants to bring computation to musical questions.
 
