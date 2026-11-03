@@ -32,13 +32,11 @@
     {{ $span := sub $max.Unix $min.Unix }}
     {{ if eq $span 0 }}{{ $span = 1 }}{{ end }}
 
-    <h3 class="exp-heading">Employment</h3>
-
     <div class="exp-chart">
       <div class="exp-chart__inner">
-        <div class="exp-chart__axis" aria-hidden="true">
-          <span></span>
-          <div class="exp-chart__ticks">
+        <div class="exp-chart__axis">
+          <h3 class="exp-heading exp-heading--axis">Employment</h3>
+          <div class="exp-chart__ticks" aria-hidden="true">
             {{ $firstTick := $min.Year }}
             {{ if eq (mod $firstTick 2) 1 }}{{ $firstTick = add $firstTick 1 }}{{ end }}
             {{ range seq $firstTick 2 $max.Year }}
