@@ -1,5 +1,6 @@
 {{ $tag := .Get "tag" }}
 {{ $page_type := .Get "type" | default "publication" }}
+{{ $heading := .Get "heading" }}
 
 {{ $tag_lower := lower $tag }}
 {{ $tag_with_dash := replace $tag_lower " " "-" }}
@@ -33,7 +34,22 @@
 
 {{ $items := sort $matched "Date" "desc" }}
 
-{{ if $items }}
+{{ if eq $page_type "project" }}
+  {{ if $matched }}
+    {{ with $heading }}<h2 id="{{ . | anchorize }}">{{ . }}</h2>{{ end }}
+    {{ $ongoing := sort (where $matched "Params.ongoing" true) "Params.date_end" "desc" }}
+    {{ $rest := sort (where $matched "Params.ongoing" "!=" true) "Params.date_end" "desc" }}
+    {{ $projects := slice }}
+    {{ range $ongoing }}{{ $projects = $projects | append . }}{{ end }}
+    {{ range $rest }}{{ $projects = $projects | append . }}{{ end }}
+    <div class="project-tiles">
+      {{ range $projects }}{{ partial "project_tile.html" . }}{{ end }}
+    </div>
+  {{ else }}
+    {{ if not $heading }}<p class="entry-empty">No projects found.</p>{{ end }}
+  {{ end }}
+{{ else if $items }}
+  {{ with $heading }}<h2 id="{{ . | anchorize }}">{{ . }}</h2>{{ end }}
 <ul class="entry-list">
   {{ range $items }}
     {{ $item := . }}
@@ -76,5 +92,5 @@
   {{ end }}
 </ul>
 {{ else }}
-<p class="entry-empty">No items found.</p>
+  {{ if not $heading }}<p class="entry-empty">No items found.</p>{{ end }}
 {{ end }}

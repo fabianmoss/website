@@ -5,7 +5,7 @@ title: "Representing Harmony"
 subtitle: Goals and Challenges
 summary: "Goals and Challenges"
 authors: [admin, Johannes Hentschel, Markus Neuwirth, Martin Rohrmeier]
-tags: [corpus studies, harmony, music encoding]
+tags: ["corpus studies", "harmony", "music encoding", "music theory"]
 categories: ["computational musicology"]
 date: 2022-09-13T00:00:00+02:00
 date_start: "2022-09-13"

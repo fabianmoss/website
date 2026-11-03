@@ -13,38 +13,7 @@
     {{ range $rest }}{{ $projects = $projects | append . }}{{ end }}
 
     <div class="project-tiles">
-      {{ range $projects }}
-        {{ $title := .Title }}
-        {{ $start := .Params.date_start | default (.Date.Format "2006-01-02") }}
-        {{ $startYear := (time $start).Format "2006" }}
-        {{ $endYear := "" }}
-        {{ with .Params.date_end }}{{ $endYear = (time .).Format "2006" }}{{ end }}
-        {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
-        <a class="project-tile" href="{{ .RelPermalink }}">
-          {{ with $img }}
-            {{ $thumb := .Fill "640x427 webp" }}
-            <div class="project-tile__media">
-              <img src="{{ $thumb.RelPermalink }}" alt="{{ $title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy">
-            </div>
-          {{ end }}
-          <div class="project-tile__body">
-            <div class="project-tile__meta">
-              {{ if .Params.ongoing }}
-                {{ $startYear }}–present
-              {{ else if eq $startYear $endYear }}
-                {{ $startYear }}
-              {{ else }}
-                {{ $startYear }}–{{ $endYear }}
-              {{ end }}{{ with .Params.categories }} · {{ index . 0 }}{{ end }}
-            </div>
-            <h2 class="project-tile__title">{{ .Title }}</h2>
-            {{ with .Params.summary }}
-              <p class="project-tile__summary">{{ . | plainify | truncate 160 }}</p>
-            {{ end }}
-            <span class="project-tile__link">View project <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </a>
-      {{ end }}
+      {{ range $projects }}{{ partial "project_tile.html" . }}{{ end }}
     </div>
   </div>
 {{ end }}

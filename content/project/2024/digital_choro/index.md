@@ -5,7 +5,7 @@ title: "Digital Choro"
 subtitle: Exploring the potential of digitization and computational models for Brazil's musical cultural heritage
 summary: Exploring the potential of digitization and computational models for Brazil's musical cultural heritage
 authors: [admin]
-tags: [music theory, corpus studies]
+tags: ["music theory", "corpus studies", "computational musicology"]
 categories: [digital humanities, music theory]
 date: 2024-01-04T13:09:08+02:00
 date_start: "2024-01-04"

@@ -20,16 +20,10 @@ design:
 Computational musicology applies computational methods—such as machine learning, statistical modeling, and data mining—to analyze musical corpora. This interdisciplinary field bridges computer science and musicology, enabling researchers to discover patterns, trace stylistic evolution, and quantify musical features at scales beyond human perception.
 {{< /research_intro >}}
 
-## Publications
+{{< list_by_tag tag="computational-musicology" type="project" heading="Projects" >}}
 
-{{< list_by_tag tag="computational-musicology" type="publication" >}}
+{{< list_by_tag tag="computational-musicology" type="publication" heading="Publications" >}}
 
-## Projects
-
-{{< list_by_tag tag="computational-musicology" type="project" >}}
-
-## Talks
-
-{{< list_by_tag tag="computational-musicology" type="event" >}}
+{{< list_by_tag tag="computational-musicology" type="event" heading="Talks" >}}
 
 

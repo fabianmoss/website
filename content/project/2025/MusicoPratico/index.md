@@ -5,7 +5,7 @@ title: "Musico Pratico"
 subtitle: Pietro Pontio's dialogues in translation, digital evaluation and critical reception
 summary: Pietro Pontio's dialogues in translation, digital evaluation and critical reception
 authors: [Johannes Menke, admin]
-tags: [Digital Musicology, Music Theory]
+tags: ["Digital Musicology", "Music Theory", "digital humanities"]
 categories: []
 date: 2025-09-01T10:42:33+02:00
 date_start: "2025-09-01"
