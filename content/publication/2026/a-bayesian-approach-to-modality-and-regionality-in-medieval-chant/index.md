@@ -7,8 +7,8 @@ publication_types: ["1"]
 publication: "Computational Humanities Research (CHR)"
 publication_short: ""
 abstract: ""
-summary: "Accepted for publication."
-tags: ["computational musicology", "plainchant", "Bayesian modeling", "digital humanities"]
+summary: ""
+tags: ["computational musicology", "plainchant", "Bayesian modeling", "digital humanities", machine learning]
 categories: ["computational musicology", "digital humanities"]
 accepted: true
 featured: false

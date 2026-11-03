@@ -24,7 +24,7 @@ abstract: "Music analysis, in particular harmonic analysis, is concerned with th
 # Summary. An optional shortened abstract.
 summary: "In this study, we use the Latent Dirichlet Allocation (LDA) topic model to discover tonal structures in a corpus of more than 2000 musical pieces from large historical range (ca. 600 years). and that the inferred topics have music-theoretically meaningful interpretations."
 
-tags: [Topic modelling, Latent Dirichlet Allocation, tonal pitch classes, tonality, corpus studies, computational musicology]
+tags: [Topic modelling, Latent Dirichlet Allocation, tonal pitch classes, tonality, corpus studies, computational musicology, machine learning]
 categories: []
 featured: false  
 

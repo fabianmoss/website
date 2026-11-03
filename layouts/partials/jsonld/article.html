@@ -1,0 +1,71 @@
+{{- $page := .page }}
+{{ $summary := .summary }}
+{{ $featured_image := ($page.Resources.ByType "image").GetMatch "*featured*" }}
+
+{{/* Get schema type. */}}
+{{ $schema := "Article" }}
+{{ if eq $page.Type "post" }}
+  {{ $schema = "BlogPosting" }}
+{{ end }}
+
+{{/* Resolve every author, mapping profile usernames (e.g. "admin") to names. */}}
+{{ $authors := slice }}
+{{ range $page.Params.authors }}
+  {{ $authorName := . }}
+  {{ with site.GetPage (printf "/authors/%s" (urlize .)) }}{{ $authorName = .Title }}{{ end }}
+  {{ with $authorName }}{{ $authors = $authors | append . }}{{ end }}
+{{ end }}
+
+{{/* Fall back to the abstract, then to a factual citation line. */}}
+{{ $desc := $summary }}
+{{ if or (eq $desc "") (eq $desc "Accepted for publication.") }}
+  {{ $desc = $page.Params.abstract | default $page.Summary | plainify | truncate 320 }}
+{{ end }}
+{{ if not $desc }}
+  {{ $venue := $page.Params.publication | default $page.Params.publication_short }}
+  {{ $desc = printf "%s (%s)." $page.Title ($page.Date.Format "2006") }}
+  {{ with $venue }}{{ $desc = printf "%s Published in %s." $page.Title . }}{{ end }}
+{{ end }}
+
+{{ $publisher := site.Params.org_name | default site.Title }}
+{{ $logo_url := partial "functions/get_logo_url" $page -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{$schema}},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{$page.Permalink}}
+  },
+  "headline": {{$page.Title}},
+  {{ if $featured_image }}
+  "image": [
+    {{$featured_image.Permalink}}
+  ],
+  {{end}}
+  "datePublished": {{ $page.PublishDate.Format "2006-01-02T15:04:05Z07:00" }},
+  "dateModified": {{ $page.Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
+  {{ with $page.Params.doi }}
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": {{ . }}
+  },
+  {{ end }}
+  {{ with $authors }}
+  "author": [
+    {{ range $i, $author := . }}{{ if $i }},{{ end }}{"@type": "Person", "name": {{ $author }}}{{ end }}
+  ],
+  {{ end }}
+  "publisher": {
+    "@type": "Organization",
+    "name": {{$publisher}},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{$logo_url}}
+    }
+  },
+  "description": {{$desc}}
+}
+</script>

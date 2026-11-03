@@ -32,7 +32,7 @@ abstract: |
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [computational musicology]
+tags: [computational musicology, machine learning]
 categories: []
 featured: false
 

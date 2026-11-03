@@ -35,6 +35,7 @@ hugo list drafts                           # show draft pages
 - Do not add npm/Node tooling; this site is Hugo-only.
 - Dark mode is enabled (`day_night: true`). `layouts/partials/hooks/footer.html` replaces the theme dropdown with a single sun/moon toggle while keeping Wowchemy’s storage/highlighting handlers.
 - `profile: false` in `params.yaml` hides the author box on content pages (single-author site).
+- SEO: `baseurl` must stay `https://fabian-moss.de` (apex; `www` 301-redirects). The site description in `params.yaml` is the English fallback used on pages without a summary. `layouts/partials/site_head.html` (project copy) adds the homepage title, description fallbacks and `name=` Twitter tags; `partials/custom_head.html` adds `Person` JSON-LD; `partials/jsonld/article.html` lists every author and the DOI; `layouts/sitemap.xml` skips pages without a permalink. Search Console/Bing verification is not configured yet (`google_site_verification` empty).
 
 ## Design system
 

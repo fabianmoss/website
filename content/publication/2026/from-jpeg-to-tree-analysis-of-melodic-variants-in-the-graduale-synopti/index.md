@@ -7,7 +7,7 @@ publication_types: ["6"]
 publication: "Shaping Early Music Research in the Digital Era: Case Studies on Plainchant (Brepols)"
 publication_short: ""
 abstract: ""
-summary: "Accepted for publication."
+summary: ""
 tags: ["plainchant", "digital humanities", "music encoding", "phylogenetics"]
 categories: ["digital humanities"]
 accepted: true

@@ -1,0 +1,41 @@
+{{/* Extra structured data for the site owner. Wowchemy v5 only emits a
+     WebSite block, so the Person entity and its external profiles are added
+     here for entity search (name queries, knowledge panels). */}}
+{{ if .IsHome }}
+  {{ $author := site.GetPage "/authors/admin" }}
+  {{ $name := site.Title }}
+  {{ $image := "" }}
+  {{ $sameAs := slice }}
+  {{ with $author }}
+    {{ $name = .Title }}
+    {{ with (.Resources.ByType "image").GetMatch "*avatar*" }}{{ $image = .Permalink }}{{ end }}
+    {{ range .Params.social }}
+      {{ if in (slice "orcid" "google-scholar" "github" "mastodon" "twitter") .icon }}
+        {{ $sameAs = $sameAs | append .link }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if not $image }}{{ with resources.Get "media/icon.png" }}{{ $image = .Permalink }}{{ end }}{{ end }}
+  {{ $knowsAbout := slice "Computational musicology" "Music theory" "Music analysis" "Corpus studies" "Artificial Intelligence and Music" "Machine learning" "Music cognition" "Digital humanities" "Cultural evolution" }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ $name }},
+    "jobTitle": "Assistant Professor of Digital Music Philology and Music Theory",
+    "url": {{ site.BaseURL }},
+    {{ with $image }}"image": {{ . }},{{ end }}
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Julius-Maximilians-Universität Würzburg",
+      "url": "https://www.uni-wuerzburg.de/"
+    },
+    "sameAs": [
+      {{ range $i, $url := $sameAs }}{{ if $i }},{{ end }}{{ $url }}{{ end }}
+    ],
+    "knowsAbout": [
+      {{ range $i, $topic := $knowsAbout }}{{ if $i }},{{ end }}{{ $topic }}{{ end }}
+    ]
+  }
+  </script>
+{{ end }}

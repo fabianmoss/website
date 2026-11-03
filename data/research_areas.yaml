@@ -6,7 +6,7 @@
 
 - key: computational-musicology
   title: "Computational Musicology"
-  description: "Modeling musical patterns in large corpora"
+  description: "Machine learning and computational models of musical patterns"
   icon: "fa-wave-square"
   image: "/media/research/computational-musicology.jpg"
   alt: "Line-of-fifths distribution of tonal pitch classes in historical corpora"

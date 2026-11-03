@@ -24,7 +24,7 @@ all_day: false
 publishDate: 2024-04-22T12:29:39+02:00
 
 authors: [admin]
-tags: [artificial intelligence, musicology, music, computational musicology]
+tags: [artificial intelligence, musicology, music, computational musicology, machine learning]
 # Is this a featured event? (true/false)
 featured: false
 
