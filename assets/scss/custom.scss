@@ -52,9 +52,11 @@
   --fc-accent-hover: #1e40af;
   --fc-accent-soft: #eef2ff;
 
-  // Role accents for the experience lanes: professor = primary accent,
-  // postdoc/research = teal, doctoral = amber.
-  --fc-role-postdoc: #0f766e;
+  // Role accents for the experience lanes. Hues are separated by lightness as
+  // well as hue (navy > teal > amber) so they stay distinguishable in
+  // grayscale and for the common forms of colour blindness.
+  --fc-role-professor: #1e3a8a;
+  --fc-role-postdoc: #0d9488;
   --fc-role-doctoral: #b45309;
   // Text/icon colour placed on top of a filled accent surface.
   --fc-on-accent: #ffffff;
@@ -101,6 +103,7 @@ body.dark {
   --fc-accent-hover: #bcd0ff;
   --fc-accent-soft: rgba(147, 180, 255, 0.12);
 
+  --fc-role-professor: #93b4ff;
   --fc-role-postdoc: #5eead4;
   --fc-role-doctoral: #fbbf24;
   --fc-on-accent: #111827;
@@ -114,6 +117,20 @@ body.dark {
 
   --fc-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
   --fc-shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+// Honour the OS "increase contrast" preference: strengthen muted text and
+// control borders without changing the palette.
+@media (prefers-contrast: more) {
+  :root {
+    --fc-text-muted: #374151;
+    --fc-border: #6b7280;
+  }
+
+  body.dark {
+    --fc-text-muted: #e5e7eb;
+    --fc-border: #9ca3af;
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -206,6 +223,43 @@ a {
 
 // Keep the theme's link colours intact; only improve the focus ring so it is
 // visible and consistent with the accent.
+// Links inside prose rely on an underline as well as colour, so they stay
+// identifiable without colour perception (WCAG 1.4.1). Scoped to prose
+// containers so card and list-item titles keep their own styling.
+.article-style p a:not(.btn),
+.article-style li a:not(.btn),
+.article-style dd a:not(.btn),
+.article-style td a:not(.btn),
+.article-style th a:not(.btn),
+.article-style blockquote a:not(.btn),
+.pub-summary a {
+  color: var(--fc-accent);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.article-style p a:not(.btn):hover,
+.article-style p a:not(.btn):focus-visible,
+.article-style li a:not(.btn):hover,
+.article-style li a:not(.btn):focus-visible,
+.article-style dd a:not(.btn):hover,
+.article-style dd a:not(.btn):focus-visible,
+.article-style td a:not(.btn):hover,
+.article-style td a:not(.btn):focus-visible,
+.article-style th a:not(.btn):hover,
+.article-style th a:not(.btn):focus-visible,
+.article-style blockquote a:not(.btn):hover,
+.article-style blockquote a:not(.btn):focus-visible,
+.pub-summary a:hover,
+.pub-summary a:focus-visible {
+  color: var(--fc-accent-hover);
+  text-decoration-color: currentColor;
+}
+
 a:focus-visible,
 button:focus-visible,
 .btn:focus-visible {
@@ -1745,6 +1799,10 @@ body.teaching-page .article-style details a {
   box-shadow: 0 0 0 3px var(--fc-accent-soft);
 }
 
+.exp-bar--professor {
+  background: var(--fc-role-professor);
+}
+
 .exp-bar--postdoc {
   background: var(--fc-role-postdoc);
 }
@@ -1779,7 +1837,7 @@ body.teaching-page .article-style details a {
   height: 7px;
   margin-right: 0.4rem;
   vertical-align: 0.1em;
-  background: var(--fc-accent);
+  background: var(--fc-role-professor);
   border-radius: 50%;
 }
 

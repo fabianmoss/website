@@ -41,6 +41,7 @@ hugo list drafts                           # show draft pages
 - `assets/scss/custom.scss` holds all site-level styling; it is imported last by the theme. It is organised in numbered sections: tokens, typography, links, research cards, navbar, hero, videos, publications, footer, teaching, talks, vertical rhythm, experience, research pages, project pages, motion.
 - Design tokens are CSS variables (`--fc-*`) for colour, spacing, radius, shadow and accent. Prefer them over hard-coded values. A dark palette is keyed to `body.dark`.
 - Typography: **H1 and H2 are serif** (Source Serif Pro); H3–H6 and body text are Inter. Fonts are self-hosted (see below) and declared with `@font-face` at the top of `custom.scss`.
+- Colour and accessibility: text pairs meet WCAG AA in both themes; prose links are underlined as well as accent-coloured; role colours (professor/postdoc/doctoral) differ in lightness as well as hue, and research-area colours are always paired with labels and icons, so colour is never the only cue. `prefers-contrast: more` strengthens muted text and borders.
 - The homepage has a **single H1** (the hero name). Section titles are H2 via `layouts/partials/widget_page.html`; keep that invariant when changing headings.
 
 ## Homepage composition
