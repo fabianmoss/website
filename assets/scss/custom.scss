@@ -1859,7 +1859,7 @@ body.teaching-page .article-style details a {
   border-top: 1px solid var(--fc-border);
 }
 
-.exp-education__heading {
+.exp-heading {
   margin: 0 0 var(--fc-space-3);
   color: var(--fc-text-muted);
   font-size: 0.72rem;
@@ -1880,7 +1880,7 @@ body.teaching-page .article-style details a {
 .exp-edu {
   display: grid;
   grid-template-columns: 28px minmax(0, 1fr) auto;
-  gap: var(--fc-space-3);
+  gap: var(--fc-space-2);
   align-items: center;
 }
 

@@ -32,6 +32,8 @@
     {{ $span := sub $max.Unix $min.Unix }}
     {{ if eq $span 0 }}{{ $span = 1 }}{{ end }}
 
+    <h3 class="exp-heading">Employment</h3>
+
     <div class="exp-chart">
       <div class="exp-chart__inner">
         <div class="exp-chart__axis" aria-hidden="true">
@@ -107,7 +109,7 @@
 
   {{ if $education }}
     <div class="exp-education">
-      <h3 class="exp-education__heading">Education</h3>
+      <h3 class="exp-heading">Education</h3>
       <ul class="exp-education__list">
         {{ range $education }}
           {{ $edu := . }}
