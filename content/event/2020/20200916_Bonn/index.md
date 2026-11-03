@@ -26,8 +26,7 @@ all_day: true
 publishDate: 2021-09-13T19:13:56+01:00
 
 authors: [admin, Markus Neuwirth, Martin Rohrmeier]
-tags: [Corpus Studies, Beethoven, String Quartets]
-
+tags: [Corpus Studies, Beethoven, String Quartets, computational musicology, music theory]
 # Is this a featured talk? (true/false)
 featured: false
 

@@ -6,9 +6,10 @@
 
 - key: computational-musicology
   title: "Computational Musicology"
-  description: "Modeling musical patterns in large corpora"
+  description: "Machine learning and computational models of musical patterns"
   icon: "fa-wave-square"
   image: "/media/research/computational-musicology.jpg"
+  alt: "Line-of-fifths distribution of tonal pitch classes in historical corpora"
   url: "/research/computational-musicology/"
 
 - key: music-theory
@@ -16,6 +17,7 @@
   description: "How algorithms reveal musical structure"
   icon: "fa-music"
   image: "/media/research/music-theory.jpg"
+  alt: "Wavescapes visualization of tonal hierarchies"
   url: "/research/music-theory/"
 
 - key: digital-humanities
@@ -23,6 +25,7 @@
   description: "Building digital editions and research tools"
   icon: "fa-code"
   image: "/media/research/digital-humanities.jpg"
+  alt: "Page from a historical music-theory treatise showing encoded text"
   url: "/research/digital-humanities/"
 
 - key: cultural-evolution
@@ -30,4 +33,5 @@
   description: "How musical traditions change and spread"
   icon: "fa-network-wired"
   image: "/media/research/cultural-evolution.jpg"
+  alt: "Stacked area chart of chord-transition probabilities from 1920 to 2000"
   url: "/research/cultural-evolution/"

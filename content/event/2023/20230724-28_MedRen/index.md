@@ -24,8 +24,7 @@ all_day: true
 publishDate: 2023-04-11T17:03:30+02:00
 
 authors: [Tim Eipert, admin]
-tags: [trope, network, transmission, tropus, computer]
-
+tags: [trope, network, transmission, tropus, computer, digital humanities, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

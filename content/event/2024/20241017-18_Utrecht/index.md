@@ -33,8 +33,7 @@ all_day: false
 publishDate: 2024-08-13T10:00:38+02:00
 
 authors: [Lucas Hofmann, Craig S. Sapp, admin]
-tags: [polymeter, meter, analysis, corpus study, music encoding, Hugo Distler ]
-
+tags: [polymeter, meter, analysis, corpus study, music encoding, Hugo Distler, computational musicology, music theory]
 # Is this a featured event? (true/false)
 featured: false
 

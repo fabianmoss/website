@@ -29,7 +29,7 @@ _Reflets dans l’eau_, and Webern’s _Four Pieces for Violin and Piano_, Op. 7
 summary: "We introduce a novel perspective on set-class analysis combining the DFT magnitudes with the music visualisation technique of
 wavescapes."
 
-tags: [Fourier Qualia Space, wavescapes, Fourier transform, music analysis, harmonic qualities]
+tags: [Fourier Qualia Space, wavescapes, Fourier transform, music analysis, harmonic qualities, computational musicology, music theory]
 categories: []
 featured: false
 

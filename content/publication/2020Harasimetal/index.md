@@ -24,7 +24,7 @@ abstract: >
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: [computational musicology, music theory]
 categories: [corpus study]
 featured: false
 

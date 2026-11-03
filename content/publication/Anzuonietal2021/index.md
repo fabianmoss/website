@@ -23,7 +23,7 @@ abstract: "This study focuses on the exploration of the possibilities arising fr
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: [computational musicology, music theory, machine learning]
 categories: []
 featured: false
 

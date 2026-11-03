@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ partial "page_header.html" . }}
+
+  <div class="universal-wrapper">
+    {{ with .Content }}
+      <div class="article-style">{{ . }}</div>
+    {{ end }}
+
+    {{ $ongoing := sort (where .Pages "Params.ongoing" true) "Params.date_end" "desc" }}
+    {{ $rest := sort (where .Pages "Params.ongoing" "!=" true) "Params.date_end" "desc" }}
+    {{ $projects := slice }}
+    {{ range $ongoing }}{{ $projects = $projects | append . }}{{ end }}
+    {{ range $rest }}{{ $projects = $projects | append . }}{{ end }}
+
+    <div class="project-tiles">
+      {{ range $projects }}{{ partial "project_tile.html" . }}{{ end }}
+    </div>
+  </div>
+{{ end }}

@@ -24,7 +24,7 @@ abstract: "We introduce phantom curves, a novel music-theoretical concept based 
 # Summary. An optional shortened abstract.
 summary: "We introduce phantom curves, a novel music-theoretical concept based on the discrete Fourier transform (DFT), and document the creative process that led to their discovery"
 
-tags: []
+tags: [computational musicology]
 categories: []
 featured: false
 

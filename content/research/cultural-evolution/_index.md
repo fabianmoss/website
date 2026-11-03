@@ -20,16 +20,10 @@ design:
 Cultural evolution studies how cultural traits—such as musical styles, genres, and practices—change over time through processes of transmission, variation, and selection. Drawing on evolutionary biology, anthropology, and cognitive science, this field examines how music spreads across populations, adapts to new contexts, and gives rise to the rich diversity of musical traditions we observe today. Research in this area often combines computational methods with large-scale corpus analysis to model cultural dynamics.
 {{< /research_intro >}}
 
-## Publications
+{{< list_by_tag tag="cultural-evolution" type="project" heading="Projects" >}}
 
-{{< list_by_tag tag="cultural-evolution" type="publication" >}}
+{{< publications_list tag="cultural-evolution" heading="Publications" >}}
 
-## Projects
-
-{{< list_by_tag tag="cultural-evolution" type="project" >}}
-
-## Talks
-
-{{< list_by_tag tag="cultural-evolution" type="event" >}}
+{{< talks_list tag="cultural-evolution" heading="Talks" >}}
 
 

@@ -1,80 +1,30 @@
+{{/*
+  Projects for a research area, matched by tag/category.
+
+  Parameters:
+    tag     – research-area key or name (e.g. "music theory")
+    type    – optional content type; defaults to "project"
+    heading – optional section heading; omit to render the list without one
+
+  Renders the same compact project cards used on the /project/ index. If no
+  projects match, the whole output (including the heading) is suppressed so
+  empty research-area sections disappear.
+*/}}
 {{ $tag := .Get "tag" }}
-{{ $page_type := .Get "type" | default "publication" }}
+{{ $page_type := .Get "type" | default "project" }}
+{{ $heading := .Get "heading" }}
 
-{{ $tag_lower := lower $tag }}
-{{ $tag_with_dash := replace $tag_lower " " "-" }}
-{{ $tag_with_space := replace $tag_lower "-" " " }}
+{{ $items := where site.RegularPages "Type" $page_type }}
+{{ $matched := partial "functions/filter_by_tag" (dict "pages" $items "tag" $tag) }}
 
-{{ $items := where $.Site.RegularPages "Type" $page_type }}
-
-{{ $matched := slice }}
-{{ range $items }}
-  {{ $has_tag := false }}
-  {{ with .Params.tags }}
-    {{ range . }}
-      {{ $tag_in_content := lower . }}
-      {{ if or (eq $tag_in_content $tag_lower) (in $tag_in_content $tag_lower) (eq $tag_in_content $tag_with_space) (in $tag_in_content $tag_with_space) (eq $tag_in_content $tag_with_dash) (in $tag_in_content $tag_with_dash) }}
-        {{ $has_tag = true }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-  {{ with .Params.categories }}
-    {{ range . }}
-      {{ $cat_in_content := lower . }}
-      {{ if or (eq $cat_in_content $tag_lower) (in $cat_in_content $tag_lower) (eq $cat_in_content $tag_with_space) (in $cat_in_content $tag_with_space) (eq $cat_in_content $tag_with_dash) (in $cat_in_content $tag_with_dash) }}
-        {{ $has_tag = true }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-  {{ if $has_tag }}
-    {{ $matched = $matched | append . }}
-  {{ end }}
-{{ end }}
-
-{{ $items := sort $matched "Date" "desc" }}
-
-{{ if $items }}
-<ul class="entry-list">
-  {{ range $items }}
-    {{ $item := . }}
-    {{ $venueHref := "" }}
-    {{ with $item.Params.doi }}
-      {{ $venueHref = . }}
-      {{ if not (hasPrefix . "http") }}{{ $venueHref = printf "https://doi.org/%s" . }}{{ end }}
-    {{ end }}
-    {{ if not $venueHref }}
-      {{ with $item.Params.url_pdf }}
-        {{ $venueHref = . }}
-        {{ if not (hasPrefix . "http") }}{{ $venueHref = . | relURL }}{{ end }}
-      {{ end }}
-    {{ end }}
-    <li class="entry-item">
-      <span class="entry-year">{{ .Date.Format "2006" }}</span>
-      <div class="entry-body">
-        <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <div class="entry-meta">
-          {{ if eq $page_type "publication" }}
-            {{ $ptype := partial "functions/publication_type" $item }}
-            <span class="entry-type"><i class="fas {{ $ptype.icon }}" aria-hidden="true"></i>{{ $ptype.label }}</span>
-            <span class="middot-divider"></span>
-            {{ if $item.Params.authors }}{{ partial "page_metadata_authors" $item }}{{ end }}
-            {{ with $item.Params.publication }}
-              {{ if $item.Params.authors }}<span class="middot-divider"></span>{{ end }}
-              <em>{{ if $venueHref }}<a href="{{ $venueHref }}" target="_blank" rel="noopener">{{ end }}{{ . | markdownify }}{{ if $venueHref }}</a>{{ end }}</em>
-            {{ end }}
-          {{ else if eq $page_type "event" }}
-            {{ if $item.Params.authors }}{{ partial "page_metadata_authors" $item }}<span class="middot-divider"></span>{{ end }}
-            {{ partial "functions/get_event_dates" . }}
-            {{ with .Params.event }}<span class="middot-divider"></span>{{ . | markdownify }}{{ end }}
-            {{ with .Params.location }}<span class="middot-divider"></span>{{ . }}{{ end }}
-          {{ else }}
-            {{ with .Params.summary }}{{ . | plainify | truncate 160 }}{{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </li>
-  {{ end }}
-</ul>
-{{ else }}
-<p class="entry-empty">No items found.</p>
+{{ if $matched }}
+  {{ with $heading }}<h2 id="{{ . | anchorize }}">{{ . }}</h2>{{ end }}
+  {{ $ongoing := sort (where $matched "Params.ongoing" true) "Params.date_end" "desc" }}
+  {{ $rest := sort (where $matched "Params.ongoing" "!=" true) "Params.date_end" "desc" }}
+  {{ $projects := slice }}
+  {{ range $ongoing }}{{ $projects = $projects | append . }}{{ end }}
+  {{ range $rest }}{{ $projects = $projects | append . }}{{ end }}
+  <div class="project-tiles">
+    {{ range $projects }}{{ partial "project_tile.html" . }}{{ end }}
+  </div>
 {{ end }}

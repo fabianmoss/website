@@ -25,8 +25,7 @@ all_day: false
 publishDate: 2024-03-20T20:50:32+01:00
 
 authors: [Tim Eipert, admin, John Ashley Burgoyne, Bas Cornelissen, Jan Hajič, Vojtěch Lanz, Hana Vlhová-Wörner, Andreas Haug, Charles Atkinson]
-tags: []
-
+tags: [computational musicology, digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

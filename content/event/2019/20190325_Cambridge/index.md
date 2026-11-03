@@ -29,8 +29,7 @@ all_day: true
 publishDate: 2019-10-03T13:10:34+02:00
 
 authors: [admin]
-tags: []
-
+tags: [computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

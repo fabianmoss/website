@@ -25,8 +25,7 @@ all_day: false
 publishDate: 2024-03-20T20:50:32+01:00
 
 authors: [Polykarpos Polykarpidis, Dionysios Kalofonos, admin, Christina Anagnostopoulou]
-tags: []
-
+tags: [computational musicology, digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

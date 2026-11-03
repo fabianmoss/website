@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2022-03-25T08:41:48+01:00
 
 authors: [admin]
-tags: [discrete Fourier transform, midiVERTO, visualization, MIDI, music analysis]
-
+tags: [discrete Fourier transform, midiVERTO, visualization, MIDI, music analysis, music theory, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

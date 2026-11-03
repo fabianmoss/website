@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2019-10-02T15:49:58+02:00
 
 authors: [Uri Rom, Ariane Jeßulat, admin, Inbal Guter]
-tags: []
-
+tags: [music theory]
 # Is this a featured talk? (true/false)
 featured: false
 

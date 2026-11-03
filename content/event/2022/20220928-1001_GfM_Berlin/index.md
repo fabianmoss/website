@@ -57,8 +57,7 @@ all_day: false
 publishDate: 2022-08-28T07:53:16+01:00
 
 authors: [Maik Köster, admin]
-tags: [discourse analysis, dualism debate, harmonic dualism]
-
+tags: [discourse analysis, dualism debate, harmonic dualism, music theory]
 # Is this a featured event? (true/false)
 featured: false
 

@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <div class="universal-wrapper pt-3 error-page">
+    <p class="error-page__code">404</p>
+    <h1>{{ i18n "page_not_found" | default "Page not found" }}</h1>
+    <p class="error-page__text">The page you are looking for does not exist or has moved.</p>
+    <div class="error-page__links">
+      <a href="{{ "" | relLangURL }}">Home</a>
+      <a href="{{ "" | relLangURL }}#research-areas">Research</a>
+      <a href="{{ "publication/" | relLangURL }}">Publications</a>
+      <a href="{{ "event/" | relLangURL }}">Talks</a>
+      <a href="{{ "teaching/" | relLangURL }}">Teaching</a>
+    </div>
+  </div>
+{{ end }}

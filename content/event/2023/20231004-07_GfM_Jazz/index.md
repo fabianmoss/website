@@ -62,8 +62,7 @@ all_day: false
 publishDate: 2023-06-12T11:02:21+02:00
 
 authors: [Tim Eipert, Klaus Frieler, admin]
-tags: []
-
+tags: [music theory]
 # Is this a featured event? (true/false)
 featured: false
 

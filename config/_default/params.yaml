@@ -15,7 +15,7 @@ font_size: s
 site_type: Person
 local_business_type: 'University'
 org_name: 'Julius-Maximilians-Universität Würzburg'
-description: 'Juniorprofessur für Digitale Musikphilologie und Musiktheorie'
+description: 'Assistant professor of Digital Music Philology and Music Theory at Würzburg, working on computational musicology, music theory and Artificial Intelligence and Music.'
 twitter: 'fabianmoss'
 
 # Contact (edit or remove options as required)
@@ -30,8 +30,8 @@ address:
   country: Germany
   country_code: DE
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
+  latitude: '49.7921'
+  longitude: '9.9374'
 directions: Enter the building and take the stairs to Office 208 on Floor 2
 # office_hours:
 #   - 'Monday 10:00 to 13:00'
@@ -138,7 +138,7 @@ comments:
   commento:
     url: ''
 search:
-  provider: wowchemy
+  provider: ''
   algolia:
     app_id: ''
     api_key: ''

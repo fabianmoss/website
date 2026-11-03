@@ -35,7 +35,7 @@ summary: "In this study, we employ a computational model that formalizes music-t
 interval distributions for pieces in a large corpus of music, represented as so-called ‘bags of
 tonal pitch classes’."
 
-tags: []
+tags: [computational musicology]
 categories: []
 featured: false
 

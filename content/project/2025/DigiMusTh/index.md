@@ -8,6 +8,8 @@ authors: [admin]
 tags: [music theory, digital humanities]
 categories: [digital humanities, music theory]
 date: 2025-01-01T13:09:08+02:00
+date_start: "2025-01-01"
+date_end: "2025-12-31"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

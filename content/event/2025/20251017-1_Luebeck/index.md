@@ -28,8 +28,7 @@ all_day: false
 publishDate: 2025-06-02T09:10:20+02:00
 
 authors: [Lucas Hofmann, admin]
-tags: [metrische Stabilität, Polymetrik, Metrik, metrische Dissonanz, metrische Komplexität, Hugo Distler, Der Jahrkreis ]
-
+tags: [metrische Stabilität, Polymetrik, Metrik, metrische Dissonanz, metrische Komplexität, Hugo Distler, Der Jahrkreis, music theory, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

@@ -7,7 +7,7 @@ publication_types: ["2"]
 publication: "Music & Science"
 publication_short: ""
 abstract: ""
-summary: "Accepted for publication."
+summary: ""
 tags: ["computational musicology", "corpus studies", "Chinese music", "music theory"]
 categories: ["computational musicology"]
 accepted: true

@@ -23,7 +23,7 @@ abstract: "We present a dataset of 264 annotated piano pieces of nine composers,
 # Summary. An optional shortened abstract.
 summary: "We present a dataset of 264 annotated piano pieces of nine composers, composed in the long 19th century."
 
-tags: [corpora, harmony, phrase, cadence, piano, 19th century]
+tags: [corpora, harmony, phrase, cadence, piano, 19th century, computational musicology]
 categories: []
 featured: false
 

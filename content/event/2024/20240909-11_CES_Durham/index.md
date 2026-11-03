@@ -25,8 +25,7 @@ all_day: false
 publishDate: 2024-04-11T08:02:46+01:00
 
 authors: [admin, Eita Nakamura]
-tags: [Popular Music, Harmony, Chord Substitution, Style Evolution]
-
+tags: [Popular Music, Harmony, Chord Substitution, Style Evolution, cultural evolution, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

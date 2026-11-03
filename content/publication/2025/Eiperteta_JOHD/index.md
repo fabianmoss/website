@@ -27,7 +27,7 @@ This dataset allows the comprehensive collection of individual trope elements to
 # Summary. An optional shortened abstract.
 summary: "We present a dataset of occurrences of so-called trope elements in manuscripts of European medieval chant. "
 
-tags: [dataset]
+tags: [dataset, digital humanities, computational musicology]
 categories: []
 featured: false
 

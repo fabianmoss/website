@@ -26,7 +26,7 @@ abstract: "Es ist eine Tradition in Texten zu „Digitalität” in der Musikfor
 # Summary. An optional shortened abstract.
 summary: "Es ist eine Tradition in Texten zu „Digitalität” in der Musikforschung, gleich zu Beginn festzustellen, dass diese bereits seit vielen Jahren zum festen Bestandteil des musikwissenschaftlichen Methodenrepertoires gehört. Ebenso ist es üblich, darauf hinzuweisen, dass diese „neuartigen Methoden“ ein ungeahntes Potential für unsere Disziplin freilegen können/sollen/werden, und dass es sich deshalb lohnt, in sie zu investieren. Eine andere Texttradition hingegen verweist darauf, dass der bisherige Ertrag von computergestützten Methoden allenfalls als mäßig beschrieben werden könne. Der Nachweis erstens der Neuheit und zweitens des qualitativen Zugewinns algorithmisch oder statistisch erzeugter Resultate gegenüber händisch in Eigen- und Einzelarbeit erzeugten Erkenntnissen stehe noch aus."
 
-tags: [Digitalität, Musikforschung, Intradisziplinarität]
+tags: [Digitalität, Musikforschung, Intradisziplinarität, digital humanities]
 categories: []
 featured: false
 

@@ -39,8 +39,7 @@ all_day: false
 publishDate: 2019-10-02T13:23:32+02:00
 
 authors: [admin, Willian Fernandes Souza, Martin Rohrmeier]
-tags: []
-
+tags: [computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

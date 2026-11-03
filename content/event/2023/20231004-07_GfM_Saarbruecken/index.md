@@ -35,8 +35,7 @@ all_day: true
 publishDate: 2023-06-04T10:04:20+02:00
 
 authors: [Markus Neuwirth, Martin Rohrmeier, admin, Christof Weiß, Johannes Hentschel, Maik Köster]
-tags: []
-
+tags: [digital humanities]
 # Is this a featured event? (true/false)
 featured: false
 

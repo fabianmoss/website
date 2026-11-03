@@ -23,7 +23,7 @@ abstract: "What can we learn from the content of surviving medieval music manusc
 # Summary. An optional shortened abstract.
 summary: "What can we learn from the content of surviving medieval music manuscripts about their cultural context?"
 
-tags: []
+tags: [computational musicology, digital humanities, machine learning]
 categories: []
 featured: false
 

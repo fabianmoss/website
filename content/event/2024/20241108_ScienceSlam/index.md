@@ -24,8 +24,7 @@ all_day: false
 publishDate: 2024-09-25T16:02:01+02:00
 
 authors: [admin]
-tags: []
-
+tags: [computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

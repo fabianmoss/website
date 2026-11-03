@@ -25,8 +25,7 @@ all_day: false
 publishDate: 2025-05-09T22:20:46+02:00
 
 authors: [admin]
-tags: []
-
+tags: [music theory]
 # Is this a featured event? (true/false)
 featured: false
 

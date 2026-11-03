@@ -28,8 +28,7 @@ all_day: false
 publishDate: 2024-06-25T00:00:00+00:00
 
 authors: [Tim Eipert, Alexander Hartelt, admin, Frank Puppe]
-tags: [Optical Music Recognition, Digital Analysis of Chant, Phylogenetic Inference]
-
+tags: [Optical Music Recognition, Digital Analysis of Chant, Phylogenetic Inference, digital humanities, cultural evolution, computational musicology]
 # Is this a featured event? (true/false)
 featured: false
 

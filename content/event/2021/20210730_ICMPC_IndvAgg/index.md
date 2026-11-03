@@ -39,8 +39,7 @@ all_day: true
 publishDate: 2021-09-08T16:22:42+02:00
 
 authors: [admin, Steffen A. Herff, Martin Rohrmeier]
-tags: [probe-tone study, tonal stability, scales vs cadences, harmony]
-
+tags: [probe-tone study, tonal stability, scales vs cadences, harmony, computational musicology]
 # Is this a featured talk? (true/false)
 featured: false
 

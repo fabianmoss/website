@@ -1,12 +1,5 @@
-{{ $name := .Get "name" }}
 <div class="research-intro">
   <div class="research-intro__text">
     {{ .Inner | markdownify }}
   </div>
-  {{ with resources.Get (printf "media/research/%s.jpg" $name) }}
-    {{ $img := .Resize "900x webp" }}
-    <div class="research-intro__media">
-      <img src="{{ $img.RelPermalink }}" alt="" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="eager">
-    </div>
-  {{ end }}
 </div>
