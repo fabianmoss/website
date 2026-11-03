@@ -81,28 +81,13 @@ Working with large symbolic datasets of musical scores and harmonic annotations,
 
 Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch) (DCML) at [École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL, Switzerland) for the project [*Distant Listening: The Development of Harmony over Three Centuries (1700–2000)*](https://dcml.epfl.ch/projects/distant-listening), funded by the [Swiss National Science Foundation](http://www.snf.ch) (PI: Martin Rohrmeier). I also directed the project [*Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources*](http://dcmlab.github.io/ddd), supported by the EPFL-UNIL funding scheme [CROSS - Collaborative Research on Science and Society](https://www.epfl.ch/schools/cdh/research-2/cross-collaborative-research-on-science-and-society/). -->
 
-I am a tenure-track assistant professor for **Digital Music Philology and Music Theory**
-in the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/team/moss/)
-at [Julius-Maximilians University Würzburg](https://www.uni-wuerzburg.de/) (JMU), Germany,
-part of the extended collegial board of the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/) (ZPD), and member of the [Graduate School Humanities](https://www.graduateschools.uni-wuerzburg.de/humanities/home/) (GSH). 
+I am an assistant professor of Digital Music Philology and Music Theory at Julius-Maximilians-Universität Würzburg, at the Institut für Musikforschung and the Zentrum für Philologie und Digitalität.
 
+I study how harmony and tonality change over time. From medieval chant and Renaissance polyphony to 19th-century tonality, Brazilian choro and popular music, I work with large corpora of scores and harmonic annotations — pairing music theory with statistical modelling, machine learning and music cognition to find patterns that close analysis alone cannot reach, and to test what our theories of harmony actually predict. The methods are a means, not an end: the goal is always a better understanding of music.
 
-<!-- ### Research Interests -->
-<!---->
-<!-- Computational Musicology · Corpus Studies · Music Theory & Analysis · Digital Humanities · Artificial Intelligence · Cultural Evolution -->
+Current projects include *Musico Pratico*, a digital edition, translation and study of Pietro Pontio's 16th-century dialogues on music theory, and *DigiMusTh*, an open collection of 19th-century German-language music-theory texts.
 
-In my research, I bridge concepts and methodologies from the humanities and the sciences,
-and aim to understand music and its structure from an inherently **interdisciplinary perspective**,
-involving fields such as musicology and music theory, mathematics, music information retrieval,
-data science and machine learning, music cognition, and the digital humanities.
-
-One of my central interests lies in analysing large digital corpora in order to better understand musical styles,
-especially from a historical viewpoint. 
-More specifically, I work with large **symbolic datasets** of musical scores and harmonic annotations.
-I  am also interested in **computational modeling** of music and its perception,
-and am fascinated by quantitative approaches to model historical processes.
-
-I [teach courses](teaching) covering a wide range of topics in music theory, computational musicology, and digital tools.
+I teach music theory, computational musicology and digital methods, and I supervise work on corpus-based and computational approaches to music. I am always glad to hear from students and collaborators, and from anyone who wants to bring computation to musical questions.
 
 <!--Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), -->
 <!--and before that as doctoral and postdoctoral researcher at -->
