@@ -66,6 +66,14 @@ education:
     date_end: "2016-04-30"
     detail: Visiting PhD Student · Linguistics & Philosophy / Brain & Cognitive Sciences
 
+  - institution: Escola Superior de Música de Catalunya
+    company_url: https://esmuc.cat/
+    company_logo: ESMUC
+    location: Barcelona, Spain
+    date_start: "2012-01-01"
+    date_end: "2012-04-30"
+    detail: ERASMUS Exchange Student
+
   - institution: Hochschule für Musik und Tanz Köln
     company_url: https://www.hfmt-koeln.de/
     company_logo: logo_HFMTK
@@ -81,14 +89,6 @@ education:
     date_start: "2006-10-01"
     date_end: "2016-09-30"
     detail: State Examination Mathematics and Educational Studies
-
-  - institution: Escola Superior de Música de Catalunya
-    company_url: https://esmuc.cat/
-    company_logo: ESMUC
-    location: Barcelona, Spain
-    date_start: "2012-01-01"
-    date_end: "2012-04-30"
-    detail: ERASMUS Exchange Student
 
 design:
   columns: '1'
