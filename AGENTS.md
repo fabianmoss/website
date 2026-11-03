@@ -128,3 +128,11 @@ If Wowchemy is updated, re-check these overrides against the new theme partials.
 3. Add an image at `assets/media/research/<key>.jpg` — used by the homepage research card, not by the research-area page.
 4. Counts and homepage cards update automatically; do not hard-code cards in `research-areas.md`.
 5. Every publication and talk must carry at least one research-area tag (`computational musicology`, `music theory`, `digital humanities`, `cultural evolution`); the research areas are the only browse path now that the homepage lists and menu entries are gone.
+
+## Outstanding tasks
+
+- **Verify the site in Google Search Console (and Bing Webmaster Tools), then submit `sitemap.xml`.** No verification token is configured yet (`marketing.google_site_verification` in `params.yaml` is empty). Any of these works:
+  1. **Google Analytics** — if the GA4 property (`G-774PTR37ZK`) is in the same Google account, add a URL-prefix property for `https://fabian-moss.de/` and verify via Analytics. No code change.
+  2. **Domain property + DNS TXT** — add a Domain property for `fabian-moss.de`, put the `google-site-verification=…` TXT record at the DNS provider, verify. Covers apex, `www` and subdomains; no code change.
+  3. **HTML tag** — add a URL-prefix property, choose the HTML-tag method, and put the token in `params.yaml` under `marketing.google_site_verification` (the theme emits the meta tag), then redeploy and verify.
+  Afterwards submit `https://fabian-moss.de/sitemap.xml` and import the site into Bing Webmaster Tools.
