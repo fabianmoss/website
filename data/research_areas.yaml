@@ -1,6 +1,6 @@
 # Images are figures from Fabian Moss's own publications and projects:
 #   computational-musicology — line of fifths / tonal pitch-class co-evolution (JMM 2022)
-#   music-theory — Wavescapes (Moss et al., Musicae Scientiae 2022)
+#   music-theory — Figure 1, Phantom Curves (Moss, Affatato & Harasim, DLfM 2022)
 #   digital-humanities — DigiMusTh project banner (text collection/encoding)
 #   cultural-evolution — chord evolution in popular music (CHR 2024)
 
@@ -17,7 +17,7 @@
   description: "How algorithms reveal musical structure"
   icon: "fa-music"
   image: "/media/research/music-theory.jpg"
-  alt: "Wavescapes visualization of tonal hierarchies"
+  alt: "Hierarchy of timeline segments shown as a wavescape, with phantom curves for two example segments"
   url: "/research/music-theory/"
 
 - key: digital-humanities

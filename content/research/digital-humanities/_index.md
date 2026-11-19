@@ -1,6 +1,6 @@
 ---
 # Research Area Page
-title: "Digital Humanities"
+title: "Music Encoding & Digital Humanities"
 subtitle: "Applying digital methods to humanities research"
 
 # Description at the top

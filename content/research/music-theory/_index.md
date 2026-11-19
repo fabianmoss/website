@@ -1,6 +1,6 @@
 ---
 # Research Area Page
-title: "Music Theory"
+title: "Music Theory & Analysis"
 subtitle: "Understanding the structures and systems of music"
 
 # Description at the top

@@ -1,6 +1,6 @@
 ---
 # Research Area Page
-title: "Cultural Evolution"
+title: "Cultural Evolution & Music"
 subtitle: "Tracing the transmission and transformation of musical traditions"
 
 # Description at the top

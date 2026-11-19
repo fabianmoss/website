@@ -279,7 +279,7 @@ button:focus-visible,
 // -----------------------------------------------------------------------------
 // Rendered by `layouts/shortcodes/research_areas.html` from
 // `data/research_areas.yaml`: muted tinted icon, accent top rule, content
-// counts, and an explicit "Explore" affordance.
+// counts, and the whole card as the link.
 
 .research-cards {
   display: grid;
@@ -394,7 +394,7 @@ button:focus-visible,
 
 .research-area-card__title {
   margin: 0;
-  color: var(--fc-heading);
+  color: var(--area-color);
   font-size: 1.02rem;
   font-weight: 600;
   line-height: 1.3;
@@ -414,24 +414,6 @@ button:focus-visible,
   color: var(--fc-text-muted);
   font-size: 0.8rem;
   line-height: 1.4;
-}
-
-.research-area-card__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  color: var(--area-color);
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-
-.research-area-card__link span {
-  transition: transform 0.2s ease;
-}
-
-.research-area-card:hover .research-area-card__link span,
-.research-area-card:focus-visible .research-area-card__link span {
-  transform: translateX(3px);
 }
 
 .area-computational-musicology {
@@ -1686,37 +1668,39 @@ body.teaching-page .article-style details a {
   background: var(--fc-border);
 }
 
+// Bars are opaque tints of their role colour, so the track line behind them
+// never shows through. Current and hovered bars use the full colour.
 .exp-bar {
+  --bar-color: var(--fc-accent);
   position: absolute;
   top: 50%;
   height: 1.05rem;
   min-width: 6px;
-  background: var(--fc-accent);
+  background: color-mix(in srgb, var(--bar-color) 55%, var(--fc-surface));
   border-radius: 999px;
-  opacity: 0.5;
   transform: translateY(-50%);
-  transition: opacity 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
-.exp-bar:hover {
-  opacity: 1;
+.exp-bar:hover,
+.exp-bar--current {
+  background: var(--bar-color);
 }
 
 .exp-bar--current {
-  opacity: 1;
   box-shadow: 0 0 0 3px var(--fc-accent-soft);
 }
 
 .exp-bar--professor {
-  background: var(--fc-role-professor);
+  --bar-color: var(--fc-role-professor);
 }
 
 .exp-bar--postdoc {
-  background: var(--fc-role-postdoc);
+  --bar-color: var(--fc-role-postdoc);
 }
 
 .exp-bar--doctoral {
-  background: var(--fc-role-doctoral);
+  --bar-color: var(--fc-role-doctoral);
 }
 
 .exp-marker {
@@ -2277,4 +2261,81 @@ body.research-page .project-tile__link {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+// -----------------------------------------------------------------------------
+// 19. Analytics consent banner and footer settings link
+// -----------------------------------------------------------------------------
+.consent-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fc-space-3) var(--fc-space-5);
+  padding: var(--fc-space-4) var(--fc-space-5);
+  background: var(--fc-surface);
+  color: var(--fc-text);
+  border-top: 1px solid var(--fc-border);
+  box-shadow: var(--fc-shadow-md);
+  font-size: 0.9rem;
+}
+
+.consent-banner[hidden] {
+  display: none;
+}
+
+.consent-banner__text {
+  margin: 0 0 var(--fc-space-1);
+  max-width: 62ch;
+}
+
+.consent-banner__text a {
+  color: var(--fc-accent);
+  text-decoration: underline;
+}
+
+.consent-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--fc-space-2);
+}
+
+.consent-banner__button {
+  padding: var(--fc-space-2) var(--fc-space-4);
+  border: 1px solid var(--fc-accent);
+  border-radius: var(--fc-radius-sm);
+  background: var(--fc-surface);
+  color: var(--fc-accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.consent-banner__button:hover {
+  background: var(--fc-accent-soft);
+}
+
+.consent-banner__button:focus-visible,
+.footer-cookie-settings:focus-visible {
+  outline: 2px solid var(--fc-accent);
+  outline-offset: 2px;
+}
+
+.footer-cookie-settings {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--fc-text-muted);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-cookie-settings:hover {
+  color: var(--fc-accent);
 }
