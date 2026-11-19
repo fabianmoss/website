@@ -23,8 +23,8 @@ abstract: "The historical narrative of increasing chromaticism and dissonance in
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: [computational musicology, music theory]
+tags: ["cultural evolution"]
+categories: ["computational musicology"]
 featured: false
 
 # Custom links (optional).

@@ -25,7 +25,7 @@ abstract: "The TP3C ('tonal pitch-class counts corpus') is a dataset of tonal pi
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [computational musicology, digital humanities]
+tags: ["digital humanities", "music theory"]
 categories: [data]
 featured: false
 

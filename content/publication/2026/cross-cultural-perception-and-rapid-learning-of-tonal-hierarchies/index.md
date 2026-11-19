@@ -8,7 +8,7 @@ publication: "Music Perception: An Interdisciplinary Journal"
 publication_short: "Music Perception"
 abstract: ""
 summary: ""
-tags: ["computational musicology", "music theory", "music perception", "Chinese music"]
+tags: ["computational musicology", "music perception", "Chinese music"]
 categories: ["computational musicology"]
 accepted: true
 featured: false

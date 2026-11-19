@@ -10,7 +10,7 @@ abstract: ""
 summary: ""
 publication_type_label: "Blog post"
 publication_type_icon: "fa-pen-nib"
-tags: ["computational musicology", "tonality"]
+tags: ["computational musicology", "tonality", "music theory"]
 categories: ["computational musicology"]
 featured: false
 links:

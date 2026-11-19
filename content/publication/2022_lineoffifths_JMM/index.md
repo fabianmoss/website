@@ -24,7 +24,7 @@ abstract: "In this study, we determine the fundamental role of the line of fifth
 # Summary. An optional shortened abstract.
 summary: "In this study, we determine the fundamental role of the line of fifths for the organization of tonal material by applying dimensionality reduction to a large historical corpus of pitch-class counts (ca. 1360–1940). We observe a historically growing trend in the exploitation of the fifths range, i.e. the size of segments that pitch-class distributions cover on the line of fifths. Moreover, we introduce the novel concept of pitch-class (co-)evolution."
 
-tags: [line of fifths, tonal pitch classes, dimensionality reduction, pitch-class co-evolution]
+tags: ["line of fifths", "tonal pitch classes", "dimensionality reduction", "pitch-class co-evolution", "computational musicology"]
 categories: [corpus studies, music theory]
 featured: false
 

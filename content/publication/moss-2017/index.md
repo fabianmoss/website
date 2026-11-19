@@ -7,7 +7,7 @@ publication_types: ["2"]
 abstract: ""
 publication_type_label: "Book review"
 publication_type_icon: "fa-quote-left"
-tags: [music theory]
+tags: ["music theory", "computational musicology"]
 featured: false
 publication: "Music Theory & Analysis"
 doi: "10.11116/MTA.4.1.71"

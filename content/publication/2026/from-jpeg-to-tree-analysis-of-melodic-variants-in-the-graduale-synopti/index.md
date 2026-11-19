@@ -8,7 +8,7 @@ publication: "Shaping Early Music Research in the Digital Era: Case Studies on P
 publication_short: ""
 abstract: ""
 summary: ""
-tags: ["plainchant", "digital humanities", "music encoding", "phylogenetics"]
+tags: ["plainchant", "digital humanities", "music encoding", "phylogenetics", "music theory"]
 categories: ["digital humanities"]
 accepted: true
 featured: false

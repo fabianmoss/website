@@ -43,7 +43,7 @@ abstract: |
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [music theory, computational musicology]
+tags: ["music theory", "digital humanities"]
 categories: []
 featured: false
 

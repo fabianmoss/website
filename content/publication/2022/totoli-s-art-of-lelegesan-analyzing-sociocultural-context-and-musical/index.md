@@ -9,8 +9,8 @@ publication_short: ""
 abstract: ""
 summary: ""
 doi: "10.31219/osf.io/5tsxa"
-tags: ["ethnomusicology", "folk music analysis", "cultural evolution", "Indonesia"]
-categories: ["cultural evolution"]
+tags: ["ethnomusicology", "folk music analysis", "Indonesia", "computational musicology"]
+categories: []
 featured: false
 url_pdf: ""
 url_code: ""

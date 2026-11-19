@@ -11,7 +11,7 @@ summary: ""
 publication_type_label: "Dataset"
 publication_type_icon: "fa-database"
 doi: "10.5281/zenodo.3265393"
-tags: ["music visualization", "software", "tonality"]
+tags: ["music visualization", "software", "tonality", "music theory"]
 categories: ["computational musicology"]
 featured: false
 url_pdf: ""

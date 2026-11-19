@@ -9,7 +9,7 @@ publication_short: ""
 abstract: ""
 summary: ""
 doi: "10.1093/9780197775097.003.0010"
-tags: ["cultural evolution", "musicology", "music history"]
+tags: ["cultural evolution", "musicology", "music history", "computational musicology"]
 categories: ["cultural evolution"]
 featured: false
 url_pdf: ""

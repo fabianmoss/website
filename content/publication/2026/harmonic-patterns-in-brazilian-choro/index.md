@@ -10,7 +10,7 @@ abstract: ""
 summary: ""
 publication_type_label: "Dataset"
 publication_type_icon: "fa-database"
-tags: ["brazilian choro", "harmony", "corpus studies"]
+tags: ["brazilian choro", "harmony", "corpus studies", "music theory"]
 categories: ["computational musicology"]
 featured: false
 links:

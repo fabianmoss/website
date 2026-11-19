@@ -24,7 +24,7 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: ["music theory"]
 categories: [digital-humanities]
 accepted: true
 featured: false

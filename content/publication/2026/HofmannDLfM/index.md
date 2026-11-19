@@ -24,7 +24,7 @@ abstract: "We present DistlerCorpus, a corpus of Hugo Distler's _Der Jahrkreis_ 
 # Summary. An optional shortened abstract.
 summary: "We present DistlerCorpus, a corpus of Hugo Distler's _Der Jahrkreis_ op. 5."
 
-tags: [Music Encoding, Symbolic Corpus, Polymeter, Humdrum, MEI, MusicXML, MuseScoreXML, MIDI, Hugo Distler]
+tags: ["Music Encoding", "Symbolic Corpus", "Polymeter", "Humdrum", "MEI", "MusicXML", "MuseScoreXML", "MIDI", "Hugo Distler", "digital humanities"]
 categories: [music-theory]
 featured: false
 

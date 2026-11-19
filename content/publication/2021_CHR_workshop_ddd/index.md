@@ -24,7 +24,7 @@ abstract: "We report the progress of the ongoing project “Digitizing the Duali
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [digital musicology, music theory, dualism debate, corpus studies, computational humanities]
+tags: ["digital musicology", "music theory", "dualism debate", "corpus studies", "computational humanities", "digital humanities"]
 categories: []
 featured: false
 

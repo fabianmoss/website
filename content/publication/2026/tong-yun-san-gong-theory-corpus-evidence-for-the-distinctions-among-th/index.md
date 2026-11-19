@@ -9,7 +9,7 @@ publication: "Music & Science, 9"
 publication_short: ""
 abstract: ""
 summary: ""
-tags: ["computational musicology", "corpus studies", "Chinese music", "music theory"]
+tags: ["computational musicology", "corpus studies", "Chinese music"]
 categories: ["computational musicology"]
 featured: false
 url_pdf: ""

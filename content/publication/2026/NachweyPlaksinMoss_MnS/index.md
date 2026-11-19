@@ -23,7 +23,7 @@ abstract: "A persistent challenge for musicological corpus studies is the scarci
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: ["computational musicology"]
 categories: [digital humanities]
 featured: false
 

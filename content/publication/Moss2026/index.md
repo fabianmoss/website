@@ -26,7 +26,7 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [Choro, Corpus Studies, Harmony, Form, Musical Style Analysis, computational musicology]
+tags: ["Choro", "Corpus Studies", "Harmony", "Form", "Musical Style Analysis", "music theory", "digital humanities"]
 categories: []
 featured: false
 

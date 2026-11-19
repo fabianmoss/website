@@ -8,7 +8,7 @@ publication: "Computational Humanities Research (CHR)"
 publication_short: ""
 abstract: ""
 summary: ""
-tags: ["computational musicology", "chord analysis", "audio", "corpus studies"]
+tags: ["computational musicology", "chord analysis", "audio", "corpus studies", "music theory"]
 categories: ["computational musicology"]
 accepted: true
 featured: false

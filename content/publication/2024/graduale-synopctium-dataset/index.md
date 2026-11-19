@@ -11,7 +11,7 @@ summary: ""
 publication_type_label: "Dataset"
 publication_type_icon: "fa-database"
 doi: "10.17605/OSF.IO/GQCHV"
-tags: ["plainchant", "optical music recognition", "dataset"]
+tags: ["plainchant", "optical music recognition", "dataset", "music theory"]
 categories: ["digital humanities"]
 featured: false
 url_pdf: ""
