@@ -64,6 +64,14 @@ positions:
 
 # Degrees, listed compactly below the lanes.
 education:
+  - institution: École Polytechnique Fédérale de Lausanne
+    company_url: https://dcml.epfl.ch
+    company_logo: epfl_square
+    location: Lausanne, Switzerland
+    date_start: "2017-09-01"
+    date_end: "2019-12-31"
+    detail: PhD · Digital Humanities · Digital and Cognitive Musicology Lab
+
   - institution: Massachusetts Institute of Technology
     company_url: https://www.mit.edu
     company_logo: MIT_logo
