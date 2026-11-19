@@ -75,6 +75,9 @@ Shortcodes (`layouts/shortcodes/`):
 
 - `publications_list.html` — publications list, year timeline, five-per-year cap, type/accepted labels, venue links to DOI/PDF. Optional `tag=` filters by research area and `heading=` adds a section title; used on the homepage and inside research areas.
 - `talks_list.html` — talks list, year timeline, date badge, speakers, attachment pills. Same optional `tag=` / `heading=` parameters as `publications_list`.
+- `projects_list.html` — projects list with the same year timeline (grouped by start year). Same optional `tag=` / `heading=`.
+- `year_timeline_script.html` (partial) — the timeline script shared by the three lists. Pass the list's `variant`, `list` and `item` classes; do not copy the script into a shortcode.
+- Without `tag=`, the three lists show everything. `content/research/{publications,talks,projects}/_index.md` ("All Publications", "All Talks", "All Projects") use them, and the browse links below the research cards point there.
 - `research_areas.html` — research cards from `data/research_areas.yaml`, including live counts.
 - `research_intro.html` — intro text block for research-area pages (no figure; figures live on the project cards and homepage research cards).
 - `video_grid.html` — click-to-play video cards from `data/videos.yaml`; embeds YouTube only on click.

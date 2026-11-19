@@ -1,0 +1,44 @@
+{{/*
+  Projects list with a year timeline, mirroring publications_list and talks_list.
+
+  Parameters:
+    tag     – optional research-area key/name; only matching projects
+    heading – optional section heading
+
+  Renders a year selector (newest first) and one tile per project, grouped by
+  the year each project started. When a tag filters out every project, nothing
+  is rendered at all so empty sections disappear.
+*/}}
+{{ $tag := .Get "tag" }}
+{{ $heading := .Get "heading" }}
+{{ $items := where site.RegularPages "Type" "project" }}
+{{ with $tag }}
+  {{ $items = partial "functions/filter_by_tag" (dict "pages" $items "tag" .) }}
+{{ end }}
+{{ $items = sort $items "Date" "desc" }}
+
+{{ if $items }}
+  {{ with $heading }}<h2 id="{{ . | anchorize }}">{{ . }}</h2>{{ end }}
+  {{ $latestYear := "" }}
+  {{ with index $items 0 }}{{ $latestYear = (time (.Params.date_start | default (.Date.Format "2006-01-02"))).Format "2006" }}{{ end }}
+  {{ $latestCount := 0 }}
+
+  <div class="year-widget year-widget--projects">
+    <div class="year-timeline year-timeline--bars" role="group" aria-label="Filter projects by year"></div>
+
+    <div class="project-tiles project-list">
+      {{ range $items }}
+        {{ $year := (time (.Params.date_start | default (.Date.Format "2006-01-02"))).Format "2006" }}
+        {{ $isLatest := eq $year $latestYear }}
+        {{ $hide := not $isLatest }}
+        {{ if and $isLatest (ge $latestCount 5) }}{{ $hide = true }}{{ end }}
+        {{ if $isLatest }}{{ $latestCount = add $latestCount 1 }}{{ end }}
+        <div class="project-slot" data-year="{{ $year }}"{{ if $hide }} hidden{{ end }}>
+          {{ partial "project_tile.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ partial "year_timeline_script.html" (dict "page" .Page "scratch" "projects_timeline_js" "variant" "projects" "list" "project-list" "item" "project-slot") }}
+{{ end }}

@@ -1,0 +1,143 @@
+{{/*
+  Year timeline for the publications, talks and projects lists. The widget
+  holds a `.year-timeline` axis and items carrying `data-year`; selecting a
+  year shows its items (five at first, with a toggle for the rest).
+
+  Parameters (dict):
+    page     – page whose Scratch guards against loading the script twice
+    scratch  – Scratch key unique to this list type
+    variant  – widget modifier: the widget has class `year-widget--<variant>`
+    list     – class of the element that holds the items
+    item     – class of each item (must carry `data-year`)
+*/}}
+{{ if not (.page.Scratch.Get .scratch) }}
+  {{ .page.Scratch.Set .scratch true }}
+  <script>
+    (function () {
+      function initWidget(widget) {
+        if (!widget || widget.dataset.ready) return;
+        var container = widget.querySelector('.year-timeline');
+        var list = widget.querySelector('.{{ .list }}');
+        if (!container || !list) return;
+        widget.dataset.ready = 'true';
+
+        var items = Array.prototype.slice.call(widget.querySelectorAll('.{{ .item }}[data-year]'));
+        var counts = {};
+        var oldest = null;
+        var newest = null;
+        items.forEach(function (item) {
+          var year = Number(item.dataset.year);
+          if (!year) return;
+          counts[year] = (counts[year] || 0) + 1;
+          if (oldest === null || year < oldest) oldest = year;
+          if (newest === null || year > newest) newest = year;
+        });
+        if (newest === null) return;
+
+        // Keep years without items on the axis so the timeline stays
+        // continuous; they render without a bar and are not clickable.
+        var years = [];
+        for (var y = newest; y >= oldest; y--) years.push(String(y));
+
+        var maxCount = 0;
+        years.forEach(function (year) { maxCount = Math.max(maxCount, counts[year] || 0); });
+
+        var line = document.createElement('span');
+        line.className = 'year-timeline__line';
+        line.setAttribute('aria-hidden', 'true');
+        container.appendChild(line);
+
+        var buttons = [];
+
+        function addButton(label, value, count) {
+          var empty = !count;
+          var node = document.createElement(empty ? 'span' : 'button');
+          node.className = 'year-timeline__year' + (empty ? ' year-timeline__year--empty' : '');
+          node.dataset.year = value;
+          if (empty) {
+            node.title = 'No items in ' + label;
+          } else {
+            node.type = 'button';
+            node.setAttribute('aria-pressed', 'false');
+            node.setAttribute('aria-label', label + ' (' + count + ' items)');
+            node.addEventListener('click', function () { select(value); });
+          }
+
+          var track = document.createElement('span');
+          track.className = 'year-timeline__track';
+          if (!empty) {
+            var bar = document.createElement('span');
+            bar.className = 'year-timeline__bar';
+            if (maxCount) {
+              bar.style.height = Math.max(3, Math.round((count / maxCount) * 100)) + '%';
+              bar.title = count + (count === 1 ? ' item' : ' items');
+            }
+            track.appendChild(bar);
+          }
+
+          var labelEl = document.createElement('span');
+          labelEl.className = 'year-timeline__label';
+          labelEl.textContent = label;
+
+          node.appendChild(track);
+          node.appendChild(labelEl);
+          container.appendChild(node);
+          if (!empty) buttons.push(node);
+        }
+
+        var VISIBLE_LIMIT = 5;
+        var selectedYear = years[0];
+        var expanded = false;
+        var toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'year-list-toggle';
+        toggle.hidden = true;
+        list.parentNode.insertBefore(toggle, list.nextSibling);
+
+        function updateToggle(count) {
+          toggle.hidden = count <= VISIBLE_LIMIT;
+          toggle.textContent = expanded ? 'Show fewer' : 'Show all ' + count + ' from ' + selectedYear;
+          toggle.setAttribute('aria-expanded', String(expanded));
+        }
+
+        function applyFilter() {
+          var yearItems = items.filter(function (item) { return item.dataset.year === selectedYear; });
+          items.forEach(function (item) { item.hidden = true; });
+          yearItems.forEach(function (item, index) {
+            item.hidden = expanded ? false : index >= VISIBLE_LIMIT;
+          });
+          updateToggle(yearItems.length);
+        }
+
+        toggle.addEventListener('click', function () {
+          expanded = !expanded;
+          applyFilter();
+        });
+
+        function select(value) {
+          selectedYear = value;
+          expanded = false;
+          buttons.forEach(function (button) {
+            button.setAttribute('aria-pressed', String(button.dataset.year === value));
+          });
+          applyFilter();
+        }
+
+        years.forEach(function (year) { addButton(year, year, counts[year] || 0); });
+        select(years[0]);
+      }
+
+      function init() {
+        Array.prototype.slice
+          .call(document.querySelectorAll('.year-widget--{{ .variant }}'))
+          .forEach(initWidget);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+{{ end }}
