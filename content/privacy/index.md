@@ -13,24 +13,22 @@ header:
   image: ""
 ---
 
-Items marked **[TO CONFIRM]** must be completed or checked with the university's data protection office before this page is published.
-
 ## English
 
-### Who is responsible
+### General information
 
-Fabian C. Moss, Institut für Musikforschung, Julius-Maximilians-Universität Würzburg, Domerschulstr. 13, 97070 Würzburg, Germany. Email: fabian.moss@uni-wuerzburg.de
+The privacy statement of Julius-Maximilians-Universität Würzburg for its websites applies to this site. It names the responsible body, the university's data protection officer, and your rights, including the right to complain to a supervisory authority: [Privacy statement of the University of Würzburg](https://www.uni-wuerzburg.de/sonstiges/datenschutz/). The notes below describe what this site does in addition to that statement.
 
-Data protection officer of the university: **[TO CONFIRM: name and contact details]**
+Contact for this website: Fabian C. Moss, fabian.moss@uni-wuerzburg.de
 
-### Server log files
+### Server log files and hosting
 
-The site is hosted by GitHub Pages (GitHub, Inc.). When you visit a page, the hosting provider processes technical data such as your IP address, browser type and the page requested, in order to deliver and secure the site. The legal basis is Art. 6(1)(f) GDPR, our legitimate interest in a secure and reliable website. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+The site is hosted by GitHub Pages (GitHub, Inc.). When you request a page, the hosting provider processes technical data such as your IP address, browser type and the requested page in order to deliver and secure the site. The legal basis is Art. 6(1)(f) GDPR. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
 ### Third-party content
 
 - Icons and code-highlighting styles are loaded from the jsDelivr content delivery network (cdn.jsdelivr.net).
-- Video thumbnails on the homepage are loaded from YouTube's image server (i.ytimg.com). A video starts only when you click it, and only then does your browser contact YouTube to play it.
+- Video thumbnails on the homepage are loaded from YouTube's image server (i.ytimg.com). A video plays only after you click it; only then does your browser contact YouTube to play it.
 
 These requests transmit your IP address to the respective providers. The legal basis is Art. 6(1)(f) GDPR.
 
@@ -47,19 +45,19 @@ We use Google Analytics 4 (measurement ID G-774PTR37ZK), operated by Google Irel
 
 ### Your rights
 
-You have the right to access, rectification, erasure, restriction of processing, data portability and objection (Art. 21 GDPR, for processing based on legitimate interest). To exercise these rights, contact the address above. You may also complain to a supervisory authority. For public bodies in Bavaria this is the Bayerischer Landesbeauftragte für den Datenschutz **[TO CONFIRM]**.
+Your rights, including the right to complain to a supervisory authority, are described in the university's privacy statement linked above. You can exercise them through the data protection officer named there, or by writing to the contact address above.
 
 ## Deutsch
 
-### Verantwortlicher
+### Allgemeine Hinweise
 
-Fabian C. Moss, Institut für Musikforschung, Julius-Maximilians-Universität Würzburg, Domerschulstr. 13, 97070 Würzburg. E-Mail: fabian.moss@uni-wuerzburg.de
+Für diese Website gilt die [Datenschutzerklärung der Universität Würzburg für ihre Webseiten](https://www.uni-wuerzburg.de/sonstiges/datenschutz/). Sie nennt die verantwortliche Stelle, die Kontaktdaten des Datenschutzbeauftragten sowie Ihre Rechte einschließlich der Beschwerde bei einer Aufsichtsbehörde. Die folgenden Hinweise ergänzen diese Erklärung um das, was diese Website zusätzlich tut.
 
-Datenschutzbeauftragte(r) der Universität: **[TO CONFIRM: Name und Kontaktdaten]**
+Kontakt für diese Website: Fabian C. Moss, fabian.moss@uni-wuerzburg.de
 
-### Server-Logdateien
+### Server-Logdateien und Hosting
 
-Die Website wird über GitHub Pages (GitHub, Inc.) bereitgestellt. Beim Aufruf einer Seite verarbeitet der Hosting-Anbieter technische Daten wie IP-Adresse, Browsertyp und die aufgerufene Seite, um die Website auszuliefern und abzusichern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren Betrieb). Siehe [Datenschutzerklärung von GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+Die Website wird über GitHub Pages (GitHub, Inc.) bereitgestellt. Beim Aufruf einer Seite verarbeitet der Hosting-Anbieter technische Daten wie IP-Adresse, Browsertyp und die aufgerufene Seite, um die Website auszuliefern und abzusichern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Siehe [Datenschutzerklärung von GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
 ### Eingebundene Inhalte Dritter
 
@@ -81,6 +79,6 @@ Wir nutzen Google Analytics 4 (Mess-ID G-774PTR37ZK), betrieben von Google Irela
 
 ### Ihre Rechte
 
-Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 21 DSGVO, bei Verarbeitung auf Grundlage eines berechtigten Interesses). Zur Ausübung wenden Sie sich an die oben genannte Adresse. Sie können sich außerdem bei einer Aufsichtsbehörde beschweren. Für öffentliche Stellen in Bayern ist dies der Bayerische Landesbeauftragte für den Datenschutz **[TO CONFIRM]**.
+Ihre Rechte einschließlich der Beschwerde bei einer Aufsichtsbehörde sind in der oben verlinkten Datenschutzerklärung der Universität beschrieben. Sie können sie über den dort genannten Datenschutzbeauftragten geltend machen oder über die oben genannte Kontaktadresse.
 
 Stand: 19. November 2026
