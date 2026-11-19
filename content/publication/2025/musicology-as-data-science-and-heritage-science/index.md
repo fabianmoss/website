@@ -6,7 +6,8 @@ publishDate: 2025-11-01T00:00:00+01:00
 publication_types: ["4"]
 publication: "Zenodo"
 publication_short: ""
-abstract: ""
+abstract: >-
+  This collective guide explores the transformative intersections of musicology with data science and heritage science in the European context. It positions musicological research as both a model for and contributor to broader cultural heritage, analyzing its tangible and intangible dimensions. The report reviews advances in research infrastructures, including the European Open Science Cloud, ECHOES, and E-RIHS, highlighting challenges and opportunities for integrating music into transnational heritage frameworks. It surveys the complexity of music data — notation, audio, metadata, and visual sources — and emphasizes standardized methods for cataloging and preservation. The text critically assesses legal, policy, and technical barriers to digitizing and reusing musical materials, advocating for legal reforms and open science principles. New publication paradigms are proposed, leveraging digital tools to expand access and impact. The role of musicologists in public engagement, education, and fostering research communities is underscored as crucial for sustainability. Best practices and collaborative models link musicological data to broader digital humanities and preservation strategies. Ultimately, the guide calls for active participation in European policy and research networks to enhance musicology’s role in shaping and disseminating cultural heritage for future generations.
 summary: ""
 doi: "10.5281/zenodo.17662093"
 tags: ["digital humanities", "musicology", "heritage science"]

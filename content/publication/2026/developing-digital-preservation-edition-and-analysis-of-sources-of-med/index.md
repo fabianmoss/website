@@ -6,7 +6,8 @@ publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["4"]
 publication: "Zenodo"
 publication_short: ""
-abstract: ""
+abstract: >-
+  From July 21st to 25th, 2025, the Short-Term Scientific Mission “Developing digital preservation, edition, and analysis of sources of medieval monophony and its theory” of the COST Action EarlyMuse took place at the Institut für Musikforschung1 at Julius-Maximilians-Universität Würzburg (JMU), Germany, organized by Konstantin Voigt and Fabian C. Moss.
 summary: ""
 doi: "10.5281/zenodo.18503286"
 tags: ["musicology", "digital humanities", "EarlyMuse"]

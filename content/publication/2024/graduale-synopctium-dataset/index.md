@@ -6,7 +6,8 @@ publishDate: 2024-04-01T00:00:00+01:00
 publication_types: ["0"]
 publication: "OSF"
 publication_short: ""
-abstract: ""
+abstract: >-
+  This dataset contains 1028 transcribed chants from the Graduale Synopticum, along with metadata such as genre, mode, biblical references, and liturgical feast days, derived from early manuscript sources spanning the 10th to 12th centuries.
 summary: ""
 publication_type_label: "Dataset"
 publication_type_icon: "fa-database"

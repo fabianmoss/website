@@ -6,7 +6,8 @@ publishDate: 2019-07-01T00:00:00+01:00
 publication_types: ["0"]
 publication: "Zenodo"
 publication_short: ""
-abstract: ""
+abstract: >-
+  Plotting library for note distributions in different representations of tonal space, including e.g. the Tonnetz.
 summary: ""
 publication_type_label: "Dataset"
 publication_type_icon: "fa-database"

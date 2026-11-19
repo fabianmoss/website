@@ -4,7 +4,8 @@ date: 2018-01-01
 publishDate: 2019-10-02T15:46:12.118608Z
 authors: ["Markus Neuwirth", "Daniel Harasim", admin, "Martin Rohrmeier"]
 publication_types: ["2"]
-abstract: ""
+abstract: >-
+  This report describes a publicly available dataset of harmonic analyses of all Beethoven string quartets together with a new annotation scheme.
 featured: false
 categories: [data]
 publication: "Frontiers in Digital Humanities"
