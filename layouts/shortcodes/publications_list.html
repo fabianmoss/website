@@ -49,6 +49,7 @@
             <div class="pub-labels">
               <span class="pub-type"><i class="fas {{ $ptype.icon }}" aria-hidden="true"></i>{{ $ptype.label }}</span>
               {{ if .Params.accepted }}<span class="pub-status">Accepted</span>{{ end }}
+              {{ if .Params.in_preparation }}<span class="pub-status">In preparation</span>{{ end }}
             </div>
             <h3 class="pub-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 

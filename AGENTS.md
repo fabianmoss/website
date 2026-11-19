@@ -116,6 +116,7 @@ If Wowchemy is updated, re-check these overrides against the new theme partials.
 - **DOIs must be stored as bare DOIs** (e.g. `10.1234/abc`), never full URLs — the theme prepends `https://doi.org/`. Publication cards link the venue to the DOI (or `url_pdf` if no DOI).
 - `publication_types` is numeric: `0` uncategorized/publication, `1` conference paper, `2` journal article, `3` preprint, `4` report, `5` book, `6` book chapter, `7` thesis, `8` patent. Keep the numeric value for Wowchemy, then optionally add `publication_type_label` and `publication_type_icon` for custom labels (datasets, blog posts, book reviews).
 - `accepted: true` marks accepted/in-press publications; the cards show an “Accepted” chip and the venue should not contain “(accepted)”.
+- `in_preparation: true` marks unpublished chapters/works in preparation; the cards show an “In preparation” chip. Leave the date as a placeholder (`2026-01-01`) and do not set `accepted`.
 - Keep `publication` venue strings plain text (no Markdown emphasis); the card styles them italic. Use `publication_short` for abbreviations.
 - Events use `event`, `event_url`, `location`, `address` (`street`/`city`/`region`/`postcode`/`country`), `date`, `date_end`, and `all_day`.
 - Section indexes: `content/publication/_index.md` uses `view: 4` (citation); `content/event/_index.md` and `content/post/_index.md` use `view: 2` (compact).
