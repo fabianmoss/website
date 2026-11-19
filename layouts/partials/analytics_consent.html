@@ -1,0 +1,74 @@
+{{ $id := site.Params.marketing.google_analytics | default "" }}
+{{ with $id }}
+<script>
+(function () {
+  var GA_ID = {{ . | jsonify | safeJS }};
+  var PRIVACY_URL = {{ "privacy/" | relLangURL | jsonify | safeJS }};
+  var KEY = "fc-analytics-consent";
+  var banner = null;
+
+  function loadAnalytics() {
+    if (window.gtag) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_ID);
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+    document.head.appendChild(s);
+  }
+
+  function buildBanner() {
+    banner = document.createElement("div");
+    banner.className = "consent-banner";
+    banner.setAttribute("role", "region");
+    banner.setAttribute("aria-label", "Analytics consent / Einwilligung");
+    banner.innerHTML =
+      '<p class="consent-banner__text">We would like to use Google Analytics to see how this site is visited. Nothing is loaded until you choose. ' +
+      '<a href="' + PRIVACY_URL + '">Privacy policy</a></p>' +
+      '<p class="consent-banner__text">Wir möchten Google Analytics nutzen, um die Nutzung dieser Website zu verstehen. Bis Sie entscheiden, wird nichts geladen. ' +
+      '<a href="' + PRIVACY_URL + '">Datenschutz</a></p>' +
+      '<div class="consent-banner__actions">' +
+      '<button type="button" class="consent-banner__button" data-consent="denied">Decline / Ablehnen</button>' +
+      '<button type="button" class="consent-banner__button" data-consent="granted">Accept / Akzeptieren</button>' +
+      '</div>';
+    document.body.appendChild(banner);
+  }
+
+  function showBanner() {
+    if (!banner) buildBanner();
+    banner.hidden = false;
+  }
+
+  function hideBanner() {
+    if (banner) banner.hidden = true;
+  }
+
+  function choose(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+    hideBanner();
+    if (value === "granted") loadAnalytics();
+  }
+
+  var stored = null;
+  try { stored = localStorage.getItem(KEY); } catch (e) {}
+  if (stored === "granted") loadAnalytics();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (stored === null) showBanner();
+  });
+
+  document.addEventListener("click", function (event) {
+    var target = event.target.closest ? event.target.closest("[data-consent], [data-cookie-settings]") : null;
+    if (!target) return;
+    if (target.hasAttribute("data-cookie-settings")) {
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      showBanner();
+      return;
+    }
+    choose(target.getAttribute("data-consent"));
+  });
+})();
+</script>
+{{ end }}

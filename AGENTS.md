@@ -63,11 +63,11 @@ Inactive widgets: `publications`, `talks`, `projects`, `posts`, `featured`, `ski
 - Publications: recent items use `content/publication/<year>/<slug>/index.md`; many older items are flat at `content/publication/<slug>/index.md`. Events use `content/event/<year>/<slug>/index.md`; projects use `content/project/<year>/<slug>/index.md`. Do not reorganise existing folders — the folder path is part of the URL.
 - Event permalinks are `/talk/<slug>/` even though content lives under `content/event/` (see `permalinks` in `config.yaml`).
 - Teaching is a single page, `content/teaching/index.md`. Semesters are `##` sections containing `<details><summary>` blocks, newest first. `{{< teaching_timeline >}}` builds the year selector; it defaults to the newest year and has no “All” node.
-- Research areas live in `content/research/<area>/_index.md` and are driven by `data/research_areas.yaml`. The homepage and `/research/` both render `{{< research_areas >}}`, which builds cards (image, icon, counts, Explore link) from that data file.
+- Research areas live in `content/research/<area>/_index.md` and are driven by `data/research_areas.yaml`. The homepage and `/research/` both render `{{< research_areas >}}`, which builds cards (image, icon, counts; the whole card is the link) from that data file.
 - `content/research/_index.md` + `layouts/research/list.html` render the research landing page; `content/project/_index.md` renders the projects index.
 - Author id is `admin`: `content/authors/admin/_index.md` is the profile (`superuser: true`), and content uses `authors: [admin]`. `content/admin/index.md` is a separate Wowchemy CMS config page, not the author profile.
 - `content/journal-club/index.md` is a standalone page; its menu entry is commented out.
-- Drafts currently kept: `content/post/babysteps-google-cloud`, `content/post/new-position-wue`. `privacy.md` and `terms.md` were removed; do not reintroduce placeholder legal pages.
+- Drafts currently kept: `content/post/babysteps-google-cloud`, `content/post/new-position-wue`. `terms.md` was removed. `content/privacy/index.md` is the real, bilingual privacy policy; keep it accurate when third-party services change. Google Analytics is consent-gated: `layouts/partials/site_head.html` calls `analytics_consent.html` (banner, loader and footer "Cookie settings" hook) instead of the theme's `marketing/google_analytics` partial. Do not re-enable the theme partial, and keep `privacy_pack: false` (its cookie banner is dismiss-only and not a consent mechanism).
 
 ## Custom shortcodes and partials
 

@@ -5,6 +5,8 @@
     <span class="footer-copy">{{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify }}{{ end }}</span>
 
     <span class="footer-meta">
+      <a href="{{ "privacy/" | relLangURL }}">Privacy / Datenschutz</a>
+      <button type="button" class="footer-cookie-settings" data-cookie-settings>Cookie settings</button>
       <span class="footer-credit">Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &amp; <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a></span>
     </span>
   </div>
