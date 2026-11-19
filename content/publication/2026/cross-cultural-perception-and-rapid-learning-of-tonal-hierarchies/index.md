@@ -1,6 +1,6 @@
 ---
 title: "Cross-cultural perception and rapid learning of tonal hierarchies in Chinese heptatonic Diao"
-authors: ["Shuqi Meng", "Edward T. R. Hall", "admin", "Martin Rohrmeier"]
+authors: ["Shuxin Meng", "Edward T. R. Hall", "admin", "Martin Rohrmeier"]
 date: 2026-01-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["2"]

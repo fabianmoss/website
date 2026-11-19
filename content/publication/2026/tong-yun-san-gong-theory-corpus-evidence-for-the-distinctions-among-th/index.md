@@ -1,6 +1,6 @@
 ---
 title: "Tong yun san gong theory: corpus evidence for the distinctions among three Chinese heptatonic diao"
-authors: ["Shuqi Meng", "admin", "Martin Rohrmeier"]
+authors: ["Shuxin Meng", "admin", "Martin Rohrmeier"]
 date: 2026-01-01T00:00:00+01:00
 doi: "10.1177/20592043261500932"
 publishDate: 2026-01-01T00:00:00+01:00

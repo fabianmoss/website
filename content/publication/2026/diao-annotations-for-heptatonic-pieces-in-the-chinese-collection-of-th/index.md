@@ -1,6 +1,6 @@
 ---
 title: "Diao Annotations for Heptatonic Pieces in the Chinese Collection of the Essen Folksong Database"
-authors: ["Shuqi Meng", "admin", "Martin Rohrmeier"]
+authors: ["Shuxin Meng", "admin", "Martin Rohrmeier"]
 date: 2026-01-01T00:00:00+01:00
 publishDate: 2026-01-01T00:00:00+01:00
 publication_types: ["0"]
