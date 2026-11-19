@@ -74,26 +74,10 @@ email: ""
 highlight_name: true
 ---
 
-<!-- I am a Research Fellow in Cultural Analytics at the [Media Studies Department](https://mediastudies.nl/) at [University of Amsterdam](https://uva.nl) (UvA). I am also affiliated with the [Language & Music Cognition](https://www.illc.uva.nl/Research/Research-Units/LMC/) (LMC) research unit at UvA's [Institute for Language, Logic and Computation](https://www.illc.uva.nl/) (ILLC). I engage with the activities of the [Music Cognition Group](http://mcg.uva.nl/) (MCG) and the [Amsterdam Music Lab](https://www.amsterdammusiclab.nl/) (AML) as well as with the project [_Creative Amsterdam: an e-Humanities Perspective_](https://create.humanities.uva.nl/) (CREATE).
+I am an Assistant Professor for Digital Music Philology and Music Theory at [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/), working at the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/) and the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/). I obtained my PhD with my dissertation [*Transitions of Tonality: A Model-Based Corpus Study*](https://doi.org/10.5075/epfl-thesis-9808) at [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/).
 
-My research is inherently interdisciplinary and aims to bridge the humanities and the sciences. I draw on methods and concepts from Musicology and Music Theory, Mathematics, Music Information Retrieval, Data Science & Machine Learning, Music Psychology & Cognition, and the Digital Humanities.
-Working with large symbolic datasets of musical scores and harmonic annotations, I am primarily interested in Computational Music Analysis, Music Theory, Music Cognition, and their mutual relationship. 
-
-Before my appointment at UvA, I worked as a postdoctoral researcher in the [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch) (DCML) at [École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL, Switzerland) for the project [*Distant Listening: The Development of Harmony over Three Centuries (1700–2000)*](https://dcml.epfl.ch/projects/distant-listening), funded by the [Swiss National Science Foundation](http://www.snf.ch) (PI: Martin Rohrmeier). I also directed the project [*Digitizing the Dualism Debate: A Case Study in the Computational Analysis of Historical Music Sources*](http://dcmlab.github.io/ddd), supported by the EPFL-UNIL funding scheme [CROSS - Collaborative Research on Science and Society](https://www.epfl.ch/schools/cdh/research-2/cross-collaborative-research-on-science-and-society/). -->
-
-Since December 2022, I have been an assistant professor of Digital Music Philology and Music Theory at [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/), working at the [Institut für Musikforschung](https://www.musikwissenschaft.uni-wuerzburg.de/) and the [Zentrum für Philologie und Digitalität](https://www.uni-wuerzburg.de/zpd/).
-
-My PhD in Digital Humanities at [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/) was completed in 2019, and my dissertation, [*Transitions of Tonality: A Model-Based Corpus Study*](https://doi.org/10.5075/epfl-thesis-9808), is available online.
-
-My research asks how harmony and tonality have changed over time. The material ranges from medieval chant and Renaissance polyphony through 19th-century tonality to Brazilian choro and popular music. I combine large corpora of scores and harmonic annotations with statistical modelling, machine learning and music cognition, testing what our theories of harmony predict and where computation reveals patterns that close reading alone would miss.
-
+In my research, I study large corpora of scores and harmonic annotations with methods from statistical modeling, machine learning, and music cognition, to find out what how can we sharpen our theories of music and what patterns computation can reveal that close reading would miss.
+The material ranges from medieval chant and Renaissance polyphony through 19th-century tonality to Brazilian choro, Chinese folk music, and popular music. 
 Current projects include [*Musico Pratico*](/project/2025/musicopratico/), a digital edition, translation and study of Pietro Pontio's 16th-century dialogues on music theory, and [*DigiMusTh*](/project/2025/digimusth/), an open collection of 19th-century German-language music-theory texts.
 
-I teach music theory, computational musicology and digital methods, and supervise corpus-based and computational projects. Students and collaborators who want to bring computation to musical questions are always welcome to get in touch.
-
-<!--Before my appointment to JMU, I have worked as a Research Fellow in Cultural Analytics at [University of Amsterdam](https://uva.nl) ([Media Studies Department](https://mediastudies.nl/) & [Data Science Centre](https://dsc.uva.nl/)), -->
-<!--and before that as doctoral and postdoctoral researcher at -->
-<!--[École Polytechnique Fédérale de Lausanne](https://epfl.ch) (EPFL)'s [Digital and Cognitive Musicology Lab](https://dcml.epfl.ch).-->
-<!--Supported by the [German Academic Exchange Service](https://www.daad.de/en/) (DAAD), I visited the [Department of Linguistics and Philosophy](https://linguistics.mit.edu/) at the [Massachusetts Institute of Technology](https://www.mit.edu) (MIT) as a research PhD student and spent a semester at [Escola Superior de Música de Catalunya](https://www.esmuc.cat/en/) (ESMUC) funded by the ERASMUS program of the European Union.-->
-<!---->
-
+I teach music theory, computational musicology and digital methods, and supervise corpus-based and computational projects. Feel free to get in touch if you want to learn more or are interested in collaboration.
