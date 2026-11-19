@@ -26,6 +26,7 @@ summary: ""
 
 tags: []
 categories: [digital-humanities]
+accepted: true
 featured: false
 
 # Custom links (optional).

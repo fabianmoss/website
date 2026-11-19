@@ -2,6 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Digitizing a 19th-Century Music Theory Debate for Computational Analysis"
+event: "Computational Humanities Research 2021 (CHR 2021)"
+location: Amsterdam, The Netherlands (online)
 authors: [admin, Maik Köster, Melinda Femminis, Coline Métrailler, François Bavaud]
 date: 2021-11-18T15:05:36+02:00
 doi: ""

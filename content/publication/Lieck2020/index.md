@@ -44,6 +44,7 @@ tags:
 - Pitch-Class Distributions
 - Cognitive Modeling
 - Tonality
+- computational musicology
 - Bayesian Generative Model
 - machine learning
 - computational musicology

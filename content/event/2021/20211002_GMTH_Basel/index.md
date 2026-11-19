@@ -4,7 +4,7 @@
 title: "Polytonality and the Emergence of Tone Fields in Tailleferre's Pastorale"
 event: 21. Jahreskongress der Gesellschaft für Musiktheorie (GMTH) - Tonsysteme und Stimmungen
 event_url:
-location:
+location: Musik-Akademie Basel / FHNW, Basel, Switzerland
 address:
   street:
   city: Basel

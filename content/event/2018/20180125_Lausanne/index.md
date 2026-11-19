@@ -16,14 +16,14 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2018-01-26T13:46:51+02:00
-date_end: 2019-01-29T13:46:51+02:00
+date: 2018-01-25T13:46:51+02:00
+date_end: 2018-01-25T13:46:51+02:00
 all_day: true
 
 # Schedule page publish date (NOT talk date).
 publishDate: 2019-10-02T13:46:51+02:00
 
-authors: [Daniel Harasim, admin, Matthias Ramirez, Martin Rohrmeier]
+authors: [Daniel Harasim, admin, Matthias Ramirez]
 tags: [computational musicology]
 # Is this a featured talk? (true/false)
 featured: false

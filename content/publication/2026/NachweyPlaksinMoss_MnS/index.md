@@ -15,7 +15,7 @@ publishDate: 2026-09-04T09:39:36+02:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Music & Science"
+publication: "Music & Science, 9"
 publication_short: ""
 
 abstract: "A persistent challenge for musicological corpus studies is the scarcity of existing, high-quality corpora for computational research. Here, we propose a method to selectively encode musical scores based on a specific sampling technique and illustrate the approach using a corpus of piano works, namely Beethoven's Bagatelles op. 33. In a case study, we perform a phylogenetic analysis on six editions of the Bagatelles. We first analyze the full-length encodings and then sampled subsets of bars and compare the results. We evaluate three sampling approaches to create the subsets, each approach based on distinct assumptions about the distribution of differences between musical prints. The results show that sampled subsets can approximate the overall number of differences with high accuracy. In particular, random sampling performs as well as, or better than, more constrained approaches. These findings show that sampling methods are a viable option to enable quantitative musicological analyses, for example on historical editorial practices, using phylogenetic approaches."

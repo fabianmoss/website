@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Brazilian Choro: A New Data Set of Chord Transcriptions and Analyses of Harmonic and Formal Features"
-event: "17ter Jahreskongress der Gesellschaft für Musiktheorie (GMTH) & 27te Arbeitstagung der Gesellschaft für Popularmusikforschung (GfPM) 'Populäre Musik und ihre Theorien: Begegnungen – Perspektivwechsel – Transfers'"
+event: "17. Jahreskongress der Gesellschaft für Musiktheorie (GMTH) & 27. Arbeitstagung der Gesellschaft für Popularmusikforschung (GfPM) 'Populäre Musik und ihre Theorien: Begegnungen – Perspektivwechsel – Transfers'"
 event_url: https://jazzforschung.kug.ac.at/institut-16-jazzforschung/gfpm-gmth-konferenz-2017.html
 location: Universität für Musik und darstellende Kunst Graz
 address:

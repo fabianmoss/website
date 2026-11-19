@@ -15,7 +15,7 @@ publishDate: 2026-09-04T09:39:23+02:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Brazilian Journal of Music and Mathematics"
+publication: "Brazilian Journal of Music and Mathematics, 10(1), 52–71"
 publication_short: ""
 
 abstract: "Data-driven research on different harmonic styles has increased substantially since the early

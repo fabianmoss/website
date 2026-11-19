@@ -1,8 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Inside or Outside: The Use of Chord, Scale and Chromatic 
-Tones in Jazz Solo Improvisations"
+title: "Inside or Outside: The Use of Chord, Scale and Chromatic Tones in Jazz Solo Improvisations"
 event: 'Jahrestagung der Gesellschaft für Musikforschung (GfM 2023)'
 event_url: https://www.uni-saarland.de/fachrichtung/musikwissenschaft/gfm-tagung-2023.html
 location: Saarbrücken, Germany

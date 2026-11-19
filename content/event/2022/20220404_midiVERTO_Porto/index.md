@@ -2,9 +2,9 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Interactive Music Analysis using the DFT and Pitch-Class Distributions extracted from MIDI files"
-event:
+event: "Faculdade de Engenharia da Universidade do Porto (FEUP)"
 event_url: https://sigarra.up.pt/feup/pt/noticias_geral.ver_noticia?p_nr=131270
-location: Faculdade de Engenharia da Universidade do Porto (FEUP)
+location: Porto, Portugal
 address:
   street: 
   city: Porto

@@ -28,7 +28,7 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: 2021-03-04T19:12:10+01:00
 
-authors: [admin, Markus Neuwirth, Martin Rohrmeier]
+authors: [admin]
 tags: [computational musicology]
 # Is this a featured talk? (true/false)
 featured: false

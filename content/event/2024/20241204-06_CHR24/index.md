@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Modeling the evolution of harmony in different cultural contexts"
+title: "Modeling the evolution of harmony in popular music from different cultural contexts"
 event: "CHR2024: Fifth Conference on Computational Humanities Research"
 event_url: https://2024.computational-humanities-research.org/
 location: Aarhus, Denmark

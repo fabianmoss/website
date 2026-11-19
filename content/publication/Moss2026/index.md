@@ -3,11 +3,11 @@
 
 title: "Choro Songbook Corpus"
 authors: [admin,  Willian Fernandes Souza, Martin Rohrmeier]
-date: 2018-10-02T18:25:03+02:00
-doi: "10.5281/zenodo.1442765"
+date: 2026-07-06T00:00:00+02:00
+doi: "10.5281/zenodo.21219604"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2019-10-02T18:25:03+02:00
+publishDate: 2026-07-06T00:00:00+02:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -18,7 +18,7 @@ publication_type_label: "Dataset"
 publication_type_icon: "fa-database"
 
 # Publication name and optional abbreviated publication name.
-publication: "Zenodo"
+publication: "Zenodo, v1.3.3"
 publication_short: ""
 
 abstract: ""

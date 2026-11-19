@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Metric Complexity in Polyphonic Music: A Theoretical Framework and Quantitative Analysis of Hugo Distler’s Motets"
+title: "Conventional and characteristic harmonic sequences across Brazilian choro, Western classical music and rock: tonal harmony in a Global South context"
 event: "Third International Conference on Computational and Cognitive Musicology"
 event_url: https://digital.musicology.org/icccm2025/
 location: Aalborg, Denmark
@@ -12,12 +12,7 @@ address:
   postcode:
   country:
 summary:
-abstract: "Musical meter typically functions as a structural constant in music, providing a framework of regular pulses upon which rhythms unfold. In Western music, meter generally remains consistent over extended musical sections, or even throughout entire pieces. However, this regularity is occasionally disrupted by metric shifts or polymetric structures, which challenge conventional conceptions of meter.
-Here, we understand meter as composed of smaller units—simple meters—that serve as its basic building blocks. This view allows for the decomposition of both regular and irregular metric structures into their fundamental components. In doing so, it provides a means to analyze and quantify the structural complexity of individual meters as well as of sequences of meters in both monophonic and polyphonic music.
-
-Based on this perspective, we propose a measure for the complexity of meters and sequences of meters that depends on the cardinality (i.e., the number of pulses) and the number and type of its component simple meters. In this context, we also outline the concept of metric stability, a holistic feature of a piece of music. It serves as a new parameter for describing the degree to which a meter remains consistent over time. We demonstrate our music-theoretical framework through computational analyses of Hugo Distler’s motets, which are characterized by pronounced metric irregularities.
-
-Key findings show that Distler’s motet collection Der Jahrkreis employs a total of 16 distinct time signatures, resulting in an overall high degree of metric complexity. Individual motets feature up to six different meters, with an average of 2.57 distinct meters per piece. The metric complexity values exhibit substantial variability across the motets and are, on average, approximately five times higher than those found in Bach’s chorales, which themselves show very low variability. Similarly, Distler’s motets exhibit fluctuating metric stability, whereas Bach’s chorales demonstrate high stability."
+abstract: "Data-driven research on different harmonic styles, including both Western classical and popular music, has increased substantially since the early 2000s (e.g. de Clercq and Temperley, 2011, Broze and Shanahan, 2013, Devaney et al., 2015, de Clercq, 2022). Such studies have largely focused on a single style at a time, while also rarely addressing styles from the Global South. Sears and Forrest (2021) present a method for comparing Western classical and rock harmonic styles based on large corpora of Roman numeral annotations (namely, the ABC, TAVERN, Rolling Stones and McGill Billboard corpora), ranking both the conventional chord progressions of each style (i.e. those most commonly found in the style) as well as the characteristic progressions (i.e. those that are unique to a style or corpus relative to a comparison style, or anti-corpus). The present study addresses the lack of representation of styles from the Global South by reproducing the methodology of Sears and Forrest with the inclusion of Brazilian choro, based on the corpus by Moss et al. (2019), which contains harmonic annotations of 295 choro pieces. We identify the most conventional tri-grams of Roman numeral sequences in choro and the most characteristic in comparison to the Western classical and rock databases used in the original study. Preliminary results indicate that choro harmony, even if largely tonal and tertian, exhibits unique chord progressions at formal boundaries relative to the other two styles, such as iv - iiø - i  (relative frequency ratio = 5.58 relative to classical, and 6.47 relative to rock). These results advance our knowledge of how a previously under-studied genre deploys unique vocabularies of tonal chord progressions in comparison to more studied styles, increasing our understanding of how tonal harmony develops in different parts of the world and contributing to diversity in corpus studies (Shea et al. 2024)."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -28,8 +23,8 @@ all_day: false
 # Schedule page publish date (NOT event date).
 publishDate: 2025-08-07T17:21:25+02:00
 
-authors: [Lucas Hofmann, Christoph Finkensiep, admin]
-tags: [meter, metric complexity, metric stability, computational analysis, Hugo Distler, computational musicology, music theory]
+authors: [Mauro Orsini Windholz, David Sears, admin]
+tags: [computational musicology, cultural evolution]
 # Is this a featured event? (true/false)
 featured: false
 

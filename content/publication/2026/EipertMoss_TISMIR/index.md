@@ -15,7 +15,7 @@ publishDate: 2026-03-03T15:04:38+01:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Transactions of the International Society for Music Information Retrieval"
+publication: "Transactions of the International Society for Music Information Retrieval, 9(1), 36–49"
 publication_short: "TISMIR"
 
 abstract: "What can we learn from the content of surviving medieval music manuscripts about their cultural context? Our study maps the spread of so‑called trope elements (textual– musical insertions into Gregorian chant) in manuscripts across medieval central Europe, specifically the Carolingian Empire and the Italian Peninsula, from the 9th to the 14th century. Using a nested stochastic block model, we infer groupings from the bipartite network of trope element occurrences in manuscripts. We identify three cohesive manuscript groups that align with the geographical borders established by the Treaty of Verdun in 843 CE. This correspondence indicates that the post‑Verdun political boundaries both channeled and limited musical exchange, along with possibly cultural transmission more broadly. Our results demonstrate how data‑driven methods can be used to evaluate assertions in prior historical work empirically. Fitting sophisticated network models to large, high‑quality datasets yields a bird’s‑eye view that integrates statistical precision with scholarly interpretability, illustrating the power of computational methods for historical musicology."

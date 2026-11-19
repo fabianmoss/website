@@ -15,7 +15,7 @@ publishDate: 2021-01-04T14:18:51+01:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Humanities and Social Sciences Communications, 8(5), 1-11"
+publication: "Humanities and Social Sciences Communications, 8(1), 1-11"
 publication_short: ""
 
 abstract: >

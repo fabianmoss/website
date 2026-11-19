@@ -23,7 +23,7 @@ all_day: true
 # Schedule page publish date (NOT talk date).
 publishDate: 2019-10-02T13:38:29+02:00
 
-authors: [Colin Aitken, Timothy J. O'Donnell, Martin Rohrmeier]
+authors: [Colin Aitken, Timothy J. O'Donnell, Martin Rohrmeier, admin]
 tags: [computational musicology, music theory]
 # Is this a featured talk? (true/false)
 featured: false

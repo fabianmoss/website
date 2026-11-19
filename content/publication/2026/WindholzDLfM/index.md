@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Mapping the space of harmonic cadences between Brazilian choro, jazz and Anglophone popular music"
-authors: [Mauri Orsini Windholz, admin]
+authors: [Mauro Orsini Windholz, admin]
 date: 2026-04-01T15:32:24+02:00
 doi: "10.1145/3815723.3815724"
 

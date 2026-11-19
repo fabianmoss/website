@@ -4,7 +4,7 @@
 title: "Historical Changes of Modes and their Substructure Modeled as Pitch Distributions in Plainchant from the 1100s to the 1500s"
 event: 16th International Symposium on Computer Music Multidisciplinary Research (CMMR2023)
 event_url:
-location:
+location: Tokyo, Japan
 address:
   street:
   city:

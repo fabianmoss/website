@@ -16,7 +16,7 @@ publishDate: 2026-09-04T09:38:54+02:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the Workshop on Computational Methods in the Humanities 2025"
+publication: "Workshop on Computational Methods in the Humanities 2026 (COMHUM 2026)"
 publication_short: "COMHUM 2026"
 
 abstract: "For some time now, musicologists studying pre-modern Europe have been examining the question 

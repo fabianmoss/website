@@ -16,7 +16,7 @@ publishDate: 2024-05-24T12:03:22+02:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Humanities and Social Sciences Communications"
+publication: "Humanities and Social Sciences Communications, 11, 864"
 publication_short: ""
 
 abstract: "Diachronic stylistic changes in music are to a large extent affected by composers’ different

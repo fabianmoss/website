@@ -4,7 +4,7 @@
 title: "Text+ Musik: Multimodale Kodierungsherausforderungen im DigiMusTh-Kooperationsprojekt"
 event: DH-Kolloquium an der Berlin-Brandenburgischen Akademie der Wissenschaften
 event_url:
-location:
+location: Online
 address:
   street:
   city:
